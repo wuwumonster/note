@@ -121,8 +121,11 @@ if (!empty($target)) {
 直接搜索.exe
 ![](attachment/Pasted%20image%2020230224195328.png)
 将文件备份到桌面，然后将原文件删除
+`bcdedit /deletevalue {current} safeboot `将默认开机该回去
+开机后发现还有一个程序，杀掉
+![](attachment/Pasted%20image%2020230224201924.png)
 
-
+然后做逆向分析就可以
 
 # Task2
 ## WebServer
@@ -173,6 +176,9 @@ top, 定位到ip-route2
 - Find hidden locations of malicious program(s)
 - Analyse PE file(s) to describe its or their behaviour
 - Find the key left by malicious program(s)
+### 调查过程
+volatility进行分析
+![](attachment/Pasted%20image%2020230224202403.png)
 ## Network
 ### 任务
 - Find and submit the URL that the backup uploaded
