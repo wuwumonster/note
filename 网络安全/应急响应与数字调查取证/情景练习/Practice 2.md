@@ -141,8 +141,11 @@ top, 定位到ip-route2
 在rc.local发现路径
 ![](attachment/Pasted%20image%2020230224180133.png)
 
-实质上的，目录路径应该是/usr/bin/ip-route2
+实质上的，目录路径应该是/bin/ip-route2
 ![](attachment/Pasted%20image%2020230224180524.png)
+对ip-route2进行分析,基本功能是维持wuhu这个文件的存在，每5秒就会写一次这个文件
+![](attachment/Pasted%20image%2020230224181601.png)
+恢复环境的话就将/bin/下的ip-route2删除，将rc.local中的任务清除和删除wuhu文件
 
 ## Win.img & mem.dump
 ### 任务
