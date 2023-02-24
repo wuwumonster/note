@@ -129,6 +129,8 @@ if (!empty($target)) {
 - Locate malicious program file(s)
 - Analyse ELF file(s) to describe its or their behaviour
 - Recover the system settings which were modified by malware (List the settings or provide the screenshot which were modified by the malware, Describe the steps, how to recover system)
+### 调查过程
+
 ## Win.img & mem.dump
 ### 任务
 - Find and analyse malicious program(s)

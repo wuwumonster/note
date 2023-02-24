@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "52376e457f9cda7f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/test pull.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/test pull.md"
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md"
               }
             }
           },
@@ -104,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 426.5086555480957
+    "width": 274.5086555480957
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -121,9 +109,9 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/test pull.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "options": {
-                  "collapse-filter": false,
+                  "collapse-filter": true,
                   "search": "",
                   "localJumps": 3,
                   "localBacklinks": true,
@@ -171,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/test pull.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/test pull.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,8 +213,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "52376e457f9cda7f",
+  "active": "d23d82cfe1dae50b",
   "lastOpenFiles": [
+    "网络安全/内网渗透/提权/Lunux提权.md",
+    "网络安全/应急响应与数字调查取证/排查思路.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/应急响应与数字调查取证/情景练习/test pull.md",
     "工具使用",
