@@ -112,7 +112,10 @@ if (!empty($target)) {
 - Analyse the malicious program to describe its behaviour.
 ### 调查过程
 开机启动后发现鼠标一直在飘，开机启动项可能被受害了
-
+使用安全模式打开
+`bcdedit /set {default} safeboot minimal`这条命令设置默认以安全模式打开
+![](attachment/Pasted%20image%2020230224192637.png)
+打开后查看启动项
 
 
 # Task2
