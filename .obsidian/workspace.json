@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "4264d32639701a0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebed8a533677a565",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2930b3393098ff2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/SSRF/SSRF-FastCGI&Redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d23d82cfe1dae50b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9873ecb543e2936d",
+    "type": "split",
+    "children": [
+      {
+        "id": "13e12c923b6057c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b88c6fc99e6a03e7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1660fe89eec4088b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md"
+              }
+            }
+          },
+          {
+            "id": "f4b0315690e14fda",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#dp泄露",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1f84be4be0117483",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 426.5086555480957
+  },
+  "right": {
+    "id": "caaf5b2001d4395e",
+    "type": "split",
+    "children": [
+      {
+        "id": "764760dc2726562f",
+        "type": "tabs",
+        "dimension": 26.608187134502927,
+        "children": [
+          {
+            "id": "6db15c0934719e17",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 3,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0000000000000009,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "15bd25c47d97349a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "8bde2fa46e5c99cf",
+        "type": "tabs",
+        "dimension": 73.39181286549707,
+        "children": [
+          {
+            "id": "ebece91d27bf2118",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3812b003ed6f2a1c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9ed40ef3182d1f4f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 240.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "b88c6fc99e6a03e7",
+  "lastOpenFiles": [
+    "note",
+    "Web/协议/RESP协议.md",
+    "Web/SSRF/SSRF-FastCGI&Redis.md",
+    "Docker.md",
+    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+    "网络安全/网络运维/安全加固/Splunk.md",
+    "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
+    "Misc/Write up/2023.2.23.md",
+    "Misc/未命名.md",
+    "Web/协议/FastCGI.md",
+    "Web/Sql注入/SQL注入常用函数.md",
+    "Web/SSRF/SSRF概述.md",
+    "Web/SSRF/SSRF-POST请求&文件上传.md",
+    "Web/代码审计/MVC架构.md",
+    "Crypto/低加密指数广播攻击(n、c不同，e和m相同).md"
+  ]
+}
