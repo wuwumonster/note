@@ -213,11 +213,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "d23d82cfe1dae50b",
   "lastOpenFiles": [
+    "Web/SSRF/SSRF-FastCGI&Redis.md",
     "note",
     "Web/协议/RESP协议.md",
-    "Web/SSRF/SSRF-FastCGI&Redis.md",
     "Docker.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/网络运维/安全加固/Splunk.md",
