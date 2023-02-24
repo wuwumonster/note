@@ -116,6 +116,12 @@ if (!empty($target)) {
 `bcdedit /set {default} safeboot minimal`这条命令设置默认以安全模式打开
 ![](attachment/Pasted%20image%2020230224192637.png)
 打开后查看启动项
+- shell:startup
+- services.msc
+直接搜索.exe
+![](attachment/Pasted%20image%2020230224195328.png)
+将文件备份到桌面，然后将原文件删除
+
 
 
 # Task2
