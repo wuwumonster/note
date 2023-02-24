@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md"
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
               }
             }
           },
@@ -109,7 +109,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,11 +213,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d23d82cfe1dae50b",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+    "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224171758.png",
+    "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224171652.png",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/应急响应与数字调查取证/排查思路.md",
-    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/应急响应与数字调查取证/情景练习/test pull.md",
     "工具使用",
     "Web/SSRF/SSRF-FastCGI&Redis.md",

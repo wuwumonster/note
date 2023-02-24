@@ -130,6 +130,10 @@ if (!empty($target)) {
 - Analyse ELF file(s) to describe its or their behaviour
 - Recover the system settings which were modified by malware (List the settings or provide the screenshot which were modified by the malware, Describe the steps, how to recover system)
 ### 调查过程
+history
+![](attachment/Pasted%20image%2020230224171652.png)
+ps aux | grep wuhu
+![](attachment/Pasted%20image%2020230224171758.png)
 
 ## Win.img & mem.dump
 ### 任务
