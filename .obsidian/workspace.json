@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md"
               }
             }
           },
@@ -109,7 +109,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,8 +213,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "d23d82cfe1dae50b",
   "lastOpenFiles": [
+    "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224180524.png",
+    "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224180133.png",
+    "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224175508.png",
+    "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224171758.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachment/Pasted image 20230224171652.png",

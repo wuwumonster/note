@@ -130,10 +130,19 @@ if (!empty($target)) {
 - Analyse ELF file(s) to describe its or their behaviour
 - Recover the system settings which were modified by malware (List the settings or provide the screenshot which were modified by the malware, Describe the steps, how to recover system)
 ### 调查过程
-history
+history,发现有编译的行为
 ![](attachment/Pasted%20image%2020230224171652.png)
 ps aux | grep wuhu
 ![](attachment/Pasted%20image%2020230224171758.png)
+
+top, 定位到ip-route2
+![](attachment/Pasted%20image%2020230224175508.png)
+
+在rc.local发现路径
+![](attachment/Pasted%20image%2020230224180133.png)
+
+实质上的，目录路径应该是/usr/bin/ip-route2
+![](attachment/Pasted%20image%2020230224180524.png)
 
 ## Win.img & mem.dump
 ### 任务
