@@ -105,6 +105,16 @@ if (!empty($target)) {
 
 ## FileServer
 ### 任务
+- Windows settings see the appendix
+- Incident Analysis
+- Find and submit the i) pathname and ii) filename of the malicious program that moves your mouse in the attack
+- Submit the SHA1 checksum of the malicious program that moves your mouse in the attack.
+- Analyse the malicious program to describe its behaviour.
+### 调查过程
+开机启动后发现鼠标一直在飘，开机启动项可能被受害了
+
+
+
 # Task2
 ## WebServer
 ### 任务
