@@ -179,6 +179,13 @@ top, 定位到ip-route2
 ### 调查过程
 volatility进行分析
 ![](attachment/Pasted%20image%2020230224202403.png)
+autopsy 进行分析，搜索Wow.exe
+![](attachment/Pasted%20image%2020230225084100.png)
+
+将文件导出IDA分析，和前面的wuhu有些类似
+![](attachment/Pasted%20image%2020230225084820.png)
+这些字符串转化以后是KEY KEY{iZwxPj0eiswLEJM9}
+
 ## Network
 ### 任务
 - Find and submit the URL that the backup uploaded
