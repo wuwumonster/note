@@ -45,6 +45,7 @@ $name = str_ireplace($blacklist, "", $name);
 
 
 ## 参数污染
+[(70条消息) Bypass WAF-HTTP参数污染漏洞挖掘_Tr0e的博客-CSDN博客](https://bwshen.blog.csdn.net/article/details/113081278)
 当对一个参数传入两个值时，不同的服务器又不同的处理方法`wumonster.cn?key=value1&key=value2`
 | 服务器           | 处理                    |
 | ---------------- | ----------------------- |
@@ -57,9 +58,6 @@ $name = str_ireplace($blacklist, "", $name);
 
 ## 缓冲区溢出
 在编写waf的语言自身没有缓冲区保护机制时，当输入超出其缓冲区长度，就会引发bug而形成绕过，有一些栈溢出的感觉
-
-##  分块数据包
-在post传参中通过在最后两行空白行来形成空白块，加上Transfer-Encoding:chunked
 
 # Bypass进阶
 
