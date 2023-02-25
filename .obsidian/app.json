@@ -7,7 +7,7 @@
   "newFileLocation": "current",
   "newFileFolderPath": "attachment",
   "showUnsupportedFiles": false,
-  "attachmentFolderPath": "./attachment",
+  "attachmentFolderPath": "./attachments",
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true
