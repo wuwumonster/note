@@ -1,5 +1,5 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "showLineNumber": false,
   "rightToLeft": false,
   "strictLineBreaks": false,
