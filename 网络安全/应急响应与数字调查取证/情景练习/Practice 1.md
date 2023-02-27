@@ -77,3 +77,7 @@ volatility -f\[filename\] --profile=\[imageinfo\]  filescan
 在这个dmp文件里面找敏感内容
 ![](attachments/Pasted%20image%2020230227093739.png)
 
+将exe文件导出
+volatility -f \[filename\] --profile=\[imageinfo\] dumpfiles -Q \[偏移地址\] --dump-dir ./
+IDA进行逆向
+![](attachments/Pasted%20image%2020230227104206.png)

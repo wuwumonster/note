@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md"
+                "file": "Web/文件包含/文件包含和相关Trick.md"
               }
             }
           },
@@ -109,7 +109,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -159,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,8 +216,10 @@
   },
   "active": "bd5eec71fcac8762",
   "lastOpenFiles": [
+    "Web/PHPTrike/PHP伪协议.md",
     "Web/文件包含/文件包含和相关Trick.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227104206.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227093739.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227092450.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227091918.png",
@@ -253,14 +255,12 @@
     "CTF赛题/WriteUP/2022安洵杯.md",
     "CTF赛题/WriteUP/2019SUCTF.md",
     "JavaSec/JavaSec/JNDI注入.md",
-    "CTF赛题/WriteUP/长安杯2022 attachments/Untitled 2.png",
     "CTF赛题/WriteUP/长安杯2022 attachments",
     "CTF赛题/WriteUP/2022长城杯 attachments",
     "CTF赛题/WriteUP/2022蓝帽杯 attachments",
     "CTF赛题/WriteUP/2022美亚杯个人赛 attachments",
     "CTF赛题/WriteUP/2022美亚团队赛 attachments",
     "CTF赛题/WriteUP/2022祥云杯线上 attachments",
-    "CTF赛题/WriteUP/2022强网杯 attachments",
-    "JavaSec/JavaSec/RMI攻击利用.md"
+    "CTF赛题/WriteUP/2022强网杯 attachments"
   ]
 }
