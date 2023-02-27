@@ -34,6 +34,6 @@
 
 [Spring框架漏洞](JavaSec/Spring框架漏洞.md)
 
-[****Tomcat****](JavaSec/Tomcat.md)
+[Tomcat](JavaSec/Tomcat.md)
 
 [CC链](JavaSec/CC链.md)
