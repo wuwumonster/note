@@ -55,3 +55,23 @@ include('/var/www/html/upload/'.$file.'.jpg');
 ### php://input
 **利用条件：**
 - allow_url_include=On
+
+### php://filter
+存在过滤器来进行编码
+`index.php?file=php://filter/read=convert.base64-encode/resource=index.php`
+### phar://
+- php版本高于php5.3.0
+
+### data://
+- php版本大于5.2.0
+- allow_url_fopen = On
+- allow_url_include = On
+
+### zip://
+- php版本大于等于php5.3.0
+
+构造zip包的方法同phar。
+但使用zip协议，需要指定绝对路径，同时将`#`编码为`%23`，之后填上压缩包内的文件
+
+### glob:///
+`glob://`伪协议是php5.3.0版本开始生效的伪协议，它在筛选目录时是不受open_basedir的制约的
