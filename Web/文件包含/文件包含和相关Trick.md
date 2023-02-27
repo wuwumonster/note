@@ -30,6 +30,7 @@ include('/var/www/html/upload/'.$file);
 - SplFileInfo::getRealPath列举目录
 - GD库iageftbox/imagefttext列举目录
 - bindtextdomain暴力猜解目录
+
 [open_basedir绕过](../PHPTrike/open_basedir绕过.md)
 
 ## 00字符串截断
@@ -169,3 +170,4 @@ PHP removes temp files(if any)
 
 [php文件包含漏洞 | Chybeta](https://chybeta.github.io/2017/10/08/php%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/)
 [LFI、RFI、PHP封装协议安全问题学习 - 郑瀚Andrew - 博客园 (cnblogs.com)](https://www.cnblogs.com/LittleHann/p/3665062.html#3831621)
+[1earn/Web_Generic.md at master · wuwumonster/1earn (github.com)](https://github.com/wuwumonster/1earn/blob/master/1earn/Security/RedTeam/Web%E5%AE%89%E5%85%A8/Web_Generic/Web_Generic.md)
