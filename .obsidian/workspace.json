@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +72,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh.md"
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md"
               }
             }
           },
@@ -121,7 +120,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,12 +225,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0df7d6660fc43382",
+  "active": "3f5622cf3d238619",
   "lastOpenFiles": [
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227194411.png",
-    "网络安全/病毒样本分析/attachments",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/病毒样本分析/ldr.sh.md",
+    "网络安全/病毒样本分析/attachments/Pasted image 20230227224634.png",
+    "网络安全/病毒样本分析/attachments/Pasted image 20230227224339.png",
+    "网络安全/病毒样本分析/attachments/Pasted image 20230227224021.png",
+    "网络安全/病毒样本分析/attachments/Pasted image 20230227194411.png",
+    "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
     "Web/文件包含/文件包含和相关Trick.md",
@@ -248,10 +250,6 @@
     "Web/文件包含/未确认 124842.crdownload",
     "Web/PHPTrike/open_basedir绕过.md",
     "Web/PHPTrike/PHP伪协议.md",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227104206.png",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227093739.png",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227092450.png",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227091918.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments",
     "网络安全/内网渗透/提权.md",
     "Web/文件包含",
