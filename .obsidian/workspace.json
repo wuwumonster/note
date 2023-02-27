@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "bd5eec71fcac8762",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c8dd339d4dd76cfc",
             "type": "leaf",
             "state": {
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md"
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md"
               }
             }
           },
@@ -121,7 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,10 +213,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd5eec71fcac8762",
+  "active": "3f5622cf3d238619",
   "lastOpenFiles": [
-    "Web/PHPTrike/PHP伪协议.md",
     "Web/文件包含/文件包含和相关Trick.md",
+    "Web/文件包含/LFI With PHPInfo Assistance.pdf",
+    "Web/文件包含/未确认 124842.crdownload",
+    "Web/PHPTrike/open_basedir绕过.md",
+    "Web/PHPTrike/PHP伪协议.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227104206.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227093739.png",
@@ -265,14 +255,10 @@
     "WriteUP/2022藍帽杯半决 ea75350721e0496aac3b83ef96c181bf.md",
     "CTF赛题/WriteUP/2022蓝帽杯.md",
     "CTF赛题/WriteUP/2022安洵杯.md",
-    "CTF赛题/WriteUP/2019SUCTF.md",
-    "JavaSec/JavaSec/JNDI注入.md",
     "CTF赛题/WriteUP/长安杯2022 attachments",
     "CTF赛题/WriteUP/2022长城杯 attachments",
     "CTF赛题/WriteUP/2022蓝帽杯 attachments",
     "CTF赛题/WriteUP/2022美亚杯个人赛 attachments",
-    "CTF赛题/WriteUP/2022美亚团队赛 attachments",
-    "CTF赛题/WriteUP/2022祥云杯线上 attachments",
-    "CTF赛题/WriteUP/2022强网杯 attachments"
+    "CTF赛题/WriteUP/2022美亚团队赛 attachments"
   ]
 }

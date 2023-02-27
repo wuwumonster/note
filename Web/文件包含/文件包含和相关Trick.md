@@ -24,6 +24,13 @@ include('/var/www/html/upload/'.$file);
 比如说还是去读取`/etc/passwd`可以传入这样的url `http://localhost/index.php?file=../../../../etc/passwd`
 这样去完成对敏感文件的读取，也就是说`/etc/passwd`是等价于 `/var/www/html/upload/../../../../etc/passwd`的
 对于这样的读取方式怎么去防御呢，在php中可以设置`open_basedir`这个设置可以对php进行访问控制使其只能够访问所设置的目录内的文件，即便是写入了一句话木马也难以去对目录外的内容进行访问
+当然`open_basedir`是可以通过其他方法来绕过的这里进行举例
+- Directoryterator+Glob列举目录
+- realpath列举目录
+- SplFileInfo::getRealPath列举目录
+- GD库iageftbox/imagefttext列举目录
+- bindtextdomain暴力猜解目录
+[open_basedir绕过](../PHPTrike/open_basedir绕过.md)
 
 ## 00字符串截断
 在上面的基础上加入对文件名后缀是否能够控制其读取的文件类型呢
@@ -48,7 +55,7 @@ include('/var/www/html/upload/'.$file.'.jpg');
 `http://localhost/index.php?file=../../../../etc/passwd././././././././././bypass`
 
 ## PHP伪协议
-在上面的目录穿越中我们提到了`open_basedir`的相关设置，那么这样的设置是否就无法绕过呢，当然是可以的，是可以通过`反射+glob://`伪协议或者其他的一些Trick来完成绕过的，在这里先引入php伪协议在文件包含中的应用
+在上面的目录穿越中我们提到了`open_basedir`的相关设置是可以通过`反射+glob://`伪协议或者其他的一些Trick来完成绕过的，在这里引入php伪协议在文件包含中的应用
 [PHP伪协议](../PHPTrike/PHP伪协议.md)
 ### file://
 `file://`伪协议本身是对本地的文件系统进行访问
@@ -75,3 +82,90 @@ include('/var/www/html/upload/'.$file.'.jpg');
 
 ### glob:///
 `glob://`伪协议是php5.3.0版本开始生效的伪协议，它在筛选目录时是不受open_basedir的制约的
+
+## session文件包含
+
+## 日志包含
+### 访问日志
+web服务器往往会将访问记录写入日志文件中以apache为例，在默认情况下会将日志保留在`/var/log/apache2/access.log`在利用中可以将相应的php代码写入UA头等地方待服务器将其写入了log后对其进行包含
+### SSH log
+SSH log实际上的利用原理和访问日志是一致的，`/var/log/auth.log`
+```shell
+ssh '<?php phpinfo();?>'@remotehost
+```
+## 包含environ
+/proc/self/environ中会保存user-agent头。如果在user-agent中插入php代码，则php代码会被写入到environ中。
+**利用条件**
+- php以cgi运行，这样environ才会保持UA头
+- environ文件可读，且知道文件位置
+
+[shell via LFI - proc/self/environ method (exploit-db.com)](https://www.exploit-db.com/papers/12886)
+## 包含fd
+包含原理是和environ类似的，这里给一篇blog和字典
+https://highon.coffee/blog/lfi-cheat-sheet/#procselffd-lfi-method
+[fuzzdb/LFI-FD-check.txt at master · tennc/fuzzdb (github.com)](https://github.com/tennc/fuzzdb/blob/master/dict/BURP-PayLoad/LFI/LFI-FD-check.txt)
+
+```txt
+/proc/self/cmdline
+/proc/self/stat
+/proc/self/status
+/proc/self/fd/0
+/proc/self/fd/1
+/proc/self/fd/2
+/proc/self/fd/3
+/proc/self/fd/4
+/proc/self/fd/5
+/proc/self/fd/6
+/proc/self/fd/7
+/proc/self/fd/8
+/proc/self/fd/9
+/proc/self/fd/10
+/proc/self/fd/11
+/proc/self/fd/12
+/proc/self/fd/13
+/proc/self/fd/14
+/proc/self/fd/15
+/proc/self/fd/16
+/proc/self/fd/17
+/proc/self/fd/18
+/proc/self/fd/19
+/proc/self/fd/20
+/proc/self/fd/21
+/proc/self/fd/22
+/proc/self/fd/23
+/proc/self/fd/24
+/proc/self/fd/25
+/proc/self/fd/26
+/proc/self/fd/27
+/proc/self/fd/28
+/proc/self/fd/29
+/proc/self/fd/30
+/proc/self/fd/31
+/proc/self/fd/32
+/proc/self/fd/33
+/proc/self/fd/34
+/proc/self/fd/35
+```
+## 包含临时文件——条件竞争
+由于php本身创建的临时文件，往往是处于PHP允许访问的目录范围的
+php处理文件的过程
+```
+HTTP POST with a file arrives
+PHP begins analysis
+PHP creates temp file
+PHP writes data to temp file
+PHP close temp file
+script execution begins
+[optional] script moves uploaded file
+script execution ends
+PHP removes temp files(if any)
+```
+
+毕竟是临时文件，因此存在时间很短暂，需要利用条件竞争，脚本在下面的pdf中有
+[LFI With PHPInfo Assistance](LFI%20With%20PHPInfo%20Assistance.pdf)
+本质原理很简单，就是在tmp文件被删除前对其进行包含，最合适的写法是把代码写为当访问后生成一个webshell，以此来保证持续访问
+
+# 参考文章
+
+[php文件包含漏洞 | Chybeta](https://chybeta.github.io/2017/10/08/php%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/)
+[LFI、RFI、PHP封装协议安全问题学习 - 郑瀚Andrew - 博客园 (cnblogs.com)](https://www.cnblogs.com/LittleHann/p/3665062.html#3831621)
