@@ -52,3 +52,6 @@ include('/var/www/html/upload/'.$file.'.jpg');
 [PHP伪协议](../PHPTrike/PHP伪协议.md)
 ### file://
 `file://`伪协议本身是对本地的文件系统进行访问
+### php://input
+**利用条件：**
+- allow_url_include=On
