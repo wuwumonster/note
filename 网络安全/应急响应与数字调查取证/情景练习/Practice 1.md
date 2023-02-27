@@ -55,3 +55,25 @@ IP:1.210.5.212
 
 # 数字调查取证
 ## Dump.raw
+### 工作任务
+- 识别内存中的恶意进程
+- 查找并提交恶意程序在硬盘中上的完整路径
+- 分析PE文件以描述其行为
+- 分析PE文件寻找攻击者向外传递收集到的信息发送方的地址
+### 调查过程
+查看镜像类型
+![](attachments/Pasted%20image%2020230227090948.png)
+查看进程并输入到文本
+volatility -f  \[filename\] --profile=\[imageinfo\]  pslist > pslist.txt
+![](attachments/Pasted%20image%2020230227091850.png)
+volatility -f  \[filename\] --profile=\[imageinfo\]  pstree > pstree.txt
+![](attachments/Pasted%20image%2020230227091918.png)
+导出对应进程文件
+volatility -f \[filename\] --profile=\[imageinfo\] memdump -p \[PID\] -D ./
+
+volatility -f\[filename\] --profile=\[imageinfo\]  filescan
+![](attachments/Pasted%20image%2020230227092450.png)
+文件路径： `\Device\HarddiskVolume1\User\IEUser\Downloads\SteamInstaller.exe`
+在这个dmp文件里面找敏感内容
+![](attachments/Pasted%20image%2020230227093739.png)
+
