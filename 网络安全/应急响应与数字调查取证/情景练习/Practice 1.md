@@ -66,6 +66,16 @@ ps aux
 ![](attachments/Pasted%20image%2020230227185321.png)
 直接whereis hezb这是一个挖矿木马
 `/usr/bin/hezb`
+sudo ss -ntlp
+![](attachments/Pasted%20image%2020230227190906.png)
+当cd到 /root时，有脚本执行了
+![](attachments/Pasted%20image%2020230227191240.png)
+直接whereis
+![](attachments/Pasted%20image%2020230227191422.png)
+`/usr/bin/ldr.sh`
+在root下查看定时任务
+![](attachments/Pasted%20image%2020230227191918.png)
+。bashrc里也有一个这样的脚本启动
 
 # 数字调查取证
 ## Dump.raw
