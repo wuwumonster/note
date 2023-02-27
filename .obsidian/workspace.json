@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md"
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
               }
             }
           },
@@ -108,7 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,8 +215,8 @@
   },
   "active": "3f5622cf3d238619",
   "lastOpenFiles": [
-    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "Web/文件包含/文件包含和相关Trick.md",
     "Web/文件包含/LFI With PHPInfo Assistance.pdf",
     "JavaSec/JavaSec.md",
