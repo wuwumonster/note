@@ -59,7 +59,13 @@ IP:1.210.5.212
 - 分析攻击者如何使恶意程序维持启动
 - 分别使用一句话简要描述载入脚本（sh文件）中各模块的功能与目的
 ### 调查过程
-
+netstat -antlp
+![](attachments/Pasted%20image%2020230227185016.png)
+发现6379端口
+ps aux
+![](attachments/Pasted%20image%2020230227185321.png)
+直接whereis hezb这是一个挖矿木马
+`/usr/bin/hezb`
 
 # 数字调查取证
 ## Dump.raw

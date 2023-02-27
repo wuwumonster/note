@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md"
               }
             }
           },
@@ -108,7 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,6 +215,9 @@
   },
   "active": "3f5622cf3d238619",
   "lastOpenFiles": [
+    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227185321.png",
+    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230227185016.png",
+    "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "Web/文件包含/文件包含和相关Trick.md",
@@ -240,7 +243,6 @@
     "CTF赛题/WriteUP/长安杯2022 attachments/Untitled 1.png",
     "CTF赛题/WriteUP/2021N1CTF.md",
     "CTF赛题/WriteUP/2020网鼎-复现.md",
-    "CTF赛题/WriteUP/长安杯2022 attachments/Pasted image 20230225221427.png",
     "CTF赛题/WriteUP/2022美亚杯个人赛.md",
     "CTF赛题/WriteUP/datacon笔记.md",
     "WriteUP/2022祥云杯线上 1deb8dae846f4e2cae518051ccaf0ab2/未命名",
@@ -254,8 +256,6 @@
     "CTF赛题/WriteUP/2022网鼎杯.md",
     "CTF赛题/WriteUP/2022强网杯.md",
     "CTF赛题/WriteUP/2022美亚团队赛.md",
-    "WriteUP/2022藍帽杯半决 ea75350721e0496aac3b83ef96c181bf.md",
-    "CTF赛题/WriteUP/2022蓝帽杯.md",
     "CTF赛题/WriteUP/长安杯2022 attachments",
     "CTF赛题/WriteUP/2022长城杯 attachments",
     "CTF赛题/WriteUP/2022蓝帽杯 attachments",
