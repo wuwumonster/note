@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/网络运维/拓扑练习/拓扑3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef800b75a6a9c092",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -72,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
+                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md"
               }
             }
           },
@@ -120,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -170,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,10 +238,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3f5622cf3d238619",
+  "active": "ef800b75a6a9c092",
   "lastOpenFiles": [
-    "网络安全/应急响应与数字调查取证/排查思路.md",
+    "网络安全/网络运维/拓扑练习/attachments/4d5ff9fdfd797bf91f27b8c09a8496e.png",
+    "网络安全/网络运维/拓扑练习/attachments",
+    "网络安全/网络运维/拓扑练习/拓扑3.md",
+    "网络安全/网络运维/拓扑练习/拓扑——4.md",
+    "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
     "网络安全/应急响应与数字调查取证/应急响应.md",
+    "网络安全/应急响应与数字调查取证/排查思路.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
@@ -266,12 +284,7 @@
     "CTF赛题/WriteUP/2023西湖论剑.md",
     "CTF赛题/WriteUP/2022MTCTF.md",
     "CTF赛题/WriteUP/2022BytesCTF.md",
-    "CTF赛题/WriteUP/2022长城杯.md",
-    "CTF赛题/WriteUP/2022祥云杯线上.md",
-    "CTF赛题/WriteUP/2022网鼎杯.md",
-    "CTF赛题/WriteUP/2022强网杯.md",
     "CTF赛题/WriteUP/长安杯2022 attachments",
-    "CTF赛题/WriteUP/2022长城杯 attachments",
-    "CTF赛题/WriteUP/2022蓝帽杯 attachments"
+    "CTF赛题/WriteUP/2022长城杯 attachments"
   ]
 }
