@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/ROME链.md",
+                "file": "JavaSec/JavaSec/CC链.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b23776374fb12aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaSec/动态加载字节码.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/ROME链.md"
+                "file": "JavaSec/动态加载字节码.md"
               }
             }
           },
@@ -145,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/ROME链.md",
+                "file": "JavaSec/动态加载字节码.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/ROME链.md",
+                "file": "JavaSec/动态加载字节码.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/ROME链.md",
+                "file": "JavaSec/动态加载字节码.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -250,10 +262,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4c809da7cf134a7f",
+  "active": "1b23776374fb12aa",
   "lastOpenFiles": [
-    "JavaSec/JavaSec.md",
+    "JavaSec/attachments/Pasted image 20230228225905.png",
+    "JavaSec/attachments/Pasted image 20230228224229.png",
+    "JavaSec/attachments",
+    "JavaSec/JavaSec/CC链.md",
+    "JavaSec/动态加载字节码.md",
     "JavaSec/JavaSec/ROME链.md",
+    "JavaSec/JavaSec.md",
     "CTF赛题/WriteUP/2022MRCTF.md",
     "网络安全/网络运维/拓扑练习/拓扑3.md",
     "CTF赛题/WriteUP/attachments/Untitled 4.png",
@@ -275,7 +292,6 @@
     "网络安全/病毒样本分析/attachments/Pasted image 20230227230137.png",
     "网络安全/病毒样本分析/attachments/Pasted image 20230227230001.png",
     "网络安全/病毒样本分析/attachments/Pasted image 20230227225621.png",
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227225351.png",
     "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
     "Web/文件包含/文件包含和相关Trick.md",
@@ -293,10 +309,6 @@
     "CTF赛题/WriteUP/2020网鼎-复现.md",
     "CTF赛题/WriteUP/2022美亚杯个人赛.md",
     "CTF赛题/WriteUP/datacon笔记.md",
-    "WriteUP/2022祥云杯线上 1deb8dae846f4e2cae518051ccaf0ab2/未命名",
-    "WriteUP/蓝帽练习 9f3d3195e71c4cbe987005586d637655.md",
-    "CTF赛题/WriteUP/2023西湖论剑.md",
-    "CTF赛题/WriteUP/2022MTCTF.md",
-    "CTF赛题/WriteUP/长安杯2022 attachments"
+    "WriteUP/2022祥云杯线上 1deb8dae846f4e2cae518051ccaf0ab2/未命名"
   ]
 }
