@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
 阅读源码发现是随机产生一个SECRET_KEY,用来产生session
 
-![Untitled](2022MTCTF%20attachments/Untitled.png)
+![Untitled](attachments/Untitled%204.png)
 
 产生字典
 
@@ -60,7 +60,7 @@ f.close()
 
 waf
 
-![Untitled](2022MTCTF%20attachments/Untitled%201.png)
+![Untitled](attachments/Untitled%201%201.png)
 
 总体步骤
 
@@ -69,9 +69,9 @@ waf
 
 session限制之前已经绕过，为什么没有提代码中对函数名的替换呢，在阅读代码逻辑后发现这些对函数名的替换是赋值给a的最后执行了pickle.loads()还是session中的数据，而对字节码的校验也是对替换后的a来进行检测得，因此对函数名的替换反而成为了绕过对字节码的帮助
 
-![Untitled](2022MTCTF%20attachments/Untitled%202.png)
+![Untitled](attachments/Untitled%202%201.png)
 
-![Untitled](2022MTCTF%20attachments/Untitled%203.png)
+![Untitled](attachments/Untitled%203%201.png)
 
 ## baby_java
 

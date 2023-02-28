@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "ef800b75a6a9c092",
+            "id": "c532452fc12c5fda",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
+                "file": "CTF赛题/WriteUP/2022MRCTF.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md"
+                "file": "CTF赛题/WriteUP/2022MRCTF.md"
               }
             }
           },
@@ -133,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
+                "file": "CTF赛题/WriteUP/2022MRCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
+                "file": "CTF赛题/WriteUP/2022MRCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络运维/拓扑练习/拓扑——4.md",
+                "file": "CTF赛题/WriteUP/2022MRCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,12 +238,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ef800b75a6a9c092",
+  "active": "c532452fc12c5fda",
   "lastOpenFiles": [
+    "网络安全/网络运维/拓扑练习/拓扑3.md",
+    "CTF赛题/WriteUP/2022MRCTF.md",
+    "CTF赛题/WriteUP/attachments/Untitled 4.png",
+    "CTF赛题/WriteUP/attachments/Untitled 1 1.png",
+    "CTF赛题/WriteUP/attachments/Untitled 3 1.png",
+    "CTF赛题/WriteUP/attachments/Untitled 2 1.png",
+    "CTF赛题/WriteUP/长安杯2022.md",
+    "网络安全/网络运维/拓扑练习/拓扑——4.md",
+    "CTF赛题/WriteUP/attachments",
     "网络安全/网络运维/拓扑练习/attachments/4d5ff9fdfd797bf91f27b8c09a8496e.png",
     "网络安全/网络运维/拓扑练习/attachments",
-    "网络安全/网络运维/拓扑练习/拓扑3.md",
-    "网络安全/网络运维/拓扑练习/拓扑——4.md",
     "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
     "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/排查思路.md",
@@ -255,11 +262,6 @@
     "网络安全/病毒样本分析/attachments/Pasted image 20230227230001.png",
     "网络安全/病毒样本分析/attachments/Pasted image 20230227225621.png",
     "网络安全/病毒样本分析/attachments/Pasted image 20230227225351.png",
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227225240.png",
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227224634.png",
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227224339.png",
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227224021.png",
-    "网络安全/病毒样本分析/attachments/Pasted image 20230227194411.png",
     "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
     "Web/文件包含/文件包含和相关Trick.md",
@@ -279,12 +281,10 @@
     "CTF赛题/WriteUP/2022美亚杯个人赛.md",
     "CTF赛题/WriteUP/datacon笔记.md",
     "WriteUP/2022祥云杯线上 1deb8dae846f4e2cae518051ccaf0ab2/未命名",
-    "CTF赛题/WriteUP/长安杯2022.md",
     "WriteUP/蓝帽练习 9f3d3195e71c4cbe987005586d637655.md",
     "CTF赛题/WriteUP/2023西湖论剑.md",
     "CTF赛题/WriteUP/2022MTCTF.md",
     "CTF赛题/WriteUP/2022BytesCTF.md",
-    "CTF赛题/WriteUP/长安杯2022 attachments",
-    "CTF赛题/WriteUP/2022长城杯 attachments"
+    "CTF赛题/WriteUP/长安杯2022 attachments"
   ]
 }

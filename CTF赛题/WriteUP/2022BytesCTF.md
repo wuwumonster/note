@@ -6,17 +6,17 @@
 
 绕过Nginx400
 
-![Untitled](2022BytesCTF%20attachments/Untitled.png)
+![Untitled](attachments/Untitled%205.png)
 
 /var/lib/grafana/grafana.db拿数据源密文    b0NXeVJoSXKPoSYIWt8i/GfPreRT03fO6gbMhzkPefodqe1nvGpdSROTvfHK1I3kzZy9SQnuVy9c3lVkvbyJcqRwNT6/
 
-![Untitled](2022BytesCTF%20attachments/Untitled%201.png)
+![Untitled](attachments/Untitled%201%202.png)
 
 读取/etc/grafana/grafana.ini的secret_key     SW2YcwTIb9zpO1hoPsMm
 
-![Untitled](2022BytesCTF%20attachments/Untitled%202.png)
+![Untitled](attachments/Untitled%202%202.png)
 
-![Untitled](2022BytesCTF%20attachments/Untitled%203.png)
+![Untitled](attachments/Untitled%203%202.png)
 
 ## ctf_cloud
 
@@ -24,11 +24,11 @@ insert在注入设置{"username":"123456","password":"1',0),('admin','123456',1)
 
 登录admin 
 
-![Untitled](2022BytesCTF%20attachments/Untitled%204.png)
+![Untitled](attachments/Untitled%204%201.png)
 
 编写一个恶意的package.json然后npm publish上传
 
-![Untitled](2022BytesCTF%20attachments/Untitled%205.png)
+![Untitled](attachments/Untitled%205%201.png)
 
 给dependencies传值
 
@@ -165,8 +165,8 @@ router.post('/kill', function(req, res, next) {
 module.exports = router;
 ```
 
-![Untitled](2022BytesCTF%20attachments/Untitled%206.png)
+![Untitled](attachments/Untitled%206.png)
 
 点击编译就可以等待反弹shell了
 
-![Untitled](2022BytesCTF%20attachments/Untitled%207.png)
+![Untitled](attachments/Untitled%207.png)
