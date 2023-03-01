@@ -25,7 +25,7 @@ JVM在加载类的时候的查找类文件的方式：Classpath+包目录+类文
 
 那么如果这个类不在这个目录中，同时也不在任何一个其它classpath中呢，虚拟机会抛出一个`ClassNotFoundException`。
 
-![Untitled](RMI攻击利用%20attachments/Untitled.png)
+![Untitled](../attachments/Untitled.png)
 
 Classpath的指定
 

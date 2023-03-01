@@ -12,7 +12,7 @@ RMI的三层架构
 - Server-服务端：远程调用方法对象的提供者，也是代码真正执行的地方，执行结束会返回给客户端一个方法执行的结果
 - Registry-注册中心：其实本质就是一个map，相当于是字典一样，用于客户端查询要调用的方法的引用（在低版本的JDK中，Server与Registry是可以不在一台服务器上的，而在高版本的JDK中，Server与Registry只能在一台服务器上，否则无法注册成功）
 
-![Untitled](RMI%20attachments/Untitled.png)
+![Untitled](../attachments/Untitled%201.png)
 
 有点DNS的感觉
 

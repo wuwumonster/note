@@ -8,7 +8,7 @@ JNDI支持的服务主要有：DNS、LDAP、CORBA、RMI等
 
 Java命名和目录接口（JNDI）是一种Java API，类似于一个索引中心，它允许客户端通过name发现和查找数据和对象。
 
-![Untitled](JNDI%20attachments/Untitled.png)
+![Untitled](../attachments/Untitled%204.png)
 
 ### 命名服务（Name Server）
 
@@ -151,11 +151,11 @@ public class Server_Client {
 }
 ```
 
-![Untitled](JNDI%20attachments/Untitled%201.png)
+![Untitled](../attachments/Untitled%201%202.png)
 
 看代码
 
-![Untitled](JNDI%20attachments/Untitled%202.png)
+![Untitled](../attachments/Untitled%202%202.png)
 
 在JNDI中通过context来对RMI来进行了绑定和初始化
 
@@ -182,7 +182,7 @@ Java为了将Object对象存储在Naming或Directory服务下，提供了Naming 
 > Java中的对象分为本地对象和远程对象，本地对象是默认为可信任的，但是远程对象是不受信任的。比如，当我们的系统从远程服务器加载一个对象，为了安全起见，JVM就要限制该对象的能力，比如禁止该对象访问我们本地的文件系统等，这些在现有的JVM中是依赖安全管理器（SecurityManager）来实现的。
 > 
 > 
-> ![Untitled](JNDI%20attachments/Untitled%203.png)
+> ![Untitled](../attachments/Untitled%203%201.png)
 > 
 > JVM中采用的最新模型见上图，引入了“域”的概念，在不同的域中执行不同的权限。JVM会把所有代码加载到不同的系统域和应用域，系统域专门负责与关键资源进行交互，而应用域则通过系统域的部分代理来对各种需要的资源进行访问，存在于不同域的class文件就具有了当前域的全部权限。
 > 
@@ -198,7 +198,7 @@ Java为了将Object对象存储在Naming或Directory服务下，提供了Naming 
 > 对于加载远程对象，JDNI有两种不同的安全控制方式，对于Naming Manager来说，相对的安全管理器的规则比较宽泛，但是对JNDI SPI层会按照下面表格中的规则进行控制：
 > 
 > 
-> ![Untitled](JNDI%20attachments/Untitled%204.png)
+> ![Untitled](../attachments/Untitled%204%201.png)
 > 
 > 针对以上特性，黑客可能会找到一些特殊场景，利用两者的差异来执行恶意代码
 > 
@@ -222,6 +222,6 @@ Context ctx = new InitialContext(env);
 
 这样代码跟踪一下：
 
-![Untitled](JNDI%20attachments/Untitled%205.png)
+![Untitled](../attachments/Untitled%205.png)
 
 很明显通过`String scheme = *getURLScheme*(name);`会重新去尝试解析URL中的协议，如果存在的话会重新获取其上下文环境

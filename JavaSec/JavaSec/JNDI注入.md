@@ -13,7 +13,7 @@
 
 大体上的攻击流程
 
-![Untitled](JNDI注入%20attachments/Untitled.png)
+![Untitled](../attachments/Untitled%202.png)
 
 ### 对RMI
 
@@ -105,7 +105,7 @@ public class EvilClassFactory extends UnicastRemoteObject implements ObjectFacto
 
 服务端程序在调用Reference()初始化参数时，其中的classFactoryLocation参数外部可控，导致存在JNDI注入
 
-![Untitled](JNDI注入%20attachments/Untitled%201.png)
+![Untitled](../attachments/Untitled%201%201.png)
 
 攻击者将恶意类EvilClassFactory.class放置在自己的Web服务器后，通过往RMI注册表服务端的classFactoryLocation参数输入攻击者的Web服务器地址后，当受害者的RMI客户端通过JNDI来查询RMI注册表中年绑定的demo对象时，会找到classFactoryLocation参数被修改的Reference对象，再远程加载攻击者服务器上的恶意类EvilClassFactory.class，从而导致JNDI注入、实现远程代码执行：
 
@@ -348,7 +348,7 @@ public class EvilObject {
 }
 ```
 
-![Untitled](JNDI注入%20attachments/Untitled%202.png)
+![Untitled](../attachments/Untitled%202%201.png)
 
 ### CORBA利用
 
@@ -379,7 +379,7 @@ JNDI同样有类似的限制，在`JDK 6u132`, `JDK 7u122`, `JDK 8u113`之后J
 
 这个的话用高版本执行一下demo的例子看报错就知道了
 
-![Untitled](JNDI注入%20attachments/Untitled%203.png)
+![Untitled](../attachments/Untitled%203.png)
 
 ### 对LDAP_Reference的限制
 

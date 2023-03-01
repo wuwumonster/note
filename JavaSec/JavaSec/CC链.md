@@ -68,19 +68,19 @@ public class CC1 {
 
 **ChainedTransformer**
 
-![Untitled](CC链%20attachments/Untitled.png)
+![Untitled](attachments/CC链%20attachments/Untitled.png)
 
 将传入的Object数组遍历，第一个数组的尾部作为第二个的参数，形成链式调用
 
 **ConstantTransformer**
 
-![Untitled](CC链%20attachments/Untitled%201.png)
+![Untitled](attachments/CC链%20attachments/Untitled%201.png)
 
 对传入的Object对象返回一个iConstant对象
 
 **InvokerTransformer**
 
-![Untitled](CC链%20attachments/Untitled%202.png)
+![Untitled](attachments/CC链%20attachments/Untitled%202.png)
 
 反射实现危险方法
 
@@ -88,19 +88,19 @@ transform方法可以实现任意命令执行
 
 全局去找了transform的使用，白日梦组长的切入是checkSetValue，就依照这个为切入点
 
-![Untitled](CC链%20attachments/Untitled%203.png)
+![Untitled](attachments/CC链%20attachments/Untitled%203.png)
 
-![Untitled](CC链%20attachments/Untitled%204.png)
+![Untitled](attachments/CC链%20attachments/Untitled%204.png)
 
 valueTransformer的值来自于TransformedMap的赋值，但是由于是protected修饰再不同包无法调用
 
-![Untitled](CC链%20attachments/Untitled%205.png)
+![Untitled](attachments/CC链%20attachments/Untitled%205.png)
 
 但是有静态方法decorate确定valueTransformer值可控，现在需要去查找调用了checkSetValue方法的地方
 
 在AbsrtactInputCheckedMapDecorator中有对checkvalue的调用，setValue中
 
-![Untitled](CC链%20attachments/Untitled%206.png)
+![Untitled](attachments/CC链%20attachments/Untitled%206.png)
 
 莫约是将Map中集合遍历就可以触发setvalue
 
@@ -108,11 +108,11 @@ valueTransformer的值来自于TransformedMap的赋值，但是由于是protecte
 
 `AnnotationInvocationHandler` 完美调用
 
-![Untitled](CC链%20attachments/Untitled%207.png)
+![Untitled](attachments/CC链%20attachments/Untitled%207.png)
 
 进入逻辑要保证通过if判断到setValue
 
-![Untitled](CC链%20attachments/Untitled%208.png)
+![Untitled](attachments/CC链%20attachments/Untitled%208.png)
 
 ```java
 Map outerMap = TransformedMap.decorate(innerMap, null, transformerChain);
@@ -213,11 +213,11 @@ public class CC4 {
 
 对父类的判断
 
-![Untitled](CC链%20attachments/Untitled%209.png)
+![Untitled](attachments/CC链%20attachments/Untitled%209.png)
 
 也就是需要加载的恶意类满足父类的限制
 
-![Untitled](CC链%20attachments/Untitled%2010.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2010.png)
 
 报错的原因是为抽象类，需要实现抽象方法
 
@@ -225,11 +225,11 @@ public class CC4 {
 
 只有一个抽象方法transform
 
-![Untitled](CC链%20attachments/Untitled%2011.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2011.png)
 
 再实现后再运行CC3就可以执行了
 
-![Untitled](CC链%20attachments/Untitled%2012.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2012.png)
 
 这个时候就说明只要调用了TemplatesImpl.newTransformer方法就可以执行恶意代码
 
@@ -314,11 +314,11 @@ public class CC3 {
 
 同样是从newTransformer的用法查找开始
 
-![Untitled](CC链%20attachments/Untitled%2013.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2013.png)
 
 可以用TrAXFilter类，但是没有反序列化接口，考虑和Runtime类似的方法
 
-![Untitled](CC链%20attachments/Untitled%2014.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2014.png)
 
 先实例化TrAXFilter类，到图中代码事实上已经代码执行了
 
@@ -487,13 +487,13 @@ public class CC5 {
 
 从LazyMap#get去接着查找调用
 
-![Untitled](CC链%20attachments/Untitled%2020.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2020.png)
 
 找到TiedMapEntry，其getValue存在对get方法的调用
 
-![Untitled](CC链%20attachments/Untitled%2021.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2021.png)
 
-![Untitled](CC链%20attachments/Untitled%2022.png)
+![Untitled](attachments/CC链%20attachments/Untitled%2022.png)
 
 在TiedMapEntry方法中的调用顺序是
 

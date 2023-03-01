@@ -12,6 +12,8 @@
 
 [Java Agent与PASP](JavaSec/Java%20Agent与PASP.md)
 
+[动态加载字节码](JavaSec/动态加载字节码.md)
+
 ## 漏洞学习
 
 ---
