@@ -146,3 +146,14 @@ public int beanHashCode() {
 ```
 
 这里结合上面的toString()，其实很任意想到去调用`EqualsBean`的HashCode()然后调用beanHashCode()
+
+### ObjectBean.hashCode()
+```java
+public ObjectBean(Class beanClass,Object obj) {  
+    this(beanClass,obj,null);  
+}
+```
+这里发现ObjectBean既可以调用`equalsBean.beanHashCode()`还可用调用`toStringBean.toString()`
+![](attachments/Pasted%20image%2020230301160102.png)
+
+也就是说可用跳过`equalsBean.beanHashCode()`直接去触发`toStringBean.toString()`
