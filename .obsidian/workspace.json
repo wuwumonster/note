@@ -73,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/动态加载字节码.md",
+                "file": "Web/SSRF/SSRF-FastCGI&Redis.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -262,8 +262,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c8dd339d4dd76cfc",
+  "active": "1b23776374fb12aa",
   "lastOpenFiles": [
+    "JavaSec/JavaSec/attachments/Pasted image 20230301091304.png",
+    "JavaSec/JavaSec/attachments",
     "Web/SSRF/SSRF-FastCGI&Redis.md",
     "JavaSec/JavaSec/动态加载字节码.md",
     "JavaSec/JavaSec/FastJson.md",
@@ -307,8 +309,6 @@
     "Web/文件包含",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "README.md",
-    "CTF赛题/WriteUP/2021N1CTF.md",
-    "CTF赛题/WriteUP/2020网鼎-复现.md",
-    "WriteUP/2022祥云杯线上 1deb8dae846f4e2cae518051ccaf0ab2/未命名"
+    "CTF赛题/WriteUP/2021N1CTF.md"
   ]
 }
