@@ -121,3 +121,28 @@ private static Map getPDs(Method[] methods,boolean setters) throws Introspection
 
 在这里进行调试的时候会发现，事实上在ysoserial中在`ToStringBean.toString()`和`TemplatesImpl.getOutputProperties()`的链条流程实质上已经包含在执行中了
 ![](attachments/Pasted%20image%2020230301153551.png)
+
+### EqualsBean.beanHashCode()
+类本身和前面的ToStringBean类似,都是传入class 和 object两个参数
+```java
+public EqualsBean(Class beanClass,Object obj) {  
+    if (!beanClass.isInstance(obj)) {  
+        throw new IllegalArgumentException(obj.getClass()+" is not instance of "+beanClass);  
+    }  
+    _beanClass = beanClass;  
+    _obj = obj;  
+}
+```
+
+直接看到beanHashCode()
+```java
+public int hashCode() {  
+    return beanHashCode();  
+}  
+  
+public int beanHashCode() {  
+    return _obj.toString().hashCode();  
+}
+```
+
+这里结合上面的toString()，其实很任意想到去调用`EqualsBean`的HashCode()然后调用beanHashCode()
