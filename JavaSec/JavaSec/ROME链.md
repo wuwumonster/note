@@ -51,4 +51,25 @@ private String toString(String prefix) {
     return sb.toString();  
 }
 ```
-从注释可用看的出来是会获取到，传入的类中的
+从注释可用看的出来是会获取到，传入的类中的getter方法
+
+```java
+public static synchronized PropertyDescriptor[] getPropertyDescriptors(Class klass) throws IntrospectionException {  
+    PropertyDescriptor[] descriptors = (PropertyDescriptor[]) _introspected.get(klass);  
+    if (descriptors==null) {  
+        descriptors = getPDs(klass);  
+        _introspected.put(klass,descriptors);  
+    }  
+    return descriptors;  
+}
+
+private static PropertyDescriptor[] getPDs(Class klass) throws IntrospectionException {  
+    Method[] methods = klass.getMethods();  
+    Map getters = getPDs(methods,false);  
+    Map setters = getPDs(methods,true);  
+    List pds     = merge(getters,setters);  
+    PropertyDescriptor[] array = new PropertyDescriptor[pds.size()];  
+    pds.toArray(array);  
+    return array;  
+}
+```
