@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "2cc05ff47fe91df2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/SSRF/SSRF-FastCGI&Redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c8dd339d4dd76cfc",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -250,10 +262,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1b23776374fb12aa",
+  "active": "c8dd339d4dd76cfc",
   "lastOpenFiles": [
-    "JavaSec/JavaSec/FastJson.md",
+    "Web/SSRF/SSRF-FastCGI&Redis.md",
     "JavaSec/JavaSec/动态加载字节码.md",
+    "JavaSec/JavaSec/FastJson.md",
     "conflict-files-obsidian-git.md",
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
     "JavaSec/JavaSec.md",
@@ -296,7 +309,6 @@
     "README.md",
     "CTF赛题/WriteUP/2021N1CTF.md",
     "CTF赛题/WriteUP/2020网鼎-复现.md",
-    "CTF赛题/WriteUP/2022美亚杯个人赛.md",
     "WriteUP/2022祥云杯线上 1deb8dae846f4e2cae518051ccaf0ab2/未命名"
   ]
 }
