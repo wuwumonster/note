@@ -75,7 +75,7 @@ private static PropertyDescriptor[] getPDs(Class klass) throws IntrospectionExce
 }
 ```
 
-符合
+符合get开头的匹配，所有可以用来触发`getOutputProperties()`
 ```java
 private static final String SETTER = "set";  
 private static final String GETTER = "get";  
@@ -115,3 +115,9 @@ private static Map getPDs(Method[] methods,boolean setters) throws Introspection
     return pds;  
 }
 ```
+
+最后返回到toString，用invoke来触发方法
+![](attachments/Pasted%20image%2020230301152902.png)
+
+在这里进行调试的时候会发现，事实上在ysoserial中在`ToStringBean.toString()`和`TemplatesImpl.getOutputProperties()`的链条流程实质上已经包含在执行中了
+![](attachments/Pasted%20image%2020230301153551.png)
