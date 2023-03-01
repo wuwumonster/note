@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "14eafb5bd06a14b4",
+        "id": "40f03e58c55c8798",
         "type": "tabs",
         "children": [
           {
-            "id": "3f5622cf3d238619",
+            "id": "e01e3f0c3ae28677",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/网络运维/拓扑练习/拓扑3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c532452fc12c5fda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaSec/JavaSec/动态加载字节码.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1b23776374fb12aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2cc05ff47fe91df2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web/SSRF/SSRF-FastCGI&Redis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c8dd339d4dd76cfc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web/SSRF/SSRF-FastCGI&Redis.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
+                "file": "CTF赛题/WriteUP/2022长城杯.md"
               }
             }
           },
@@ -124,8 +75,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -146,7 +96,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -196,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,14 +201,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1660fe89eec4088b",
+  "active": "e01e3f0c3ae28677",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2022蓝帽杯.md",
+    "网络安全/网络运维/拓扑练习/拓扑3.md",
     "JavaSec/JavaSec/ROME链.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230301160102.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230301153551.png",
     "Web/SSRF/SSRF-FastCGI&Redis.md",
     "JavaSec/JavaSec/动态加载字节码.md",
-    "网络安全/网络运维/拓扑练习/拓扑3.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230301152902.png",
     "JavaSec/JavaSec.md",
     "RMI攻击利用 attachments/Java安全漫谈_-_04.RMI篇(1).pdf.md",
