@@ -136,7 +136,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -262,7 +263,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1b23776374fb12aa",
+  "active": "1660fe89eec4088b",
   "lastOpenFiles": [
     "JavaSec/JavaSec/attachments/Pasted image 20230301111440.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230301111428.png",
