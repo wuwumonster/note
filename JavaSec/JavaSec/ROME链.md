@@ -53,6 +53,7 @@ private String toString(String prefix) {
 ```
 从注释可用看的出来是会获取到，传入的类中的getter方法
 
+这里的重点是getPDs的使用在getPDSs中又调用了getPDs，在这里做了方法重载
 ```java
 public static synchronized PropertyDescriptor[] getPropertyDescriptors(Class klass) throws IntrospectionException {  
     PropertyDescriptor[] descriptors = (PropertyDescriptor[]) _introspected.get(klass);  
@@ -71,5 +72,46 @@ private static PropertyDescriptor[] getPDs(Class klass) throws IntrospectionExce
     PropertyDescriptor[] array = new PropertyDescriptor[pds.size()];  
     pds.toArray(array);  
     return array;  
+}
+```
+
+符合
+```java
+private static final String SETTER = "set";  
+private static final String GETTER = "get";  
+private static final String BOOLEAN_GETTER = "is";  
+  
+private static Map getPDs(Method[] methods,boolean setters) throws IntrospectionException {  
+    Map pds = new HashMap();  
+    for (int i=0;i<methods.length;i++) {  
+        String pName = null;  
+        PropertyDescriptor pDescriptor = null;  
+        if ((methods[i].getModifiers()&Modifier.PUBLIC)!=0) {  
+            if (setters) {  
+                if (methods[i].getName().startsWith(SETTER) &&  
+                    methods[i].getReturnType()==void.class && methods[i].getParameterTypes().length==1) {  
+                    pName = Introspector.decapitalize(methods[i].getName().substring(3));  
+                    pDescriptor = new PropertyDescriptor(pName,null,methods[i]);  
+                }  
+            }  
+            else {  
+                if (methods[i].getName().startsWith(GETTER) &&  
+                    methods[i].getReturnType()!=void.class && methods[i].getParameterTypes().length==0) {  
+                    pName = Introspector.decapitalize(methods[i].getName().substring(3));  
+                    pDescriptor = new PropertyDescriptor(pName,methods[i],null);  
+                }  
+                else  
+                if (methods[i].getName().startsWith(BOOLEAN_GETTER) &&  
+                    methods[i].getReturnType()==boolean.class && methods[i].getParameterTypes().length==0) {  
+                    pName = Introspector.decapitalize(methods[i].getName().substring(2));  
+                    pDescriptor = new PropertyDescriptor(pName,methods[i],null);  
+                }  
+            }  
+        }  
+        if (pName!=null) {  
+            pds.put(pName,pDescriptor);  
+        }  
+    }  
+    return pds;  
 }
 ```
