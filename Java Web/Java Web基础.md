@@ -66,5 +66,17 @@ filter 也称之为过滤器，是对 Servlet 技术的一个强补充，其主�
 与 servlet 一样，Filter 的创建和销毁也由 Web 容器负责。Web 应用程序启动时，Web 服务器将创建 Filter 的实例对象，并调用其 init() 方法，读取 web.xml 配置，完成对象的初始化功能，从而为后续的用户请求作好拦截的准备工作（filter 对象只会创建一次，init 方法也只会执行一次）。开发人员通过init方法的参数，可获得代表当前filter配置信息的FilterConfig对象。
 Filter 对象创建后会驻留在内存，当 Web 应用移除或服务器停止时才销毁。在 Web 容器卸载 Filter 对象之前被调用。该方法在 Filter 的生命周期中仅执行一次。在这个方法中，可以释放过滤器使用的资源。
 
+### Fileter链
+![](attachments/Pasted%20image%2020230302183118.png)
+
+## Listener
+Java Web 开发中的监听器（Listener）就是 Application、Session 和 Request 三大对象创建、销毁或者往其中添加、修改、删除属性时自动执行代码的功能组件
+
+- *ServletContextListener*：对Servlet上下文的创建和销毁进行监听； ServletContextAttributeListener：监听 Servlet 上下文属性的添加、删除和替换
+- *HttpSessionListener*：对 Session 的创建和销毁进行监听。Session 的销毁有两种情况，一个中 Session 超时，还有一种是通过调用 Session 对象的 invalidate() 方法使 session 失效。
+- *HttpSessionAttributeListener*：对 Session 对象中属性的添加、删除和替换进行监听；
+- *ServletRequestListener*：对请求对象的初始化和销毁进行监听； 
+
+
 # Tomcat
-## Tomcat服务器与
+## Tomcat服务器与Ser
