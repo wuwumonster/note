@@ -84,3 +84,8 @@ Tomcat 只是一个 servlet (jsp 也翻译成 servlet)容器，可以认为是 A
 理解为一个Web服务器即可，但是加点比较极端
 
 ## Tomcat服务器与Servlet
+**Tomcat 是 Web 应用服务器，是一个 Servlet/JSP 容器**，而 Servlet 容器从上到下分别是 Engine、Host、Context、Wrapper。
+- Engine即为全局引擎容器，它的标准实现是StandardEngine。
+- Host在整个Servlet引擎中抽象出Host容器用于表示虚拟主机，它是根据URL地址中的主机部分抽象的，一个Servlet引擎可以包含若干个Host容器，而一个Host容器可以包含若干个Context容器。在Tomcat中Host的标准实现是StandardHost，它从虚拟主机级别对请求和响应进行处理。
+- 一个Context对应一个Web应用程序，但Web项目的组成比较复杂，它包含很多组件。对于Web容器，需要将Web应用程序包含的组件转换成容器的组件。
+- Wrapper属于Tomcat中4个级别容器中最小级别的容器，与之相对应的是Servlet。
