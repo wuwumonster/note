@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2022长城杯.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2022长城杯.md"
+                "file": "Web/文件包含/文件包含和相关Trick.md"
               }
             }
           },
@@ -108,7 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2022长城杯.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2022长城杯.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2022长城杯.md",
+                "file": "Web/文件包含/文件包含和相关Trick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,12 +213,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e01e3f0c3ae28677",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
-    "JavaSec/JavaSec/CC链.md",
-    "CTF赛题/WriteUP/2022长城杯.md",
-    "CTF赛题/WriteUP/2022蓝帽杯.md",
+    "Web/文件包含/LFI With PHPInfo Assistance.pdf",
+    "网络安全/应急响应与数字调查取证/应急响应.md",
+    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
+    "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
+    "网络安全/应急响应与数字调查取证/排查思路.md",
+    "网络安全/网络运维/拓扑练习/拓扑4.md",
     "网络安全/网络运维/拓扑练习/拓扑3.md",
+    "网络安全/网络运维/拓扑练习/attachments/4d5ff9fdfd797bf91f27b8c09a8496e.png",
+    "CTF赛题/WriteUP/2022长城杯.md",
+    "JavaSec/JavaSec/CC链.md",
+    "CTF赛题/WriteUP/2022蓝帽杯.md",
     "JavaSec/JavaSec/ROME链.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230301160102.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230301153551.png",
@@ -236,7 +243,6 @@
     "JavaSec/JavaSec/attachments/Pasted image 20230301104445.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230301104226.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230301092804.png",
-    "JavaSec/JavaSec/attachments/Pasted image 20230301091304.png",
     "JavaSec/JavaSec/attachments",
     "conflict-files-obsidian-git.md",
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
@@ -244,22 +250,15 @@
     "JavaSec/attachments",
     "CTF赛题/WriteUP/2022MRCTF.md",
     "CTF赛题/WriteUP/长安杯2022.md",
-    "网络安全/网络运维/拓扑练习/拓扑——4.md",
     "CTF赛题/WriteUP/attachments",
     "网络安全/网络运维/拓扑练习/attachments",
     "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
-    "网络安全/应急响应与数字调查取证/应急响应.md",
-    "网络安全/应急响应与数字调查取证/排查思路.md",
-    "网络安全/应急响应与数字调查取证/情景练习/Practice 1.md",
-    "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
     "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
     "Web/文件包含/文件包含和相关Trick.md",
-    "Web/文件包含/LFI With PHPInfo Assistance.pdf",
     "JavaSec/JavaSec/Tomcat.md",
     "Web/文件包含/未确认 124842.crdownload",
     "Web/PHPTrike/open_basedir绕过.md",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments",
-    "网络安全/内网渗透/提权.md"
+    "网络安全/应急响应与数字调查取证/情景练习/attachments"
   ]
 }
