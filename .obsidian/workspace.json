@@ -228,8 +228,10 @@
   },
   "active": "be76eb9d433e7352",
   "lastOpenFiles": [
-    "JavaSec/JavaSec.md",
+    "Excalidraw/Drawing 2023-03-02 17.10.07.excalidraw.md",
     "Java Web/Java Web基础.md",
+    "Excalidraw",
+    "JavaSec/JavaSec.md",
     "Java Web",
     "JavaSec/JavaSec/Java Agent与PASP.md",
     "JavaSec/JavaSec/RMI攻击利用.md",
@@ -268,11 +270,9 @@
     "JavaSec/JavaSec/attachments",
     "conflict-files-obsidian-git.md",
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
-    "Web/PHPTrike/PHP伪协议.md",
     "JavaSec/attachments",
     "CTF赛题/WriteUP/attachments",
     "网络安全/网络运维/拓扑练习/attachments",
-    "网络安全/病毒样本分析/attachments",
-    "网络安全/病毒样本分析"
+    "网络安全/病毒样本分析/attachments"
   ]
 }
