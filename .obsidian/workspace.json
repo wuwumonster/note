@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "f1111fb296b3069f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Crypto/RSA已知p的高位攻击.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3452e0c0403564e7",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md"
+                "file": "Crypto/RSA已知p的高位攻击.md"
               }
             }
           },
@@ -108,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
+                "file": "Crypto/RSA已知p的高位攻击.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
+                "file": "Crypto/RSA已知p的高位攻击.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/文件包含/文件包含和相关Trick.md",
+                "file": "Crypto/RSA已知p的高位攻击.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,8 +226,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "f1111fb296b3069f",
   "lastOpenFiles": [
+    "Web/文件包含/文件包含和相关Trick.md",
+    "Crypto/RSA已知p的高位攻击.md",
     "Web/文件包含/LFI With PHPInfo Assistance.pdf",
     "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 2.md",
@@ -255,7 +270,6 @@
     "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
     "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
-    "Web/文件包含/文件包含和相关Trick.md",
     "JavaSec/JavaSec/Tomcat.md",
     "Web/文件包含/未确认 124842.crdownload",
     "Web/PHPTrike/open_basedir绕过.md",
