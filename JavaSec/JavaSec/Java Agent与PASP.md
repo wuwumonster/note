@@ -33,8 +33,6 @@ Build-Jdk: 1.8.0_40
 
 指定这两个值是因为在加载Java Agent之后，会找到 Agent-Class 或者 Premain-Class 指定的类，并运行对应的 agentmain 或者 premain 方法。
 
-![Untitled](Java%20Agent%E4%B8%8EPASP%207c0439d22738477da7d400468799add8/Untitled.png)
-
 > MANIFEST.MF 文件，也可以通过Maven配置，在打包的时候自动生成
 > 
 
@@ -42,7 +40,6 @@ Build-Jdk: 1.8.0_40
 
 原理图
 
-![Untitled](Java%20Agent%E4%B8%8EPASP%207c0439d22738477da7d400468799add8/Untitled%201.png)
 
 RASP进程是直接嵌入到APP执行流程中去，这一点和WAF有本质的不同。正是由于这一点，RASP可以避免WAF规则被各种奇异的编码绕过的痛点，因为Agent进程最终获取的参数正是各个层面编码转换完成后真正执行的参数。并且RASP不像WAF那样需要拦截每个请求去check是否命中了攻击的规则，而是当HOOK住的危险函数被调用之后，才会触发检测逻辑。
 

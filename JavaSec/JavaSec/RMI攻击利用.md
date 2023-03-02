@@ -590,17 +590,3 @@ public class Client {
     }
 }
 ```
-
-## Java安全**漫谈RMI篇**
-
-### **Java安全漫谈 - 04.RMI篇(1)**
-
-[Java安全漫谈 - 04.RMI篇(1).pdf](RMI攻击利用%20attachments/Java%E5%AE%89%E5%85%A8%E6%BC%AB%E8%B0%88_-_04.RMI%E7%AF%87(1).pdf)
-
-### **Java安全漫谈 - 05.RMI篇(2)**
-
-[Java安全漫谈 - 05.RMI篇(2).pdf](RMI攻击利用%20attachments/Java%E5%AE%89%E5%85%A8%E6%BC%AB%E8%B0%88_-_05.RMI%E7%AF%87(2).pdf)
-
-### **Java安全漫谈 - 06.RMI篇(3)**
-
-[Java安全漫谈 - 06.RMI篇(3).pdf](RMI攻击利用%20attachments/Java%E5%AE%89%E5%85%A8%E6%BC%AB%E8%B0%88_-_06.RMI%E7%AF%87(3).pdf)
