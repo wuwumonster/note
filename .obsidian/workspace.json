@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/Javassist动态编程.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/Javassist动态编程.md"
+                "file": "CTF赛题/WriteUP/2022长城杯.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/Javassist动态编程.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/Javassist动态编程.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/Javassist动态编程.md",
+                "file": "CTF赛题/WriteUP/2022长城杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,8 +228,9 @@
   },
   "active": "177b87fbd8b3ffbf",
   "lastOpenFiles": [
-    "CTF赛题/WriteUP/2022长城杯.md",
+    "CTF赛题/WriteUP/2022BytesCTF.md",
     "JavaSec/JavaSec/Javassist动态编程.md",
+    "CTF赛题/WriteUP/2022长城杯.md",
     "Web/文件包含/文件包含和相关Trick.md",
     "RMI攻击利用 attachments/Java安全漫谈_-_04.RMI篇(1).pdf.md",
     "Crypto/RSA已知p的高位攻击.md",
@@ -271,7 +272,6 @@
     "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
     "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
-    "JavaSec/JavaSec/Tomcat.md",
     "Web/文件包含/未确认 124842.crdownload",
     "网络安全/应急响应与数字调查取证/情景练习/attachments"
   ]
