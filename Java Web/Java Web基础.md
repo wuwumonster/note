@@ -120,3 +120,5 @@ Container（又名Catalina）用于处理Connector发过来的servlet连接请�
 [(71条消息) Tomcat学习笔记（5）- 容器（Engine、Host、Context、Wrapper）_everyD_struggle的博客-CSDN博客](https://blog.csdn.net/littlewhitevg/article/details/107671946)
 
 [Java内存马系列-01-基础内容学习 | 芜风 (drun1baby.github.io)](https://drun1baby.github.io/2022/08/19/Java%E5%86%85%E5%AD%98%E9%A9%AC%E7%B3%BB%E5%88%97-01-%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/#toc-heading-2)
+
+[javaweb 基础知识（总结） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/123170292)
