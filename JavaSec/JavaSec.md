@@ -14,6 +14,8 @@
 
 [动态加载字节码](JavaSec/动态加载字节码.md)
 
+[Javassist动态编程](JavaSec/Javassist动态编程.md)
+
 ## 漏洞学习
 
 ---
@@ -39,3 +41,5 @@
 [Tomcat](JavaSec/Tomcat.md)
 
 [CC链](JavaSec/CC链.md)
+
+[ROME链](JavaSec/ROME链.md)

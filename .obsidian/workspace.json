@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "177b87fbd8b3ffbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF赛题/WriteUP/2022长城杯.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3452e0c0403564e7",
             "type": "leaf",
             "state": {
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -144,7 +131,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.36288736930121523,
+                  "scale": 0.2588386562181654,
                   "close": true
                 }
               }
@@ -226,11 +213,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "177b87fbd8b3ffbf",
+  "active": "e01e3f0c3ae28677",
   "lastOpenFiles": [
+    "Java Agent与PASP 7c0439d22738477da7d400468799add8/Untitled 1.png.md",
+    "JavaSec/JavaSec.md",
+    "Java Agent与PASP 7c0439d22738477da7d400468799add8",
+    "JavaSec/JavaSec/ROME链.md",
     "CTF赛题/WriteUP/2022BytesCTF.md",
-    "JavaSec/JavaSec/Javassist动态编程.md",
     "CTF赛题/WriteUP/2022长城杯.md",
+    "JavaSec/JavaSec/Javassist动态编程.md",
     "Web/文件包含/文件包含和相关Trick.md",
     "RMI攻击利用 attachments/Java安全漫谈_-_04.RMI篇(1).pdf.md",
     "Crypto/RSA已知p的高位攻击.md",
@@ -244,13 +235,11 @@
     "网络安全/网络运维/拓扑练习/attachments/4d5ff9fdfd797bf91f27b8c09a8496e.png",
     "JavaSec/JavaSec/CC链.md",
     "CTF赛题/WriteUP/2022蓝帽杯.md",
-    "JavaSec/JavaSec/ROME链.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230301160102.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230301153551.png",
     "Web/SSRF/SSRF-FastCGI&Redis.md",
     "JavaSec/JavaSec/动态加载字节码.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230301152902.png",
-    "JavaSec/JavaSec.md",
     "RMI攻击利用 attachments",
     "JavaSec/JavaSec/RMI攻击利用.md",
     "JavaSec/JavaSec/FastJson.md",
@@ -269,10 +258,8 @@
     "CTF赛题/WriteUP/长安杯2022.md",
     "CTF赛题/WriteUP/attachments",
     "网络安全/网络运维/拓扑练习/attachments",
-    "网络安全/网络运维/安全加固/CISCO ASA防火墙.md",
     "网络安全/病毒样本分析/attachments",
     "网络安全/病毒样本分析",
-    "Web/文件包含/未确认 124842.crdownload",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments"
+    "Web/文件包含/未确认 124842.crdownload"
   ]
 }
