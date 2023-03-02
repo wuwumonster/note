@@ -67,7 +67,7 @@ filter 也称之为过滤器，是对 Servlet 技术的一个强补充，其主�
 Filter 对象创建后会驻留在内存，当 Web 应用移除或服务器停止时才销毁。在 Web 容器卸载 Filter 对象之前被调用。该方法在 Filter 的生命周期中仅执行一次。在这个方法中，可以释放过滤器使用的资源。
 
 ### Fileter链
-![](attachments/Pasted%20image%2020230302183118.png)
+![](attachments/Pasted%20image%2020230302185705.png)
 
 ## Listener
 Java Web 开发中的监听器（Listener）就是 Application、Session 和 Request 三大对象创建、销毁或者往其中添加、修改、删除属性时自动执行代码的功能组件
@@ -79,6 +79,8 @@ Java Web 开发中的监听器（Listener）就是 Application、Session 和 Req
 
 
 # Tomcat
+Apache 是 Web 服务器（静态解析，如 HTML），Tomcat 是 java 应用服务器（动态解析，如 JSP）
+Tomcat 只是一个 servlet (jsp 也翻译成 servlet)容器，可以认为是 Apache 的扩展，但是可以独立于 Apache 运行。
+理解为一个Web服务器即可，但是加点比较极端
 
-
-## Tomcat服务器与Ser
+## Tomcat服务器与Servlet
