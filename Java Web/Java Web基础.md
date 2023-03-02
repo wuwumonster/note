@@ -50,5 +50,21 @@ Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是�
 
 ## Filter
 filter 也称之为过滤器，是对 Servlet 技术的一个强补充，其主要功能是在 HttpServletRequest 到达 Servlet 之前，拦截客户的 HttpServletRequest ，根据需要检查 HttpServletRequest，也可以修改 HttpServletRequest 头和数据；在 HttpServletResponse 到达客户端之前，拦截 HttpServletResponse ，根据需要检查 HttpServletResponse，也可以修改 HttpServletResponse 头和数据。
+![](attachments/Pasted%20image%2020230302180540.png)
+
+### 基本工作原理
+- Filter程序是一个实现了特殊接口的Java类，与Servlet类似，也是由Servlet容器进行调用和执行的
+- Filter程序在可以在HttpServletRequest到达Servlet和HTTPServletResponse到达客户端前对其进行检查和修改头和数据，实现了一个类防火墙的功能
+- Filter接口中有一个doFilter方法，当开发人员编写好Filter，并配置对哪个web资源进行拦截后，Web服务器每次在调用web资源的service方法之前，都会先调用一下filter的doFilter方法，doFilter方法中有一个filterChain对象,用于继续传递给下一个filter,在传递之前我们可以定义过滤请求的功能,在传递之后,我们可以定义过滤响应的功能
+>1、 Filter.doFilter 方法中不能直接调用 Servlet 的 service 方法，而是调用 FilterChain.doFilter 方法来激活目标 Servlet 的 service 方法，FilterChain 对象时通过 Filter.doFilter 方法的参数传递进来的
+>2、在 Filter.doFilter 方法中调用 FilterChain.doFilter 方法的语句前后增加某些程序代码，这样就可以在 Servlet 进行响应前后实现某些特殊功能
+>3、如果在 Filter.doFilter 方法中没有调用 FilterChain.doFilter 方法，则目标 Servlet 的 service 方法不会被执行，这样通过 Filter 就可以阻止某些非法的访问请求
+
+
+### Filter生命周期
+
+与 servlet 一样，Filter 的创建和销毁也由 Web 容器负责。Web 应用程序启动时，Web 服务器将创建 Filter 的实例对象，并调用其 init() 方法，读取 web.xml 配置，完成对象的初始化功能，从而为后续的用户请求作好拦截的准备工作（filter 对象只会创建一次，init 方法也只会执行一次）。开发人员通过init方法的参数，可获得代表当前filter配置信息的FilterConfig对象。
+Filter 对象创建后会驻留在内存，当 Web 应用移除或服务器停止时才销毁。在 Web 容器卸载 Filter 对象之前被调用。该方法在 Filter 的生命周期中仅执行一次。在这个方法中，可以释放过滤器使用的资源。
+
 # Tomcat
 ## Tomcat服务器与
