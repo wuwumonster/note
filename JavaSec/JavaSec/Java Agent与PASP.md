@@ -29,12 +29,13 @@ Created-By: Apache Maven 3.2.5
 Build-Jdk: 1.8.0_40
 ```
 
-****Agent-Class&Premain-Class****
+**Agent-Class&Premain-Class**
 
 指定这两个值是因为在加载Java Agent之后，会找到 Agent-Class 或者 Premain-Class 指定的类，并运行对应的 agentmain 或者 premain 方法。
 
 > MANIFEST.MF 文件，也可以通过Maven配置，在打包的时候自动生成
 > 
+
 
 ## RASP技术
 
