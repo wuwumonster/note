@@ -89,3 +89,5 @@ Tomcat 只是一个 servlet (jsp 也翻译成 servlet)容器，可以认为是 A
 - Host在整个Servlet引擎中抽象出Host容器用于表示虚拟主机，它是根据URL地址中的主机部分抽象的，一个Servlet引擎可以包含若干个Host容器，而一个Host容器可以包含若干个Context容器。在Tomcat中Host的标准实现是StandardHost，它从虚拟主机级别对请求和响应进行处理。
 - 一个Context对应一个Web应用程序，但Web项目的组成比较复杂，它包含很多组件。对于Web容器，需要将Web应用程序包含的组件转换成容器的组件。
 - Wrapper属于Tomcat中4个级别容器中最小级别的容器，与之相对应的是Servlet。
+
+在 Tomcat 中 Wrapper 代表一个独立的 servlet 实例， StandardWrapper 是 Wrapper 接口的标准实现类（StandardWrapper 的主要任务就是载入 Servlet 类并且进行实例化），同时其从 ContainerBase 类继承过来，表示他是一个容器，只是他是最底层的容器，不能再含有任何的子容器了，且其父容器只能是 context。
