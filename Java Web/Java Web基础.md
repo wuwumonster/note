@@ -91,3 +91,12 @@ Tomcat 只是一个 servlet (jsp 也翻译成 servlet)容器，可以认为是 A
 - Wrapper属于Tomcat中4个级别容器中最小级别的容器，与之相对应的是Servlet。
 
 在 Tomcat 中 Wrapper 代表一个独立的 servlet 实例， StandardWrapper 是 Wrapper 接口的标准实现类（StandardWrapper 的主要任务就是载入 Servlet 类并且进行实例化），同时其从 ContainerBase 类继承过来，表示他是一个容器，只是他是最底层的容器，不能再含有任何的子容器了，且其父容器只能是 context。
+
+## Tomcat架构
+
+### Containter
+![](attachments/Pasted%20image%2020230302193948.png)
+
+# 参考链接
+[(71条消息) Tomcat学习笔记（5）- 容器（Engine、Host、Context、Wrapper）_everyD_struggle的博客-CSDN博客](https://blog.csdn.net/littlewhitevg/article/details/107671946)
+[Java内存马系列-01-基础内容学习 | 芜风 (drun1baby.github.io)](https://drun1baby.github.io/2022/08/19/Java%E5%86%85%E5%AD%98%E9%A9%AC%E7%B3%BB%E5%88%97-01-%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%AD%A6%E4%B9%A0/#toc-heading-2)
