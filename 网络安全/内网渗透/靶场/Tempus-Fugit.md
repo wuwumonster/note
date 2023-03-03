@@ -130,3 +130,4 @@ if __name__ == "__main__":
 ![](attachments/Pasted%20image%2020230303153445.png)
 
 `
+利用msf做端口转发
