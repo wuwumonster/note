@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "43ee8aac17a6ed6f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
+          },
+          {
             "id": "3452e0c0403564e7",
             "type": "leaf",
             "state": {
@@ -44,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,7 +237,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "be76eb9d433e7352",
+  "active": "43ee8aac17a6ed6f",
   "lastOpenFiles": [
     "Java Web/attachments/Pasted image 20230302200001.png",
     "Java Web/attachments/Pasted image 20230302195142.png",
