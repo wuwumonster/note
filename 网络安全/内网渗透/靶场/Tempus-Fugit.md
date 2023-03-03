@@ -201,3 +201,8 @@ fclose($fp);
 
 ![](attachments/Pasted%20image%2020230303203156.png)
 
+这里提权基本没戏
+设置的点是responder
+[【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)
+# 相关文章
+[【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)

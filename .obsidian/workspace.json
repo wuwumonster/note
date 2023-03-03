@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md"
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md"
               }
             }
           },
@@ -145,7 +145,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,6 +252,7 @@
   },
   "active": "1ef66487ee398c8d",
   "lastOpenFiles": [
+    "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit.md",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303203156.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303203131.png",
