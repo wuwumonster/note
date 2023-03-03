@@ -115,4 +115,6 @@ if __name__ == "__main__":
 `python -c "import pty;pty.spawn('/bin/bash')"`
 ![](attachments/Pasted%20image%2020230303111910.png)
 
+查找main.py 的ftp服务
+`ls /usr/bin | grep ftp`
 
