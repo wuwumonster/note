@@ -125,3 +125,4 @@ if __name__ == "__main__":
 ![](attachments/Pasted%20image%2020230303135918.png)
 `hardEnough4u`
 
+利用这台机器开始扫描内网，在kail上起一个http服务，然后再受害机上用wget下载，nmap的apk包（没有联通互联网）然后利用apk按照本地包
