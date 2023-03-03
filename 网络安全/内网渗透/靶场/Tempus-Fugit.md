@@ -14,4 +14,7 @@
 ![](attachments/Pasted%20image%2020230303085226.png)
 
 
-猜测后台有读文件的相关操作
+猜测后台有读文件的相关操作，尝试xss文件内容也无效，可能对内容有处理，尝试文件名注入
+![](attachments/Pasted%20image%2020230303092812.png)
+![](attachments/Pasted%20image%2020230303092758.png)
+过滤了whoami，那么就是想办法在这里实现命令执行了
