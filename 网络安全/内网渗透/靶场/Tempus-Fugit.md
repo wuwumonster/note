@@ -118,3 +118,4 @@ if __name__ == "__main__":
 查找main.py 的ftp服务
 `ls /usr/bin | grep ftp`
 
+`lftp someuser@ftp.mofo.pwn`
