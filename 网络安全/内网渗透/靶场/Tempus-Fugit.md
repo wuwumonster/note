@@ -117,5 +117,11 @@ if __name__ == "__main__":
 
 查找main.py 的ftp服务
 `ls /usr/bin | grep ftp`
-
+利用之前代码中的用户名密码登录FTP服务
 `lftp someuser@ftp.mofo.pwn`
+![](attachments/Pasted%20image%2020230303135822.png)
+
+查看cmscreds.txt
+![](attachments/Pasted%20image%2020230303135918.png)
+`hardEnough4u`
+
