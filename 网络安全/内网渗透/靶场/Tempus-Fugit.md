@@ -202,7 +202,10 @@ fclose($fp);
 ![](attachments/Pasted%20image%2020230303203156.png)
 
 这里提权基本没戏
-设置的点是responder
+设置的点是responder，一个类似中间人攻击的方式来骗取其他主机的账户和密码
 [【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)
+
+在还是和之前一样下载responder的工具然后从kaliwget
+
 # 相关文章
 [【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)
