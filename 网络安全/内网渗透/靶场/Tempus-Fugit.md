@@ -108,3 +108,4 @@ if __name__ == "__main__":
     app.run()
 ```
 
+尝试反弹shell，由于过滤了`.`nc
