@@ -141,3 +141,5 @@ dig枚举域名
 现在访问127.0.0.1:18080可以看到apache的页面
 ![](attachments/Pasted%20image%2020230303163134.png)
 但是没有看到cms，可能是站点域名的设置，需要更改一下host文件
+![](attachments/Pasted%20image%2020230303164733.png)
+
