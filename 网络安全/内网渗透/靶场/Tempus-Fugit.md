@@ -149,4 +149,7 @@ dirsearch扫目录
 ![](attachments/Pasted%20image%2020230303180408.png)
 
 结合先前获得的账号密码，直接登录后台
+>到这里就开始卡起来了，据说端口转发就是会巨卡无比
 ![](attachments/Pasted%20image%2020230303180814.png)
+
+进后台之后是一个类Wordpress的网站，在Theme哪里去做修改拿shell
