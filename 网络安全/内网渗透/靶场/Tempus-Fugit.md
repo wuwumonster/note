@@ -143,3 +143,10 @@ dig枚举域名
 但是没有看到cms，可能是站点域名的设置，需要更改一下host文件
 ![](attachments/Pasted%20image%2020230303164733.png)
 
+直接访问
+![](attachments/Pasted%20image%2020230303180416.png)
+dirsearch扫目录
+![](attachments/Pasted%20image%2020230303180408.png)
+
+结合先前获得的账号密码，直接登录后台
+![](attachments/Pasted%20image%2020230303180814.png)
