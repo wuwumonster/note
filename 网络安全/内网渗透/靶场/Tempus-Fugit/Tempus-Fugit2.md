@@ -24,9 +24,13 @@ nmap网络扫描
 wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务，通过中间人攻击来拿到新的密码
 
 修改etter.dns 中的值来将域名伪造为需要的 `smtp.tempusfugit2.com`和 `smtp.tempusfugit2.com.localdomain`
+
+![](attachments/Pasted%20image%2020230304111035.png)
+
 本地用python起一个简单的smtp服务
 `sudo python3 -m smtpd -n -c DebuggingServer 192.168.163.135:25`
-然后启动ettercup开始攻击
+然后启动ettercup扫描host主机，将靶机添加到target1中，同时选择dns_spoof插件
 
+![](attachments/Pasted%20image%2020230304111546.png)
 
 
