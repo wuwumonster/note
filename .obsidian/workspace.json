@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/域渗透.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/域渗透.md"
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md"
               }
             }
           },
@@ -133,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/域渗透.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/域渗透.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/域渗透.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,8 +238,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "def0d1552e97e0f9",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
+    "网络安全/内网渗透/域渗透.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "网络安全/内网渗透/靶场/靶场.md",
     "JavaSec/JavaSec.md",
@@ -282,8 +284,6 @@
     "网络安全/网络运维/拓扑练习/拓扑4.md",
     "网络安全/网络运维/拓扑练习/拓扑3.md",
     "JavaSec/JavaSec/CC链.md",
-    "CTF赛题/WriteUP/2022蓝帽杯.md",
-    "Web/SSRF/SSRF-FastCGI&Redis.md",
     "RMI攻击利用 attachments",
     "JavaSec/JavaSec/attachments"
   ]
