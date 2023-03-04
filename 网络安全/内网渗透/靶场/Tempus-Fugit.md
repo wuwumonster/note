@@ -205,7 +205,65 @@ fclose($fp);
 设置的点是responder，一个类似中间人攻击的方式来骗取其他主机的账户和密码
 [【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)
 
-在还是和之前一样下载responder的工具然后从kaliwget
+在还是和之前一样下载responder的工具然后从kali wget
+
+![](attachments/Pasted%20image%2020230303211610.png)
+
+利用拿到的用户名密码登录172.19.0.1的ssh
+
+![](attachments/Pasted%20image%2020230303211737.png)
+
+user.txt
+```txt
+a81be4e9b20632860d20a64c054c4150
+```
+
+
+现在找提权的方法
+
+![](attachments/Pasted%20image%2020230303212852.png)
+
+这个用户还没有办法做sudo -l
+
+![](attachments/Pasted%20image%2020230303213245.png)
+
+mail里有大量的邮件内容
+
+![](attachments/Pasted%20image%2020230303212221.png)
+
+还算友好，没有藏在中间，在末尾的部分可以一眼看到
+
+![](attachments/Pasted%20image%2020230303212354.png)
+
+`vickie:9f4lw0r82bn6`
+
+现在上一vickie这个号看看
+sudo -i
+
+![](attachments/Pasted%20image%2020230303213304.png)
+
+用ip提权
+
+[GTFOBins](https://gtfobins.github.io/)
+
+```
+sudo ip netns add foo
+sudo ip netns exec foo /bin/sh
+```
+
+![](attachments/Pasted%20image%2020230303213603.png)
+
+这样就拿下了
+
+![](attachments/Pasted%20image%2020230303213754.png)
+
+执行一下，嘿嘿嘿
+
+![](attachments/Pasted%20image%2020230303213900.png)
+
 
 # 相关文章
 [【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)
+
+这个提权总结的很牛，没事可以多看看
+[GTFOBins](https://gtfobins.github.io/)
