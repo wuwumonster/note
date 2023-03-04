@@ -37,19 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/靶场.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ef66487ee398c8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
+                "file": "网络安全/内网渗透/靶场/靶场.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md"
+                "file": "网络安全/内网渗透/靶场/靶场.md"
               }
             }
           },
@@ -145,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
+                "file": "网络安全/内网渗透/靶场/靶场.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
+                "file": "网络安全/内网渗透/靶场/靶场.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit.md",
+                "file": "网络安全/内网渗透/靶场/靶场.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -250,8 +238,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1ef66487ee398c8d",
+  "active": "def0d1552e97e0f9",
   "lastOpenFiles": [
+    "JavaSec/JavaSec.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303213900.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303213754.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303213603.png",
@@ -259,20 +249,18 @@
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303213245.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303212852.png",
     "网络安全/内网渗透/提权/Lunux提权.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit.md",
-    "网络安全/内网渗透/靶场.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit.md",
+    "网络安全/内网渗透/靶场/靶场.md",
     "Java Web/Java Web基础.md",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303212354.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303212221.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303211737.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303211610.png",
-    "网络安全/内网渗透/靶场/attachments/Pasted image 20230303203156.png",
     "网络安全/内网渗透/靶场/attachments",
     "网络安全/内网渗透/靶场",
     "Java Web/attachments",
     "Excalidraw/Drawing 2023-03-02 17.10.07.excalidraw.md",
     "Excalidraw",
-    "JavaSec/JavaSec.md",
     "Java Web",
     "JavaSec/JavaSec/Java Agent与PASP.md",
     "JavaSec/JavaSec/RMI攻击利用.md",
@@ -296,7 +284,6 @@
     "CTF赛题/WriteUP/2022蓝帽杯.md",
     "Web/SSRF/SSRF-FastCGI&Redis.md",
     "RMI攻击利用 attachments",
-    "JavaSec/JavaSec/attachments",
-    "JavaSec/attachments"
+    "JavaSec/JavaSec/attachments"
   ]
 }
