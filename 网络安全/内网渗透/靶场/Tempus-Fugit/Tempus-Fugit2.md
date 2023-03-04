@@ -136,3 +136,16 @@ int main(void) {
 运行的时候发现，glic版本对不上，最好还是传进去让docker里的系统自己编译，或者ssh传进去让外面的linux编译
 
 ![](attachments/Pasted%20image%2020230304180508.png)
+
+测试了一下syd这个用户是没有gcc的，只能传到docker里编译
+
+![](attachments/Pasted%20image%2020230304211331.png)
+
+这样就拿下了，只是还是不明白那个用户标识有什么用
+
+![](attachments/Pasted%20image%2020230304211404.png)
+
+# 参考链接
+[register_activation_hook() - 设置插件的激活（启用）钩子 - WordPress函数 - WordPress动力 (wpdongli.com)](https://www.wpdongli.com/reference/functions/register_activation_hook/)
+
+[靶机-简单谈一下端口碰撞技术 (Port Knocking) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/210177505)
