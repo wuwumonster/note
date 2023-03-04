@@ -208,6 +208,8 @@ fclose($fp);
 [【脉搏译文系列】渗透师指南之Responder - SecPulse.COM | 安全脉搏](https://www.secpulse.com/archives/65503.html)
 
 在还是和之前一样下载responder的工具然后从kali wget
+这里是在172.19.0.10这台有root权限的机器上做监听，抓取其他用户登录的密码和用户名，在这个靶场中似乎存在多台这样模拟登录的客户机
+>想要完成流量的抓取，我杀掉了原本运行在80端口上的Nginx服务
 
 ![](attachments/Pasted%20image%2020230303211610.png)
 
