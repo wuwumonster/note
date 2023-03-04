@@ -8,5 +8,5 @@ nmap网络扫描
 
 ![](attachments/Pasted%20image%2020230304092401.png)
 
-站点为WordPress 5.2.3，WPscan扫描无果
+站点为WordPress 5.2.3，WPscan扫描`wpscan --url http://192.168.163.135 -e u --no-banner --no-update --wpcontent-dir wp-content`
 
