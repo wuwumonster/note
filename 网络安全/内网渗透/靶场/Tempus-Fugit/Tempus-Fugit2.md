@@ -75,4 +75,32 @@ wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务�
 
 ![](attachments/Pasted%20image%2020230304154012.png)
 
-grissel:9l4lw0r82cp9
+反应过来了,是改了hosts文件
+
+![](attachments/Pasted%20image%2020230304170942.png)
+
+有很多账号
+
+![](attachments/Pasted%20image%2020230304171047.png)
+
+sudo -l 尝试提权
+
+![](attachments/Pasted%20image%2020230304171422.png)
+
+`sudo -u syd timedatectl list-timezones`
+
+![](attachments/Pasted%20image%2020230304172009.png)
+
+拿到用户标识 `a81be4e9b20632860d20a64c054c4150`
+
+![](attachments/Pasted%20image%2020230304172103.png)
+
+
+![](attachments/Pasted%20image%2020230304172511.png)
+
+接下来sudo -l 没有密码那个用户标识也没有用
+爆破密码
+`hydra -V -t 4 -l syd -P '/usr/share/wordlists/rockyou.txt.gz' ssh://192.168.1.132:22`
+
+
+
