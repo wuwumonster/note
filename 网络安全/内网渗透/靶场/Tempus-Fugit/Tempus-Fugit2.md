@@ -32,3 +32,9 @@ wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务�
 然后启动ettercup扫描host主机，将靶机添加到target1中，同时选择dns_spoof插件，注意要在MITM中打开ARP sniff remote connection
 
 ![](attachments/Pasted%20image%2020230304111546.png)
+
+在这之后提交reset admin的密码,伪造的邮箱就会收到更新链接,进去后更新为新的直接登录后台
+
+![](attachments/Pasted%20image%2020230304144148.png)
+
+![](attachments/Pasted%20image%2020230304144413.png)
