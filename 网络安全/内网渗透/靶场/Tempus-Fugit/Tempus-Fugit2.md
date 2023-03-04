@@ -41,3 +41,36 @@ wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务�
 
 主题没有办法提交,用激活插件的方法反弹shell,需要自己写一个插件
 [register_activation_hook() - 设置插件的激活（启用）钩子 - WordPress函数 - WordPress动力 (wpdongli.com)](https://www.wpdongli.com/reference/functions/register_activation_hook/)
+
+压缩为zip包上传后激活就可以弹到shell
+
+![](attachments/Pasted%20image%2020230304151542.png)
+
+但是现在的shell并不是tty,在这个里面找到了别的东西`dG9ycmllOjlhNGx3MHI4MmN4Mgo=`
+
+![](attachments/Pasted%20image%2020230304151838.png)
+
+在wordpress中有一篇文章
+
+![](attachments/Pasted%20image%2020230304151955.png)
+
+是port koncking
+[靶机-简单谈一下端口碰撞技术 (Port Knocking) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/210177505)
+
+![](attachments/Pasted%20image%2020230304152256.png)
+
+很明显了`1981 867 5309`
+不知道为什么我的kali没有办法下载konckd,所有用nmap来替代了
+`nmap 192.168.1.132 -Pn -p 1981,867,5309`
+
+![](attachments/Pasted%20image%2020230304152901.png)
+
+这个时候该连ssh了但是,发觉自己没有账号密码,回想起了刚刚的nb.txt,base64一下
+`torrie:9a4lw0r82cx2`
+
+![](attachments/Pasted%20image%2020230304153209.png)
+
+
+登录的时候傻了,没反应登不上,感觉可能是konck没到
+
+![](attachments/Pasted%20image%2020230304154012.png)
