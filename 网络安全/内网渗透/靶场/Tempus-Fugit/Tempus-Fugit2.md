@@ -13,3 +13,5 @@ nmap网络扫描
 
 ![](attachments/Pasted%20image%2020230304095111.png)
 
+扫目录也没有效果，这个靶机一扫就烂
+
