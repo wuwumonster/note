@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+                "file": "网络安全/内网渗透/靶场/Vulhub靶机.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md"
+                "file": "网络安全/内网渗透/靶场/Vulhub靶机.md"
               }
             }
           },
@@ -108,7 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+                "file": "网络安全/内网渗透/靶场/Vulhub靶机.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+                "file": "网络安全/内网渗透/靶场/Vulhub靶机.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+                "file": "网络安全/内网渗透/靶场/Vulhub靶机.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,6 +215,7 @@
   },
   "active": "e01e3f0c3ae28677",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304211404.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304211331.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304180508.png",
@@ -225,12 +226,10 @@
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304174451.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304172511.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304172103.png",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230304172009.png",
     "JavaSec/JavaSec.md",
     "README.md",
     "2023-03-04.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "JavaSec/JavaSec/CC链.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments",
