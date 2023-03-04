@@ -38,3 +38,6 @@ wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务�
 ![](attachments/Pasted%20image%2020230304144148.png)
 
 ![](attachments/Pasted%20image%2020230304144413.png)
+
+主题没有办法提交,用激活插件的方法反弹shell,需要自己写一个插件
+[register_activation_hook() - 设置插件的激活（启用）钩子 - WordPress函数 - WordPress动力 (wpdongli.com)](https://www.wpdongli.com/reference/functions/register_activation_hook/)
