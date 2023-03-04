@@ -7,3 +7,6 @@ nmap网络扫描
 `nmap -v -A 192.168.163.0/24`
 
 ![](attachments/Pasted%20image%2020230304092401.png)
+
+站点为WordPress 5.2.3，WPscan扫描无果
+
