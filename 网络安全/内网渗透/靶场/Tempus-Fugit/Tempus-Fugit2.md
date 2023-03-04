@@ -17,7 +17,16 @@ nmap网络扫描
 在hosts文件中加入tf2.com的记录
 
 这里提供了忘记密码的选项
-但是在尝试获得新密码的时候
+但是在尝试获得新密码的时候，出现了报错，猜测是邮件服务没有
 
 ![](attachments/Pasted%20image%2020230304103734.png)
+
+wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务，通过中间人攻击来拿到新的密码
+
+修改etter.dns 中的值来将域名伪造为需要的 `smtp.tempusfugit2.com`和 `smtp.tempusfugit2.com.localdomain`
+本地用python起一个简单的smtp服务
+`sudo python3 -m smtpd -n -c DebuggingServer 192.168.163.135:25`
+然后启动ettercup开始攻击
+
+
 
