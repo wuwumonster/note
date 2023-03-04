@@ -1,5 +1,5 @@
 # 靶场拓扑&情况
-
+这个靶场只有一台机器，在外面访问到的WordPress是运行在docker中的，打点进去后，主要是容器逃逸和利用docker挂载目录来实现提权
 
 # 渗透过程
 
@@ -133,6 +133,6 @@ int main(void) {
 ![](attachments/Pasted%20image%2020230304175934.png)
 
 当出去提权的时候发现,工作目录是wp-content,回去吧shell挪进去
-运行的时候发现
+运行的时候发现，glic版本对不上，最好还是传进去让docker里的系统自己编译，或者ssh传进去让外面的linux编译
 
 ![](attachments/Pasted%20image%2020230304180508.png)
