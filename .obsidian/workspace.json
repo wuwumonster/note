@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/靶场/靶场.md",
+                "file": "网络安全/内网渗透/域渗透.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/靶场.md"
+                "file": "网络安全/内网渗透/域渗透.md"
               }
             }
           },
@@ -133,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/靶场.md",
+                "file": "网络安全/内网渗透/域渗透.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/靶场.md",
+                "file": "网络安全/内网渗透/域渗透.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/靶场.md",
+                "file": "网络安全/内网渗透/域渗透.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,8 +238,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "def0d1552e97e0f9",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Vulhub靶机.md",
+    "网络安全/内网渗透/靶场/靶场.md",
     "JavaSec/JavaSec.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303213900.png",
@@ -250,7 +252,6 @@
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303212852.png",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit.md",
-    "网络安全/内网渗透/靶场/靶场.md",
     "Java Web/Java Web基础.md",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303212354.png",
     "网络安全/内网渗透/靶场/attachments/Pasted image 20230303212221.png",
