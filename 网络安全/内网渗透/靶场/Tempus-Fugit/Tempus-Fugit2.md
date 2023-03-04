@@ -29,7 +29,7 @@ wirshark监听，也证实了这个猜想，可以通过建立一个smtp服务�
 
 本地用python起一个简单的smtp服务
 `sudo python3 -m smtpd -n -c DebuggingServer 192.168.163.135:25`
-然后启动ettercup扫描host主机，将靶机添加到target1中，同时选择dns_spoof插件
+然后启动ettercup扫描host主机，将靶机添加到target1中，同时选择dns_spoof插件，注意要在MITM中打开ARP sniff remote connection
 
 ![](attachments/Pasted%20image%2020230304111546.png)
 
