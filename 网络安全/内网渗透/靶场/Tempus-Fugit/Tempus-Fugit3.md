@@ -308,6 +308,8 @@ f0VMRgIBAQAAAAAAAAAAAAIAPgABAAAAeABAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAOAABAAAA
 ![](attachments/Pasted%20image%2020230305231014.png)
 
 很奇怪每次到这里就会卡住，无法接着做操作，网页就访问不上了
+从官网下载hellowworld的包，进行修改
+![](attachments/Pasted%20image%2020230306001937.png)
 # 参考链接
 [python中的subprocess.Popen() 执行shell命令 - 技术改变命运Andy - 博客园 (cnblogs.com)](https://www.cnblogs.com/andy0816/p/15624304.html)
 

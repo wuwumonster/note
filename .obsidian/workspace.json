@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md"
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,6 +228,10 @@
   },
   "active": "be50270c367facfc",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230306001937.png",
+    "网络安全/内网渗透/提权/Lunux提权.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/排查思路.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
@@ -238,8 +242,6 @@
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305202730.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305202540.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305202156.png",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305200231.png",
     "README.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305195138.png",
@@ -248,7 +250,6 @@
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "JavaSec/JavaSec.md",
     "2023-03-04.md",
-    "网络安全/内网渗透/提权/Lunux提权.md",
     "JavaSec/JavaSec/CC链.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments",
     "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
@@ -272,7 +273,6 @@
     "CTF赛题/WriteUP/2022BytesCTF.md",
     "JavaSec/JavaSec/Javassist动态编程.md",
     "Web/文件包含/文件包含和相关Trick.md",
-    "RMI攻击利用 attachments/Java安全漫谈_-_04.RMI篇(1).pdf.md",
     "Web/文件包含/LFI With PHPInfo Assistance.pdf"
   ]
 }
