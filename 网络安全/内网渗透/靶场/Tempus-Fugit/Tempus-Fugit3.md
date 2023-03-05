@@ -266,7 +266,13 @@ echo '    sock.close()' >> scan.py
 
 ![](attachments/Pasted%20image%2020230305182441.png)
 
-这里用到ssh远程端口转发
+这里用到ssh远程端口转发`ssh -R 44443:192.168.100.1:443 root@192.168.163.129`,emmm,出现了一些问题找机会问问大佬
+
+![](attachments/Pasted%20image%2020230305195138.png)
+
+ssh远程转发失效那就考虑msf来做portfwd，和TF1一样先生成一个shell
+
+
 
 
 # 参考链接
