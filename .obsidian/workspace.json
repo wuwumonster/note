@@ -226,8 +226,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "be50270c367facfc",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305163716.png",
     "Web/SSTI",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305160729.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305160544.png",
@@ -272,7 +273,6 @@
     "Web/文件包含/文件包含和相关Trick.md",
     "RMI攻击利用 attachments/Java安全漫谈_-_04.RMI篇(1).pdf.md",
     "Crypto/RSA已知p的高位攻击.md",
-    "Web/文件包含/LFI With PHPInfo Assistance.pdf",
-    "RMI攻击利用 attachments"
+    "Web/文件包含/LFI With PHPInfo Assistance.pdf"
   ]
 }

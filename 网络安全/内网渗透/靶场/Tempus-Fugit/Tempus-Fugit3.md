@@ -14,7 +14,9 @@ nmap网络扫描
 
 ![](attachments/Pasted%20image%2020230305160729.png)
 
+确认是ssti不过页面没有办法确定相关利用类。粘贴出来用vscode看看，发现popen类
 
+![](attachments/Pasted%20image%2020230305163716.png)
 
 # 参考链接
 
