@@ -191,5 +191,52 @@ secret_key其实是给flag需要base64解码
 
 ![](attachments/Pasted%20image%2020230305172148.png)
 
+准备直接看数据库，发现源码中用了一个叫`sqlcipher`的工具，加上密钥才对数据库做的操作
+
+```python
+pra = "pragma key='SecretssecretsSecrets...'"
+
+def validate(username, password):
+    con = sqlcipher.connect("static/db2.db")
+    con.execute(pra)
+    completion = False
+    with con:
+                cur = con.cursor()
+                cur.execute("SELECT * FROM Users")
+                rows = cur.fetchall()
+                for row in rows:
+                    uname = row[0]
+                    pw = row[1]
+                    if uname==username:
+                        completion=check_password(password, pw)
+    return completion
+```
+
+![](attachments/Pasted%20image%2020230305173903.png)
+
+命令比较奇怪，不过可以`.help`来看看，`pragma key='SecretssecretsSecrets...';`将key输入
+`.tables`发现只有一个`users`表
+
+![](attachments/Pasted%20image%2020230305174323.png)
+
+```txt
+hugh-janus|S0secretPassW0rd
+anita-hanjaab|ssdf%dg5xc
+clee-torres|asRtesa#2s
+RmxhZzN7IEhleSwgcmVhZGluZyBzZWNyZXRzICB9|
+
+```
+
+最后一个是flag`Flag3{ Hey, reading secrets  }`
+我flag2呢？？？先上号看看
+上号后发现flag，黑黑的很难找
+`Flag2{ Is this the foothold I have been looking for?}`
+```txt
+hugh-janus     ->  60571
+anita-hanjaab  ->  60571
+clee-torres    ->  60571
+```
+
+感觉可能是在暗示端口，想要试试扫描端口，但是发现www-data没有下载东西的权限
 # 参考链接
 [python中的subprocess.Popen() 执行shell命令 - 技术改变命运Andy - 博客园 (cnblogs.com)](https://www.cnblogs.com/andy0816/p/15624304.html)
