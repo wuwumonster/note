@@ -280,9 +280,28 @@ ssh远程转发失效那就考虑msf来做portfwd，和TF1一样先生成一个s
 f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAAAAAAAIAECACABAjPAAAASgEAAAcAAAAAEAAAagpeMdv341NDU2oCsGaJ4c2Al1towKijgWgCACK4ieFqZlhQUVeJ4UPNgIXAeRlOdD1oogAAAFhqAGoFieMxyc2AhcB5vesnsge5ABAAAInjwesMweMMsH3NgIXAeBBbieGZsmqwA82AhcB4Av/huAEAAAC7AQAAAM2Af
 ```
 
+![](attachments/Pasted%20image%2020230305202156.png)
+
+设置portfwd
+
+![](attachments/Pasted%20image%2020230305202540.png)
+
+发现80端口的服务和之前的是一样的
+
+![](attachments/Pasted%20image%2020230305202730.png)
+
+访问的时候意识到端口不存在99443，调成了9443，一个全新的网站
+
+![](attachments/Pasted%20image%2020230305202910.png)
+
+下面这个upload
+![](attachments/Pasted%20image%2020230305203159.png)
+
+
+
+
 
 
 # 参考链接
 [python中的subprocess.Popen() 执行shell命令 - 技术改变命运Andy - 博客园 (cnblogs.com)](https://www.cnblogs.com/andy0816/p/15624304.html)
 
-![](attachments/Pasted%20image%2020230305190455.png)
