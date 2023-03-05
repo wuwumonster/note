@@ -79,7 +79,7 @@ Linux提权的本质一方面是信息收集，另一方面是对内核漏洞的
   - uname -m    查看系统内核架构（64位/32位）
   - hostname    系统主机名
   - cat /proc/version    内核信息
-  - cat /etc/*-release   分发信息
+  - cat /etc/\*-release   分发信息
   - cat /etc/issue       分发信息
   - cat /proc/cpuinfo    CPU信息
 
