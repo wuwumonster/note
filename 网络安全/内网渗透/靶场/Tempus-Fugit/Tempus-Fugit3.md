@@ -297,7 +297,7 @@ f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAAAAAA
 下面这个upload
 ![](attachments/Pasted%20image%2020230305203159.png)
 
-这里登录admin考虑在文章中有提到自己的名字，使用之前的数据库中的密码`admin:S0secretPassW0rd`
+这里登录admin考虑在文章中有提到自己的名字，使用之前的数据库中的密码`hugh-janus:S0secretPassW0rd`
 
 ![](attachments/Pasted%20image%2020230305204319.png)
 
