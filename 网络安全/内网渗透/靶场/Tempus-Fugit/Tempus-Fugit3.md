@@ -266,5 +266,10 @@ echo '    sock.close()' >> scan.py
 
 ![](attachments/Pasted%20image%2020230305182441.png)
 
+这里用到ssh远程端口转发
+
+
 # 参考链接
 [python中的subprocess.Popen() 执行shell命令 - 技术改变命运Andy - 博客园 (cnblogs.com)](https://www.cnblogs.com/andy0816/p/15624304.html)
+
+![](attachments/Pasted%20image%2020230305190455.png)
