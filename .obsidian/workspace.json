@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "be50270c367facfc",
+            "id": "03325c1dd9641cb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md"
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,16 +226,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "be50270c367facfc",
+  "active": "03325c1dd9641cb7",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+    "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
+    "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
+    "网络安全/内网渗透/靶场/Vulhub靶机.md",
+    "Excalidraw/Drawing 2023-03-02 17.10.07.excalidraw.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
+    "网络安全/应急响应与数字调查取证/应急响应.md",
     "Web/文件上传",
     "Web/XXE",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230306001937.png",
     "网络安全/内网渗透/提权/Lunux提权.md",
-    "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/排查思路.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305231014.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305204319.png",
@@ -248,12 +252,10 @@
     "README.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230305195138.png",
     "Web/SSTI",
-    "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "JavaSec/JavaSec.md",
     "2023-03-04.md",
     "JavaSec/JavaSec/CC链.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments",
-    "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
     "网络安全/内网渗透/域渗透.md",
     "网络安全/内网渗透/靶场/靶场.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit",
@@ -262,14 +264,12 @@
     "网络安全/内网渗透/靶场/attachments",
     "网络安全/内网渗透/靶场",
     "Java Web/attachments",
-    "Excalidraw/Drawing 2023-03-02 17.10.07.excalidraw.md",
     "Excalidraw",
     "Java Web",
     "JavaSec/JavaSec/Java Agent与PASP.md",
     "JavaSec/JavaSec/RMI攻击利用.md",
     "CTF赛题/WriteUP/2022长城杯.md",
     "Java Agent与PASP 7c0439d22738477da7d400468799add8/Untitled 1.png.md",
-    "Java Agent与PASP 7c0439d22738477da7d400468799add8",
     "JavaSec/JavaSec/ROME链.md",
     "CTF赛题/WriteUP/2022BytesCTF.md",
     "JavaSec/JavaSec/Javassist动态编程.md",
