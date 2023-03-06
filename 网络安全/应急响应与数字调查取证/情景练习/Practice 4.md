@@ -20,3 +20,7 @@
 crontab -l 
 
 ![](attachments/Pasted%20image%2020230306160032.png)
+
+/var/www/www/data/shell.php
+
+![](attachments/Pasted%20image%2020230306161635.png)
