@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md"
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
+                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,8 +228,8 @@
   },
   "active": "3452e0c0403564e7",
   "lastOpenFiles": [
-    "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
+    "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "网络安全/应急响应与数字调查取证/排查思路.md",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306164839.png",
