@@ -24,3 +24,15 @@ crontab -l
 /var/www/www/data/shell.php
 
 ![](attachments/Pasted%20image%2020230306161635.png)
+
+
+netstat -antlp|more
+
+![](attachments/Pasted%20image%2020230306162814.png)
+
+ps aux | grep 2429
+
+![](attachments/Pasted%20image%2020230306162855.png)
+
+![](attachments/Pasted%20image%2020230306163032.png)
+
