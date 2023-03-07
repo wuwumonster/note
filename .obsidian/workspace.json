@@ -73,14 +73,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2021 0CTF.md",
+                "file": "网络安全/网络数据包分析/Practice 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b392043d1ea21995",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络数据包分析/Practice 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5dd76172d7b2ba75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络数据包分析/Practice 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -109,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2021 0CTF.md"
+                "file": "网络安全/网络数据包分析/Practice 3.md"
               }
             }
           },
@@ -157,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2021 0CTF.md",
+                "file": "网络安全/网络数据包分析/Practice 3.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -207,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2021 0CTF.md",
+                "file": "网络安全/网络数据包分析/Practice 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2021 0CTF.md",
+                "file": "网络安全/网络数据包分析/Practice 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -262,12 +286,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dcbb0c93f0416cd9",
+  "active": "5dd76172d7b2ba75",
   "lastOpenFiles": [
+    "网络安全/网络数据包分析/Practice 4.md",
+    "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/Practice 1.md",
+    "网络安全/网络数据包分析/Practice 2.md",
     "CTF赛题/WriteUP/2021 0CTF.md",
     "CTF赛题/未命名",
-    "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络数据包分析/attachments/Pasted image 20230307093140.png",
     "网络安全/网络数据包分析/attachments/Pasted image 20230307092654.png",
     "网络安全/网络数据包分析/attachments/Pasted image 20230307092415.png",
@@ -307,8 +333,6 @@
     "网络安全/内网渗透/靶场",
     "JavaSec/JavaSec/Java Agent与PASP.md",
     "JavaSec/JavaSec/RMI攻击利用.md",
-    "CTF赛题/WriteUP/2022长城杯.md",
-    "Java Agent与PASP 7c0439d22738477da7d400468799add8/Untitled 1.png.md",
-    "JavaSec/JavaSec/ROME链.md"
+    "CTF赛题/WriteUP/2022长城杯.md"
   ]
 }
