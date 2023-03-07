@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7d9e678ea4be9981",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络数据包分析/Practice 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -73,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md"
+                "file": "网络安全/网络数据包分析/Practice 2.md"
               }
             }
           },
@@ -121,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
+                "file": "网络安全/网络数据包分析/Practice 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
+                "file": "网络安全/网络数据包分析/Practice 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
+                "file": "网络安全/网络数据包分析/Practice 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,8 +238,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3452e0c0403564e7",
+  "active": "7d9e678ea4be9981",
   "lastOpenFiles": [
+    "网络安全/网络数据包分析/attachments/Pasted image 20230307091416.png",
+    "网络安全/网络数据包分析/attachments",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
+    "网络安全/网络数据包分析/Practice 2.md",
+    "网络安全/网络数据包分析",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
     "网络安全/应急响应与数字调查取证/应急响应.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
@@ -245,7 +262,6 @@
     "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "Excalidraw/Drawing 2023-03-02 17.10.07.excalidraw.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
     "Web/文件上传",
     "Web/XXE",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230306001937.png",
@@ -264,14 +280,11 @@
     "网络安全/内网渗透/靶场/attachments",
     "网络安全/内网渗透/靶场",
     "Java Web/attachments",
-    "Excalidraw",
-    "Java Web",
     "JavaSec/JavaSec/Java Agent与PASP.md",
     "JavaSec/JavaSec/RMI攻击利用.md",
     "CTF赛题/WriteUP/2022长城杯.md",
     "Java Agent与PASP 7c0439d22738477da7d400468799add8/Untitled 1.png.md",
     "JavaSec/JavaSec/ROME链.md",
-    "CTF赛题/WriteUP/2022BytesCTF.md",
-    "JavaSec/JavaSec/Javassist动态编程.md"
+    "CTF赛题/WriteUP/2022BytesCTF.md"
   ]
 }
