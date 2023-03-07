@@ -7,6 +7,19 @@ https://github.com/github/codeql-cli-binaries/releases
 ![](attachments/Pasted%20image%2020230307204307.png)
 
 ## SDK安装
-在之前选的安装引擎的位置下
+在之前选的安装引擎的位置下,文件结构是这样
 `git clone https://github.com/Semmle/ql`
+```txt
+codeql
+|-codeql
+|_ql
+```
+
+## VsCode插件安装&配置
+
+![](attachments/Pasted%20image%2020230307211103.png)
+
+配置引擎位置
+
+![](attachments/Pasted%20image%2020230307211402.png)
 
