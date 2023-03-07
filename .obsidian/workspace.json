@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ee09bd3693c15c97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络数据包分析/Practice 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 2.md"
+                "file": "网络安全/网络数据包分析/Practice 1.md"
               }
             }
           },
@@ -133,7 +145,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 2.md",
+                "file": "网络安全/网络数据包分析/Practice 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -183,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 2.md",
+                "file": "网络安全/网络数据包分析/Practice 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 2.md",
+                "file": "网络安全/网络数据包分析/Practice 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -238,8 +250,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7d9e678ea4be9981",
+  "active": "ee09bd3693c15c97",
   "lastOpenFiles": [
+    "网络安全/网络数据包分析/Practice 2.md",
+    "网络安全/网络数据包分析/Practice 1.md",
     "网络安全/网络数据包分析/attachments/Pasted image 20230307093140.png",
     "网络安全/网络数据包分析/attachments/Pasted image 20230307092654.png",
     "网络安全/网络数据包分析/attachments/Pasted image 20230307092415.png",
@@ -247,7 +261,6 @@
     "网络安全/网络数据包分析/attachments/Pasted image 20230307091416.png",
     "网络安全/网络数据包分析/attachments",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
-    "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络数据包分析",
     "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
     "网络安全/应急响应与数字调查取证/应急响应.md",
@@ -258,7 +271,6 @@
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306164456.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306163032.png",
     "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306162855.png",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306162814.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
