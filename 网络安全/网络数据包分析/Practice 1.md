@@ -1,3 +1,4 @@
 流量中一共有多少条爆破记录
 该盲注操作的字典内容是什么
+`abcdefghijklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ1234567890,_-%7B%7D`
 藏有flag的数据库内有哪些数据表，以group_concat结果形式提交
