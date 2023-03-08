@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 3.md",
+                "file": "网络安全/应急响应/排查思路.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 3.md"
+                "file": "网络安全/应急响应/排查思路.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 3.md",
+                "file": "网络安全/应急响应/排查思路.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 3.md",
+                "file": "网络安全/应急响应/排查思路.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 3.md",
+                "file": "网络安全/应急响应/排查思路.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,24 +228,26 @@
   },
   "active": "95a9a91c66875b58",
   "lastOpenFiles": [
-    "网络安全/网络数据包分析/attachments/Pasted image 20230308165528.png",
-    "网络安全/网络数据包分析/Practice 4.md",
-    "网络安全/文件取证/Practice/Practice 1.md",
+    "网络安全/应急响应/情景练习/Practice 4.md",
+    "网络安全/应急响应/情景练习/Practice 2.md",
+    "网络安全/应急响应/情景练习/Practice 1.md",
     "网络安全/文件取证/Practice/Practice 2.md",
-    "JavaSec/JavaSec/Javassist动态编程.md",
+    "网络安全/文件取证/Practice/Practice 1.md",
+    "网络安全/文件取证/Practice/attachments/Pasted image 20230308090728.png",
+    "网络安全/网络数据包分析/Practice 4.md",
     "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络数据包分析/Practice 1.md",
+    "网络安全/网络数据包分析/attachments/Pasted image 20230308181113.png",
+    "网络安全/网络数据包分析/attachments/Pasted image 20230308181040.png",
+    "网络安全/网络数据包分析/attachments/Pasted image 20230308180911.png",
+    "网络安全/网络数据包分析/attachments/Pasted image 20230308165528.png",
+    "JavaSec/JavaSec/Javassist动态编程.md",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308163006.png",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308162342.png",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308162141.png",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308161235.png",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308160731.png",
-    "网络安全/文件取证/Practice/attachments/Pasted image 20230308153159.png",
-    "网络安全/文件取证/Practice/attachments/Pasted image 20230308152408.png",
-    "网络安全/文件取证/Practice/attachments/Pasted image 20230308151833.png",
-    "网络安全/文件取证/Practice/attachments/Pasted image 20230308144323.png",
-    "网络安全/文件取证/Practice/attachments/Pasted image 20230308143805.png",
     "网络安全/应急响应/应急响应.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
     "JavaSec/JavaSec.md",
@@ -259,7 +261,6 @@
     "CTF赛题/未命名",
     "网络安全/网络数据包分析/attachments",
     "网络安全/网络数据包分析",
-    "网络安全/应急响应/情景练习/Practice 4.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "网络安全/应急响应/排查思路.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
@@ -272,7 +273,6 @@
     "README.md",
     "Web/SSTI",
     "2023-03-04.md",
-    "JavaSec/JavaSec/CC链.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments"
   ]
 }
