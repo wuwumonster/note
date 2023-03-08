@@ -11,3 +11,5 @@
 
 # 过程
 
+在HTTP包中发现下载了叫做`offline.exe`的恶意文件
+![](attachments/Pasted%20image%2020230308165528.png)
