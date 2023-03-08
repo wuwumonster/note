@@ -1,3 +1,8 @@
+## Evidence1
+skf2.exe
+cc46c77f06a8b0ac1f24f0dd6462d667
+![](attachments/Pasted%20image%2020230308161235.png)
+
 ## Evidence2
 fafg.sys.txt
 58aa2849f9d182bb63b6b3e7d2226935
@@ -22,3 +27,15 @@ faek.png
 vav1.mp3
 23f9d91d8abc532d9039706831a33c53
 ![](attachments/Pasted%20image%2020230308143805.png)
+
+## Evidence 9 
+aolg.xls
+1b61c0e544fda5962f646cb540e7d15e
+
+![](attachments/Pasted%20image%2020230308160731.png)
+```python
+v5 = ['\xC5', '\xF6', '\xE9', '\xE4', '\xE5', '\xEE', '\xE3', '\xE5', '\xA0', '\xB9', '\x00']
+for i in range(len(v5)):
+    print(chr(ord(v5[i])^0x80))
+    
+```
