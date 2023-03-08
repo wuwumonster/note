@@ -23,6 +23,19 @@ awf.pdf
 faek.png
 82da4b121061da0e96e4455f008e0b15
 ![](attachments/Pasted%20image%2020230308152408.png)
+
+## Evidence6
+gge.png
+c3969db9dfab31672d29a81e0bc02e0d
+
+![](attachments/Pasted%20image%2020230308162141.png)
+
+## Evidence7
+gepj.star.png
+cc5d534f8fffeeed9c3c84f2e6a4b20b
+
+![](attachments/Pasted%20image%2020230308162342.png)
+
 ## Evidence8
 vav1.mp3
 23f9d91d8abc532d9039706831a33c53
