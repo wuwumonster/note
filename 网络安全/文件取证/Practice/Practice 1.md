@@ -52,3 +52,10 @@ for i in range(len(v5)):
     print(chr(ord(v5[i])^0x80))
     
 ```
+
+
+## Evidence10
+fa3f.doc
+d6b07f066a013fa2fe9f3e2e4419e1c9
+解压，theme2.xml->png
+![](attachments/Pasted%20image%2020230308163006.png)
