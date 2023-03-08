@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应/应急响应.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应与数字调查取证/应急响应.md",
+                "file": "网络安全/应急响应/应急响应.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3d875f54531efe2f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/文件取证/Practice/Practice 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -145,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java Web/Java Web基础.md"
+                "file": "网络安全/文件取证/Practice/Practice 2.md"
               }
             }
           },
@@ -193,7 +205,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Java Web/Java Web基础.md",
+                "file": "网络安全/文件取证/Practice/Practice 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -243,7 +255,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java Web/Java Web基础.md",
+                "file": "网络安全/文件取证/Practice/Practice 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -260,7 +272,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java Web/Java Web基础.md",
+                "file": "网络安全/文件取证/Practice/Practice 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -298,8 +310,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cb036ff7f44ef0ab",
+  "active": "3d875f54531efe2f",
   "lastOpenFiles": [
+    "Java Web/Java Web基础.md",
+    "网络安全/文件取证/Practice/Practice 2.md",
+    "网络安全/文件取证/Practice",
+    "网络安全/文件取证",
     "CTF赛题/WriteUP/2021 0CTF.md",
     "JavaSec/JavaSec/CodeQL.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230307211402.png",
@@ -319,12 +335,12 @@
     "网络安全/网络数据包分析/attachments",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
     "网络安全/网络数据包分析",
-    "网络安全/应急响应与数字调查取证/情景练习/Practice 4.md",
-    "网络安全/应急响应与数字调查取证/应急响应.md",
+    "网络安全/应急响应/情景练习/Practice 4.md",
+    "网络安全/应急响应/应急响应.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
-    "网络安全/应急响应与数字调查取证/排查思路.md",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306164839.png",
-    "网络安全/应急响应与数字调查取证/情景练习/attachments/Pasted image 20230306164616.png",
+    "网络安全/应急响应/排查思路.md",
+    "网络安全/应急响应/情景练习/attachments/Pasted image 20230306164839.png",
+    "网络安全/应急响应/情景练习/attachments/Pasted image 20230306164616.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
@@ -341,9 +357,6 @@
     "网络安全/内网渗透/靶场/靶场.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit.md",
-    "Java Web/Java Web基础.md",
-    "网络安全/内网渗透/靶场/attachments",
-    "网络安全/内网渗透/靶场",
     "JavaSec/JavaSec/Java Agent与PASP.md"
   ]
 }
