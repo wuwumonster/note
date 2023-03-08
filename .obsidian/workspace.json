@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "95a9a91c66875b58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/文件取证/Practice/Practice 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/文件取证/Practice/Practice 2.md"
+                "file": "网络安全/文件取证/Practice/Practice 1.md"
               }
             }
           },
@@ -109,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/文件取证/Practice/Practice 2.md",
+                "file": "网络安全/文件取证/Practice/Practice 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -159,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/文件取证/Practice/Practice 2.md",
+                "file": "网络安全/文件取证/Practice/Practice 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/文件取证/Practice/Practice 2.md",
+                "file": "网络安全/文件取证/Practice/Practice 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,8 +226,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "03325c1dd9641cb7",
+  "active": "95a9a91c66875b58",
   "lastOpenFiles": [
+    "网络安全/文件取证/Practice/attachments/Pasted image 20230308144323.png",
+    "网络安全/文件取证/Practice/attachments/Pasted image 20230308143805.png",
+    "网络安全/文件取证/Practice/Practice 2.md",
+    "网络安全/文件取证/Practice/Practice 1.md",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308114453.png",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308113124.png",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308112911.png",
@@ -230,7 +246,6 @@
     "网络安全/网络数据包分析/Practice 3.md",
     "JavaSec/JavaSec.md",
     "Misc/Write up/2023.2.23.md",
-    "网络安全/文件取证/Practice/Practice 2.md",
     "Java Web/Java Web基础.md",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308090728.png",
     "网络安全/文件取证/Practice/attachments",
@@ -239,8 +254,6 @@
     "CTF赛题/WriteUP/2021 0CTF.md",
     "JavaSec/JavaSec/CodeQL.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230307211402.png",
-    "JavaSec/JavaSec/attachments/Pasted image 20230307211103.png",
-    "JavaSec/JavaSec/attachments/Pasted image 20230307204307.png",
     "网络安全/网络数据包分析/Practice 4.md",
     "CTF赛题/未命名",
     "网络安全/网络数据包分析/attachments",
@@ -260,7 +273,6 @@
     "2023-03-04.md",
     "JavaSec/JavaSec/CC链.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments",
-    "网络安全/内网渗透/域渗透.md",
-    "网络安全/内网渗透/靶场/靶场.md"
+    "网络安全/内网渗透/域渗透.md"
   ]
 }
