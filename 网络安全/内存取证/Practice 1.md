@@ -7,7 +7,7 @@
 
 `volatility -f .\mem.dump --profile=Win7SP1x64 pstree`
 
-
+`volatility -f .\mem.dump --profile=Win7SP1x64 memdump -p 2856 --dump-dir ./`
 ## 提交恶意程序识别的全部文件拓展名
 
 ## 提交恶意程序内存栈中的key地址
