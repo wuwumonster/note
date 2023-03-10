@@ -61,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/靶场/wsc/Task1.md",
+                "file": "网络安全/网络数据包分析/Practice 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c65a683bb31a31b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络数据包分析/Practice5.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/wsc/Task1.md"
+                "file": "网络安全/网络数据包分析/Practice5.md"
               }
             }
           },
@@ -128,7 +140,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5086555480957
+    "width": 275.5086555480957
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -145,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/wsc/Task1.md",
+                "file": "网络安全/网络数据包分析/Practice5.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/wsc/Task1.md",
+                "file": "网络安全/网络数据包分析/Practice5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/wsc/Task1.md",
+                "file": "网络安全/网络数据包分析/Practice5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -250,15 +262,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "caddfc726fff44ae",
+  "active": "1c65a683bb31a31b",
   "lastOpenFiles": [
-    "JavaSec/JavaSec/Shiro.md",
-    "Web/Bypass/基于HTTP协议特性绕WAF.md",
-    "Web/Bypass/Bypass基操.md",
+    "网络安全/网络数据包分析/Practice 3.md",
+    "网络安全/网络数据包分析/Practice5.md",
+    "网络安全/网络数据包分析/数据包附件/Practice5.pcap",
+    "网络安全/网络数据包分析/数据包附件/未确认 94836.crdownload",
+    "网络安全/网络数据包分析/数据包附件",
+    "网络安全/网络数据包分析/新建文件夹",
+    "网络安全/网络数据包分析/Practice 4.md",
+    "Web/PHPTrike/PHP伪协议.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
-    "网络安全/内网渗透/靶场/靶场.md",
+    "Web/Bypass/Bypass基操.md",
     "网络安全/内网渗透/靶场/wsc/Task1.md",
+    "JavaSec/JavaSec/Shiro.md",
+    "Web/Bypass/基于HTTP协议特性绕WAF.md",
+    "网络安全/内网渗透/靶场/靶场.md",
     "网络安全/内网渗透/靶场/wsc/attachments/Pasted image 20230310093636.png",
     "网络安全/内网渗透/靶场/wsc/attachments",
     "网络安全/内网渗透/靶场/wsc",
@@ -280,8 +300,6 @@
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/文件取证/Practice/Practice 1.md",
     "网络安全/文件取证/Practice/attachments/Pasted image 20230308090728.png",
-    "网络安全/网络数据包分析/Practice 4.md",
-    "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络数据包分析/Practice 1.md",
     "网络安全/网络数据包分析/attachments/Pasted image 20230308181113.png",
@@ -290,13 +308,7 @@
     "JavaSec/JavaSec/Javassist动态编程.md",
     "网络安全/应急响应/应急响应.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
-    "JavaSec/JavaSec.md",
-    "Misc/Write up/2023.2.23.md",
     "网络安全/文件取证/Practice/attachments",
-    "网络安全/文件取证/Practice",
-    "网络安全/文件取证",
-    "CTF赛题/未命名",
-    "网络安全/网络数据包分析/attachments",
-    "网络安全/网络数据包分析"
+    "网络安全/文件取证/Practice"
   ]
 }
