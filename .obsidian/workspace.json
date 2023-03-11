@@ -90,9 +90,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e6650a7cc0e2bf0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/PHP反序列化/Phar反序列化.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -121,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/实战渗透/CTFShow/第二周.md"
+                "file": "Web/PHP反序列化/Phar反序列化.md"
               }
             }
           },
@@ -169,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/实战渗透/CTFShow/第二周.md",
+                "file": "Web/PHP反序列化/Phar反序列化.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/实战渗透/CTFShow/第二周.md",
+                "file": "Web/PHP反序列化/Phar反序列化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/实战渗透/CTFShow/第二周.md",
+                "file": "Web/PHP反序列化/Phar反序列化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -274,14 +286,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "09a26359f5a95760",
+  "active": "e6650a7cc0e2bf0e",
   "lastOpenFiles": [
+    "Web/PHP反序列化/attachments/Pasted image 20230311145433.png",
+    "Web/PHP反序列化/attachments/Pasted image 20230311145233.png",
+    "Web/PHP反序列化/attachments",
+    "网络安全/实战渗透/CTFShow/第二周.md",
+    "Web/PHP反序列化/Phar反序列化.md",
+    "Web/PHP反序列化",
     "网络安全/实战渗透/CTFShow/attachments/Pasted image 20230310215719.png",
     "网络安全/实战渗透/CTFShow/attachments/Pasted image 20230310214904.png",
     "网络安全/实战渗透/CTFShow/attachments/Pasted image 20230310214816.png",
     "网络安全/实战渗透/CTFShow/attachments",
     "网络安全/网络数据包分析/Practice5.md",
-    "网络安全/实战渗透/CTFShow/第二周.md",
     "网络安全/实战渗透/CTFShow",
     "网络安全/实战渗透",
     "网络安全/网络数据包分析/attachments/Pasted image 20230310171318.png",
@@ -304,13 +321,9 @@
     "JavaSec/JavaSec/Shiro.md",
     "Web/Bypass/基于HTTP协议特性绕WAF.md",
     "网络安全/内网渗透/靶场/靶场.md",
-    "网络安全/内网渗透/靶场/wsc/attachments/Pasted image 20230310093636.png",
     "网络安全/内网渗透/靶场/wsc/attachments",
-    "网络安全/内网渗透/靶场/wsc",
     "网络安全/内存取证/Practice 1.md",
-    "网络安全/内存取证/attachments/Pasted image 20230309143833.png",
     "网络安全/内存取证/Practice 2.md",
-    "网络安全/内存取证/attachments",
     "网络安全/应急响应/情景练习/Practice 4.md",
     "网络安全/应急响应/情景练习/Practice 2.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
@@ -320,7 +333,6 @@
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/文件取证/Practice/Practice 1.md",
     "网络安全/网络数据包分析/Practice 2.md",
-    "网络安全/网络数据包分析/Practice 1.md",
-    "JavaSec/JavaSec/Javassist动态编程.md"
+    "网络安全/网络数据包分析/Practice 1.md"
   ]
 }
