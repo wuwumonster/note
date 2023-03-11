@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/PHP反序列化/Phar反序列化.md",
+                "file": "网络安全/内存取证/Practice 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/PHP反序列化/Phar反序列化.md"
+                "file": "网络安全/内存取证/Practice 2.md"
               }
             }
           },
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/PHP反序列化/Phar反序列化.md",
+                "file": "网络安全/内存取证/Practice 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -231,7 +231,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/PHP反序列化/Phar反序列化.md",
+                "file": "网络安全/内存取证/Practice 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -248,7 +248,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/PHP反序列化/Phar反序列化.md",
+                "file": "网络安全/内存取证/Practice 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -288,11 +288,17 @@
   },
   "active": "e6650a7cc0e2bf0e",
   "lastOpenFiles": [
+    "网络安全/内存取证/Practice 1.md",
+    "Java Web/Java Web基础.md",
+    "JavaSec/JavaSec/JNDI注入.md",
+    "JavaSec/JavaSec/JNDI.md",
+    "JavaSec/JavaSec/JEP290.md",
+    "JavaSec/JavaSec.md",
+    "Web/PHP反序列化/Phar反序列化.md",
     "Web/PHP反序列化/attachments/Pasted image 20230311145433.png",
     "Web/PHP反序列化/attachments/Pasted image 20230311145233.png",
     "Web/PHP反序列化/attachments",
     "网络安全/实战渗透/CTFShow/第二周.md",
-    "Web/PHP反序列化/Phar反序列化.md",
     "Web/PHP反序列化",
     "网络安全/实战渗透/CTFShow/attachments/Pasted image 20230310215719.png",
     "网络安全/实战渗透/CTFShow/attachments/Pasted image 20230310214904.png",
@@ -306,7 +312,6 @@
     "网络安全/网络数据包分析/attachments/Pasted image 20230310165855.png",
     "网络安全/网络数据包分析/attachments/Pasted image 20230310164107.png",
     "网络安全/网络数据包分析/attachments/Pasted image 20230310160353.png",
-    "网络安全/网络数据包分析/attachments/Pasted image 20230310160332.png",
     "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/数据包附件/Practice5.pcap",
     "网络安全/网络数据包分析/数据包附件/未确认 94836.crdownload",
@@ -322,17 +327,12 @@
     "Web/Bypass/基于HTTP协议特性绕WAF.md",
     "网络安全/内网渗透/靶场/靶场.md",
     "网络安全/内网渗透/靶场/wsc/attachments",
-    "网络安全/内存取证/Practice 1.md",
     "网络安全/内存取证/Practice 2.md",
     "网络安全/应急响应/情景练习/Practice 4.md",
     "网络安全/应急响应/情景练习/Practice 2.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
-    "Java Web/Java Web基础.md",
     "网络安全/网络安全.md",
     "网络安全/应急响应/排查思路.md",
-    "网络安全/文件取证/Practice/Practice 2.md",
-    "网络安全/文件取证/Practice/Practice 1.md",
-    "网络安全/网络数据包分析/Practice 2.md",
-    "网络安全/网络数据包分析/Practice 1.md"
+    "网络安全/文件取证/Practice/Practice 2.md"
   ]
 }
