@@ -2,7 +2,7 @@
 
 ## 环境搭建
 ### 基于Maven的Servlet搭建
-新建项目就，下面的Maven archetype是对项目模板的不同选择，更多模板细节可以看[Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)，，这里使用`maven-archetype-webapp`
+新建项目就，下面的Maven archetype是对项目模板的不同选择，更多模板细节可以看[Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)，[Maven – Introduction to Archetypes (apache.org)](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)这里使用`maven-archetype-webapp`
 
 ![](attachments/Pasted%20image%2020230312143315.png)
 
@@ -42,6 +42,42 @@ pom.xml添加依赖
 
 ![](attachments/Pasted%20image%2020230312145414.png)
 
+
+```java
+package org.example.demo;  
+  
+import javax.servlet.*;  
+import javax.servlet.http.*;  
+import javax.servlet.annotation.*;  
+import java.io.IOException;  
+  
+@WebServlet(name = "Servlet", value = "/Servlet")  
+public class Servlet extends HttpServlet {  
+    @Override  
+    public void init() throws ServletException {  
+        System.out.println("servlet初始化");  
+    }  
+  
+    @Override  
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  
+        response.getWriter().println("<html>\n" +  
+                "<body>\n" +  
+                "<h2>Hello wuwumonster </h2>\n" +  
+                "</body>\n" +  
+                "</html>\n");  
+    }  
+  
+    @Override  
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  
+  
+    }  
+  
+    @Override  
+    public void destroy() {  
+        super.destroy();  
+    }  
+}
+```
 ## 坑点
 
 这里的部署工件，应用程序上下文是会对访问路径产生影响的想要和注解一致，而不用带上这个路径
@@ -50,4 +86,6 @@ pom.xml添加依赖
 
 ## 参考资料
 [Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)
+
+[Maven – Introduction to Archetypes (apache.org)](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
 
