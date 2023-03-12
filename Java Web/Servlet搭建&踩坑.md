@@ -42,6 +42,12 @@ pom.xml添加依赖
 
 ![](attachments/Pasted%20image%2020230312145414.png)
 
+## 坑点
+
+这里的部署工件，应用程序上下文是会对访问路径产生影响的想要和注解一致，而不用带上这个路径
+
+![](attachments/Pasted%20image%2020230312150558.png)
+
 ## 参考资料
 [Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)
 
