@@ -36,6 +36,12 @@ pom.xml添加依赖
   <scope>provided</scope>  
 </dependency>
 ```
+
+新建servlet，IDEA中是直接有这个选项的，值得一提的是用这样的方式新建的servlet是不用在web.xml中去注册的，它自己使用了注解来进行注册
+`@WebServlet(name = "Servlet", value = "/Servlet")`
+
+![](attachments/Pasted%20image%2020230312145414.png)
+
 ## 参考资料
 [Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)
 
