@@ -228,6 +228,8 @@
   },
   "active": "1eb490e64fa64ab2",
   "lastOpenFiles": [
+    "JavaSec/JavaSec/attachments/Pasted image 20230312230852.png",
+    "JavaSec/JavaSec/attachments/Pasted image 20230312225836.png",
     "Java Web/Servlet搭建&踩坑.md",
     "JavaSec/JavaSec/Tomcat内存马——Filter.md",
     "Java Web/attachments/Pasted image 20230312150558.png",
@@ -249,7 +251,6 @@
     "JavaSec/JavaSec.md",
     "Web/PHP反序列化/Phar反序列化.md",
     "Web/PHP反序列化/attachments/Pasted image 20230311145433.png",
-    "Web/PHP反序列化/attachments/Pasted image 20230311145233.png",
     "Web/PHP反序列化/attachments",
     "网络安全/实战渗透/CTFShow/第二周.md",
     "Web/PHP反序列化",
@@ -272,7 +273,6 @@
     "Web/Bypass/基于HTTP协议特性绕WAF.md",
     "网络安全/内网渗透/靶场/靶场.md",
     "网络安全/内网渗透/靶场/wsc/attachments",
-    "网络安全/应急响应/情景练习/Practice 4.md",
-    "网络安全/应急响应/情景练习/Practice 2.md"
+    "网络安全/应急响应/情景练习/Practice 4.md"
   ]
 }
