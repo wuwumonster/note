@@ -1,0 +1,20 @@
+搭的时候看了狂神说的JavaWeb部分，但是总是报404的错，在init里面写了print函数，发现servlet根本没有初始化，调来调去，踩了好几个坑，在这里记录Servlet的环境搭建流程，和一些坑的注意点
+
+## 环境搭建
+### 基于Maven的Servlet搭建
+新建项目就，下面的Maven archetype是对项目模板的不同选择，更多模板细节可以看[Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)，，这里使用`maven-archetype-webapp`
+
+![](attachments/Pasted%20image%2020230312143315.png)
+
+直接创建后得到的是一个目录结构已经完成的maven项目
+
+![](attachments/Pasted%20image%2020230312143709.png)
+
+手动添加一个java文件夹，并设置为源文件夹
+
+![](attachments/Pasted%20image%2020230312143919.png)
+
+
+## 参考资料
+[Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)
+
