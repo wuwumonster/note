@@ -74,3 +74,8 @@ public class Filter1 implements Filter {
 
 ![](attachments/Pasted%20image%2020230312230852.png)
 
+在执行请求后可以看到基本的函数调用
+
+![](attachments/Pasted%20image%2020230312233716.png)
+
+但是在这个时候我们步入是无法看到函数流程的，需要导入对应的`catalina`和`tomcat`的jar包
