@@ -14,7 +14,28 @@
 
 ![](attachments/Pasted%20image%2020230312143919.png)
 
+还要构建软件包结构
 
+![](attachments/Pasted%20image%2020230312144736.png)
+
+pom.xml添加依赖
+
+```xml
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->  
+<dependency>  
+  <groupId>javax.servlet</groupId>  
+  <artifactId>javax.servlet-api</artifactId>  
+  <version>4.0.1</version>  
+  <scope>provided</scope>  
+</dependency>  
+<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->  
+<dependency>  
+  <groupId>javax.servlet.jsp</groupId>  
+  <artifactId>javax.servlet.jsp-api</artifactId>  
+  <version>2.3.3</version>  
+  <scope>provided</scope>  
+</dependency>
+```
 ## 参考资料
 [Maven 三种archetype说明_maven-archetype-webapp_大旭123456的博客-CSDN博客](https://blog.csdn.net/cx1110162/article/details/78297654)
 
