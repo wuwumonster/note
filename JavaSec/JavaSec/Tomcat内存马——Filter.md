@@ -177,3 +177,19 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha
 在StandradContext这个类里面
 
 ![](attachments/Pasted%20image%2020230313111716.png)
+
+*FilterConfig*
+```java
+ApplicationFilterConfig(Context context, FilterDef filterDef) throws ClassCastException, ClassNotFoundException, IllegalAccessException, InstantiationException, ServletException, InvocationTargetException, NamingException, IllegalArgumentException, NoSuchMethodException, SecurityException {  
+    this.context = context;  
+    this.filterDef = filterDef;  
+    if (filterDef.getFilter() == null) {  
+        this.getFilter();  
+    } else {  
+        this.filter = filterDef.getFilter();  
+        this.getInstanceManager().newInstance(this.filter);  
+        this.initFilter();  
+    }  
+  
+}
+```
