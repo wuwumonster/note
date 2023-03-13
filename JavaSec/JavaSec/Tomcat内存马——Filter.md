@@ -82,7 +82,7 @@ public class Filter1 implements Filter {
 
 这个时候就可以直观的看到代码了
 
-代码执行，看名字的话大概可以知道是做了一个全局安全的开启检查，然后就直接进到`else`中，调用`internaklDoFilter()`
+代码执行,现在在`ApplicationFilterChain`，看名字的话大概可以知道是做了一个全局安全的开启检查，然后就直接进到`else`中，调用`internaklDoFilter()`
 
 ![](attachments/Pasted%20image%2020230313090949.png)
 
@@ -93,7 +93,7 @@ public class Filter1 implements Filter {
 ![](attachments/Pasted%20image%2020230313091757.png)
 
 这里有两个filter但是只有第一个是我们自己写的filter，pos为1时获取的是tomcat的filter,调试的时候进来pos就是1
-进行`getFilter`，这里已经是一个新的class叫做`ApplicationFilterConfigoooooooooooooooooooooooooooooooooooooooooooooo`
+进行`getFilter`，这里已经是一个新的class叫做`ApplicationFilterConfi
 
 ```java
 Filter getFilter() throws ClassCastException, ClassNotFoundException, IllegalAccessException, InstantiationException, ServletException, InvocationTargetException, NamingException, IllegalArgumentException, NoSuchMethodException, SecurityException {  
