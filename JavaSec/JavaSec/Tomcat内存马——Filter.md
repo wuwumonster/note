@@ -108,4 +108,10 @@ Filter getFilter() throws ClassCastException, ClassNotFoundException, IllegalAcc
 }
 ```
 
-get后
+getFilter
+
+![](attachments/Pasted%20image%2020230313100914.png)
+
+getFilter后，又对当前的Filter进行doFilter
+
+![](attachments/Pasted%20image%2020230313100818.png)
