@@ -178,18 +178,12 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha
 
 ![](attachments/Pasted%20image%2020230313111716.png)
 
-*FilterConfig*
-```java
-ApplicationFilterConfig(Context context, FilterDef filterDef) throws ClassCastException, ClassNotFoundException, IllegalAccessException, InstantiationException, ServletException, InvocationTargetException, NamingException, IllegalArgumentException, NoSuchMethodException, SecurityException {  
-    this.context = context;  
-    this.filterDef = filterDef;  
-    if (filterDef.getFilter() == null) {  
-        this.getFilter();  
-    } else {  
-        this.filter = filterDef.getFilter();  
-        this.getInstanceManager().newInstance(this.filter);  
-        this.initFilter();  
-    }  
-  
-}
-```
+在*StandardContext*里面其实能够看到这几个都是hashmap
+
+![](attachments/Pasted%20image%2020230313113152.png)
+
+在context中也很清晰，这些hashmap中的存放
+
+![](attachments/Pasted%20image%2020230313113340.png)
+
+但是filter的使用是基于filterchan的，回到调试的调用中去看看
