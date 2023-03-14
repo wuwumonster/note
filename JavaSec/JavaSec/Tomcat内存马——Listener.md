@@ -84,6 +84,8 @@ public void attributeReplaced(HttpSessionBindingEvent sbe) {
 
 ![](attachments/Pasted%20image%2020230314181855.png)
 
-这里有一个不一样的函数方法`fireRequestInitEvent`,
+这里有一个不一样的函数方法`fireRequestInitEvent`,方法向后跟的话就做了一堆的安全检查
+
+![](attachments/Pasted%20image%2020230314184300.png)
 
 
