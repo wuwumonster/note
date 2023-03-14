@@ -73,6 +73,15 @@ public void attributeReplaced(HttpSessionBindingEvent sbe) {
 ```
 
 当然这里缺少了对于Listener内存马来说最为，适用的方法，就是上面的listener中的两个方法`requestInitialized`和`requestDestroyed`
-当访问
+当访问页面的时候触发
 
-### 配置文件的读取
+先前看这个方法的接口
+
+![](attachments/Pasted%20image%2020230314181322.png)
+
+### Listener的执行
+先在执行的Listener中下个断点调试，看的出来后面的一系列invoke都是前面分析过的很熟悉的流程
+
+![](attachments/Pasted%20image%2020230314181855.png)
+
+
