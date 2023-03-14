@@ -156,6 +156,14 @@
               "type": "RSS_FEED",
               "state": {}
             }
+          },
+          {
+            "id": "3071e2bae51866d5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ]
       },
