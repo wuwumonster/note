@@ -88,4 +88,100 @@ public void attributeReplaced(HttpSessionBindingEvent sbe) {
 
 ![](attachments/Pasted%20image%2020230314184300.png)
 
+但是在*StandardContext*这里调用了`requestInitialized`
+
+![](attachments/Pasted%20image%2020230314185744.png)
+
+而这个listener是来自`getApplicationEventListeners()`这个方法
+
+![](attachments/Pasted%20image%2020230314190030.png)
+
+接着往上找
+
+![](attachments/Pasted%20image%2020230314190130.png)
+
+![](attachments/Pasted%20image%2020230314190148.png)
+
+![](attachments/Pasted%20image%2020230314190251.png)
+
+![](attachments/Pasted%20image%2020230314190347.png)
+
+最后发现这个`CopyOnWriteArrayList()`也只是做一个数组，那么应该是中间对==applicationEventListenersList==做了处理，还是在源文件搜索，发现这是应该放listener的地方
+
+![](attachments/Pasted%20image%2020230314190645.png)
+
+去找这两个函数的用法
+
+![](attachments/Pasted%20image%2020230314191003.png)
+
+![](attachments/Pasted%20image%2020230314191017.png)
+
+逐层向上找，源头是在`findApplicationListeners()`
+
+![](attachments/Pasted%20image%2020230314191100.png)
+
+![](attachments/Pasted%20image%2020230314191336.png)
+发现这里有确切的值
+
+![](attachments/Pasted%20image%2020230314191239.png)
+
+向下找到`addApplicationListener`这个方法
+
+![](attachments/Pasted%20image%2020230314191449.png)
+
+找它的用法，在`ContextConfig#configureContext(WebXml webxml)`,看名字其实就可以做一些推测应该是去读取web.xml的配置来对Listerer来进行注册的
+
+在这个里面可以看到前面[Tomcat内存马——Filter](Tomcat内存马——Filter.md)的一些熟悉的函数
+
+![](attachments/Pasted%20image%2020230314192050.png)
+
+这个是对listener的使用
+
+![](attachments/Pasted%20image%2020230314192153.png)
+
+理解了前面对listener的读取再向后去看后面对Listener的调用（其实这个时候已经可以发现`fireRequestInitEvent`这个函数是中间的衔接点）
+
+```java
+public boolean fireRequestInitEvent(ServletRequest request) {  
+  
+    Object instances[] = getApplicationEventListeners();  
+  
+    if ((instances != null) && (instances.length > 0)) {  
+  
+        ServletRequestEvent event = new ServletRequestEvent(getServletContext(), request);  
+  
+        for (Object instance : instances) {  
+            if (instance == null) {  
+                continue;  
+            }  
+            if (!(instance instanceof ServletRequestListener)) {  
+                continue;  
+            }  
+            ServletRequestListener listener = (ServletRequestListener) instance;  
+  
+            try {  
+                listener.requestInitialized(event);  
+            } catch (Throwable t) {  
+                ExceptionUtils.handleThrowable(t);  
+                getLogger().error(  
+                        sm.getString("standardContext.requestListener.requestInit", instance.getClass().getName()),  
+                        t);  
+                request.setAttribute(RequestDispatcher.ERROR_EXCEPTION, t);  
+                return false;            }  
+        }  
+    }  
+    return true;  
+}
+```
+
+现在看之前说的眼熟的invoke，在StandardHostValve这里，依旧是以request的方式来获取context
+
+![](attachments/Pasted%20image%2020230314193408.png)
+
+到目前为止我们已经知道了整个执行的流程，可以去完成一个内存马的编写了
+
+## 内存马的编写
+我们的恶意代码应该写在`requestInitialized`中来执行
+这里的恶意类
+
 
