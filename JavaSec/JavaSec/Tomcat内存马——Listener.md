@@ -84,4 +84,6 @@ public void attributeReplaced(HttpSessionBindingEvent sbe) {
 
 ![](attachments/Pasted%20image%2020230314181855.png)
 
+这里有一个不一样的函数方法`fireRequestInitEvent`,
+
 
