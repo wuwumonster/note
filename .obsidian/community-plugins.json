@@ -12,5 +12,6 @@
   "obsidian-pandoc",
   "templater-obsidian",
   "quickadd",
-  "obsidian-git"
+  "obsidian-git",
+  "rss-reader"
 ]
