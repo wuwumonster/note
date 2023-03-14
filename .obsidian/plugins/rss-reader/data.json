@@ -6,7 +6,61 @@
       "folder": "CTF竞赛"
     }
   ],
+  "read": {
+    "items": [
+      {
+        "title": "NaSCon'23 CTF",
+        "description": "\nName: NaSCon&#39;23 CTF (an <a href=\"/ctf/793\">NaSCon CTF</a> event.)<br/>\nDate: 三月 18, 2023, 4 a.m. &mdash; 18 三月 2023, 12:00 UTC &nbsp;<a href=\"/event/1894.ics\">[add to calendar]</a><br/>\nFormat: Jeopardy<br/>\n<b>On-site</b><br/>\nLocation: <a href=\"http://maps.yandex.com/?text=FAST%20NUCES%20Islamabad\">FAST NUCES Islamabad</a><br/>\nOffical URL: <a href=\"http://www.csl-ctf.live/\" rel=\"nofollow\">http://www.csl-ctf.live/</a><br/>\nRating weight: 0.00<br/>\n\nEvent organizers: \n\n<a href=\"/team/166402\">Infinity brains</a> \n\n\n",
+        "content": "\nName: NaSCon&#39;23 CTF (an <a href=\"/ctf/793\">NaSCon CTF</a> event.)<br/>\nDate: 三月 18, 2023, 4 a.m. &mdash; 18 三月 2023, 12:00 UTC &nbsp;<a href=\"/event/1894.ics\">[add to calendar]</a><br/>\nFormat: Jeopardy<br/>\n<b>On-site</b><br/>\nLocation: <a href=\"http://maps.yandex.com/?text=FAST%20NUCES%20Islamabad\">FAST NUCES Islamabad</a><br/>\nOffical URL: <a href=\"http://www.csl-ctf.live/\" rel=\"nofollow\">http://www.csl-ctf.live/</a><br/>\nRating weight: 0.00<br/>\n\nEvent organizers: \n\n<a href=\"/team/166402\">Infinity brains</a> \n\n\n",
+        "category": "",
+        "link": "https://ctftime.org/event/1894",
+        "creator": "",
+        "pubDate": "",
+        "folder": "CTF竞赛",
+        "feed": "CTFtime"
+      },
+      {
+        "title": "WolvCTF 2023",
+        "description": "\nName: WolvCTF 2023 (an <a href=\"/ctf/766\">WolvCTF</a> event.)<br/>\nDate: 三月 17, 2023, 8 p.m. &mdash; 19 三月 2023, 20:00 UTC &nbsp;<a href=\"/event/1866.ics\">[add to calendar]</a><br/>\nFormat: Jeopardy<br/>\n<b>On-line</b><br/>\n\nOffical URL: <a href=\"https://wolvctf.io/\" rel=\"nofollow\">https://wolvctf.io/</a><br/>\nRating weight: 24.33<br/>\n\nEvent organizers: \n\n<a href=\"/team/83621\">w01verines</a> \n\n\n",
+        "content": "\nName: WolvCTF 2023 (an <a href=\"/ctf/766\">WolvCTF</a> event.)<br/>\nDate: 三月 17, 2023, 8 p.m. &mdash; 19 三月 2023, 20:00 UTC &nbsp;<a href=\"/event/1866.ics\">[add to calendar]</a><br/>\nFormat: Jeopardy<br/>\n<b>On-line</b><br/>\n\nOffical URL: <a href=\"https://wolvctf.io/\" rel=\"nofollow\">https://wolvctf.io/</a><br/>\nRating weight: 24.33<br/>\n\nEvent organizers: \n\n<a href=\"/team/83621\">w01verines</a> \n\n\n",
+        "category": "",
+        "link": "https://ctftime.org/event/1866",
+        "creator": "",
+        "pubDate": "",
+        "folder": "CTF竞赛",
+        "feed": "CTFtime"
+      },
+      {
+        "title": "vikeCTF 2023",
+        "description": "\nName: vikeCTF 2023 (an <a href=\"/ctf/888\">vikeCTF</a> event.)<br/>\nDate: 三月 17, 2023, 4 p.m. &mdash; 19 三月 2023, 16:00 UTC &nbsp;<a href=\"/event/1884.ics\">[add to calendar]</a><br/>\nFormat: Jeopardy<br/>\n<b>On-line</b><br/>\n\nOffical URL: <a href=\"https://ctf.vikesec.ca/\" rel=\"nofollow\">https://ctf.vikesec.ca/</a><br/>\nRating weight: 0.00<br/>\n\nEvent organizers: \n\n<a href=\"/team/178288\">PencilTesters</a> \n\n\n",
+        "content": "\nName: vikeCTF 2023 (an <a href=\"/ctf/888\">vikeCTF</a> event.)<br/>\nDate: 三月 17, 2023, 4 p.m. &mdash; 19 三月 2023, 16:00 UTC &nbsp;<a href=\"/event/1884.ics\">[add to calendar]</a><br/>\nFormat: Jeopardy<br/>\n<b>On-line</b><br/>\n\nOffical URL: <a href=\"https://ctf.vikesec.ca/\" rel=\"nofollow\">https://ctf.vikesec.ca/</a><br/>\nRating weight: 0.00<br/>\n\nEvent organizers: \n\n<a href=\"/team/178288\">PencilTesters</a> \n\n\n",
+        "category": "",
+        "link": "https://ctftime.org/event/1884",
+        "creator": "",
+        "pubDate": "",
+        "folder": "CTF竞赛",
+        "feed": "CTFtime"
+      },
+      {
+        "title": "OmWars CTF 2023 Final",
+        "description": "\nName: OmWars CTF 2023 Final (an <a href=\"/ctf/896\">OmWars CTF</a> event.)<br/>\nDate: 三月 19, 2023, 6 a.m. &mdash; 19 三月 2023, 14:00 UTC &nbsp;<a href=\"/event/1902.ics\">[add to calendar]</a><br/>\nFormat: Attack-Defense<br/>\n<b>On-line</b><br/>\n\nOffical URL: <a href=\"https://omwars.org/\" rel=\"nofollow\">https://omwars.org/</a><br/>\nRating weight: 0.00<br/>\n\nEvent organizers: \n\n<a href=\"/team/212482\">Omsk_Hackers</a> \n\n\n",
+        "content": "\nName: OmWars CTF 2023 Final (an <a href=\"/ctf/896\">OmWars CTF</a> event.)<br/>\nDate: 三月 19, 2023, 6 a.m. &mdash; 19 三月 2023, 14:00 UTC &nbsp;<a href=\"/event/1902.ics\">[add to calendar]</a><br/>\nFormat: Attack-Defense<br/>\n<b>On-line</b><br/>\n\nOffical URL: <a href=\"https://omwars.org/\" rel=\"nofollow\">https://omwars.org/</a><br/>\nRating weight: 0.00<br/>\n\nEvent organizers: \n\n<a href=\"/team/212482\">Omsk_Hackers</a> \n\n\n",
+        "category": "",
+        "link": "https://ctftime.org/event/1902",
+        "creator": "",
+        "pubDate": "",
+        "folder": "CTF竞赛",
+        "feed": "CTFtime"
+      }
+    ]
+  },
+  "favorites": {
+    "items": []
+  },
   "updateTime": 60,
+  "saveLocation": "default",
+  "saveLocationFolder": "",
+  "template": "---\nlink: {{link}}\nauthor: {{author}}\npublished: {{published}}\ntags: [{{tags:,}}]\n---\n# Highlights\n{{highlights}}\n\n---\n# {{title}}\n{{content}}",
   "filtered": [
     {
       "name": "Favorites",
@@ -22,9 +76,7 @@
       "sortOrder": "ALPHABET_NORMAL"
     }
   ],
-  "saveLocation": "default",
   "displayStyle": "cards",
-  "saveLocationFolder": "",
   "items": [
     {
       "title": "CTFtime.org: upcoming CTF events",
@@ -1471,7 +1523,6 @@
     }
   ],
   "dateFormat": "YYYY-MM-DDTHH:mm:SS",
-  "template": "---\nlink: {{link}}\nauthor: {{author}}\npublished: {{published}}\ntags: [{{tags:,}}]\n---\n# Highlights\n{{highlights}}\n\n---\n# {{title}}\n{{content}}",
   "pasteTemplate": "## {{title}}\n{{content}}",
   "askForFilename": true,
   "defaultFilename": "{{title}}",
