@@ -217,8 +217,15 @@ StandardContext context = (StandardContext) req.getContext();
 ListenerShell listenerShell = new ListenerShell();  
 context.addApplicationEventListener(listenerShell);
 ```
+完整的结合起来
 
- Drun1baby师傅的写法，为什么不zha
+```jsp
+
+```
+
+
+
+ Drun1baby师傅的写法，为什么不通找机会研究一下
  
 ```jsp
 <%@ page import="org.apache.catalina.core.StandardContext" %>  
@@ -286,4 +293,12 @@ context.addApplicationEventListener(listenerShell);
 
 
 ## 总结&踩坑
-在写jsp的马的时候需要完成从创建到销毁整个过程，否则是无法完成所接入的类的
+
+在写jsp的马的时候需要完成从创建到销毁整个过程，否则是无法完成所继承的类的
+Listtener型的内存马与Filter型的相比是要简单一些的或者是所使用的方法少于Filter型
+
+## 参考文章
+
+[Java内存马系列-04-Tomcat 之 Listener 型内存马 | 芜风 (drun1baby.top)](https://drun1baby.top/2022/08/27/Java%E5%86%85%E5%AD%98%E9%A9%AC%E7%B3%BB%E5%88%97-04-Tomcat-%E4%B9%8B-Listener-%E5%9E%8B%E5%86%85%E5%AD%98%E9%A9%AC/#toc-heading-6)
+
+[Tomcat 内存马（一）Listener型 - Atomovo - 博客园 (cnblogs.com)](https://www.cnblogs.com/yyhuni/p/15512792.html#%E4%BA%8Clistener%E5%86%85%E5%AD%98%E9%A9%AC)
