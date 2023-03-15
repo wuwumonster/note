@@ -16,3 +16,8 @@ Windows NT 10.0
 3474
 
 ![](attachments/Pasted%20image%2020230315095129.png)
+
+- 操作者的IRCnikename
+k3anu
+
+![](attachments/Pasted%20image%2020230315100808.png)
