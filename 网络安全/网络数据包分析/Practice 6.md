@@ -68,13 +68,24 @@ fozzie
 ![](attachments/Pasted%20image%2020230315115602.png)
 
 - What IP and port does the executable connect to? ip:port
+- 
+![](attachments/Pasted%20image%2020230315142327.png)
+103.131.112.255 1234
 - What was used to compile the malicious executable?
+winscp
+连接了21端口
+![](attachments/Pasted%20image%2020230315142749.png)
 - What executable did K3anu likely use to download files from the remote server? (exactly as written in source material)
 - What is the host system’s exact BIOS version?
 - What is the filename of the first file taken from K3anu’s computer?
+trueidentity.zip
 - What is the filename of the second file taken from K3anu’s computer?
+trueidpwhelp.zip
 - What utility was used to steal the files from K3anu’s computer?
+ncat
+![](attachments/Pasted%20image%2020230315143048.png)
 - What destination port was used to steal the files from K3anu’s computer?
+123 5
 - What is the password to decrypt the file stolen from K3anu’s computer? (lowercase)
 - What is K3anu’s real identity?
 - The hacker left a message for law enforcement on K3anu’s system, what was it? (message only)
