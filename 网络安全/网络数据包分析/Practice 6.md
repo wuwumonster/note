@@ -64,6 +64,8 @@ fozzie
 - How many total rows of “fullz” are represented in the file?
 13377
 - How many people in the fullz are named Joshua, have a MasterCard, and use an OS X system?
+11
+![](attachments/Pasted%20image%2020230315115602.png)
 
 - What IP and port does the executable connect to? ip:port
 - What was used to compile the malicious executable?
