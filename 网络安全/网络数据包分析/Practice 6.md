@@ -87,5 +87,16 @@ ncat
 - What destination port was used to steal the files from K3anu’s computer?
 123 5
 - What is the password to decrypt the file stolen from K3anu’s computer? (lowercase)
+molder
 - What is K3anu’s real identity?
+
+![](attachments/Pasted%20image%2020230315144907.png)
 - The hacker left a message for law enforcement on K3anu’s system, what was it? (message only)
+
+![](attachments/Pasted%20image%2020230315144335.png)
+yeah good luck finding this guy cops, great job picking an informant.. real winner with his grilled cheese
+
+
+![](attachments/Pasted%20image%2020230315144821.png)
+
+![](attachments/Pasted%20image%2020230315144827.png)
