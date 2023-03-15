@@ -8,9 +8,6 @@ That package was the last you heard from K3anu.
 ![](attachments/Pasted%20image%2020230315101949.png)
 
 - · What is the hostname of the system the PCAP was recovered from? (all caps)
-
-
-- 收集数据包的主机名
 NBNS包中找注册
 
 ![](attachments/Pasted%20image%2020230315102326.png)
@@ -43,8 +40,35 @@ key =0a
 
 - How did K3anu get access to the file? (lowercase, just protocol)
 
+FTP
 
 - 操作者的IRC nikename
 k3anu
 
 ![](attachments/Pasted%20image%2020230315100808.png)
+
+- What is the 1st operation needed to decode the IRC users “secure” comms? (just the format name)
+base64
+
+- What is the 2nd operation needed to decode the IRC users “secure” comms? (just the format name)
+ROT13
+
+- What is the 3rd operation needed to decode the IRC users “secure” comms? (just the format name)
+HEX
+- What is the 4th and final operation needed to decode the IRC users “secure” comms? (2 words lowercase)
+morse code
+
+- What is the password to decrypt the zip file that was downloaded by K3anu?
+- How many total rows of “fullz” are represented in the file?
+- How many people in the fullz are named Joshua, have a MasterCard, and use an OS X system?
+- What IP and port does the executable connect to? ip:port
+- What was used to compile the malicious executable?
+- What executable did K3anu likely use to download files from the remote server? (exactly as written in source material)
+- What is the host system’s exact BIOS version?
+- What is the filename of the first file taken from K3anu’s computer?
+- What is the filename of the second file taken from K3anu’s computer?
+- What utility was used to steal the files from K3anu’s computer?
+- What destination port was used to steal the files from K3anu’s computer?
+- What is the password to decrypt the file stolen from K3anu’s computer? (lowercase)
+- What is K3anu’s real identity?
+- The hacker left a message for law enforcement on K3anu’s system, what was it? (message only)
