@@ -59,6 +59,7 @@ HEX
 morse code
 
 - What is the password to decrypt the zip file that was downloaded by K3anu?
+
 - How many total rows of “fullz” are represented in the file?
 - How many people in the fullz are named Joshua, have a MasterCard, and use an OS X system?
 - What IP and port does the executable connect to? ip:port
