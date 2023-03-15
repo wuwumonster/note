@@ -59,9 +59,12 @@ HEX
 morse code
 
 - What is the password to decrypt the zip file that was downloaded by K3anu?
-
+爆破
+fozzie
 - How many total rows of “fullz” are represented in the file?
+13377
 - How many people in the fullz are named Joshua, have a MasterCard, and use an OS X system?
+
 - What IP and port does the executable connect to? ip:port
 - What was used to compile the malicious executable?
 - What executable did K3anu likely use to download files from the remote server? (exactly as written in source material)
