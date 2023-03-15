@@ -2,7 +2,7 @@
 
 ![](attachments/Pasted%20image%2020230315151437.png)
 
-先看invoke前的流程
+### Servlet执行流程
 还是获取context环境
 
 ![](attachments/Pasted%20image%2020230315154144.png)
@@ -52,6 +52,26 @@ private synchronized void initServlet(Servlet servlet) throws ServletException {
 }
 ```
 
-在同一个类里面`loadServlet`调用了`initServlet`,还有Servlet值得传输
+在同一个类里面`loadServlet`调用了`initServlet`,还有Servlet值的传输
 
 ![](attachments/Pasted%20image%2020230315160415.png)
+
+同样`allocate`方法，做了`loadServlet`的调用
+
+![](attachments/Pasted%20image%2020230315164708.png)
+
+`StandardWrapperValve#invoke`调用allocate
+
+![](attachments/Pasted%20image%2020230315164833.png)
+
+wrapper向上找赋值 
+
+![](attachments/Pasted%20image%2020230315165022.png)
+
+再去找这个invoke的调用的话，就是StandardContextValve
+
+![](attachments/Pasted%20image%2020230315165732.png)
+
+这里就已经可以看到请求的信息了
+
+![](attachments/Pasted%20image%2020230315165749.png)
