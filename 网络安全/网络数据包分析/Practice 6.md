@@ -72,7 +72,7 @@ fozzie
 ![](attachments/Pasted%20image%2020230315115602.png)
 
 - What IP and port does the executable connect to? ip:port
-- 
+
 ![](attachments/Pasted%20image%2020230315142327.png)
 103.131.112.255 1234
 - What was used to compile the malicious executable?
