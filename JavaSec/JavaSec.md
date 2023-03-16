@@ -40,6 +40,6 @@ j# JavaSec
 
 [Tomcat](JavaSec/Tomcat.md)
 
-[CC链](JavaSec/CC链.md)
+[CC链](JavaSec/CC链/CC链.md)
 
 [ROME链](JavaSec/ROME链.md)
