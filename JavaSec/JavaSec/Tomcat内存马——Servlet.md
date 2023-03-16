@@ -80,15 +80,12 @@ wrapper向上找赋值
 
 ![](attachments/Pasted%20image%2020230316151505.png)
 
-getWrapper的声明和用例
+这里是一长串的invoke的传递、源头是在`CoyoteAdapter#service`
 
-![](attachments/Pasted%20image%2020230316151633.png)
-
-
+![](attachments/Pasted%20image%2020230316185312.png)
 
 
-
-
+这一长串的invoke实质上是对http请求的处理
 ###  Servlet的注册
 在之前的[Java Web基础](../../Java%20Web/Java%20Web基础.md)中有说到过，Servlet是在首次对其进行访问时，检测是否存在该Servlet没有的话就会执行init开始初始化，现在我使用的是注解的方式来完成Servlet的注册的
 在上面的执行流程中，最后一个invoke，在调用allocate前，servlet的值还是null，那么我们就到invoke后面去仔细看看
