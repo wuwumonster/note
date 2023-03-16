@@ -91,4 +91,13 @@ wrapper向上找赋值
 在之前的[Java Web基础](../../Java%20Web/Java%20Web基础.md)中有说到过，Servlet是在首次对其进行访问时，检测是否存在该Servlet没有的话就会执行init开始初始化，现在我使用的是注解的方式来完成Servlet的注册的
 在上面的执行流程中，最后一个invoke，在调用allocate前，servlet的值还是null，那么我们就到invoke后面去仔细看看
 
-![](attachments/Pasted%20image%2020230316191632.png)
+从loadServlet中传给initServlet的servlet向上找
+
+![](attachments/Pasted%20image%2020230316194134.png)
+
+找给他赋值的servletClass，找到了setServletClass这个方法，看意思是判断是不是JSP的Servlet
+
+![](attachments/Pasted%20image%2020230316194504.png)
+
+
+但是在这里既找不到setServletClass这个方法的使用，也找不到相关的参数使用，
