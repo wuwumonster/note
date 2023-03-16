@@ -1,5 +1,3 @@
-# CC链
-
 ## CC1-TransformedMap-commons.collections 3.2.1\<JDK8u71
 
 ### 代码
@@ -132,7 +130,7 @@ Object instance = ctor.newInstance(Target.class, outerMap);
 > 1、构造一个TemplatesImpl的恶意类转为字节码，然后反射注入到TemplatesImpl对象的_bytecodes属性
 2、创建一个InvokerTransformer并传递一个newTransformer方法，然后将InvokerTransformer方法名传递给TransformeringComparator
 3、通过反射构造PriorityQueue队列的comparator和queue两个字段，将PriorityQueue队列的comparator字段设置为TransformingComparator，然后将queue字段设置为TemplatesImpl对象，触发利用链
-> 
+
 
 ```java
 package org.cc.cc1;
