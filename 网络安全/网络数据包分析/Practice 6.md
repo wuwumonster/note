@@ -7,7 +7,7 @@ That package was the last you heard from K3anu.
 
 ![](attachments/Pasted%20image%2020230315101949.png)
 
-- · What is the hostname of the system the PCAP was recovered from? (all caps)
+- What is the hostname of the system the PCAP was recovered from? (all caps)
 NBNS包中找注册
 
 ![](attachments/Pasted%20image%2020230315102326.png)
