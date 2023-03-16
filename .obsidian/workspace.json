@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md",
+                "file": "JavaSec/JavaSec/CodeQL食用指北/CodeQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md"
+                "file": "JavaSec/JavaSec/CodeQL食用指北/CodeQL.md"
               }
             }
           },
@@ -145,7 +145,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md",
+                "file": "JavaSec/JavaSec/CodeQL食用指北/CodeQL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -211,7 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md",
+                "file": "JavaSec/JavaSec/CodeQL食用指北/CodeQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +228,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md",
+                "file": "JavaSec/JavaSec/CodeQL食用指北/CodeQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,10 +266,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0f090c071f4a8752",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
-    "JavaSec/JavaSec/CC链.md",
+    "JavaSec/JavaSec/CodeQL食用指北",
     "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md",
+    "JavaSec/JavaSec/CC链.md",
     "JavaSec/JavaSec/Tomcat——Servlet内存马.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230315165749.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230315165732.png",
@@ -313,7 +314,6 @@
     "Web/PHPTrike/PHP伪协议.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "网络安全/内网渗透/靶场/Vulnstack/Vulunstack01.md",
-    "Web/Bypass/Bypass基操.md",
     "网络安全/内网渗透/靶场/wsc/attachments"
   ]
 }

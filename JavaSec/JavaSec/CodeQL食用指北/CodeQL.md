@@ -12,7 +12,7 @@ https://github.com/github/codeql-cli-binaries/releases
 ```txt
 codeql
 |-codeql
-|_ql
+|-ql
 ```
 
 ## VsCode插件安装&配置
