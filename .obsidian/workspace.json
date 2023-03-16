@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/CC链/CC链.md",
+                "file": "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/CC链/CC链.md"
+                "file": "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md"
               }
             }
           },
@@ -109,7 +109,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/CC链/CC链.md",
+                "file": "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/CC链/CC链.md",
+                "file": "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/CC链/CC链.md",
+                "file": "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -232,8 +232,11 @@
   },
   "active": "0f090c071f4a8752",
   "lastOpenFiles": [
-    "JavaSec/JavaSec/CC链/CC1.md",
+    "网络安全/网络运维/防火墙/CISCO ASA防火墙.md",
+    "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
     "JavaSec/JavaSec/CC链/CC链.md",
+    "网络安全/网络运维/防火墙",
+    "JavaSec/JavaSec/CC链/CC1.md",
     "JavaSec/JavaSec/CC链",
     "网络安全/网络数据包分析/Practice 6.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
@@ -241,7 +244,6 @@
     "网络安全/应急响应/情景练习/Practice 4.md",
     "JavaSec/JavaSec/CodeQL食用指北/CodeQL.md",
     "JavaSec/JavaSec/CodeQL食用指北",
-    "网络安全/网络运维/安全加固/Firewall-cmd 使用指北.md",
     "JavaSec/JavaSec/Tomcat——Servlet内存马.md",
     "JavaSec/JavaSec/attachments/Pasted image 20230315165749.png",
     "JavaSec/JavaSec/attachments/Pasted image 20230315165732.png",
@@ -275,9 +277,7 @@
     "网络安全/实战渗透/CTFShow/attachments",
     "网络安全/实战渗透/CTFShow",
     "网络安全/实战渗透",
-    "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/数据包附件/Practice5.pcap",
-    "网络安全/网络数据包分析/数据包附件/未确认 94836.crdownload",
-    "网络安全/网络数据包分析/数据包附件"
+    "网络安全/网络数据包分析/数据包附件/未确认 94836.crdownload"
   ]
 }
