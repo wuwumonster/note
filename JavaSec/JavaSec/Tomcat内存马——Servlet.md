@@ -76,13 +76,17 @@ wrapper向上找赋值
 
 ![](attachments/Pasted%20image%2020230315165749.png)
 
-在这里可以发现吗，wraspper拿到了我们的Servlert的类
+在这里可以发现，wrapper拿到了我们的Servlert的类
 
 ![](attachments/Pasted%20image%2020230316151505.png)
 
 getWrapper的声明和用例
 
 ![](attachments/Pasted%20image%2020230316151633.png)
+
+
+
+
 
 
 ###  Servlet的注册
