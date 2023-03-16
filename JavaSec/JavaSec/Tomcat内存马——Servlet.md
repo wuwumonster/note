@@ -75,3 +75,7 @@ wrapper向上找赋值
 这里就已经可以看到请求的信息了
 
 ![](attachments/Pasted%20image%2020230315165749.png)
+
+
+###  Servlet的注册
+在之前的[Java Web基础](../../Java%20Web/Java%20Web基础.md)中有说到过，Servlet是在首次对其进行访问时，检测是否存在该Servlet没有的话就会执行init开始初始化，现在我使用的是注解的方式来完成Servlet的注册的
