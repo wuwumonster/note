@@ -12,6 +12,10 @@ NBNS包中找注册
 
 ![](attachments/Pasted%20image%2020230315102326.png)
 
+DHCP也可以找到
+
+![](attachments/Pasted%20image%2020230316154655.png)
+
 - What exact version of browser did K3anu use? (exact number only)
 63.0.3239.84
 
