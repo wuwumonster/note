@@ -80,7 +80,7 @@ winscp
 连接了21端口
 ![](attachments/Pasted%20image%2020230315142749.png)
 - What executable did K3anu likely use to download files from the remote server? (exactly as written in source material)
-- What is the host system’s exact BIOS version?
+
 - What is the filename of the first file taken from K3anu’s computer?
 trueidentity.zip
 - What is the filename of the second file taken from K3anu’s computer?
