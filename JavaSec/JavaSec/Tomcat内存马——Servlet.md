@@ -170,6 +170,9 @@ webConfig这里向下运行就，进入configureContext
 
 ![](attachments/Pasted%20image%2020230317120557.png)
 
+ServletDef里面遍历出来
+
+![](attachments/Pasted%20image%2020230317121536.png)
 
 在1307行这里获取到了我们的Servlet
 
