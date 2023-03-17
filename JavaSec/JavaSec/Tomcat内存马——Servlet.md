@@ -145,3 +145,25 @@ wrapper向上找赋值
 ![](attachments/Pasted%20image%2020230317102530.png)
 
 ![](attachments/Pasted%20image%2020230317104450.png)
+
+webConfig这里向下运行就，进入configureContext
+
+![](attachments/Pasted%20image%2020230317105245.png)
+
+然后就是对filter的读取，添加，再向下就是对Servlet的get，虽然这里为null，但是还是创建了Wrapper
+
+![](attachments/Pasted%20image%2020230317105602.png)
+
+后面还有对Wapper的处理，但是这个时候servlet还是只有默认的
+
+![](attachments/Pasted%20image%2020230317105841.png)
+
+下面的addChild将Wapper装载到了context中
+
+![](attachments/Pasted%20image%2020230317110014.png)
+
+在1307行这里获取到了我们的Servlet
+
+![](attachments/Pasted%20image%2020230317110243.png)
+
+![](attachments/Pasted%20image%2020230317110303.png)
