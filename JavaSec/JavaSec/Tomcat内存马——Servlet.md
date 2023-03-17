@@ -95,9 +95,51 @@ wrapper向上找赋值
 
 ![](attachments/Pasted%20image%2020230316194134.png)
 
-找给他赋值的servletClass，找到了setServletClass这个方法，看意思是判断是不是JSP的Servlet
+找给他赋值的servletClass，找到了setServletClass这个方法，看意思有判断是不是JSP的Servlet
 
 ![](attachments/Pasted%20image%2020230316194504.png)
 
 
-但是在这里既找不到setServletClass这个方法的使用，也找不到相关的参数使用，但是在这个时候，已经有Servlet的相关值了，这里应该是waper的值已经被设置好了
+在这里找用法
+
+![](attachments/Pasted%20image%2020230317093919.png)
+
+这个configureContext在之前的调试中遇到过，就是在web.xml中读配置的，而且从包名来说下面的也更像是初始化时使用的，这里先看ContextConfig
+
+![](attachments/Pasted%20image%2020230317094714.png)
+
+进getServletClass()，`ServletDef#getServletClass`
+
+![](attachments/Pasted%20image%2020230317094835.png)
+
+查找了一下这个servletClass的用法
+
+![](attachments/Pasted%20image%2020230317095132.png)
+
+上面的是JSP的，那么只能是下面的`processAnnotationWebServlet`,这个函数中有对web.xml的判断，基本上就是对注释的方式来注册Servlet的实现，继续往下翻filter之类的也都有这样通过注释的方法的注册
+
+![](attachments/Pasted%20image%2020230317095442.png)
+
+而按照原来的xml的话在1282行这里是有注册的
+
+![](attachments/Pasted%20image%2020230317100610.png)
+
+在这个位置小小的下了一个断点
+
+![](attachments/Pasted%20image%2020230317100906.png)
+
+不需要访问直接调试就会有断在这里，在这里setServerletDef，同时将==isWebXMLservletDef==设置为false这样的话应该web.xml就不会起效
+
+![](attachments/Pasted%20image%2020230317101102.png)
+
+在下面各种添加东西，最后在下面判断然后addServlet
+
+![](attachments/Pasted%20image%2020230317101651.png)
+
+![](attachments/Pasted%20image%2020230317101832.png)
+
+![](attachments/Pasted%20image%2020230317102019.png)
+
+到下面又是设置standardcontext之类
+
+![](attachments/Pasted%20image%2020230317102530.png)
