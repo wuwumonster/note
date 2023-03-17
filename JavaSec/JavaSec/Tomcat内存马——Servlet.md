@@ -100,4 +100,4 @@ wrapper向上找赋值
 ![](attachments/Pasted%20image%2020230316194504.png)
 
 
-但是在这里既找不到setServletClass这个方法的使用，也找不到相关的参数使用，但是在这个时候，已经有Servlet的相关值了，直接开晕，
+但是在这里既找不到setServletClass这个方法的使用，也找不到相关的参数使用，但是在这个时候，已经有Servlet的相关值了，这里应该是waper的值已经被设置好了
