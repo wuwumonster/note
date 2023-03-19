@@ -184,8 +184,12 @@ ServletDef里面遍历出来
 
 ![](attachments/Pasted%20image%2020230319142210.png)
 
-到这里得话其实整个过程都看得差不多了，但是很乱，因为原本得目的带着一些想看看注释类型得webservlet是怎么注册的，所以直接拿web.xml从请求那里，跟了一次
 
+### web.xml再调试
+到这里得话其实整个过程都看得差不多了，但是很乱，因为原本得目的带着一些想看看注释类型得webservlet是怎么注册的，所以直接拿web.xml从请求那里，跟了一次，关键步骤就那么几个
+直接跟到ContextConfig,获取Context
+
+![](attachments/Pasted%20image%2020230319152220.png)
 
 
 ## 内存马的编写
@@ -198,3 +202,4 @@ ServletDef里面遍历出来
 - addChild将StandardWrapper放到StandardContext中
 - 为Servlet添加路径映射
 
+### shell.jsp
