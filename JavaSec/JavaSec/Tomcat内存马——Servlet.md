@@ -186,3 +186,15 @@ ServletDef里面遍历出来
 
 到这里得话其实整个过程都看得差不多了，但是很乱，因为原本得目的带着一些想看看注释类型得webservlet是怎么注册的，所以直接拿web.xml从请求那里，跟了一次
 
+
+
+## 内存马的编写
+
+### 基本流程
+- 编写一个恶意的servlet
+- 获取stansardcontext
+- 穿甲一个stansardwrapper
+- 将恶意的SSServlet放到StandardWrapper中
+- addChild将StandardWrapper放到StandardContext中
+- 为Servlet添加路径映射
+
