@@ -193,7 +193,21 @@ ServletDef里面遍历出来
 
 ![](attachments/Pasted%20image%2020230319154307.png)
 
-进到configureContext中
+进到configureContext中，到wrapper的创建和把Servlet塞进去，前面几个是内置的默认servlet
+
+![](attachments/Pasted%20image%2020230319155110.png)
+
+这里是塞Servlet的关键函数
+- setName
+- setServletClass
+
+![](attachments/Pasted%20image%2020230319155453.png)
+
+addChild和设置映射
+
+![](attachments/Pasted%20image%2020230319155954.png)
+
+到这里就已经完成了一个servlet的注册，我们也只需要这些步骤，就可以实现servlet的注册
 ## 内存马的编写
 
 ### 基本流程
@@ -204,4 +218,5 @@ ServletDef里面遍历出来
 - addChild将StandardWrapper放到StandardContext中
 - 为Servlet添加路径映射
 
-### shell.jsp
+### shellServlet.jsp
+
