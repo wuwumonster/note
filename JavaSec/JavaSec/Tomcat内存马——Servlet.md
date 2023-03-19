@@ -179,3 +179,7 @@ ServletDef里面遍历出来
 ![](attachments/Pasted%20image%2020230317110243.png)
 
 ![](attachments/Pasted%20image%2020230317110303.png)
+
+这里涉及到一个懒加载机制，基本上就是如果有这个值得存在得话，就不需要访问可以在容器加载得时候就加载这个servlet
+
+![](attachments/Pasted%20image%2020230319142210.png)
