@@ -88,8 +88,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -231,8 +230,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d90269f86b76e48c",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "网络安全/网络运维/安全加固/attachments/import.png",
+    "网络安全/网络运维/安全加固/attachments/requests 1.png",
     "网络安全/网络运维/安全加固/attachments/requests.png",
     "网络安全/网络运维/安全加固/attachments/certsrv.png",
     "网络安全/网络运维/安全加固/attachments/Pasted image 20230321093901.png",
@@ -247,8 +248,6 @@
     "网络安全/网络运维/防火墙/attachments/Untitled 33.png",
     "网络安全/网络运维/防火墙/attachments/Untitled 32.png",
     "网络安全/网络运维/防火墙/attachments/Untitled 31.png",
-    "网络安全/网络运维/防火墙/attachments/Untitled.png",
-    "网络安全/网络运维/防火墙/attachments/Untitled 9.png",
     "网络安全/网络运维/防火墙/attachments",
     "网络安全/网络运维/未命名.md",
     "JavaSec/JavaSec/Tomcat内存马——Servlet.md",

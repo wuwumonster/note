@@ -100,16 +100,19 @@ openssl ca -gencrl -out ca.crl
 
 
 ## Windows系统
+这里因为CA在安装的时候就已经生成了一张自签证书
 在Server Certificates中生成证书请求，并导出
 
-
+![](attachments/requests%201.png)
 
 在Windows的certsrv中放入证书的生成请求
 
 ![](attachments/certsrv.png)
 
 
+完成了证书的生成后，再将它导入
 
+![](attachments/import.png)
 ## 参考文章
 
 https://www.cnblogs.com/yunlongaimeng/p/9417276.html
