@@ -6,7 +6,7 @@
 
 ## 网络配置
 
-### **IPSecSite2SiteVPN的搭建方法及注意事项**
+### IPSecSite2SiteVPN的搭建方法及注意事项
 
 #### 基于CA服务器发放证书
 
@@ -55,7 +55,7 @@ http://`<CA>`/certsrv/mscep_admin/
 
 成功
 
-#### **配置IKEv1（预共享密钥）**
+#### 配置IKEv1（预共享密钥）
 
 **开启IKEv1协议**
 
@@ -119,9 +119,9 @@ lifetime 86400
 	4、兴趣流的配置（ACL）
 	5、隧道配置
 	5、map配置
-### IKEv2的IPSec（tunnel隧道&预共享密钥)
+#### IKEv2的IPSec（tunnel隧道&预共享密钥)
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled.png)
+![Untitled](../安全加固/attachments/Untitled.png)
 
 **FW-A**
 
@@ -210,9 +210,9 @@ route ipsec_tunnel_B2A 10.0.31.0 255.255.255.0 10.0.0.1
 
 </aside>
 
-### I******************************KEv2的IPSec（证书）******************************
+#### IKEv2的IPSec（证书）
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%201.png)
+![Untitled](../安全加固/attachments/Untitled%201.png)
 
 ```bash
 # 部署配置ike的端口区域
@@ -253,9 +253,9 @@ interface tunnel 1
 route ipsec_tunnel_A 172.17.1.0 255.255.255.0 10.0.0.2
 ```
 
-### SSLVPN配置
+#### SSLVPN配置
 
-****************************管理口的配置****************************
+**管理口的配置**
 
 - 配置IP，标记端口名称
 
@@ -289,36 +289,36 @@ username <username> password <password> privilege 15
     - 进入第五页，认证方法，AAA服务器我们选择本地，下方的用户数据库，可以看需求添加用户、
     - 入第六页，SAML配置，本页无需过多配置，直接下一步即可
     
-    ![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%202.png)
+    ![Untitled](../安全加固/attachments/Untitled%202.png)
     
-    ![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%203.png)
+    ![Untitled](../安全加固/attachments/Untitled%203.png)
     
     - 进入第七页，客户端IP分配，本页仅需配置IPv4地址池即可，选择IPv4地址池，点击右边按钮新建，按需分配IP地址池，分配完成后点击完成即可
     
-    ![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%204.png)
+    ![Untitled](../安全加固/attachments/Untitled%204.png)
     
     - 进入第八页，网络名称和域名解析，本页可以配置DNS服务器和域名称
     
-    ![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%205.png)
+    ![Untitled](../安全加固/attachments/Untitled%205.png)
     
     - 进入第九页，NAT豁免，如果用到了NAT可以勾选豁免
     - 然后就直接到结束即可
 
-### VPN兴趣流
+#### VPN兴趣流
 
 在完成vpn的隧道的建立后，客户端可以和与其建立连接的防火墙所在网段通信。无法与建立了IPSec通道的其他网段通信。需要在防火墙上建立相关ACL策略
 
 FW3
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%206.png)
+![Untitled](../安全加固/attachments/Untitled%206.png)
 
 FW4
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%207.png)
+![Untitled](../安全加固/attachments/Untitled%207.png)
 
 FW5
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%208.png)
+![Untitled](../安全加固/attachments/Untitled%208.png)
 
 配置完成后仍然是无法和其他网段通信的，需要设置
 
@@ -326,7 +326,7 @@ FW5
 
 即允许端内通信，之所以无法通信其实是因为还是在那个端口上的流量，虽然防火墙为VPN虚拟了网卡，但是还是寄生在原本OUTSIDE上的，与PA上的同一个zone类似。所以需要允许端内通信
 
-### 模拟发包
+#### 模拟发包
 
 packet-tracer input <端口区域> <包类型>
 
@@ -341,19 +341,19 @@ packet-tracer input <端口区域> <包类型>
 - udp
 - vlan-id
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%209.png)
+![Untitled](../安全加固/attachments/Untitled%209.png)
 
 ## NAT
 
 ### 应用场景
 
-### **NAT转换**
+### NAT转换
 
 - object network <Object名称>
     - subnets <需要nat的网段> <需要nat的网段的子网掩码>
     - nat (INSIDE OUTSIDE) dynamic interface
 
-### **NAT豁免**
+### NAT豁免
 
 `nat (inside,outside) source static inside inside destination remote_192.168.99.0 remote_192.168.99.0 no-proxy-arp route-lookup`
 
@@ -368,8 +368,7 @@ packet-tracer input <端口区域> <包类型>
 > 注意：ACL是需要通过access-group来应用到对应接口（zone）的 分为in/out 来区分在这个接口是进入防火墙还是出防火墙
 > 
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%2010.png)
+![Untitled](../安全加固/attachments/Untitled%2010.png)
 
-![Untitled](CISCO%20ASA%E9%98%B2%E7%81%AB%E5%A2%99%206a2ce29487d042f0b2bf3c47fc9d4293/Untitled%2011.png)
+![Untitled](../安全加固/attachments/Untitled%2011.png)
 
-##
