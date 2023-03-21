@@ -57,3 +57,6 @@ dirsearch目录扫描
 
 ![](attachments/Pasted%20image%2020230321162715.png)
 
+结合下面这个mofo=test的报文，应该是对Auth这个Cookie值有检测
+
+![](attachments/Pasted%20image%2020230321163803.png)
