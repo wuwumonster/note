@@ -13,3 +13,15 @@ nmap网络环境扫描
 在contact发现了一个功能点
 
 ![](attachments/Pasted%20image%2020230321104043.png)
+
+dirsearch目录扫描
+
+![](attachments/Pasted%20image%2020230321112141.png)
+
+后台
+
+![](attachments/Pasted%20image%2020230321112408.png)
+
+登录报文
+
+![](attachments/Pasted%20image%2020230321112434.png)
