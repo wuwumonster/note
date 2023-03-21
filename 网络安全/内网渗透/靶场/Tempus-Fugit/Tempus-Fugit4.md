@@ -27,5 +27,7 @@ dirsearch目录扫描
 ![](attachments/Pasted%20image%2020230321112434.png)
 
 这里思考了组件的漏洞和jwt的cookie伪造没有办法
-最后的解决是XSS
+最后的解决是XSS，在这里一个早一些和这个功能联系起来的
+
+![](attachments/Pasted%20image%2020230321152853.png)
 
