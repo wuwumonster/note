@@ -41,7 +41,19 @@ dirsearch目录扫描
 
 ![](attachments/Pasted%20image%2020230321160120.png)
 
-这里用burp来做访问避免影响
+这里用burp来拦截放包避免影响，或者构造这样的传参
 
-![](attachments/Pasted%20image%2020230321160106.png)
+![](attachments/Pasted%20image%2020230321161017.png)
+
+现在下面可以看到大量的请求
+
+![](attachments/Pasted%20image%2020230321161126.png)
+
+会发现有一个访问了shell的cookie，偷过来用，进入shell界面
+
+![](attachments/Pasted%20image%2020230321161707.png)
+
+发现网站还在建设中，用不了，这里唯一有变化的是Auth的值，尝试SSTI发现报Don't think so!应该是waf
+
+![](attachments/Pasted%20image%2020230321162715.png)
 
