@@ -25,3 +25,7 @@ dirsearch目录扫描
 登录报文
 
 ![](attachments/Pasted%20image%2020230321112434.png)
+
+这里思考了组件的漏洞和jwt的cookie伪造没有办法
+最后的解决是XSS
+
