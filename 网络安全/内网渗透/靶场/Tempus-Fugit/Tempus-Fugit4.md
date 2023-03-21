@@ -33,3 +33,15 @@ dirsearch目录扫描
 
 ![](attachments/Pasted%20image%2020230321153920.png)
 
+那这个cookie登录admin
+
+![](attachments/Pasted%20image%2020230321155617.png)
+
+这里去看log，但是很奇怪为什么bot点xss在我这里有反馈，导致没有办法做操作
+
+![](attachments/Pasted%20image%2020230321160120.png)
+
+这里用burp来做访问避免影响
+
+![](attachments/Pasted%20image%2020230321160106.png)
+
