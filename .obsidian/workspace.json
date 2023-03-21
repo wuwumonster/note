@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d90269f86b76e48c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/网络运维/安全加固/CA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Splunk.md"
+                "file": "网络安全/网络运维/安全加固/CA.md"
               }
             }
           },
@@ -75,7 +88,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,7 +110,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Splunk.md",
+                "file": "网络安全/网络运维/安全加固/CA.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -162,7 +176,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Splunk.md",
+                "file": "网络安全/网络运维/安全加固/CA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +193,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Splunk.md",
+                "file": "网络安全/网络运维/安全加固/CA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,13 +231,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3c44437c7daf1ad8",
+  "active": "d90269f86b76e48c",
   "lastOpenFiles": [
+    "网络安全/网络运维/安全加固/attachments/requests.png",
+    "网络安全/网络运维/安全加固/attachments/certsrv.png",
+    "网络安全/网络运维/安全加固/attachments/Pasted image 20230321093901.png",
+    "网络安全/网络运维/安全加固/Splunk.md",
+    "网络安全/网络运维/安全加固/CA.md",
     "网络安全/网络运维/防火墙/CISCO ASA防火墙.md",
     "网络安全/网络运维/防火墙/SSLVPN与IPSec的搭建.md",
     "网络安全/网络运维/安全加固/attachments/Untitled 5.png",
     "网络安全/网络运维/安全加固/attachments/Untitled 3.png",
-    "网络安全/网络运维/安全加固/Splunk.md",
     "网络安全/网络运维/安全加固/attachments/Untitled.png",
     "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
     "网络安全/网络运维/防火墙/attachments/Untitled 33.png",
@@ -231,8 +249,6 @@
     "网络安全/网络运维/防火墙/attachments/Untitled 31.png",
     "网络安全/网络运维/防火墙/attachments/Untitled.png",
     "网络安全/网络运维/防火墙/attachments/Untitled 9.png",
-    "网络安全/网络运维/防火墙/attachments/Untitled 8.png",
-    "网络安全/网络运维/防火墙/attachments/Untitled 7.png",
     "网络安全/网络运维/防火墙/attachments",
     "网络安全/网络运维/未命名.md",
     "JavaSec/JavaSec/Tomcat内存马——Servlet.md",
@@ -258,7 +274,6 @@
     "网络安全/网络数据包分析/Practice 5.md",
     "JavaSec/JavaSec/Tomcat内存马——Filter.md",
     "未命名.canvas",
-    "README.md",
     "Web/PHP反序列化/attachments",
     "Web/PHP反序列化",
     "网络安全/实战渗透/CTFShow/attachments",
