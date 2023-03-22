@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
+                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md"
+                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
+                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
+                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
+                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,6 +244,7 @@
   },
   "active": "0b31576921eb79a4",
   "lastOpenFiles": [
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321163803.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321162715.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321162410.png",
@@ -254,12 +255,10 @@
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321160106.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321155617.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321153920.png",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321153525.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "网络安全/网络运维/安全加固/Splunk.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
     "网络安全/网络运维/安全加固/CA.md",
     "网络安全/网络运维/防火墙/CISCO ASA防火墙.md",
     "网络安全/网络运维/防火墙/SSLVPN与IPSec的搭建.md",
