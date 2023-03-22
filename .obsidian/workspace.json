@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
+                "file": "网络安全/应急响应/情景练习/Practice 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md"
+                "file": "网络安全/应急响应/情景练习/Practice 2.md"
               }
             }
           },
@@ -121,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
+                "file": "网络安全/应急响应/情景练习/Practice 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
+                "file": "网络安全/应急响应/情景练习/Practice 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/病毒样本分析/ldr.sh & hezb.md",
+                "file": "网络安全/应急响应/情景练习/Practice 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,6 +244,7 @@
   },
   "active": "0b31576921eb79a4",
   "lastOpenFiles": [
+    "网络安全/病毒样本分析/ldr.sh & hezb.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321163803.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321162715.png",
