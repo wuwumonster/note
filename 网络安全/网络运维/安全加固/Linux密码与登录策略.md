@@ -1,14 +1,14 @@
 ## 配置
 ### 不小于10的密码长度
 ```
-password    required    pam_pwquality.so try_first_pass local_user_only retry=3 authtk_type= minlen=10
+password    required    pam_pwquality.so try_first_pass local_user_only retry=3 authtok_type= minlen=10
 password    sufficient  pam_unix.so sha512 shadow nullok try_first_pass use_authtok
 password    required    pam_deny.so
 ```
 
 ### 强密码
 ```
-password    required    pam_pwquality.so try_first_pass local_user_only retry=3 authtk_type= minlen=10 lcredit=-1 ucredit=-1 ocredit=-1 dcraedit=-1
+password    required    pam_pwquality.so try_first_pass local_user_only retry=3 authtok_type= minlen=10 lcredit=-1 ucredit=-1 ocredit=-1 dcraedit=-1
 password    sufficient  pam_unix.so sha512 shadow nullok try_first_pass use_authtok
 password    required    pam_deny.so
 ```
