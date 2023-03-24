@@ -16,7 +16,7 @@ password    required    pam_deny.so
 
 ### 三次失败锁定1分种
 ```conf
-auth           required       pam_faillock.so  preauth_audit deny=2 unlock_time=60
+auth           required       pam_faillock.so  preauth audit deny=2 unlock_time=60
 auth           [default=die]      pam_faillock.so  audit deny=2 unlock_time=60
 account        required       pam_faillock.so
 ```
