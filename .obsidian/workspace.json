@@ -124,8 +124,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -267,7 +266,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f45a5ca9cbba043e",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
     "网络安全/网络运维/安全加固/PAM.md",
     "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
