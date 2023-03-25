@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
+                "file": "网络安全/应急响应/情景练习/Practice 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Linux密码与登录策略.md"
+                "file": "网络安全/应急响应/情景练习/Practice 1.md"
               }
             }
           },
@@ -145,7 +145,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
+                "file": "网络安全/应急响应/情景练习/Practice 1.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -211,7 +211,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
+                "file": "网络安全/应急响应/情景练习/Practice 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +228,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
+                "file": "网络安全/应急响应/情景练习/Practice 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,10 +266,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "f45a5ca9cbba043e",
   "lastOpenFiles": [
-    "网络安全/网络运维/安全加固/PAM.md",
+    "网络安全/应急响应/情景练习/Practice 4.md",
+    "网络安全/应急响应/情景练习/Practice 2.md",
+    "网络安全/应急响应/情景练习/Practice 1.md",
     "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
+    "网络安全/网络运维/安全加固/PAM.md",
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
     "网络安全/网络运维/拓扑练习/拓扑4.md",
     "网络安全/网络运维/拓扑练习/拓扑3.md",
@@ -278,7 +281,6 @@
     "Web/协议/dict协议.md",
     "Web/SSRF/内网访问&伪协议读取读取文件&端口扫描.md",
     "Web/SSRF/SSRF-FastCGI&Redis.md",
-    "网络安全/应急响应/情景练习/Practice 2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321163803.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321162715.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/attachments/Pasted image 20230321162410.png",
@@ -303,8 +305,6 @@
     "JavaSec/JavaSec/Tomcat内存马——Listener.md",
     "Java Web/Java Web基础.md",
     "网络安全/网络数据包分析/Practice 6.md",
-    "网络安全/网络数据包分析/Practice 1.md",
-    "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络运维/防火墙",
     "JavaSec/JavaSec/CC链",
     "JavaSec/JavaSec/CodeQL食用指北",
