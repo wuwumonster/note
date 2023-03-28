@@ -34,7 +34,7 @@ j# JavaSec
 
 [Shiro](JavaSec/Shiro.md)
 
-[Strucs2漏洞](JavaSec/Strucs2漏洞.md)
+[Struts2漏洞](JavaSec/Struts2漏洞.md)
 
 [Spring框架漏洞](JavaSec/Spring框架漏洞.md)
 
