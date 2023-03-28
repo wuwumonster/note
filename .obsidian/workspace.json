@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "eaf1aa4c6ff67704",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "50d78615488e935c",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md"
+                "file": "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md"
               }
             }
           },
@@ -145,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md",
+                "file": "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -211,7 +223,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md",
+                "file": "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +240,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md",
+                "file": "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,8 +278,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f45a5ca9cbba043e",
+  "active": "eaf1aa4c6ff67704",
   "lastOpenFiles": [
+    "JavaSec/JavaSec/Struts2漏洞.md",
+    "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
+    "JavaSec/JavaSec/Struts2漏洞",
     "JavaSec/JavaSec.md",
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/应急响应/应急响应.md",
@@ -302,9 +317,7 @@
     "网络安全/网络运维/安全加固/CA.md",
     "网络安全/网络运维/防火墙/CISCO ASA防火墙.md",
     "网络安全/网络运维/防火墙/SSLVPN与IPSec的搭建.md",
-    "网络安全/网络运维/防火墙/Firewall-cmd 食用指北.md",
     "网络安全/网络运维/防火墙/attachments",
-    "网络安全/网络运维/未命名.md",
     "网络安全/网络运维/防火墙",
     "JavaSec/JavaSec/CC链",
     "JavaSec/JavaSec/CodeQL食用指北",
@@ -313,7 +326,6 @@
     "Web/PHP反序列化",
     "网络安全/实战渗透/CTFShow/attachments",
     "网络安全/实战渗透/CTFShow",
-    "网络安全/实战渗透",
-    "网络安全/网络数据包分析/数据包附件/Practice5.pcap"
+    "网络安全/实战渗透"
   ]
 }
