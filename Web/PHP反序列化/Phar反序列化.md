@@ -201,8 +201,7 @@ new dbCtrl() => $token=new User() => $nickname=new Reader()
 								  => $backup = 命令
 ```
 
-```
-## exp
+
 ```php
 <?php
 
