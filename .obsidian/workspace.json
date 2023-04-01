@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "bc886681e8abd6e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "eaf1aa4c6ff67704",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md"
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md"
               }
             }
           },
@@ -136,8 +148,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -158,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md",
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -224,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md",
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,7 +252,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/Struts2漏洞.md",
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -279,10 +290,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f45a5ca9cbba043e",
+  "active": "bc886681e8abd6e8",
   "lastOpenFiles": [
-    "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
     "JavaSec/JavaSec/Struts2漏洞.md",
+    "CTF赛题/CTFShow/2023 愚人杯.md",
+    "CTF赛题/CTFShow",
+    "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
     "JavaSec/JavaSec/Struts2漏洞/attachments/Pasted image 20230330141426.png",
     "JavaSec/JavaSec/Struts2漏洞/attachments/Pasted image 20230330140644.png",
     "JavaSec/JavaSec/Struts2漏洞/attachments/Pasted image 20230330140347.png",
@@ -325,7 +338,6 @@
     "JavaSec/JavaSec/CC链",
     "JavaSec/JavaSec/CodeQL食用指北",
     "未命名.canvas",
-    "Web/PHP反序列化/attachments",
-    "Web/PHP反序列化"
+    "Web/PHP反序列化/attachments"
   ]
 }
