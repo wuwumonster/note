@@ -222,7 +222,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "8bde2fa46e5c99cf",
@@ -290,7 +291,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bc886681e8abd6e8",
+  "active": "ab06ed3a0e7ba357",
   "lastOpenFiles": [
     "CTF赛题/CTFShow/attachments/Pasted image 20230402110424.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230402110324.png",
