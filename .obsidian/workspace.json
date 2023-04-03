@@ -148,7 +148,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -291,7 +292,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0b31576921eb79a4",
+  "active": "1660fe89eec4088b",
   "lastOpenFiles": [
     "Web/PHP反序列化/Phar反序列化.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
