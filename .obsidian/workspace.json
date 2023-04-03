@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/PHP反序列化/Phar反序列化.md",
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
+                "file": "网络安全/应急响应/情景练习/Practice 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -148,8 +148,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -292,8 +291,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bc886681e8abd6e8",
+  "active": "0b31576921eb79a4",
   "lastOpenFiles": [
+    "Web/PHP反序列化/Phar反序列化.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
+    "网络安全/网络运维/安全加固/PAM.md",
+    "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
+    "网络安全/应急响应/情景练习/Practice 1.md",
+    "网络安全/应急响应/情景练习/Practice 2.md",
+    "网络安全/应急响应/情景练习/Practice 4.md",
+    "CTF赛题/CTFShow/2023 愚人杯.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
     "CTF赛题/CTFShow/attachments/Pasted image 20230403103202.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230403100538.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230403075545.png",
@@ -304,18 +312,12 @@
     "CTF赛题/CTFShow/attachments/Pasted image 20230403060551.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230402113158.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230402110424.png",
-    "CTF赛题/CTFShow/attachments/Pasted image 20230402110324.png",
-    "Web/PHP反序列化/Phar反序列化.md",
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
-    "CTF赛题/CTFShow/2023 愚人杯.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit3.md",
     "JavaSec/JavaSec/Struts2漏洞.md",
     "CTF赛题/CTFShow/attachments",
     "CTF赛题/CTFShow",
-    "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
     "JavaSec/JavaSec/Struts2漏洞/attachments",
     "汇编语言/未命名.md",
     "汇编语言",
@@ -325,11 +327,7 @@
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/应急响应/应急响应.md",
     "网络安全/文件取证/Practice/Practice 1.md",
-    "网络安全/应急响应/情景练习/Practice 1.md",
-    "网络安全/应急响应/情景练习/Practice 4.md",
-    "网络安全/应急响应/情景练习/Practice 2.md",
     "网络安全/网络运维/安全加固/Linux密码与登录策略.md",
-    "网络安全/网络运维/安全加固/PAM.md",
     "网络安全/网络运维/拓扑练习/拓扑4.md",
     "网络安全/网络运维/拓扑练习/拓扑3.md",
     "Web/文件包含/文件包含和相关Trick.md",
