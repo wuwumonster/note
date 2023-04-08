@@ -44,3 +44,46 @@
 这里的isURL有对应的check会去去除空格和对`jacascript:`的检测
 
 ![](attachments/Pasted%20image%2020230408141012.png)
+
+在post.ejs中存在callback
+
+```js
+      function load_post(post) {
+        if (!post.success) {
+          $("#post-name").innerText = "Error";
+          $("#post-body").innerText = post.error;
+          return;
+        }
+  
+        $("#post-name").innerText = post.name;
+        $("#post-body").innerText = post.body;
+      }
+
+      window.onload = function() {
+        const id = new URLSearchParams(window.location.search).get('id');
+        if (!id) {
+          return;
+        }
+  
+        // Load post from POST_SERVER
+        // Since POST_SERVER might be a different origin, this also supports loading data through JSONP
+        const request = new XMLHttpRequest();
+        try {
+          request.open('GET', POST_SERVER + `/api/post/` + encodeURIComponent(id), false);
+          request.send(null);
+        }
+        catch (err) { // POST_SERVER is on another origin, so let's use JSONP
+          let script = document.createElement("script");
+          script.src = `${POST_SERVER}/api/post/${id}?callback=load_post`;
+          document.head.appendChild(script);
+          return;
+        }
+  
+        load_post(JSON.parse(request.responseText));
+      }
+    </script>
+```
+
+
+## 参考文章
+https://blog.huli.tw/2022/04/07/iframe-and-window-open/
