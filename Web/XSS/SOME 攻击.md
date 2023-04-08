@@ -7,3 +7,5 @@ SOME是同源方法执行漏洞（Same Origin Method Execution）的简称，SOM
 ## 参考文章
 
 https://michaelwayneliu.github.io/2017/12/21/SOME%E6%94%BB%E5%87%BB/
+
+https://wiki.wgpsec.org/knowledge/web/same-origin-policy.html
