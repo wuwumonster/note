@@ -41,3 +41,6 @@
 ```
 
 能够看出，在todo这里有一个isURL的check大致是，如果todo是url的话就给放到`<a>`里面，这样操作的话bot就可以点击到
+这里的isURL有对应的check会去去除空格和对`jacascript:`的检测
+
+![](attachments/Pasted%20image%2020230408141012.png)
