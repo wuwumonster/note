@@ -90,7 +90,7 @@
 ![](attachments/Pasted%20image%2020230408172455.png)
 
 现在知道了对应uuid的位置，可以通过类似sql盲注的方式来实现获取uuid
-
+之后为了触发callback，需要
 
 
 ## 参考文章
