@@ -90,7 +90,11 @@
 ![](attachments/Pasted%20image%2020230408172455.png)
 
 现在知道了对应uuid的位置，可以通过类似sql盲注的方式来实现获取uuid
-之后为了触发callback，需要
+之后为了使用josnnp来完成跨域访问，需要设置 sync-xhr 'none'来禁用xhr使try捕获异常，从而使用jsonp来获取数据
+
+![](attachments/Pasted%20image%2020230409154316.png)
+
+使用callback需要将原来的callback=load_post截断掉，这里使用#
 
 
 ## 参考文章
