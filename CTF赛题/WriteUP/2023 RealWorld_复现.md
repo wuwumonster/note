@@ -87,5 +87,9 @@
 首先确定获得admin页面的uuid的位置，这个可以用自己创建的做实验
 
 ![](attachments/Pasted%20image%2020230408172455.png)
+
+
+
+
 ## 参考文章
 https://blog.huli.tw/2022/04/07/iframe-and-window-open/
