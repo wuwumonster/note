@@ -1,6 +1,7 @@
 # Web
 ## the_cult_of_8bit
 注册登录之后发现有简历post和to do的功能
+最初的想法是去骗取_csrf的值来实现登录admin，但是发现每次都会刷新
 
 ![](attachments/Pasted%20image%2020230408131159.png)
 
@@ -88,6 +89,7 @@
 
 ![](attachments/Pasted%20image%2020230408172455.png)
 
+现在知道了对应uuid的位置，可以通过类似sql盲注的方式来实现获取uuid
 
 
 
