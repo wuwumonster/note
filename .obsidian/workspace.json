@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0fbe9b73c894faed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF赛题/刷题/Web.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md"
+                "file": "CTF赛题/刷题/Web.md"
               }
             }
           },
@@ -108,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "CTF赛题/刷题/Web.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -175,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "CTF赛题/刷题/Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "CTF赛题/刷题/Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,8 +243,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "62396bf8760be474",
+  "active": "0fbe9b73c894faed",
   "lastOpenFiles": [
+    "CTF赛题/刷题/attachments/Pasted image 20230415111607.png",
+    "CTF赛题/刷题/attachments/Pasted image 20230415111247.png",
+    "CTF赛题/刷题/attachments",
+    "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+    "CTF赛题/刷题/Web.md",
+    "CTF赛题/刷题",
     "CTF赛题/WriteUP/attachments/Pasted image 20230409154316.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
@@ -244,7 +263,6 @@
     "JavaSec/JavaSec/Tomcat内存马——Filter.md",
     "Java Web/Java Web基础.md",
     "Java Web/Servlet搭建&踩坑.md",
-    "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230408172455.png",
     "网络安全/网络运维/安全加固/PAM.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
@@ -260,8 +278,6 @@
     "CTF赛题/CTFShow/attachments/Pasted image 20230405105216.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230405105019.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230405103559.png",
-    "CTF赛题/CTFShow/attachments/Pasted image 20230405103539.png",
-    "CTF赛题/CTFShow/attachments/Pasted image 20230405103208.png",
     "二进制/汇编语言.md",
     "二进制",
     "Web/PHP反序列化/Phar反序列化.md",
@@ -272,12 +288,9 @@
     "CTF赛题/CTFShow/attachments",
     "CTF赛题/CTFShow",
     "JavaSec/JavaSec/Struts2漏洞/attachments",
-    "汇编语言/未命名.md",
     "汇编语言",
     "Reverse",
     "JavaSec/JavaSec/Struts2漏洞",
-    "网络安全/网络运维/防火墙/attachments",
-    "网络安全/网络运维/防火墙",
     "未命名.canvas"
   ]
 }
