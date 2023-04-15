@@ -1,3 +1,31 @@
+# 触发函数
+- fileatime
+- file_exists
+- file_get_contents
+- file_put_contents
+- file
+- filegroup
+- fopen
+- fileinode
+- fileowner
+- fileperms
+- is_dir
+- is_file
+- is_link
+- is_executable
+- is_readable
+- is_writeable
+- is_wirtble
+- parse_ini_file
+- copy
+- unlink
+- stat
+- readfile
+- info_file
+*全局搜索*
+```
+fileatime\(|file_exists\(|file_get_contents\(|file_put_contents\(|file\(|filegroup\(|fopen\(|fileinode\(|fileowner\(|fileperms\(|is_dir\(|is_file\(|is_linkis_executable\(|is_readable\(|is_writeable\(|is_wirtble\(|parse_ini_file\(|copy\(|unlink\(|stat\(|readfile\(|info_file\(
+```
 # 例题
 *index.php*
 
