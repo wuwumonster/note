@@ -108,4 +108,12 @@ pclzip.class.php的问题是最多的，就从这里开始慢慢审计
 这里构造反序列化的话save_path是可控的，从功能上讲可以通过控制save_path来控制解压位置，现在的想法是上传压缩的webshell然后通过控制解压路径解压到能够访问的路径
 现在需要找一个能够触发反序列化的点
 
-在找unserliaze的时候发现大多都写死了序列化内容，没有写死的不是很复杂就是变量不可控，现在来考虑能够触发phar的函数
+在找unserliaze的时候发现大多都写死了序列化内容，没有写死的不是很复杂就是变量不可控，现在来考虑能够触发phar的函数，
+
+![](attachments/Pasted%20image%2020230415132901.png)
+
+
+上传shell压缩包，路径为/data/attachment/brand/2.zip
+
+![](attachments/Pasted%20image%2020230415132134.png)
+
