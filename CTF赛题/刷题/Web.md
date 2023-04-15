@@ -91,6 +91,12 @@ payload：
 
 admin/atlman777   登录后台
 
-搜索后并没有phpshe的后台漏洞，再在后台最可能的是文件上传来rce
+搜索后并没有phpshe的后台漏洞，再在后台最可能的是文件上传来rce，按理来说应该是出题人对源码做了修改，自己憋了个洞出来，但是官方源码没有以前的版本，只有最新的。。。，这样就只能自己审计了
 
 ![](attachments/Pasted%20image%2020230415122154.png)
+
+seay扫了一下
+
+![](attachments/Pasted%20image%2020230415123155.png)
+
+pclzip.class.php的问题是最多的，就从这里开始慢慢审计
