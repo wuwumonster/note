@@ -108,10 +108,17 @@ pclzip.class.php的问题是最多的，就从这里开始慢慢审计
 这里构造反序列化的话save_path是可控的，从功能上讲可以通过控制save_path来控制解压位置，现在的想法是上传压缩的webshell然后通过控制解压路径解压到能够访问的路径
 现在需要找一个能够触发反序列化的点
 
-在找unserliaze的时候发现大多都写死了序列化内容，没有写死的不是很复杂就是变量不可控，现在来考虑能够触发phar的函数，
+在找unserliaze的时候发现大多都写死了序列化内容，没有写死的不是很复杂就是变量不可控，现在来考虑能够触发phar的函数，pclzip.class.php中的无法利用，而其他文件中的大多复杂且参数不可控，这里的glob.func.php中的是可控的，删除文件夹的函数
 
 ![](attachments/Pasted%20image%2020230415132901.png)
 
+这个函数在moban.php中有调用且参数可控
+
+![](attachments/Pasted%20image%2020230415133140.png)
+
+这里pe_token_match的判断token
+
+![](attachments/Pasted%20image%2020230415133657.png)
 
 上传shell压缩包，路径为/data/attachment/brand/2.zip
 
