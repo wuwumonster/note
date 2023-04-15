@@ -100,3 +100,7 @@ seay扫了一下
 ![](attachments/Pasted%20image%2020230415123155.png)
 
 pclzip.class.php的问题是最多的，就从这里开始慢慢审计
+
+粗略看的时候发现有个__destruct
+
+![](attachments/Pasted%20image%2020230415124136.png)
