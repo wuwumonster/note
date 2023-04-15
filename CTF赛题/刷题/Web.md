@@ -124,3 +124,6 @@ pclzip.class.php的问题是最多的，就从这里开始慢慢审计
 
 ![](attachments/Pasted%20image%2020230415132134.png)
 
+提交phar的时候记录pe_token    c9ef985805818f52722ca596862b8928
+
+![](attachments/Pasted%20image%2020230415134742.png)
