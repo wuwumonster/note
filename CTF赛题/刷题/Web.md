@@ -71,3 +71,11 @@ Please input first
 其实就是md5的无法处理数组和比较类型问题
 
 ![](attachments/Pasted%20image%2020230415114824.png)
+
+## `[RoarCTF 2019]`PHPShe
+
+是phpshe的cms
+对应插件存在sql注入漏洞
+[代码审计之phpshev1.7前台注入和zzzphpv1.74后台sql注入 - FreeBuf网络安全行业门户](https://www.freebuf.com/articles/web/254237.html)
+
+payload：
