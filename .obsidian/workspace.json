@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "网络安全/网络数据包分析/Practice 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md"
+                "file": "网络安全/网络数据包分析/Practice 5.md"
               }
             }
           },
@@ -133,7 +133,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "网络安全/网络数据包分析/Practice 5.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "网络安全/网络数据包分析/Practice 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "网络安全/网络数据包分析/Practice 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -257,8 +257,12 @@
   },
   "active": "10273892f709a43c",
   "lastOpenFiles": [
-    "CTF赛题/刷题/Web.md",
+    "网络安全/网络数据包分析/Practice 4.md",
+    "网络安全/网络数据包分析/Practice 3.md",
+    "网络安全/网络数据包分析/Practice 2.md",
+    "网络安全/网络数据包分析/Practice 1.md",
     "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+    "CTF赛题/刷题/Web.md",
     "CTF赛题/刷题/attachments/Pasted image 20230415140212.png",
     "CTF赛题/刷题/attachments/Pasted image 20230415140103.png",
     "CTF赛题/刷题/attachments/Pasted image 20230415134742.png",
@@ -293,10 +297,6 @@
     "CTF赛题/CTFShow/2023 菜狗杯.md",
     "二进制/汇编语言.md",
     "二进制",
-    "JavaSec/JavaSec/Struts2漏洞/S2-001漏洞分析.md",
-    "网络安全/应急响应/情景练习/Practice 2.md",
-    "网络安全/应急响应/情景练习/Practice 4.md",
-    "网络安全/病毒样本分析/ldr.sh & hezb.md",
     "CTF赛题/CTFShow/attachments",
     "CTF赛题/CTFShow",
     "JavaSec/JavaSec/Struts2漏洞/attachments",
