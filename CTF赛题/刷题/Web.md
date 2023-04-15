@@ -104,3 +104,6 @@ pclzip.class.php的问题是最多的，就从这里开始慢慢审计
 粗略看的时候发现有个__destruct
 
 ![](attachments/Pasted%20image%2020230415124136.png)
+
+这里构造反序列化的话save_path是可控的，从功能上讲可以通过控制save_path来控制解压位置，现在的想法是上传压缩的webshell然后通过控制解压路径解压到能够访问的路径
+现在需要找一个能够触发反序列化的点
