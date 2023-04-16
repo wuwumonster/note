@@ -136,3 +136,162 @@ admin.php?mod=moban&act=del&token=c9ef985805818f52722ca596862b8928&tpl=phar:///v
 就触发了phar包将压缩的webshell解压到了对应文件夹
 
 ![](attachments/Pasted%20image%2020230415140212.png)
+
+
+## `[虎符CTF 2021]`Internal System
+
+F12,提示有source
+
+![](attachments/Pasted%20image%2020230416114326.png)
+
+```python
+const express = require('express')
+const router = express.Router()
+
+const axios = require('axios')
+
+const isIp = require('is-ip')
+const IP = require('ip')
+
+const UrlParse = require('url-parse')
+
+const {sha256, hint} = require('./utils')
+
+const salt = 'nooooooooodejssssssssss8_issssss_beeeeest'
+
+const adminHash = sha256(sha256(salt + 'admin') + sha256(salt + 'admin'))
+
+const port = process.env.PORT || 3000
+
+function formatResopnse(response) {
+  if(typeof(response) !== typeof('')) {
+    return JSON.stringify(response)
+  } else {
+    return response
+  }
+}
+
+function SSRF_WAF(url) {
+  const host = new UrlParse(url).hostname.replace(/\[|\]/g, '')
+
+  return isIp(host) && IP.isPublic(host)
+}
+
+function FLAG_WAF(url) {
+  const pathname = new UrlParse(url).pathname
+  return !pathname.startsWith('/flag')
+}
+
+function OTHER_WAF(url) {
+  return true;
+}
+
+const WAF_LISTS = [OTHER_WAF, SSRF_WAF, FLAG_WAF]
+
+router.get('/', (req, res, next) => {
+  if(req.session.admin === undefined || req.session.admin === null) {
+    res.redirect('/login')
+  } else {
+    res.redirect('/index')
+  }
+})
+
+router.get('/login', (req, res, next) => {
+  const {username, password} = req.query;
+
+  if(!username || !password || username === password || username.length === password.length || username === 'admin') {
+    res.render('login')
+  } else {
+    const hash = sha256(sha256(salt + username) + sha256(salt + password))
+
+    req.session.admin = hash === adminHash
+
+    res.redirect('/index')
+  }
+})
+
+router.get('/index', (req, res, next) => {
+  if(req.session.admin === undefined || req.session.admin === null) {
+    res.redirect('/login')
+  } else {
+    res.render('index', {admin: req.session.admin, network: JSON.stringify(require('os').networkInterfaces())})
+  }
+})
+
+router.get('/proxy', async(req, res, next) => {
+  if(!req.session.admin) {
+    return res.redirect('/index')
+  }
+  const url = decodeURI(req.query.url);
+
+  console.log(url)
+
+  const status = WAF_LISTS.map((waf)=>waf(url)).reduce((a,b)=>a&&b)
+
+  if(!status) {
+    res.render('base', {title: 'WAF', content: "Here is the waf..."})
+  } else {
+    try {
+      const response = await axios.get(`http://127.0.0.1:${port}/search?url=${url}`)
+      res.render('base', response.data)
+    } catch(error) {
+      res.render('base', error.message)
+    }
+  }
+})
+
+router.post('/proxy', async(req, res, next) => {
+  if(!req.session.admin) {
+    return res.redirect('/index')
+  }
+  // test url
+  // not implemented here
+  const url = "https://postman-echo.com/post"
+  await axios.post(`http://127.0.0.1:${port}/search?url=${url}`)
+  res.render('base', "Something needs to be implemented")
+})
+
+
+router.all('/search', async (req, res, next) => {
+  if(!/127\.0\.0\.1/.test(req.ip)){
+    return res.send({title: 'Error', content: 'You can only use proxy to aceess here!'})
+  }
+
+  const result = {title: 'Search Success', content: ''}
+
+  const method = req.method.toLowerCase()
+  const url = decodeURI(req.query.url)
+  const data = req.body
+
+  try {
+    if(method == 'get') {
+      const response = await axios.get(url)
+      result.content = formatResopnse(response.data)
+    } else if(method == 'post') {
+      const response = await axios.post(url, data)
+      result.content = formatResopnse(response.data)
+    } else {
+      result.title = 'Error'
+      result.content = 'Unsupported Method'
+    }
+  } catch(error) {
+    result.title = 'Error'
+    result.content = error.message
+  }
+
+  return res.json(result)
+})
+
+router.get('/source', (req, res, next)=>{
+  res.sendFile( __dirname + "/" + "index.js");
+})
+
+router.get('/flag', (req, res, next) => {
+  if(!/127\.0\.0\.1/.test(req.ip)){
+    return res.send({title: 'Error', content: 'No Flag For You!'})
+  }
+  return res.json({hint: hint})
+})
+
+module.exports = router
+```

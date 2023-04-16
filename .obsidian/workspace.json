@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "10273892f709a43c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/网络数据包分析/Practice 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 5.md"
+                "file": "CTF赛题/刷题/Web.md"
               }
             }
           },
@@ -133,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 5.md",
+                "file": "CTF赛题/刷题/Web.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 5.md",
+                "file": "CTF赛题/刷题/Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/网络数据包分析/Practice 5.md",
+                "file": "CTF赛题/刷题/Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -255,11 +243,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "10273892f709a43c",
+  "active": "0fbe9b73c894faed",
   "lastOpenFiles": [
+    "CTF赛题/刷题/attachments/Pasted image 20230416114326.png",
+    "网络安全/网络数据包分析/Practice 5.md",
     "网络安全/网络数据包分析/Practice 2.md",
     "Misc/Write up/2023.2.23.md",
-    "网络安全/网络数据包分析/Practice 5.md",
     "网络安全/网络数据包分析/Practice 6.md",
     "网络安全/网络数据包分析/Practice 4.md",
     "网络安全/网络数据包分析/Practice 3.md",
@@ -294,7 +283,6 @@
     "网络安全/网络运维/安全加固/PAM.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
     "CTF赛题/CTFShow/2023 愚人杯.md",
-    "Web/XSS/SOME 攻击.md",
     "Web/XSS/attachments",
     "二进制",
     "CTF赛题/CTFShow/attachments",
