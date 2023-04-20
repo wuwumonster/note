@@ -565,3 +565,13 @@ router.get('/flag', (req, res, next) => {
 
 module.exports = router
 ```
+
+
+## `[RWCTF2022]`DesperateCat
+
+出题人文章：[RWCTF 4th Desperate Cat Writeup - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/461743167)
+
+exp.py
+```python
+
+```
