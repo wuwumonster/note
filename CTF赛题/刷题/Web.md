@@ -223,6 +223,13 @@ public function __toString()
 这里的pop链流程
 `HelloWorld_DB::__wakeup`->`Typecho_Db::__contrust(__toString)`->`Typecho_Db_Query::__contrust(this->_adapter=new Soapclient)`
 
+exp
+```php
+
+```
+反序列化点的路由
+
+![](attachments/Pasted%20image%2020230420132110.png)
 
 ## `[RoarCTF 2019]`PHPShe
 
