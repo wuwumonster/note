@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ee2a0f9417f1db3d",
+        "id": "0d10729057b7c490",
         "type": "tabs",
         "children": [
           {
-            "id": "62396bf8760be474",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0fbe9b73c894faed",
+            "id": "816f38ac4347dd0b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -71,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#二次反序列化",
+                "query": "tag:#在浏览器中要编码为",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -100,8 +87,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -244,8 +230,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0fbe9b73c894faed",
+  "active": "816f38ac4347dd0b",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+    "Web/PHPTrike/PHP伪协议.md",
+    "CTF赛题/刷题/Web.md",
+    "CTF赛题/刷题/attachments/Pasted image 20230420141459.png",
     "CTF赛题/刷题/attachments/Pasted image 20230420132110.png",
     "CTF赛题/刷题/attachments/Pasted image 20230420120015.png",
     "CTF赛题/刷题/attachments/Pasted image 20230420115245.png",
@@ -259,16 +249,12 @@
     "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/Practice 1.md",
     "JavaSec/JavaSec/Hessian反序列化漏洞.md",
-    "CTF赛题/刷题/Web.md",
     "CTF赛题/刷题/attachments/Pasted image 20230415140212.png",
     "CTF赛题/刷题/attachments/Pasted image 20230415140103.png",
     "CTF赛题/刷题/attachments/Pasted image 20230415134742.png",
     "CTF赛题/刷题/attachments/Pasted image 20230415133657.png",
-    "CTF赛题/刷题/attachments/Pasted image 20230415133140.png",
-    "CTF赛题/刷题/attachments/Pasted image 20230415132901.png",
     "Web/PHP反序列化/Phar反序列化.md",
     "CTF赛题/刷题/attachments",
-    "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/刷题",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
