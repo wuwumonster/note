@@ -72,7 +72,7 @@ Please input first
 
 ![](attachments/Pasted%20image%2020230415114824.png)
 
-## Ezpop-Revenge
+## `[MRCTF2020]`Ezpop-Revenge
 `www.zip`源码泄露
 
 flag.php
@@ -176,6 +176,12 @@ class HelloWorld_Plugin implements Typecho_Plugin_Interface
 在Plugin.php的__wakeup方法中，new了一个新的类，跟进到var/Typecho/Db.php，在它的__construct函数中出现了字符串拼接
 
 ![](attachments/Pasted%20image%2020230420115245.png)
+
+找了__toString()魔术方法
+
+![](attachments/Pasted%20image%2020230420120015.png)
+
+
 ## `[RoarCTF 2019]`PHPShe
 
 是phpshe的cms
