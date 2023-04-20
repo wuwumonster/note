@@ -100,7 +100,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -243,7 +244,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0fbe9b73c894faed",
+  "active": "1660fe89eec4088b",
   "lastOpenFiles": [
     "CTF赛题/刷题/attachments/Pasted image 20230416114326.png",
     "网络安全/网络数据包分析/Practice 5.md",

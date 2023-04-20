@@ -72,6 +72,19 @@ Please input first
 
 ![](attachments/Pasted%20image%2020230415114824.png)
 
+## Ezpop-Revenge
+`www.zip`源码泄露
+
+flag.php
+```php
+<?php  
+if(!isset($_SESSION)) session_start();  
+if($_SERVER['REMOTE_ADDR']==="127.0.0.1"){  
+   $_SESSION['flag']= "MRCTF{******}";  
+}else echo "我扌your problem?\nonly localhost can get flag!";  
+?>
+```
+
 ## `[RoarCTF 2019]`PHPShe
 
 是phpshe的cms
