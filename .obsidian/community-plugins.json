@@ -13,5 +13,6 @@
   "templater-obsidian",
   "quickadd",
   "obsidian-git",
-  "rss-reader"
+  "rss-reader",
+  "obsidian-local-rest-api"
 ]
