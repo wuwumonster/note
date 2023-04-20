@@ -220,6 +220,9 @@ public function __toString()
 
 [PHP SOAP使用 - KvienChen - 博客园 (cnblogs.com)](https://www.cnblogs.com/kvienchen/p/8310798.html)
 
+这里的pop链流程
+`HelloWorld_DB::__wakeup`->`Typecho_Db::__contrust(__toString)`->`Typecho_Db_Query::__contrust(this->_adapter=new Soapclient)`
+
 
 ## `[RoarCTF 2019]`PHPShe
 
