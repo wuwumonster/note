@@ -95,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#LD_PRELOAD",
+                "query": "file:RWCTF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -270,6 +270,7 @@
   },
   "active": "1660fe89eec4088b",
   "lastOpenFiles": [
+    "CTF赛题/相关文章",
     "JavaSec/JavaSec/EL表达式.md",
     "CTF赛题/刷题/Web.md",
     "Web/文件上传/LD_PRELOAD.md",
@@ -307,7 +308,6 @@
     "JavaSec/JavaSec/Struts2漏洞.md",
     "JavaSec/JavaSec/Tomcat内存马——Filter.md",
     "Java Web/Java Web基础.md",
-    "Java Web/Servlet搭建&踩坑.md",
     "Web/XSS/attachments",
     "二进制",
     "CTF赛题/CTFShow/attachments",
