@@ -85,6 +85,95 @@ if($_SERVER['REMOTE_ADDR']==="127.0.0.1"){
 ?>
 ```
 
+猜测是反序列化结合ssrf，可能存在的反序列化点：
+- phar文件上传
+- 用户输入反序列化
+
+在全局找serialize函数发现在HelloWorld下的Plugin.php有特别的反序列化点
+
+![](attachments/Pasted%20image%2020230420114048.png)
+
+```php
+<?php  
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;  
+/**  
+ * Hello World ** @package HelloWorld   
+* @author qining  
+ * @version 1.0.0  
+ * @link http://typecho.org  
+ */class HelloWorld_DB{  
+    private $flag="MRCTF{this_is_a_fake_flag}";  
+    private $coincidence;  
+    function  __wakeup(){  
+        $db = new Typecho_Db($this->coincidence['hello'], $this->coincidence['world']);  
+    }  
+}  
+class HelloWorld_Plugin implements Typecho_Plugin_Interface  
+{  
+    /**  
+     * 激活插件方法,如果激活失败,直接抛出异常  
+     *   
+* @access public  
+     * @return void  
+     * @throws Typecho_Plugin_Exception  
+     */    
+     public static function activate()  
+    {        
+    Typecho_Plugin::factory('admin/menu.php')->navBar = array('HelloWorld_Plugin', 'render');  
+    }  
+    /**  
+     * 禁用插件方法,如果禁用失败,直接抛出异常  
+     *   
+* @static  
+     * @access public  
+     * @return void  
+     * @throws Typecho_Plugin_Exception  
+     */    
+     public static function deactivate(){}  
+    /**  
+     * 获取插件配置面板  
+     *   
+* @access public  
+     * @param Typecho_Widget_Helper_Form $form 配置面板  
+     * @return void  
+     */   
+     public static function config(Typecho_Widget_Helper_Form $form)  
+    {        /** 分类名称 */  
+        $name = new Typecho_Widget_Helper_Form_Element_Text('word', NULL, 'Hello World', _t('说点什么'));  
+        $form->addInput($name);  
+    }  
+    /**  
+     * 个人用户的配置面板  
+     *   
+* @access public  
+     * @param Typecho_Widget_Helper_Form $form  
+     * @return void  
+     */    
+     public static function personalConfig(Typecho_Widget_Helper_Form $form){}  
+    /**  
+     * 插件实现方法  
+     *   
+* @access public  
+     * @return void  
+     */    
+     public static function render()  
+    {        echo '<span class="message success">'  
+            . htmlspecialchars(Typecho_Widget::widget('Widget_Options')->plugin('HelloWorld')->word)  
+            . '</span>';  
+    }
+    public function action(){  
+        if(!isset($_SESSION)) session_start();  
+        if(isset($_REQUEST['admin'])) var_dump($_SESSION);  
+        if (isset($_POST['C0incid3nc3'])) {  
+         if(preg_match("/file|assert|eval|[`\'~^?<>$%]+/i",base64_decode($_POST['C0incid3nc3'])) === 0)  
+            unserialize(base64_decode($_POST['C0incid3nc3']));  
+         else {  
+            echo "Not that easy.";  
+         }  
+        }    }}
+```
+
+
 ## `[RoarCTF 2019]`PHPShe
 
 是phpshe的cms
