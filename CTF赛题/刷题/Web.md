@@ -181,6 +181,45 @@ class HelloWorld_Plugin implements Typecho_Plugin_Interface
 
 ![](attachments/Pasted%20image%2020230420120015.png)
 
+```php
+  
+public function __toString()  
+{  
+    switch ($this->_sqlPreBuild['action']) {  
+        case Typecho_Db::SELECT:  
+            return $this->_adapter->parseSelect($this->_sqlPreBuild);  
+        case Typecho_Db::INSERT:  
+            return 'INSERT INTO '  
+            . $this->_sqlPreBuild['table']  
+            . '(' . implode(' , ', array_keys($this->_sqlPreBuild['rows'])) . ')'  
+            . ' VALUES '  
+            . '(' . implode(' , ', array_values($this->_sqlPreBuild['rows'])) . ')'  
+            . $this->_sqlPreBuild['limit'];  
+        case Typecho_Db::DELETE:  
+            return 'DELETE FROM '  
+            . $this->_sqlPreBuild['table']  
+            . $this->_sqlPreBuild['where'];  
+        case Typecho_Db::UPDATE:  
+            $columns = array();  
+            if (isset($this->_sqlPreBuild['rows'])) {  
+                foreach ($this->_sqlPreBuild['rows'] as $key => $val) {  
+                    $columns[] = "$key = $val";  
+                }  
+            }  
+            return 'UPDATE '  
+            . $this->_sqlPreBuild['table']  
+            . ' SET ' . implode(' , ', $columns)  
+            . $this->_sqlPreBuild['where'];  
+        default:  
+            return NULL;  
+    }  
+}
+```
+
+这里的第一个case的return形式很容易想到调用__call(),结合前面的ssrf这里将_adapter设置成soapclient，利用它的__call方法来设置报文头
+
+[PHP SOAP使用 - KvienChen - 博客园 (cnblogs.com)](https://www.cnblogs.com/kvienchen/p/8310798.html)
+
 
 ## `[RoarCTF 2019]`PHPShe
 
