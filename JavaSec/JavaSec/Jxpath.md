@@ -135,3 +135,8 @@ public void refresh() throws BeansException, IllegalStateException {
     }  
 }
 ```
+
+
+在DefaultListableBeanFactory.class#preInstantiateSingletons()里完成了命令执行
+
+在这里面利用java.lang.ProcessBuilder来完成命令执行，xml中的value被读入按照其加载方式作为可执行程序和参数加载执行
