@@ -11,8 +11,12 @@
             "id": "c639f0305600c294",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF赛题/BUU月赛/2023.4.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -43,7 +47,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CTF赛题/BUU月赛/2023.4.md"
+              }
             }
           },
           {
@@ -102,6 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "CTF赛题/BUU月赛/2023.4.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -168,6 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF赛题/BUU月赛/2023.4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,6 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CTF赛题/BUU月赛/2023.4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,8 +230,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "c639f0305600c294",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/2023.4.md",
     "未命名.canvas",
     "CTF赛题/WriteUP/2022虎符CTF.md",
     "CTF赛题/刷题/Web.md",
