@@ -4,59 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0d10729057b7c490",
+        "id": "45e1711dc992bf94",
         "type": "tabs",
         "children": [
           {
-            "id": "816f38ac4347dd0b",
+            "id": "c639f0305600c294",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF赛题/刷题/Web.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05bf19cab3e1c36f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF赛题/刷题/Web.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a5f34af3fff9b891",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web/文件上传/LD_PRELOAD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d39ae9d0c221d8de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF赛题/WriteUP/2022虎符CTF.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -84,9 +43,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CTF赛题/刷题/Web.md"
-              }
+              "state": {}
             }
           },
           {
@@ -124,8 +81,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -146,7 +102,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/刷题/Web.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -213,7 +168,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/刷题/Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +184,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/刷题/Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -268,13 +221,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1660fe89eec4088b",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
-    "CTF赛题/相关文章",
-    "JavaSec/JavaSec/EL表达式.md",
+    "未命名.canvas",
+    "CTF赛题/WriteUP/2022虎符CTF.md",
     "CTF赛题/刷题/Web.md",
     "Web/文件上传/LD_PRELOAD.md",
-    "CTF赛题/WriteUP/2022虎符CTF.md",
+    "CTF赛题/相关文章",
+    "JavaSec/JavaSec/EL表达式.md",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "Web/PHPTrike/PHP伪协议.md",
     "CTF赛题/刷题/attachments/Pasted image 20230420141459.png",
@@ -314,8 +268,6 @@
     "CTF赛题/CTFShow",
     "JavaSec/JavaSec/Struts2漏洞/attachments",
     "汇编语言",
-    "Reverse",
-    "JavaSec/JavaSec/Struts2漏洞",
-    "未命名.canvas"
+    "Reverse"
   ]
 }
