@@ -74,10 +74,64 @@ org/apache/commons/jxpath/ri/JXPathContextReferenceImpl.java#getFunction
 ![](attachments/Pasted%20image%2020230422155749.png)
 
 org/apache/commons/jxpath/PackageFunctions.java#getFunction
-在parameter.length这里进行的
+
 ![](attachments/Pasted%20image%2020230422160210.png)
 
+在下面根据是否new方法来来返回不同的function
+- MethodLookupUtils.lookupConstructor
+- MethodLookupUtils.lookupStaticMethod
 
-到invoke这里结束触发calc
+![](attachments/Pasted%20image%2020230422161104.png)
 
-![](attachments/Pasted%20image%2020230422155951.png)
+在ConstructorFunction后，这就是前面get到的function
+
+![](attachments/Pasted%20image%2020230422161631.png)
+
+org/apache/commons/jxpath/functions/ConstructorFunction.java#invoke
+
+![](attachments/Pasted%20image%2020230422161802.png)
+
+constructor.newInstance后向上一直到`\org\springframework\spring-jcl\5.3.23\spring-jcl-5.3.23.jar!\org\apache\commons\logging\LogFactory.class` 进行getName
+
+![](attachments/Pasted%20image%2020230422162046.png)
+
+之后就是一直到refresh执行结弹出计算器
+
+![](attachments/Pasted%20image%2020230422162504.png)
+
+```java
+public void refresh() throws BeansException, IllegalStateException {  
+    synchronized(this.startupShutdownMonitor) {  
+        StartupStep contextRefresh = this.applicationStartup.start("spring.context.refresh");  
+        this.prepareRefresh();  
+        ConfigurableListableBeanFactory beanFactory = this.obtainFreshBeanFactory();  
+        this.prepareBeanFactory(beanFactory);  
+  
+        try {  
+            this.postProcessBeanFactory(beanFactory);  
+            StartupStep beanPostProcess = this.applicationStartup.start("spring.context.beans.post-process");  
+            this.invokeBeanFactoryPostProcessors(beanFactory);  
+            this.registerBeanPostProcessors(beanFactory);  
+            beanPostProcess.end();  
+            this.initMessageSource();  
+            this.initApplicationEventMulticaster();  
+            this.onRefresh();  
+            this.registerListeners();  
+            this.finishBeanFactoryInitialization(beanFactory);  
+            this.finishRefresh();  
+        } catch (BeansException var10) {  
+            if (this.logger.isWarnEnabled()) {  
+                this.logger.warn("Exception encountered during context initialization - cancelling refresh attempt: " + var10);  
+            }  
+  
+            this.destroyBeans();  
+            this.cancelRefresh(var10);  
+            throw var10;  
+        } finally {  
+            this.resetCommonCaches();  
+            contextRefresh.end();  
+        }  
+  
+    }  
+}
+```
