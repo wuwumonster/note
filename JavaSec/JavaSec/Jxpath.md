@@ -53,3 +53,31 @@ exp
 
 
 ## 调试
+
+入口 getValue
+![](attachments/Pasted%20image%2020230422154855.png)
+
+在将xpath放到express中后又带入getValue
+
+![](attachments/Pasted%20image%2020230422155340.png)
+
+ExtensionFunction#computeValue
+
+![](attachments/Pasted%20image%2020230422155530.png)
+
+org/apache/commons/jxpath/ri/axes/RootContext.java#getFunction
+
+![](attachments/Pasted%20image%2020230422155630.png)
+
+org/apache/commons/jxpath/ri/JXPathContextReferenceImpl.java#getFunction
+
+![](attachments/Pasted%20image%2020230422155749.png)
+
+org/apache/commons/jxpath/PackageFunctions.java#getFunction
+在parameter.length这里进行的
+![](attachments/Pasted%20image%2020230422160210.png)
+
+
+到invoke这里结束触发calc
+
+![](attachments/Pasted%20image%2020230422155951.png)
