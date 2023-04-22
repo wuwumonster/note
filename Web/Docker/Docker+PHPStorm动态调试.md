@@ -1,5 +1,14 @@
 ## 配置
 ### Xdebug 配置
+#### phpinfo确定版本
+phpinfo内容放入下面网站
+[Xdebug: Support — Tailored Installation Instructions](https://xdebug.org/wizard)
+如果挂载了目录的话可以`php -r 'phpinfo();' > phpinfo.txt`直接粘贴
+网站分析后会给出下面的步骤
+
+![](attachments/Pasted%20image%2020230422172358.png)
+
+下载后扔到目录里 或者直接执行 wget https://xdebug.org/files/xdebug-3.1.6.tgz
 #### Xdebug2
 php.ini配置
 ```
