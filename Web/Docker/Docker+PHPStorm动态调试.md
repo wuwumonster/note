@@ -35,11 +35,14 @@ RUN pecl install xdebug \
 #### Xdebug3
 php.ini配置
 ```
-[xdebug] 
-zend_extension="<path to xdebug extension>" 
-xdebug.mode=debug 
+[xdebug]
+zend_extension="<path to xdebug extension>"
+xdebug.mode = debug 
+xdebug.start_with_request = yes 
+xdebug.client_port = 9003
 xdebug.client_host=127.0.0.1 
-xdebug.client_port="9003"
+xdebug.remote_handler=dbgp 
+xdebug.idekey=PHPSTORM 
 ```
 docker下载
 ```dockerfile
