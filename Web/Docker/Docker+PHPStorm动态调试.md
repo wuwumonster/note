@@ -9,6 +9,10 @@ phpinfo内容放入下面网站
 ![](attachments/Pasted%20image%2020230422172358.png)
 
 下载后扔到目录里 或者直接执行 wget https://xdebug.org/files/xdebug-3.1.6.tgz
+
+可能没有php.ini
+![](attachments/Pasted%20image%2020230422173212.png)
+这是生产和开发两个环境备份后选择一个改为php.ini即可
 #### Xdebug2
 php.ini配置
 ```
