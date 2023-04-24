@@ -60,5 +60,10 @@ RUN pecl install xdebug \
 IDE key设置
 
 ![](attachments/Pasted%20image%2020230422170556.png)
+
+现在只要打开phpstorm的监听和浏览器的xdebug就可以监听调试了
+、
+![](attachments/Pasted%20image%2020230424155247.png)
+
 ## 参考文章
 [Configure Xdebug | PhpStorm Documentation (jetbrains.com)](https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html)

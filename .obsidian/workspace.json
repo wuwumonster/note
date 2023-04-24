@@ -11,8 +11,12 @@
             "id": "9a1c6bc23bb62068",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Web/Docker/Docker+PHPStorm动态调试.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -43,7 +47,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Web/Docker/Docker+PHPStorm动态调试.md"
+              }
             }
           },
           {
@@ -102,6 +108,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Web/Docker/Docker+PHPStorm动态调试.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -168,6 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Web/Docker/Docker+PHPStorm动态调试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,6 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Web/Docker/Docker+PHPStorm动态调试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,6 +232,7 @@
   },
   "active": "9a1c6bc23bb62068",
   "lastOpenFiles": [
+    "Web/Docker/attachments/Pasted image 20230424155247.png",
     "CTF赛题/刷题/Reverse.md",
     "二进制/汇编语言.md",
     "CTF赛题/刷题/Reverse/xor-buu.md",
