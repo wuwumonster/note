@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse/脱壳技术.md",
+                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/刷题/Reverse.md"
+                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md"
               }
             }
           },
@@ -157,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/刷题/Reverse.md",
+                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -224,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/刷题/Reverse.md",
+                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,7 +241,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/刷题/Reverse.md",
+                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -279,12 +279,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5afd5c34e6feb0b0",
+  "active": "32dd029e249827b0",
   "lastOpenFiles": [
+    "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424123347.png",
+    "CTF赛题/刷题/Reverse/attachments",
     "Reverse/脱壳技术.md",
-    "CTF赛题/刷题/Reverse/新年快乐-buu.md",
-    "CTF赛题/刷题/Reverse.md",
     "二进制/汇编语言.md",
+    "CTF赛题/BUU月赛/2023.04.md",
+    "CTF赛题/刷题/Reverse.md",
+    "CTF赛题/刷题/Reverse/新年快乐-buu.md",
     "CTF赛题/刷题/Reverse",
     "CTF赛题/刷题/attachments/Pasted image 20230424120317.png",
     "CTF赛题/刷题/Web.md",
@@ -292,7 +295,6 @@
     "Web/Docker/Docker+PHPStorm动态调试.md",
     "JavaSec/JavaSec/Jxpath.md",
     "JavaSec/JavaSec.md",
-    "CTF赛题/BUU月赛/2023.04.md",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230423161427.png",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230423160113.png",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230423153745.png",
@@ -323,10 +325,8 @@
     "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/网络数据包分析/Practice 1.md",
     "JavaSec/JavaSec/Hessian反序列化漏洞.md",
-    "Web/PHP反序列化/Phar反序列化.md",
     "CTF赛题/刷题/attachments",
     "CTF赛题/刷题",
-    "Web/XSS/attachments",
-    "二进制"
+    "Web/XSS/attachments"
   ]
 }
