@@ -17,3 +17,16 @@ e3nifIH9b_C@n@dH
 ![](attachments/Pasted%20image%2020230424135305.png)
 
 对这串字符串解base64
+
+```python
+from base64 import *
+
+str = "e3nifIH9b_C@n@dH"
+flag = ""
+for i in range(0,16):
+	flag += chr(ord(str[i])-i)
+print(flag)
+print(b64decode(flag))
+```
+
+flag{i_l0ve_you}
