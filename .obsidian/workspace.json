@@ -23,11 +23,9 @@
             "id": "32dd029e249827b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
-                "mode": "source",
-                "source": false
+                "file": "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125005.png"
               }
             }
           },
@@ -97,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md"
+                "file": "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125005.png"
               }
             }
           },
@@ -157,7 +155,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
+                "file": "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125005.png",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -224,7 +222,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
+                "file": "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125005.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -241,7 +239,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/刷题/Reverse/新年快乐-buu.md",
+                "file": "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125005.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,12 +280,17 @@
   "active": "32dd029e249827b0",
   "lastOpenFiles": [
     "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424123347.png",
+    "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125857.png",
+    "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125616.png",
+    "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125005.png",
+    "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424125950.png",
+    "CTF赛题/刷题/Reverse/新年快乐-buu.md",
+    "CTF赛题/刷题/Reverse/attachments/Pasted image 20230424130136.png",
     "CTF赛题/刷题/Reverse/attachments",
     "Reverse/脱壳技术.md",
     "二进制/汇编语言.md",
     "CTF赛题/BUU月赛/2023.04.md",
     "CTF赛题/刷题/Reverse.md",
-    "CTF赛题/刷题/Reverse/新年快乐-buu.md",
     "CTF赛题/刷题/Reverse",
     "CTF赛题/刷题/attachments/Pasted image 20230424120317.png",
     "CTF赛题/刷题/Web.md",
@@ -298,12 +301,6 @@
     "CTF赛题/BUU月赛/attachments/Pasted image 20230423161427.png",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230423160113.png",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230423153745.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230423153722.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230423144504.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230423130241.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230423130059.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230423125945.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230423125711.png",
     "Web/Docker/attachments",
     "Web/未命名.md",
     "Web/Docker",
