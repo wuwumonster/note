@@ -1,16 +1,14 @@
-# XSS
 
-# XSS
 
-### ****[Zer0pts2020]musicblog****
+### [Zer0pts2020]musicblog
 
-### ****[BBCTF2020]note****
+### [BBCTF2020]note
 
 xss插入后就变成了这样
 
-![Untitled](XSS%20a51e2f7243d74880af9d0bb380b2db36/Untitled.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/XSS%20a51e2f7243d74880af9d0bb380b2db36/Untitled.png)
 
-### ****[LineCTF2022]online-library****
+### [LineCTF2022]online-library
 
 XSS点
 
@@ -53,9 +51,9 @@ app.get("/:t/:s/:e", (req: Express.Request, res: Express.Response): void => {
 
 一个fs.open一个fs.read
 
-![Untitled](XSS%20a51e2f7243d74880af9d0bb380b2db36/Untitled%201.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/XSS%20a51e2f7243d74880af9d0bb380b2db36/Untitled%201.png)
 
-![Untitled](XSS%20a51e2f7243d74880af9d0bb380b2db36/Untitled%202.png)
+![Untitled](../../CTF赛题/BUU月赛/attachment/XSS%20a51e2f7243d74880af9d0bb380b2db36/Untitled%202.png)
 
 在参数中则为t为路径，s和e决定了读入的数据量
 
