@@ -14,5 +14,24 @@ rust编写的后端，要1亿功德拿flag
 ![](attachments/Pasted%20image%2020230427124500.png)
 
 这里考虑将cost设置为一个极限的负数，使功德减去它的时候能够转正 
-i32的大小是 -2147483648~2147483647
+i32的大小是 -2147483648~2147483647，经典的构造极限
+
+没有思考了，在极限那个位置reset了几次
+payload `name=Cost&quantity=214748366`
+
+![](attachments/Pasted%20image%2020230427131811.png)
+
+### BabyGo
+go语言
+一共5个路由
+- GET /
+- GET /upload
+- POST /upload
+	- 禁止上传 .gob 和 .go 文件
+- GET /unzip
+	- 解压文件，文件路径来自与get参数拼接
+- GET /backdoor
+	- 解码引用user.gob  在 Power为 admin 时 可以通过 goeval.Eval() 来执行命令
+
+>思路：上传压缩文件，解压后覆盖原有user.gob 以此引用 /backdoor来执行命令
 
