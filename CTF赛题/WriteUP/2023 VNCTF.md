@@ -53,7 +53,7 @@ type User struct {
 }
 
 func main() {
-    user := User{Name: "ctfer", Path: "/tmp/d7671aa466b2c69f80e4bc0cf4b6b638/", Power: "admin"}
+    user := User{Name: "ctfer", Path: "/tmp/d7671aa466b2c69f80e4bc0cf4b6b638/", Power: "admin",}
     file, err := os.Create("./user.gob")
     if err != nil {
         fmt.Println("文件创建失败", err.Error())
