@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/XSS/SOME 攻击.md",
+                "file": "CTF赛题/BUU月赛/2022.11.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 VNCTF.md",
+                "file": "网络安全/内网渗透/提权/Lunux提权.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 VNCTF.md"
+                "file": "CTF赛题/BUU月赛/2022.11.md"
               }
             }
           },
@@ -121,7 +120,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 VNCTF.md",
+                "file": "CTF赛题/BUU月赛/2022.11.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -188,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 VNCTF.md",
+                "file": "CTF赛题/BUU月赛/2022.11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 VNCTF.md",
+                "file": "CTF赛题/BUU月赛/2022.11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -243,25 +242,26 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "43480c9837a3851c",
+  "active": "9a1c6bc23bb62068",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/attachments/flag_header.jpg",
+    "CTF赛题/WriteUP/2023 VNCTF.md",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230427163729.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230427163443.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230427163228.png",
+    "网络安全/内网渗透/提权/Lunux提权.md",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230427163001.png",
+    "Web/XSS/SOME 攻击.md",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230427162734.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230427161643.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427150603.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427150553.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427145609.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427135428.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230427131811.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230427124500.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230427123520.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230427123350.png",
-    "Web/XSS/SOME 攻击.md",
-    "CTF赛题/WriteUP/2023 VNCTF.md",
     "Web/PHPTrike/open_basedir绕过.md",
     "Web/Docker/Docker+PHPStorm动态调试.md",
     "Misc/Write up/2023.2.23.md",
     "CTF赛题/BUU月赛/2023.04.md",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230426141758.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230426141412.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230426141334.png",
     "CTF赛题/刷题/Reverse.md",
     "二进制/汇编语言.md",
     "CTF赛题/刷题/Reverse/xor-buu.md",
@@ -288,7 +288,6 @@
     "JavaSec/JavaSec/EL表达式.md",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "Web/PHPTrike/PHP伪协议.md",
-    "网络安全/网络数据包分析/Practice 5.md",
     "CTF赛题/刷题/attachments",
     "CTF赛题/刷题",
     "Web/XSS/attachments"

