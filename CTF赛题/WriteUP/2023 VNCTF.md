@@ -62,7 +62,7 @@ func main() {
     defer file.Close()
 
     encoder := gob.NewEncoder(file)
-    err = encoder.Encode(info)
+    err = encoder.Encode(user)
     if err != nil {
         fmt.Println("编码错误", err.Error())
         return
@@ -77,6 +77,9 @@ path=/../../../../../tmp/d7671aa466b2c69f80e4bc0cf4b6b638/
 带着参数访问unzip就可以
 
 ![](attachments/Pasted%20image%2020230427135428.png)
+
+当backdoor回显是good，就说明已经power=admin了
+![](attachments/Pasted%20image%2020230427145609.png)
 
 接下来就是goeval的使用
 [GO语言安全 — 沙箱逃逸题目分析 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzUzMDUxNTE1Mw==&mid=2247496259&idx=1&sn=20b93256d8a5acfda5826c5d50096f63&chksm=fa5227fdcd25aeebbf9f9add2a483500a252d5ad058a92dafad394eaa1c57cf2bdb597e51b5c&scene=126&sessionid=1662436887&key=c28b5d09085340df0c20cadc0887eb0a420d5b3478fb82405c1162a5003fd87a918cab97f0023574a573ac935bbb17c54b4098410befadcc31f8320ab2775346154c10836855dd919d18f6653ef474ed1062c1b09cc3588cc8443f46baeb60df34d6211b9cc5d40cf20b4d7620e849c117bcb06d9142c9a0e852b2f08ec8a0af&ascene=15&uin=MzgxODQ4MjMz&devicetype=Windows+Server+2016+x64&version=63070517&lang=zh_CN&session_us=gh_94beeafaf804&exportkey=AzYl%2FCartrKvkaqiL%2Bd9Iv4%3D&acctmode=0&pass_ticket=L3CGnrfwXOeo2T%2Buh4YWaI7nRTXofYaJoUhuF2SbHMXZ9TQM3m3vlwD2pKPsf2tC&wx_header=0&fontgear=2)
