@@ -99,3 +99,20 @@ os/exec"%0a"fmt")%0afunc%09init()%7B%0acmd:=exec.Command("/bin/sh","-c","cat${IF
 hint是 tupper
 这里指的的tupper自指公式
 
+验证码识别脚本
+
+```python
+import ddddocr  
+  
+path = "C:\\Users\\wum0nster\\Desktop\\buu\\2023VNCTF\\验证码\\img\\imgs\\"  
+tupper = ""  
+ocr = ddddocr.DdddOcr()  
+for i in range(0, 136):  
+   png = path + f"{i}.png"  
+   with open(png, 'rb') as f:  
+      img_bytes = f.read()  
+   res = ocr.classification(img_bytes)  
+   print('识别出的验证码为：' + res)  
+   tupper += res  
+print(tupper)
+```
