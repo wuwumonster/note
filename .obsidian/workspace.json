@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ed511c3907dc2c1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaSec/JavaSec/CC链/CC链.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md"
+                "file": "JavaSec/JavaSec/CC链/CC链.md"
               }
             }
           },
@@ -87,8 +100,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -109,7 +121,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "JavaSec/JavaSec/CC链/CC链.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -176,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "JavaSec/JavaSec/CC链/CC链.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "JavaSec/JavaSec/CC链/CC链.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -231,8 +243,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1660fe89eec4088b",
+  "active": "ed511c3907dc2c1e",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/2022.04.md",
+    "JavaSec/JavaSec/CC链/CC链.md",
     "CTF赛题/BUU月赛/2022.05.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741.md",
     "CTF赛题/刷题/Web.md",
@@ -257,8 +271,6 @@
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/Java 4f0ca325aad14fee945ebc69ca658159.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/ASP NET a5d49c796a39476ea9bb91ce0f079d0c.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/信息搜集 e31f7e5bf9664aed9d1e84c0455ed54c.md",
-    "Web/Bypass/基于HTTP协议特性绕WAF.md",
-    "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/文件上传 329cca66851b4a0e8c72df7d9eecf4f2.md",
     "Web/OtherTrike",
     "CTF赛题/BUU月赛/attachments/flag_header.jpg",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427163729.png",
