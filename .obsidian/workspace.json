@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "网络安全/应急响应/应急响应.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "JavaSec/JavaSec/CC链/CC链.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62035e2c7d254fa7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF赛题/WriteUP/未命名.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md"
+                "file": "CTF赛题/WriteUP/未命名.md"
               }
             }
           },
@@ -144,7 +157,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "CTF赛题/WriteUP/未命名.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -211,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "CTF赛题/WriteUP/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +241,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/BUU月赛/2022.04.md",
+                "file": "CTF赛题/WriteUP/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,14 +279,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "62035e2c7d254fa7",
   "lastOpenFiles": [
+    "JavaSec/JavaSec/CC链/CC链.md",
+    "CTF赛题/WriteUP/未命名.md",
+    "JavaSec/JavaSec/动态加载字节码.md",
+    "网络安全/应急响应/应急响应.md",
+    "CTF赛题/BUU月赛/2022.04.md",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230428153241.png",
     "CTF赛题/BUU月赛/attachments/Pasted image 20230428151018.png",
     "CTF赛题/BUU月赛/2023.04.md",
-    "JavaSec/JavaSec/动态加载字节码.md",
-    "CTF赛题/BUU月赛/2022.04.md",
-    "JavaSec/JavaSec/CC链/CC链.md",
     "CTF赛题/BUU月赛/2022.05.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741.md",
     "CTF赛题/刷题/Web.md",
@@ -294,7 +309,6 @@
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/PHP Trick d03cca6a651f4405821abff7640473f9.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/PHP Trick 85f5b3dc12ee4d0f8917c3ff2a2f5a7e.md",
     "Web/PHPTrike/函数特性.md",
-    "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/node js 1e075dab9cd848caae679178663119ea.md",
     "Web/OtherTrike",
     "CTF赛题/BUU月赛/attachments/flag_header.jpg",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427163729.png",
@@ -304,7 +318,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230427162734.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427161643.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427150603.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230427150553.png",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
     "Reverse",
