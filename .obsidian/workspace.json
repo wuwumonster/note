@@ -44,6 +44,16 @@
             }
           },
           {
+            "id": "cf3a38a9b5fe1ac7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
+            }
+          },
+          {
             "id": "5fe534bc4a1da409",
             "type": "leaf",
             "state": {
@@ -68,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -133,6 +143,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f5adeeef7ea4d894",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -279,7 +297,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "62035e2c7d254fa7",
+  "active": "cf3a38a9b5fe1ac7",
   "lastOpenFiles": [
     "CTF赛题/WriteUP/attachments/Pasted image 20230503133245.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230503133013.png",
