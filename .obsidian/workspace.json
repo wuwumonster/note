@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "CTF赛题/WriteUP/2023 ISCC.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md"
+                "file": "CTF赛题/WriteUP/2023 ISCC.md"
               }
             }
           },
@@ -165,7 +165,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "CTF赛题/WriteUP/2023 ISCC.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,7 +232,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "CTF赛题/WriteUP/2023 ISCC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -249,7 +249,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "CTF赛题/WriteUP/2023 ISCC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -289,6 +289,8 @@
   },
   "active": "62035e2c7d254fa7",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023 D3CTF.md",
+    "CTF赛题/WriteUP/2023 ISCC.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230506152206.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230506152056.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230506151844.png",
@@ -296,7 +298,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230503133013.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230503132422.png",
     "JavaSec/JavaSec/CC链/CC链.md",
-    "CTF赛题/WriteUP/2023 D3CTF.md",
     "JavaSec/JavaSec/动态加载字节码.md",
     "网络安全/应急响应/应急响应.md",
     "CTF赛题/BUU月赛/2022.04.md",
@@ -325,7 +326,6 @@
     "Web/OtherTrike",
     "CTF赛题/BUU月赛/attachments/flag_header.jpg",
     "CTF赛题/WriteUP/attachments/Pasted image 20230427163729.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230427163443.png",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
     "Reverse",
