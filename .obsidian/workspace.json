@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md"
+                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 D3CTF.md",
+                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,6 +252,9 @@
   },
   "active": "5fe534bc4a1da409",
   "lastOpenFiles": [
+    "JavaSec/JavaSec/Hessian反序列化.md",
+    "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+    "CTF赛题/WriteUP/2023 D3CTF.md",
     "JavaSec/JavaSec/动态加载字节码.md",
     "网络安全/应急响应/应急响应.md",
     "JavaSec/JavaSec/CC链/CC链.md",
@@ -261,7 +264,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230509150413.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230509144837.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230509144807.png",
-    "CTF赛题/WriteUP/2023 D3CTF.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230506152206.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230506152056.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230506151844.png",
@@ -286,7 +288,6 @@
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/Ruby 2feabbf07ce24f4e827b1a9ef4567d1c.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/Python 2c1838eaf9de4ce0a9b5157ca12cec49.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/PHP反序列化 d90af503f8914fd0b2d3439c30147b00.md",
-    "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/PHP Trick d03cca6a651f4405821abff7640473f9.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
