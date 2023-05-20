@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1c489e472d3931e1",
-        "type": "split",
+        "id": "5fd5c64aa56b40b7",
+        "type": "tabs",
         "children": [
           {
-            "id": "5fd5c64aa56b40b7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5fe534bc4a1da409",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "5fe534bc4a1da409",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaSec/JavaSec/Tabby.md",
+                "mode": "source",
+                "source": false
               }
-            ]
-          },
-          {
-            "id": "701040570872fefd",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "75a2ca58966686a5",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "CTF赛题/WriteUP/2023 VNCTF.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md"
+                "file": "JavaSec/JavaSec/Tabby.md"
               }
             }
           },
@@ -141,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "JavaSec/JavaSec/Tabby.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "JavaSec/JavaSec/Tabby.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/Hessian反序列化漏洞.md",
+                "file": "JavaSec/JavaSec/Tabby.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -265,6 +240,9 @@
   },
   "active": "5fe534bc4a1da409",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2022安洵杯.md",
+    "JavaSec/JavaSec/Tabby.md",
+    "JavaSec/JavaSec/Hessian反序列化漏洞.md",
     "JavaSec/JavaSec/Hessian反序列化.md",
     "JavaSec/JavaSec/FastJson.md",
     "CTF赛题/BUU月赛/2023.04.md",
@@ -288,7 +266,6 @@
     "CTF赛题/CTFShow/attachments/Pasted image 20230515154944.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230515154517.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230515153444.png",
-    "JavaSec/JavaSec/Hessian反序列化漏洞.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/应急响应/应急响应.md",
     "网络安全/内网渗透/内网工作环境.md",
@@ -299,8 +276,6 @@
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741.md",
     "CTF赛题/刷题/Web.md",
     "Web/XXE/XXE 例题.md",
-    "Web/XSS/XSS靶场.md",
-    "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741/XXE 6cc3380a764c481ea029944ba543a2db.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
