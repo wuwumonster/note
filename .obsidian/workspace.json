@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5fd5c64aa56b40b7",
+        "id": "15f94957eeb70d0f",
         "type": "tabs",
         "children": [
           {
-            "id": "5fe534bc4a1da409",
+            "id": "1c1d49dbdb837a24",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -238,10 +238,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "5fe534bc4a1da409",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
-    "CTF赛题/WriteUP/2022安洵杯.md",
+    "JavaSec/JavaSec/tabby",
     "JavaSec/JavaSec/Tabby.md",
+    "JavaSec/JavaSec/Tabby.md",
+    "CTF赛题/WriteUP/2022安洵杯.md",
     "JavaSec/JavaSec/Hessian反序列化漏洞.md",
     "JavaSec/JavaSec/Hessian反序列化.md",
     "JavaSec/JavaSec/FastJson.md",
@@ -274,8 +276,6 @@
     "JavaSec/JavaSec/CC链/CC链.md",
     "CTF赛题/WriteUP/2023 ISCC.md",
     "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741.md",
-    "CTF赛题/刷题/Web.md",
-    "Web/XXE/XXE 例题.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
