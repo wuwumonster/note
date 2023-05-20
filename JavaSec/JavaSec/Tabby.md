@@ -10,3 +10,5 @@
 
 细节在文档里面有，对应的apoc的jar包在里面翻找对应的releases
 
+#### 导出依赖jar包
+**dependency:copy-dependencies -DoutputDirectory=lib**
