@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cdc147eab97521e7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.4"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,7 +106,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -238,7 +250,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1c1d49dbdb837a24",
+  "active": "cdc147eab97521e7",
   "lastOpenFiles": [
     "CTF赛题/WriteUP/2022美亚团队赛.md",
     "CTF赛题/WriteUP/2022安洵杯.md",
