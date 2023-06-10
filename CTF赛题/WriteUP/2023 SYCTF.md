@@ -45,7 +45,9 @@ app.config['SECRET_KEY'] = 'o2takuXX_donot_like_ntr'
 
 ![](attachments/Pasted%20image%2020230610151935.png)
 
-这个版本的 werkzeug应该是有漏洞的
+![](attachments/Pasted%20image%2020230610201525.png)
+
+
 
 sqlmap
 
