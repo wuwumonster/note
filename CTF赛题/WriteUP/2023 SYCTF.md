@@ -47,3 +47,6 @@ app.config['SECRET_KEY'] = 'o2takuXX_donot_like_ntr'
 
 这个版本的 werkzeug应该是有漏洞的
 
+sqlmap
+
+![](attachments/Pasted%20image%2020230610154150.png)
