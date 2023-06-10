@@ -23,9 +23,11 @@
             "id": "703e26f3323adfe7",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.5"
+                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -59,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/Java Agent与PASP.md"
+                "file": "CTF赛题/WriteUP/2023 SYCTF.md"
               }
             }
           },
@@ -127,7 +129,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/Java Agent与PASP.md",
+                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -194,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/Java Agent与PASP.md",
+                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/Java Agent与PASP.md",
+                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,6 +253,8 @@
   },
   "active": "703e26f3323adfe7",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/attachments/Pasted image 20230610114059.png",
+    "CTF赛题/WriteUP/2023 SYCTF.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "JavaSec/JavaSec/CC链/CC链.md",
@@ -288,7 +292,6 @@
     "JavaSec/JavaSec/RMI.md",
     "JavaSec/JavaSec/动态加载字节码.md",
     "CTF赛题/WriteUP/2023 ISCC.md",
-    "CTF赛题/BUU月赛/刷题记录 f21c2ca430f14785a6c805dbe3406741.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
