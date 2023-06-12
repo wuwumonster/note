@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
+                "file": "CTF赛题/CTFShow/2023 愚人杯.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 SYCTF.md"
+                "file": "JavaSec/JavaSec/Java Agent与PASP.md"
               }
             }
           },
@@ -108,7 +107,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -129,7 +129,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
+                "file": "JavaSec/JavaSec/Java Agent与PASP.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -196,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
+                "file": "JavaSec/JavaSec/Java Agent与PASP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 SYCTF.md",
+                "file": "JavaSec/JavaSec/Java Agent与PASP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,8 +251,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "703e26f3323adfe7",
+  "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "CTF赛题/CTFShow/2023 愚人杯.md",
+    "CTF赛题/CTFShow/2023 菜狗杯.md",
+    "CTF赛题/CTFShow/周末挑战.md",
+    "CTF赛题/WriteUP/2023 SYCTF.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230610201525.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230610154150.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230610151935.png",
@@ -262,7 +266,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230610115418.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230610115408.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230610114059.png",
-    "CTF赛题/WriteUP/2023 SYCTF.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "JavaSec/JavaSec/CC链/CC链.md",
@@ -282,16 +285,13 @@
     "CTF赛题/BUU月赛/2022.05.md",
     "CTF赛题/WriteUP/2023 春秋杯.md",
     "CTF赛题/WriteUP/2023 VNCTF.md",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230517134619.png",
     "CTF赛题/WriteUP/2022MTCTF.md",
     "CTF赛题/WriteUP/2023 D3CTF.md",
-    "CTF赛题/CTFShow/周末挑战.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/应急响应/应急响应.md",
     "网络安全/内网渗透/内网工作环境.md",
     "JavaSec/JavaSec/RMI.md",
     "JavaSec/JavaSec/动态加载字节码.md",
-    "CTF赛题/WriteUP/2023 ISCC.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
