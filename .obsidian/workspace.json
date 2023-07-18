@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/未命名.md",
+                "file": "CTF赛题/WriteUP/2023 SCTF 复现.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/未命名.md"
+                "file": "CTF赛题/WriteUP/2023 SCTF 复现.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/未命名.md",
+                "file": "CTF赛题/WriteUP/2023 SCTF 复现.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,7 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/未命名.md",
+                "file": "CTF赛题/WriteUP/2023 SCTF 复现.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +212,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/未命名.md",
+                "file": "CTF赛题/WriteUP/2023 SCTF 复现.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,8 +252,9 @@
   },
   "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/attachments/Pasted image 20230718153423.png",
     "Java Web/Spring Boot 2/入门篇.md",
-    "CTF赛题/WriteUP/未命名.md",
+    "CTF赛题/WriteUP/2023 SCTF 复现.md",
     "JavaSec/JavaSec/Java Agent与PASP.md",
     "Java Web/Spring Boot 2",
     "CTF赛题/CTFShow/2023 愚人杯.md",
@@ -291,7 +292,6 @@
     "CTF赛题/WriteUP/2022MTCTF.md",
     "CTF赛题/WriteUP/2023 D3CTF.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
-    "网络安全/应急响应/应急响应.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
