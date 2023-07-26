@@ -235,7 +235,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 233.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,8 +251,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1660fe89eec4088b",
+  "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/attachments/Pasted image 20230726151642.png",
     "Java Web/Spring Framework 5/入门篇.md",
     "CTF赛题/BUU月赛/2023.07.md",
     "Java Web/Spring Framework 5",
@@ -296,7 +297,6 @@
     "CTF赛题/BUU月赛/2022.09.md",
     "CTF赛题/BUU月赛/2022.07.md",
     "CTF赛题/BUU月赛/2022.04.md",
-    "CTF赛题/BUU月赛/2022.05.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
