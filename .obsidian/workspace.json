@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2022BytesCTF.md",
+                "file": "CTF赛题/CTFShow/终极考核.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2022BytesCTF.md"
+                "file": "CTF赛题/CTFShow/终极考核.md"
               }
             }
           },
@@ -141,7 +141,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2022BytesCTF.md",
+                "file": "CTF赛题/CTFShow/终极考核.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2022BytesCTF.md",
+                "file": "CTF赛题/CTFShow/终极考核.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +225,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2022BytesCTF.md",
+                "file": "CTF赛题/CTFShow/终极考核.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -265,6 +265,11 @@
   },
   "active": "551eda42a3b8b361",
   "lastOpenFiles": [
+    "CTF赛题/CTFShow/attachments/Pasted image 20230807151454.png",
+    "CTF赛题/CTFShow/attachments/Pasted image 20230807151447.png",
+    "CTF赛题/CTFShow/attachments/Pasted image 20230807150903.png",
+    "CTF赛题/WriteUP/2022BytesCTF.md",
+    "CTF赛题/CTFShow/终极考核.md",
     "CTF赛题/WriteUP/2022网鼎杯.md",
     "CTF赛题/WriteUP/2020网鼎-复现.md",
     "CTF赛题/WriteUP/2021N1CTF.md",
@@ -282,8 +287,6 @@
     "CTF赛题/BUU月赛/attachments/Pasted image 20230726151642.png",
     "Java Web/Spring Framework 5/入门篇.md",
     "Java Web/Spring Framework 5",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230725172820.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20230725171714.png",
     "Web/Python/Python 原型链污染.md",
     "Web/Python/attachments",
     "Web/Python/simpread-Python 原型链污染变体 (prototype-pollution-in-python) - 跳跳糖.md",
@@ -306,9 +309,6 @@
     "CTF赛题/WriteUP/2022安洵杯.md",
     "JavaSec/JavaSec/tabby/Tabby.md",
     "JavaSec/JavaSec/tabby",
-    "JavaSec/JavaSec/Hessian反序列化漏洞.md",
-    "JavaSec/JavaSec/Hessian反序列化.md",
-    "JavaSec/JavaSec/FastJson.md",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
     "CTF赛题/刷题/Reverse",
