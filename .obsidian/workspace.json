@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Web/Spring Boot 2/基础入门篇.md",
+                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +72,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md"
+                "file": "CTF赛题/WriteUP/2023 NepCTF.md"
               }
             }
           },
@@ -141,7 +140,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -263,12 +262,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "703e26f3323adfe7",
+  "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
-    "CTF赛题/WriteUP/2023NepCTF.md",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230817163220.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230817163042.png",
+    "Java Web/Spring Boot 2/基础入门篇.md",
+    "网络安全/内网渗透/提权/Lunux提权.md",
+    "CTF赛题/WriteUP/2023 NepCTF.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230817162152.png",
     "CTF赛题/WriteUP/2022长城杯.md",
-    "Java Web/Spring Boot 2/基础入门篇.md",
     "Web/XSS/SOME 攻击.md",
     "CTF赛题/WriteUP/2023 巅峰极客.md",
     "CTF赛题/WriteUP/2020网鼎-复现.md",
@@ -287,7 +289,6 @@
     "CTF赛题/CTFShow/attachments/Pasted image 20230807175131.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230807174141.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20230807173924.png",
-    "CTF赛题/CTFShow/attachments/Pasted image 20230807172913.png",
     "CTF赛题/WriteUP/2022BytesCTF.md",
     "CTF赛题/WriteUP/2022网鼎杯.md",
     "CTF赛题/WriteUP/2021N1CTF.md",
@@ -303,7 +304,6 @@
     "Web/Python/未确认 234530.crdownload",
     "Web/Python",
     "Web/未命名.md",
-    "CTF赛题/WriteUP/2023 SCTF 复现.md",
     "Java Web/Spring Boot 2",
     "未命名 1.canvas",
     "未命名.canvas",
