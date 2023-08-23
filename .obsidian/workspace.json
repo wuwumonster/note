@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
+                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 NepCTF.md"
+                "file": "CTF赛题/WriteUP/2023 W&MCTF.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
+                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -207,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
+                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 NepCTF.md",
+                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -264,6 +264,8 @@
   },
   "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023 NepCTF.md",
+    "CTF赛题/WriteUP/2023 W&MCTF.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818164722.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818164237.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163954.png",
@@ -274,10 +276,8 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230818162537.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818162039.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818161721.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230817163220.png",
     "Java Web/Spring Boot 2/基础入门篇.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
-    "CTF赛题/WriteUP/2023 NepCTF.md",
     "CTF赛题/WriteUP/2022长城杯.md",
     "Web/XSS/SOME 攻击.md",
     "CTF赛题/WriteUP/2023 巅峰极客.md",
