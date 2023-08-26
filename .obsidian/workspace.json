@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "file": "网络安全/文件取证/Practice/Practice 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -264,12 +264,17 @@
   },
   "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/attachments/Pasted image 20230826192710.png",
+    "Web/Sql注入/SQLI-LABS.md",
+    "网络安全/文件取证/Practice/Practice 2.md",
+    "网络安全/文件取证/Practice/Practice 1.md",
+    "网络安全/内网渗透/提权/Lunux提权.md",
+    "CTF赛题/WriteUP/2023蓝帽杯.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230826191440.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230826191418.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230826183432.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230826182815.png",
     "网络安全/应急响应/情景练习/Practice 2.md",
-    "CTF赛题/WriteUP/2023蓝帽杯.md",
     "CTF赛题/WriteUP/2023蓝帽杯/2023蓝帽初赛.md",
     "CTF赛题/WriteUP/2023蓝帽杯",
     "网络安全/应急响应/情景练习/Practice 1.md",
@@ -287,9 +292,7 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163954.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163920.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163826.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230818163255.png",
     "Java Web/Spring Boot 2/基础入门篇.md",
-    "网络安全/内网渗透/提权/Lunux提权.md",
     "CTF赛题/WriteUP/2022长城杯.md",
     "Web/XSS/SOME 攻击.md",
     "CTF赛题/WriteUP/2023 巅峰极客.md",
@@ -298,9 +301,6 @@
     "CTF赛题/WriteUP/2022蓝帽杯.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit4.md",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
-    "CTF赛题/CTFShow/终极考核.md",
-    "Web/Sql注入/SQLI-LABS.md",
-    "CTF赛题/WriteUP/2022BytesCTF.md",
     "Java Web/Spring Framework 5",
     "Web/Python/attachments",
     "Web/Python/未确认 234530.crdownload",
