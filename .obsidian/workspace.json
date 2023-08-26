@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
+                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 W&MCTF.md"
+                "file": "CTF赛题/WriteUP/2023蓝帽杯.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
+                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -207,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
+                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 W&MCTF.md",
+                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -264,8 +264,22 @@
   },
   "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
-    "CTF赛题/WriteUP/2023 NepCTF.md",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230826183432.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230826182815.png",
+    "网络安全/应急响应/情景练习/Practice 2.md",
+    "CTF赛题/WriteUP/2023蓝帽杯.md",
+    "CTF赛题/WriteUP/2023蓝帽杯/2023蓝帽初赛.md",
+    "CTF赛题/WriteUP/2023蓝帽杯",
+    "网络安全/应急响应/情景练习/Practice 1.md",
+    "网络安全/应急响应/应急响应.md",
+    "CTF赛题/CTFShow/2023 愚人杯.md",
+    "CTF赛题/CTFShow/2023 菜狗杯.md",
+    "CTF赛题/CTFShow/周末挑战.md",
+    "CTF赛题/WriteUP/attachments/flag.png",
+    "Web/PHPTrike/函数特性.md",
+    "Web/PHPTrike/PHP伪协议.md",
     "CTF赛题/WriteUP/2023 W&MCTF.md",
+    "CTF赛题/WriteUP/2023 NepCTF.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818164722.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818164237.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163954.png",
@@ -274,8 +288,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163255.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818163053.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230818162537.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230818162039.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230818161721.png",
     "Java Web/Spring Boot 2/基础入门篇.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "CTF赛题/WriteUP/2022长城杯.md",
@@ -288,29 +300,17 @@
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "CTF赛题/CTFShow/终极考核.md",
     "Web/Sql注入/SQLI-LABS.md",
-    "CTF赛题/CTFShow/2023 愚人杯.md",
     "CTF赛题/WriteUP/2022BytesCTF.md",
-    "CTF赛题/WriteUP/2022网鼎杯.md",
-    "CTF赛题/WriteUP/2021N1CTF.md",
-    "CTF赛题/WriteUP/2023 春秋杯.md",
-    "CTF赛题/WriteUP/2023 D3CTF.md",
-    "CTF赛题/BUU月赛/2023.04.md",
-    "CTF赛题/BUU月赛/2023.07.md",
-    "Java Web/Spring Framework 5/入门篇.md",
     "Java Web/Spring Framework 5",
-    "Web/Python/Python 原型链污染.md",
     "Web/Python/attachments",
-    "Web/Python/simpread-Python 原型链污染变体 (prototype-pollution-in-python) - 跳跳糖.md",
     "Web/Python/未确认 234530.crdownload",
     "Web/Python",
-    "Web/未命名.md",
     "Java Web/Spring Boot 2",
     "未命名 1.canvas",
     "未命名.canvas",
     "JavaSec/JavaSec/tabby",
     "Web/OtherTrike",
     "CTF赛题/刷题/Reverse/attachments",
-    "CTF赛题/刷题/Reverse",
-    "Reverse"
+    "CTF赛题/刷题/Reverse"
   ]
 }
