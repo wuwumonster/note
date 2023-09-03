@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "05c55da7d10ec042",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.5"
+              }
+            }
+          },
+          {
             "id": "703e26f3323adfe7",
             "type": "leaf",
             "state": {
@@ -43,7 +53,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -72,7 +83,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md"
+                "file": "CTF赛题/WriteUP/2023 陇剑杯.md"
               }
             }
           },
@@ -141,7 +152,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "CTF赛题/WriteUP/2023 陇剑杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -208,7 +219,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "CTF赛题/WriteUP/2023 陇剑杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,7 +236,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "CTF赛题/WriteUP/2023 陇剑杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -263,8 +274,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0b91c1842cbdf381",
+  "active": "05c55da7d10ec042",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023蓝帽杯.md",
     "CTF赛题/WriteUP/2023 陇剑杯.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901193113.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901193057.png",
@@ -276,7 +288,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230901184604.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901183840.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901180934.png",
-    "CTF赛题/WriteUP/2023蓝帽杯.md",
     "Web/Sql注入/SQLI-LABS.md",
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/文件取证/Practice/Practice 1.md",
