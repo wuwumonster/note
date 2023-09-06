@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md"
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md"
               }
             }
           },
@@ -150,7 +150,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -272,11 +272,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
-    "网络安全/实战渗透/未命名",
-    "CTF赛题/WriteUP/2023 陇剑杯.md",
     "CTF赛题/WriteUP/2023蓝帽杯.md",
+    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+    "网络安全/实战渗透/Hack the Box/SEASON",
+    "网络安全/实战渗透/Hack the Box",
+    "CTF赛题/WriteUP/2023 陇剑杯.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901193113.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901193057.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901192321.png",
@@ -319,8 +321,6 @@
     "未命名 1.canvas",
     "未命名.canvas",
     "JavaSec/JavaSec/tabby",
-    "Web/OtherTrike",
-    "CTF赛题/刷题/Reverse/attachments",
-    "CTF赛题/刷题/Reverse"
+    "Web/OtherTrike"
   ]
 }
