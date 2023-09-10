@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+                "file": "Web/PHPTrike/Fast Destruct.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md"
+                "file": "Web/PHPTrike/Fast Destruct.md"
               }
             }
           },
@@ -150,7 +150,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+                "file": "Web/PHPTrike/Fast Destruct.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+                "file": "Web/PHPTrike/Fast Destruct.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+                "file": "Web/PHPTrike/Fast Destruct.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -274,6 +274,8 @@
   },
   "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+    "Web/PHPTrike/Fast Destruct.md",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910164957.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910164753.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910153533.png",
@@ -285,7 +287,6 @@
     "网络安全/实战渗透/Hack the Box/SEASON/attachments",
     "Misc/内存取证-volatility工具的使用 （史上更全教程，更全命令）_路baby的博客-CSDN博客.pdf",
     "Misc/simpread-内存取证 - volatility 工具的使用 （史上更全教程，更全命令）_路 baby 的博客 - CSDN 博客.md",
-    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
     "未命名.canvas",
     "未命名 1.canvas",
     "Misc/Volatility.md",
@@ -295,7 +296,6 @@
     "CTF赛题/WriteUP/2023 陇剑杯.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901193113.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901193057.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230901192321.png",
     "Web/Sql注入/SQLI-LABS.md",
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/文件取证/Practice/Practice 1.md",
