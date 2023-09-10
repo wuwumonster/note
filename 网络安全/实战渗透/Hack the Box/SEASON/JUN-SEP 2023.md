@@ -42,4 +42,6 @@ python 将jar包下载
 ![](attachments/Pasted%20image%2020230910195809.png)
 
 
+`psql "postgresql://postgres:Vg&nvzAQ7XxR@localhost/postgres"`
+
 
