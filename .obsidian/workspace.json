@@ -272,8 +272,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910151303.png",
+    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910150903.png",
+    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910150836.png",
+    "网络安全/实战渗透/Hack the Box/SEASON/attachments",
     "Misc/内存取证-volatility工具的使用 （史上更全教程，更全命令）_路baby的博客-CSDN博客.pdf",
     "Misc/simpread-内存取证 - volatility 工具的使用 （史上更全教程，更全命令）_路 baby 的博客 - CSDN 博客.md",
     "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
@@ -292,8 +296,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20230901185225.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901185126.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230901184604.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230901183840.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230901180934.png",
     "Web/Sql注入/SQLI-LABS.md",
     "网络安全/文件取证/Practice/Practice 2.md",
     "网络安全/文件取证/Practice/Practice 1.md",
@@ -319,8 +321,6 @@
     "Web/Python/attachments",
     "Web/Python/未确认 234530.crdownload",
     "Web/Python",
-    "Java Web/Spring Boot 2",
-    "JavaSec/JavaSec/tabby",
-    "Web/OtherTrike"
+    "Java Web/Spring Boot 2"
   ]
 }
