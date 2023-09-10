@@ -37,3 +37,9 @@ script /dev/null -c bash 美化
 
 ![](attachments/Pasted%20image%2020230910164957.png)
 
+python 将jar包下载
+
+![](attachments/Pasted%20image%2020230910195809.png)
+
+
+

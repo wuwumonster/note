@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/PHPTrike/Fast Destruct.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/PHPTrike/Fast Destruct.md"
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md"
               }
             }
           },
@@ -150,7 +150,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/PHPTrike/Fast Destruct.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -217,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/PHPTrike/Fast Destruct.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +234,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/PHPTrike/Fast Destruct.md",
+                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -274,8 +274,11 @@
   },
   "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
-    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910195809.png",
+    "Web/PHPTrike/PHP伪协议.md",
+    "Web/PHPTrike/open_basedir绕过.md",
     "Web/PHPTrike/Fast Destruct.md",
+    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910164957.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910164753.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910153533.png",
@@ -309,14 +312,11 @@
     "CTF赛题/CTFShow/2023 菜狗杯.md",
     "CTF赛题/CTFShow/周末挑战.md",
     "Web/PHPTrike/函数特性.md",
-    "Web/PHPTrike/PHP伪协议.md",
     "CTF赛题/WriteUP/2023 W&MCTF.md",
     "CTF赛题/WriteUP/2023 NepCTF.md",
     "Java Web/Spring Boot 2/基础入门篇.md",
     "CTF赛题/WriteUP/2022长城杯.md",
     "Web/XSS/SOME 攻击.md",
-    "CTF赛题/WriteUP/2023 巅峰极客.md",
-    "CTF赛题/WriteUP/2020网鼎-复现.md",
     "Java Web/Spring Framework 5",
     "Web/Python/attachments",
     "Web/Python/未确认 234530.crdownload",
