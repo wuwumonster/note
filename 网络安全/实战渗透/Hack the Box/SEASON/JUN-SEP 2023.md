@@ -44,4 +44,11 @@ python 将jar包下载
 
 `psql "postgresql://postgres:Vg&nvzAQ7XxR@localhost/postgres"`
 
+连接进入
 
+![](attachments/Pasted%20image%2020230911075447.png)
+
+```
+kanderson | $2a$10$E/Vcd9ecflmPudWeLSEIv.cvK6QjxjWlWXpij1NVNV3Mm6eH58zim | User
+admin     | $2a$10$SpKYdHLB0FOaT7n3x72wtuS0yR8uqqbNNpIPjUb2MZib3H9kVO8dm | Admin
+```
