@@ -53,3 +53,15 @@ kanderson | $2a$10$E/Vcd9ecflmPudWeLSEIv.cvK6QjxjWlWXpij1NVNV3Mm6eH58zim | User
 admin     | $2a$10$SpKYdHLB0FOaT7n3x72wtuS0yR8uqqbNNpIPjUb2MZib3H9kVO8dm | Admin
 ```
 
+## Zipping
+#Linux #Medium
+nmap没有扫到其他多余端口
+
+dirseach扫描
+
+![](attachments/Pasted%20image%2020230913102902.png)
+
+
+
+![](attachments/Pasted%20image%2020230913102958.png)
+
