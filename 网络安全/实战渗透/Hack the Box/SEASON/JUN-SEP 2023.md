@@ -65,3 +65,7 @@ dirseach扫描
 
 ![](attachments/Pasted%20image%2020230913102958.png)
 
+没有办法上传php，但是考验利用link实现文件包含
+
+![](attachments/Pasted%20image%2020230913104433.png)
+
