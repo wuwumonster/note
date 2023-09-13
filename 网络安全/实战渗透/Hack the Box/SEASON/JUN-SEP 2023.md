@@ -69,3 +69,7 @@ dirseach扫描
 
 ![](attachments/Pasted%20image%2020230913104433.png)
 
+打压缩包，用·`--symlinks`参数 用了这个参数，打在压缩包的时候，是一个链接文件，而不是链接的目标文件
+
+![](attachments/Pasted%20image%2020230913105315.png)
+
