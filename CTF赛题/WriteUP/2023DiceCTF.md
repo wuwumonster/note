@@ -15,4 +15,11 @@ ValueError: {'sys': <module 'sys' (built-in)>, 'builtins': <module 'builtins' (b
 ```python
 raise ValueError(str(dir(test_8_hidden)))
 ```
-查看这下模块的细节
+
+
+当正常写了add的功能后
+
+![](attachments/Pasted%20image%2020230914140920.png)
+
+检测通过
+
