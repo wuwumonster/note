@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "13b196c9301f7557",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
+          },
+          {
             "id": "551eda42a3b8b361",
             "type": "leaf",
             "state": {
@@ -53,7 +63,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,6 +213,16 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "63bbfa59b211acb5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ],
         "currentTab": 2
@@ -272,7 +293,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0b91c1842cbdf381",
+  "active": "13b196c9301f7557",
   "lastOpenFiles": [
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913105315.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913104433.png",
