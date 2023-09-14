@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "Web/Python/PyJail.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md"
+                "file": "Web/Python/PyJail.md"
               }
             }
           },
@@ -163,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "Web/Python/PyJail.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "Web/Python/PyJail.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,7 +257,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "Web/Python/PyJail.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -298,6 +298,7 @@
   "active": "13b196c9301f7557",
   "lastOpenFiles": [
     "CTF赛题/WriteUP/2023DiceCTF.md",
+    "Web/Python/PyJail.md",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913105315.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913104433.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913102958.png",
@@ -342,7 +343,6 @@
     "CTF赛题/CTFShow/周末挑战.md",
     "CTF赛题/WriteUP/2023 W&MCTF.md",
     "CTF赛题/WriteUP/2023 NepCTF.md",
-    "Java Web/Spring Boot 2/基础入门篇.md",
     "Java Web/Spring Framework 5",
     "Web/Python/attachments"
   ]
