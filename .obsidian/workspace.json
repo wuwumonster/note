@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
+                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md"
+                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md"
               }
             }
           },
@@ -163,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
+                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
+                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,7 +257,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
+                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -297,6 +297,11 @@
   },
   "active": "13b196c9301f7557",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023 W&MCTF.md",
+    "Web/Python/PyJail.md",
+    "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md",
@@ -311,12 +316,9 @@
     "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/PyJail.md",
-    "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
     "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客",
     "Web/Python/文档/simpread-ast --- 抽象语法树 — Python 3.11.5 文档.md",
-    "Web/Python/文档",
     "Web/Python/Python 原型链污染.md",
     "CTF赛题/WriteUP/2023DiceCTF.md",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913105315.png",
@@ -342,5 +344,6 @@
     "Misc/Volatility.md",
     "CTF赛题/WriteUP/2023蓝帽杯.md",
     "CTF赛题/WriteUP/2023 陇剑杯.md",
-    "Web/Sql注入/SQLI-LABS.md",
-    "网络安全/文件取证/Practice/Practice 2.md"
+    "Web/Sql注入/SQLI-LABS.md"
+  ]
+}

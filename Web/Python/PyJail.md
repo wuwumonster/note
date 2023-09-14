@@ -81,3 +81,5 @@ sys.addaudithook(hook)
 后续的利用这里直接贴DummyKitty师傅的博客
 [CTF Pyjail 沙箱逃逸原理合集 | DummyKitty's blog](https://dummykitty.github.io/posts/python-%E6%B2%99%E7%AE%B1%E9%80%83%E9%80%B8%E5%8E%9F%E7%90%86/)
 [CTF Pyjail 沙箱逃逸绕过合集 | DummyKitty's blog](https://dummykitty.github.io/posts/python-%E6%B2%99%E7%AE%B1%E9%80%83%E9%80%B8%E7%BB%95%E8%BF%87/)
+
+本地存了一份[simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog](大佬博客/simpread-CTF%20Pyjail%20沙箱逃逸绕过合集%20_%20DummyKitty's%20blog.md)

@@ -21,41 +21,48 @@
 -----------------------
 
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-01-%E7%BB%95%E8%BF%87%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97%E6%88%96%E6%96%B9%E6%B3%95/)
-
+[simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog](simpread-pyjail%20bypass-01%20绕过删除模块或方法%20_%20DummyKitty's%20blog.md)
 绕过基于字符串匹配的过滤
 -----------------------------
 
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-02-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%98%E6%8D%A2%E7%BB%95%E8%BF%87/)
+[simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog](simpread-pyjail%20bypass-02%20绕过基于字符串匹配的过滤%20_%20DummyKitty's%20blog.md)
 
 绕过命名空间限制
 ---------------------
 
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-03-%E7%BB%95%E8%BF%87%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E9%99%90%E5%88%B6/)
-
-绕过长度限制
------------------
-
-[redirect](https://dummykitty.github.io/posts/pyjail-bypass-04-%E7%BB%95%E8%BF%87%E5%A4%9A%E8%A1%8C%E9%99%90%E5%88%B6/)
+[simpread-pyjail bypass-03 绕过命名空间限制 _ DummyKitty's blog](simpread-pyjail%20bypass-03%20绕过命名空间限制%20_%20DummyKitty's%20blog.md)
 
 绕过多行限制
 -----------------
 
+[redirect](https://dummykitty.github.io/posts/pyjail-bypass-04-%E7%BB%95%E8%BF%87%E5%A4%9A%E8%A1%8C%E9%99%90%E5%88%B6/)
+[simpread-pyjail bypass-04 绕过多行限制 _ DummyKitty's blog](simpread-pyjail%20bypass-04%20绕过多行限制%20_%20DummyKitty's%20blog.md)
+
+绕过长度限制
+-----------------
+
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-05-%E7%BB%95%E8%BF%87%E9%95%BF%E5%BA%A6%E9%99%90%E5%88%B6/)
+[simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog](simpread-pyjail%20bypass-05%20绕过长度限制%20_%20DummyKitty's%20blog.md)
 
 变量覆盖与函数篡改
 -----------------------
 
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-06-%E5%8F%98%E9%87%8F%E8%A6%86%E7%9B%96%E4%B8%8E%E5%87%BD%E6%95%B0%E7%AF%A1%E6%94%B9/)
+[simpread-pyjail bypass-06 变量覆盖与函数篡改 _ DummyKitty's blog](simpread-pyjail%20bypass-06%20变量覆盖与函数篡改%20_%20DummyKitty's%20blog.md)
 
 绕过 audit hook
 -------------------------------
 
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-07-%E7%BB%95%E8%BF%87-audit-hook/)
+[simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog](simpread-pyjail%20bypass-07%20绕过%20audit%20hook%20_%20DummyKitty's%20blog.md)
 
 绕过 AST 沙箱
 -----------------------
 
 [redirect](https://dummykitty.github.io/posts/pyjail-bypass-08-%E7%BB%95%E8%BF%87-AST-%E6%B2%99%E7%AE%B1/)
+[simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog](simpread-pyjail%20bypass-08%20绕过%20AST%20沙箱%20_%20DummyKitty's%20blog.md)
 
 其他技巧
 -------------
