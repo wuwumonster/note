@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md"
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md"
               }
             }
           },
@@ -163,7 +162,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,7 +239,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,7 +256,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -295,8 +294,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "13b196c9301f7557",
+  "active": "0b91c1842cbdf381",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/attachments/Pasted image 20230914134803.png",
+    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+    "网络安全/文件取证/Practice/Practice 2.md",
+    "CTF赛题/WriteUP/2023 陇剑杯.md",
+    "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/WriteUP/2023 W&MCTF.md",
     "Web/Python/PyJail.md",
     "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md",
@@ -329,7 +333,6 @@
     "Web/Sql注入/OOB.md",
     "Web/PHPTrike/Fast Destruct.md",
     "取证/Raid重组.md",
-    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230911075447.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910195809.png",
     "Web/PHPTrike/PHP伪协议.md",
@@ -340,10 +343,6 @@
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910153526.png",
     "Misc/simpread-内存取证 - volatility 工具的使用 （史上更全教程，更全命令）_路 baby 的博客 - CSDN 博客.md",
     "未命名.canvas",
-    "未命名 1.canvas",
-    "Misc/Volatility.md",
-    "CTF赛题/WriteUP/2023蓝帽杯.md",
-    "CTF赛题/WriteUP/2023 陇剑杯.md",
-    "Web/Sql注入/SQLI-LABS.md"
+    "未命名 1.canvas"
   ]
 }
