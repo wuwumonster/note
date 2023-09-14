@@ -51,3 +51,11 @@ sys.addaudithook(hook)
 调用 [`sys.addaudithook()`](https://docs.python.org/zh-cn/3/library/sys.html?highlight=addaudithook#sys.addaudithook "sys.addaudithook") 时它自身将引发一个名为 `sys.addaudithook` 的审计事件且不附带参数。 如果任何现有的钩子引发了派生自 [`RuntimeError`](https://docs.python.org/zh-cn/3/library/exceptions.html#RuntimeError "RuntimeError") 的异常，则新的钩子不会被添加并且该异常会被抑制。 其结果就是，调用者无法确保他们的钩子已经被添加，除非他们控制了全部现有的钩子。
 
 ### 基于 AST 的沙箱
+
+抽象语法树可通过将 [`ast.PyCF_ONLY_AST`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.PyCF_ONLY_AST "ast.PyCF_ONLY_AST") 作为旗标传递给 [`compile()`](https://docs.python.org/zh-cn/3/library/functions.html#compile "compile") 内置函数来生成，或是使用此模块中提供的 [`parse()`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.parse "ast.parse") 辅助函数。返回结果将是一个由许多对象构成的树，这些对象所属的类都继承自 [`ast.AST`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.AST "ast.AST")。抽象语法树可被内置的 [`compile()`](https://docs.python.org/zh-cn/3/library/functions.html#compile "compile") 函数编译为一个 Python 代码对象。
+
+- _class_ ast.Module(_body_, _type_ignores_)
+	用于 [文件输入](https://docs.python.org/zh-cn/3/reference/toplevel_components.html#file-input)。 由 [`ast.parse()`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.parse "ast.parse") 以默认 `"exec"` _mode_ 生成的节点类型。
+	_body_ 是由该模块的 [语句](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast-statements) 组成的 [`list`](https://docs.python.org/zh-cn/3/library/stdtypes.html#list "list")。
+	_type_ignores_ 是由该模块的类型忽略注释组成的 [`list`](https://docs.python.org/zh-cn/3/library/stdtypes.html#list "list")；
+- 
