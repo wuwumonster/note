@@ -11,3 +11,17 @@ exec(object[, globals[, locals]])
 >exec 返回值永远为 None
 
 ### eval执行
+```python
+eval(expression[, globals[, locals]])
+```
+
+#### 参数
+
+- expression -- 表达式。
+- globals -- 变量作用域，全局命名空间，如果被提供，则必须是一个字典对象。
+- locals -- 变量作用域，局部命名空间，如果被提供，可以是任何映射对象。
+
+>eval() 函数将字符串转换为相应的对象，并返回表达式的结果。
+eval不允许`\n`和`;` 进行换行，exec允许但是不会输出结果，eval会,放到compile中就只和compile有关
+
+### compile
