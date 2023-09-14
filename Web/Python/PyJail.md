@@ -77,3 +77,7 @@ sys.addaudithook(hook)
 
 全部文档[simpread-ast --- 抽象语法树 — Python 3.11.5 文档](文档/simpread-ast%20---%20抽象语法树%20—%20Python%203.11.5%20文档.md)
 
+
+后续的利用这里直接贴DummyKitty师傅的博客
+[CTF Pyjail 沙箱逃逸原理合集 | DummyKitty's blog](https://dummykitty.github.io/posts/python-%E6%B2%99%E7%AE%B1%E9%80%83%E9%80%B8%E5%8E%9F%E7%90%86/)
+[CTF Pyjail 沙箱逃逸绕过合集 | DummyKitty's blog](https://dummykitty.github.io/posts/python-%E6%B2%99%E7%AE%B1%E9%80%83%E9%80%B8%E7%BB%95%E8%BF%87/)
