@@ -146,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5086555480957
+    "width": 429.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -297,6 +297,18 @@
   },
   "active": "13b196c9301f7557",
   "lastOpenFiles": [
+    "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
+    "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
+    "Web/Python/大佬博客/simpread-pyjail bypass-04 绕过多行限制 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-04 绕过多行限制 _ DummyKitty's blog.md.crdownload",
+    "Web/Python/大佬博客/simpread-pyjail bypass-06 变量覆盖与函数篡改 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-06 变量覆盖与函数篡改 _ DummyKitty's blog.md.crdownload",
+    "Web/Python/大佬博客/simpread-pyjail bypass-03 绕过命名空间限制 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-03 绕过命名空间限制 _ DummyKitty's blog.md.crdownload",
+    "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md",
+    "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog.md.crdownload",
     "Web/Python/PyJail.md",
@@ -306,7 +318,6 @@
     "Web/Python/文档/simpread-ast --- 抽象语法树 — Python 3.11.5 文档.md",
     "Web/Python/文档",
     "Web/Python/Python 原型链污染.md",
-    "Web/Python/simpread-ast --- 抽象语法树 — Python 3.11.5 文档.md.crdownload",
     "CTF赛题/WriteUP/2023DiceCTF.md",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913105315.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913104433.png",
@@ -316,11 +327,7 @@
     "Web/Sql注入/OOB.md",
     "Web/PHPTrike/Fast Destruct.md",
     "取证/Raid重组.md",
-    "取证/Raid重组复习 - 0xL4k1d - 博客园.pdf",
-    "取证/内存取证-volatility工具的使用 （史上更全教程，更全命令）_路baby的博客-CSDN博客.pdf",
     "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
-    "取证",
-    "网络安全/工具篇",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230911075447.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910195809.png",
     "Web/PHPTrike/PHP伪协议.md",
@@ -329,7 +336,6 @@
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910164753.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910153533.png",
     "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910153526.png",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments",
     "Misc/simpread-内存取证 - volatility 工具的使用 （史上更全教程，更全命令）_路 baby 的博客 - CSDN 博客.md",
     "未命名.canvas",
     "未命名 1.canvas",
@@ -337,13 +343,4 @@
     "CTF赛题/WriteUP/2023蓝帽杯.md",
     "CTF赛题/WriteUP/2023 陇剑杯.md",
     "Web/Sql注入/SQLI-LABS.md",
-    "网络安全/文件取证/Practice/Practice 2.md",
-    "网络安全/文件取证/Practice/Practice 1.md",
-    "网络安全/内网渗透/提权/Lunux提权.md",
-    "网络安全/应急响应/情景练习/Practice 2.md",
-    "CTF赛题/WriteUP/2023蓝帽杯/2023蓝帽初赛.md",
-    "网络安全/应急响应/情景练习/Practice 1.md",
-    "网络安全/应急响应/应急响应.md",
-    "CTF赛题/CTFShow/2023 愚人杯.md"
-  ]
-}
+    "网络安全/文件取证/Practice/Practice 2.md"
