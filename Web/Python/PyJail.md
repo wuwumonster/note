@@ -54,8 +54,26 @@ sys.addaudithook(hook)
 
 抽象语法树可通过将 [`ast.PyCF_ONLY_AST`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.PyCF_ONLY_AST "ast.PyCF_ONLY_AST") 作为旗标传递给 [`compile()`](https://docs.python.org/zh-cn/3/library/functions.html#compile "compile") 内置函数来生成，或是使用此模块中提供的 [`parse()`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.parse "ast.parse") 辅助函数。返回结果将是一个由许多对象构成的树，这些对象所属的类都继承自 [`ast.AST`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.AST "ast.AST")。抽象语法树可被内置的 [`compile()`](https://docs.python.org/zh-cn/3/library/functions.html#compile "compile") 函数编译为一个 Python 代码对象。
 
-- _class_ ast.Module(_body_, _type_ignores_)
-	用于 [文件输入](https://docs.python.org/zh-cn/3/reference/toplevel_components.html#file-input)。 由 [`ast.parse()`](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast.parse "ast.parse") 以默认 `"exec"` _mode_ 生成的节点类型。
-	_body_ 是由该模块的 [语句](https://docs.python.org/zh-cn/3/library/ast.html?highlight=ast#ast-statements) 组成的 [`list`](https://docs.python.org/zh-cn/3/library/stdtypes.html#list "list")。
-	_type_ignores_ 是由该模块的类型忽略注释组成的 [`list`](https://docs.python.org/zh-cn/3/library/stdtypes.html#list "list")；
-- 
+- `ast.Module`: 表示一个整个的模块或者脚本。
+- `ast.FunctionDef`: 表示一个函数定义。
+- `ast.AsyncFunctionDef`: 表示一个异步函数定义。
+- `ast.ClassDef`: 表示一个类定义。
+- `ast.Return`: 表示一个return语句。
+- `ast.Delete`: 表示一个del语句。
+- `ast.Assign`: 表示一个赋值语句。
+- `ast.AugAssign`: 表示一个增量赋值语句，如`x += 1`。
+- `ast.For`: 表示一个for循环。
+- `ast.While`: 表示一个while循环。
+- `ast.If`: 表示一个if语句。
+- `ast.With`: 表示一个with语句。
+- `ast.Raise`: 表示一个raise语句。
+- `ast.Try`: 表示一个try/except语句。
+- `ast.Import`: 表示一个import语句。
+- `ast.ImportFrom`: 表示一个from…import…语句。
+- `ast.Expr`: 表示一个表达式。
+- `ast.Call`: 表示一个函数调用。
+- `ast.Name`: 表示一个变量名。
+- `ast.Attribute`: 表示一个属性引用，如`x.y`
+
+全部文档[simpread-ast --- 抽象语法树 — Python 3.11.5 文档](文档/simpread-ast%20---%20抽象语法树%20—%20Python%203.11.5%20文档.md)
+
