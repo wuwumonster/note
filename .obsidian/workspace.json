@@ -76,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -305,9 +305,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "423bfdc455e1003d",
+  "active": "551eda42a3b8b361",
   "lastOpenFiles": [
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916153204.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916180634.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916180536.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916180503.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916180419.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916180353.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916180049.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916175918.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916175704.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916175612.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916175328.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20230916175142.png",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/WriteUP/2023 SCTF 复现.md",
     "CTF赛题/WriteUP/2023 SYCTF.md",
@@ -333,10 +343,6 @@
     "CTF赛题/WriteUP/2023蓝帽杯 半决赛.md",
     "CTF赛题/刷题/Web.md",
     "CTF赛题/BUU月赛/2023.07.md",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230914144030.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230914143857.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230914140920.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230914134803.png",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
@@ -347,12 +353,6 @@
     "Web/Python/大佬博客/simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913105315.png",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913104433.png",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913102958.png",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230913102902.png",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230911075447.png",
-    "网络安全/实战渗透/Hack the Box/SEASON/attachments/Pasted image 20230910195809.png",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
