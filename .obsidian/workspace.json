@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
+                "file": "CTF赛题/WriteUP/2023蓝帽杯 半决赛.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,18 +60,6 @@
               "type": "release-notes",
               "state": {
                 "currentVersion": "1.4.5"
-              }
-            }
-          },
-          {
-            "id": "703e26f3323adfe7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/文件取证/Practice/Practice 2.md",
-                "mode": "source",
-                "source": false
               }
             }
           }
@@ -105,7 +93,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯 初赛.md"
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md"
               }
             }
           },
@@ -173,7 +161,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -250,7 +238,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -267,7 +255,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -307,6 +295,7 @@
   },
   "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
     "CTF赛题/WriteUP/2023蓝帽杯 半决赛.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230917050956.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230917000820.png",
