@@ -2,7 +2,7 @@
   "blue-topaz-theme@@background-settings-workplace-background-image": true,
   "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-theme-dark-custom-option",
   "blue-topaz-theme@@transparent-setting-panel": false,
-  "blue-topaz-theme@@blur-depth": 5,
+  "blue-topaz-theme@@blur-depth": 0,
   "blue-topaz-theme@@background-image-settings-switch": false,
   "blue-topaz-theme@@background-image-settings-markdown-page-options": "background-image-settings-markdown-page-default",
   "blue-topaz-theme@@background-markdown-page-theme-dark-custom": "url(\"app://localC:/Users/wum0nster/Pictures/Saved Pictures/saber.jpg\")",
@@ -11,7 +11,6 @@
   "blue-topaz-theme@@toggle-calendar-transparent": true,
   "blue-topaz-theme@@toggle-calendar-shadow": true,
   "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-custom-option",
-  "blue-topaz-theme@@background-settings-workplace-theme-light-custom": "url(\"app://local/C:/Users/wum0nster/Pictures/Saved Pictures/bus.jpg\")",
   "blue-topaz-theme@@bg-panel-page-opacity-cp": 0.15,
   "blue-topaz-theme@@bg-markdown-page-opacity-cp": 0.2,
   "blue-topaz-theme@@toggle-nonoverlapping-bg": false,
@@ -47,5 +46,7 @@
   "blue-topaz-theme@@reduce-bottom-padding": false,
   "blue-topaz-theme@@default-split-style": false,
   "blue-topaz-theme@@blockquote-style-change-options": "blockquote-style-outline",
-  "blue-topaz-theme@@folder-style-change-options-colorful": "folder-style-change-options-colorful"
+  "blue-topaz-theme@@folder-style-change-options-colorful": "folder-style-change-options-colorful",
+  "blue-topaz-theme@@background-settings-workplace-theme-dark-custom": "url(\"https://wum0nster.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F68b3781d-9253-43a8-842f-fbba7b203fae%2Fa20dd397-52d3-4f96-983b-0c04c8151093%2FUntitled.jpeg?table=block&id=eaba302a-7ad5-472b-b5f3-aaaf87a84bf8&spaceId=68b3781d-9253-43a8-842f-fbba7b203fae&width=2000&userId=&cache=v2\")",
+  "blue-topaz-theme@@background-settings-workplace-theme-light-custom": "url(\"https://www.notion.so/wum0nster/5e7715d3e0274d4a9dd59cd8f7f7b82c?pvs=4#eaba302a7ad5472bb5f3aaaf87a84bf8\")"
 }
