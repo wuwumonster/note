@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/应急响应/应急响应.md",
+                "file": "网络安全/网络数据包分析/Practice 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/应急响应/应急响应.md"
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md"
               }
             }
           },
@@ -161,7 +161,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/应急响应/应急响应.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +238,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/应急响应/应急响应.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -255,7 +255,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/应急响应/应急响应.md",
+                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -293,8 +293,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "13b196c9301f7557",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "网络安全/网络数据包分析/Practice 1.md",
+    "网络安全/网络数据包分析/Practice 2.md",
+    "网络安全/网络数据包分析/Practice 6.md",
+    "网络安全/网络数据包分析/Practice 5.md",
+    "网络安全/网络数据包分析/Practice 4.md",
+    "网络安全/网络数据包分析/Practice 3.md",
+    "网络安全/应急响应/应急响应.md",
     "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
     "链接、装载与库/链接、装载与库.md",
     "大数据/相关环境搭建.md",
@@ -324,13 +331,6 @@
     "CTF赛题/WriteUP/2023 巅峰极客.md",
     "CTF赛题/WriteUP/2023 春秋杯.md",
     "CTF赛题/WriteUP/2022MTCTF.md",
-    "CTF赛题/WriteUP/2022BytesCTF.md",
-    "CTF赛题/WriteUP/2022MRCTF.md",
-    "CTF赛题/WriteUP/2022长城杯.md",
-    "CTF赛题/WriteUP/2022祥云杯线上.md",
-    "CTF赛题/WriteUP/2022网鼎杯.md",
-    "CTF赛题/WriteUP/2022强网杯.md",
-    "CTF赛题/WriteUP/2022美亚杯个人赛.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
