@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 RealWorld_复现.md",
+                "file": "网络安全/应急响应/应急响应.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +92,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "网络安全/应急响应/应急响应.md"
+              }
             }
           },
           {
@@ -142,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 429.5
+    "width": 430.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -159,6 +161,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "网络安全/应急响应/应急响应.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -235,6 +238,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "网络安全/应急响应/应急响应.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -251,6 +255,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "网络安全/应急响应/应急响应.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -288,11 +293,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "05c55da7d10ec042",
+  "active": "13b196c9301f7557",
   "lastOpenFiles": [
-    "CTF赛题/WriteUP/2023DiceCTF.md",
+    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+    "链接、装载与库/链接、装载与库.md",
+    "大数据/相关环境搭建.md",
+    "工具使用/Docker.md",
+    "机器学习/机器学习——线性代数基础/线性代数基础.md",
+    "机器学习/机器学习.md",
+    "Reverse/脱壳技术.md",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
+    "CTF赛题/WriteUP/2023DiceCTF.md",
     "CTF赛题/WriteUP/2023蓝帽杯 半决赛.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20230918084923.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20230918084915.png",
@@ -319,12 +331,6 @@
     "CTF赛题/WriteUP/2022网鼎杯.md",
     "CTF赛题/WriteUP/2022强网杯.md",
     "CTF赛题/WriteUP/2022美亚杯个人赛.md",
-    "CTF赛题/WriteUP/2022美亚团队赛.md",
-    "CTF赛题/WriteUP/2022蓝帽杯.md",
-    "CTF赛题/WriteUP/2021 0CTF.md",
-    "CTF赛题/WriteUP/2022安洵杯.md",
-    "CTF赛题/WriteUP/2020网鼎-复现.md",
-    "CTF赛题/WriteUP/2019SUCTF.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
