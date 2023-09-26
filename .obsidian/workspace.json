@@ -4,67 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1899430aa2af807a",
+        "id": "920dff9937fcdd89",
         "type": "tabs",
         "children": [
           {
-            "id": "0b91c1842cbdf381",
+            "id": "7b200934120b499a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "大数据/Hadoop技术与大数据应用.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "13b196c9301f7557",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/网络数据包分析/Practice 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "551eda42a3b8b361",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "423bfdc455e1003d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.13"
-              }
-            }
-          },
-          {
-            "id": "05c55da7d10ec042",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.5"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md"
+                "file": "大数据/Hadoop技术与大数据应用.md"
               }
             }
           },
@@ -103,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#xss",
+                "query": "tag:#配置Hadoop安装目录",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -161,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "大数据/Hadoop技术与大数据应用.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -238,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "大数据/Hadoop技术与大数据应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -255,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023DiceCTF.md",
+                "file": "大数据/Hadoop技术与大数据应用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -293,8 +248,25 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "7b200934120b499a",
   "lastOpenFiles": [
+    "大数据/全国大数据竞赛.md",
+    "大数据/Hadoop技术与大数据应用.md",
+    "大数据/相关环境搭建.md",
+    "大数据/attachments/Pasted image 20230926083340.png",
+    "大数据/attachments/Pasted image 20230926083246.png",
+    "大数据/attachments/Pasted image 20230926083225.png",
+    "大数据/attachments/Pasted image 20230926083037.png",
+    "大数据/attachments/Pasted image 20230926083004.png",
+    "大数据/attachments/Pasted image 20230926082931.png",
+    "大数据/attachments/Pasted image 20230926082911.png",
+    "大数据/attachments/Pasted image 20230926082843.png",
+    "大数据/attachments/Pasted image 20230926082606.png",
+    "大数据/attachments/Pasted image 20230926082414.png",
+    "大数据/attachments",
+    "网络安全/实战渗透/Hack the Box/SEASON/SEP-DEC 2023.md",
+    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
+    "CTF赛题/WriteUP/2023DiceCTF.md",
     "网络安全/网络数据包分析/Practice 1.md",
     "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络数据包分析/Practice 6.md",
@@ -302,35 +274,19 @@
     "网络安全/网络数据包分析/Practice 4.md",
     "网络安全/网络数据包分析/Practice 3.md",
     "网络安全/应急响应/应急响应.md",
-    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
     "链接、装载与库/链接、装载与库.md",
-    "大数据/相关环境搭建.md",
     "工具使用/Docker.md",
     "机器学习/机器学习——线性代数基础/线性代数基础.md",
     "机器学习/机器学习.md",
     "Reverse/脱壳技术.md",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
-    "CTF赛题/WriteUP/2023DiceCTF.md",
     "CTF赛题/WriteUP/2023蓝帽杯 半决赛.md",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230918084923.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230918084915.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230917050956.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230917000820.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916181544.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916181141.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916180634.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916180536.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916180503.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20230916180419.png",
     "CTF赛题/WriteUP/2023 SCTF 复现.md",
     "CTF赛题/WriteUP/2023 SYCTF.md",
     "CTF赛题/WriteUP/2023 NepCTF.md",
     "CTF赛题/WriteUP/2023 ISCC.md",
     "CTF赛题/WriteUP/2023 D3CTF.md",
-    "CTF赛题/WriteUP/2023 巅峰极客.md",
-    "CTF赛题/WriteUP/2023 春秋杯.md",
-    "CTF赛题/WriteUP/2022MTCTF.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
@@ -340,7 +296,6 @@
     "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-01 绕过删除模块或方法 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-CTF Pyjail 沙箱逃逸绕过合集 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
