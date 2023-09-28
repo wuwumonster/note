@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c5b9ee93a2bb4ad0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,7 +259,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e70702bbef5111a0",
+  "active": "c5b9ee93a2bb4ad0",
   "lastOpenFiles": [
     "网络安全/应急响应/情景练习/Practice 1.md",
     "网络安全/应急响应/情景练习/Practice 2.md",
