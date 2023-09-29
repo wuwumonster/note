@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec.md",
+                "file": "CTF赛题/BUU月赛/2023.04.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec.md"
+                "file": "CTF赛题/BUU月赛/2023.04.md"
               }
             }
           },
@@ -58,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#配置Hadoop安装目录",
+                "query": "º*",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -116,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec.md",
+                "file": "CTF赛题/BUU月赛/2023.04.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -193,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec.md",
+                "file": "CTF赛题/BUU月赛/2023.04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec.md",
+                "file": "CTF赛题/BUU月赛/2023.04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -250,13 +251,15 @@
   },
   "active": "dc1be6a2e8dc5886",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/2023.07.md",
+    "Misc/Write up/2023.2.23.md",
+    "JavaSec/JavaSec.md",
     "Reverse/脱壳技术.md",
     "README.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
     "网络安全/应急响应/情景练习/Practice 2.md",
     "网络安全/应急响应/情景练习/Practice 4.md",
     "网络安全/应急响应/应急响应.md",
-    "CTF赛题/BUU月赛/2023.07.md",
     "大数据/智警杯.md",
     "大数据/Hadoop技术与大数据应用.md",
     "大数据/全国大数据竞赛.md",
@@ -285,8 +288,6 @@
     "工具使用/Docker.md",
     "机器学习/机器学习——线性代数基础/线性代数基础.md",
     "机器学习/机器学习.md",
-    "CTF赛题/WriteUP/2023 RealWorld_复现.md",
-    "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
