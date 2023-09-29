@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "972a22d39cecd3ff",
+        "id": "75910e4fe4411940",
         "type": "tabs",
         "children": [
           {
-            "id": "66147af705f6e7e8",
+            "id": "dc1be6a2e8dc5886",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "JavaSec/JavaSec.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -43,7 +47,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "JavaSec/JavaSec.md"
+              }
             }
           },
           {
@@ -110,6 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "JavaSec/JavaSec.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -186,6 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "JavaSec/JavaSec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,6 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "JavaSec/JavaSec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -239,8 +248,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "66147af705f6e7e8",
+  "active": "dc1be6a2e8dc5886",
   "lastOpenFiles": [
+    "Reverse/脱壳技术.md",
     "README.md",
     "网络安全/应急响应/情景练习/Practice 1.md",
     "网络安全/应急响应/情景练习/Practice 2.md",
@@ -275,7 +285,6 @@
     "工具使用/Docker.md",
     "机器学习/机器学习——线性代数基础/线性代数基础.md",
     "机器学习/机器学习.md",
-    "Reverse/脱壳技术.md",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "CTF赛题/WriteUP/2023蓝帽杯 初赛.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
