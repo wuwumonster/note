@@ -67,4 +67,5 @@ return y1.mainModule.require('child_process').execSync('whoami').toString()
 console.log(y1);
 ```
 
+这里的`this` 是传递给`runInNewContext`的对象，这个对象并不在沙箱环境中，接下来就和ssit相似的过程去获取构造器，以及构造器对象的构造器
 ## 参考文章
