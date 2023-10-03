@@ -195,12 +195,17 @@ try{
 }
 ```
 
-vm
-
+vm2相比vm利用了es6新增的proxy特性，从而使用钩子拦截对`constructor和__proto__`这些属性的访问，细节上的改变
+看[vm2实现原理分析-安全客 - 安全资讯平台 (anquanke.com)](https://www.anquanke.com/post/id/207283#h2-1)
+总之vm2会为对象配置代理并初始化，如果对象是以下类型：
 ![](attachments/d2976669ebe6f4cef93742b97c6ba3c.png)
+
+就会执行`Decontextify.instance()`函数然后这个函数抛出异常，因为这个异常是沙箱外的代码抛出的，所以在沙箱内拿到的异常对象是个外部对象
 ## 参考文章
 https://xz.aliyun.com/t/11859
 
 [[函数] arguments、callee、caller是啥？ - 掘金 (juejin.cn)](https://juejin.cn/post/7056285377899790372)
 
 https://juejin.cn/post/6844904090116292616
+
+[vm2实现原理分析-安全客 - 安全资讯平台 (anquanke.com)](https://www.anquanke.com/post/id/207283#h2-1)
