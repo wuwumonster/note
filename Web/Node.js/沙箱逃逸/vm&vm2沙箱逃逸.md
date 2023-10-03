@@ -111,7 +111,9 @@ console.log('Hello ' + res)
 
 在上面的exp中重构了函数`a`的toString方法，因此在下面`console.log('Hello ' + res)`的过程中触发了a函数实现了逃逸
 
-这里其实和DiceCTF 2023的jwtjail是相似的
+这里其实和DiceCTF 2023的jwtjail是相似的，但是jwtjail中外部没有能够用来触发toString和恶意重写的函数就通过`proxy`来劫持属性
+
+
 ## 参考文章
 https://xz.aliyun.com/t/11859
 
