@@ -110,6 +110,8 @@ console.log('Hello ' + res)
 - 这个属性中保存着调用当前函数的函数的引用， 如果是在全局作用域中调用当前函数，它的值为 null。
 
 在上面的exp中重构了函数`a`的toString方法，因此在下面`console.log('Hello ' + res)`的过程中触发了a函数实现了逃逸
+
+这里其实和DiceCTF 2023的jwtjail是相似的
 ## 参考文章
 https://xz.aliyun.com/t/11859
 

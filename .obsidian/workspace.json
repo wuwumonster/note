@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+                "file": "CTF赛题/WriteUP/2023 DiceCTF.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md"
+                "file": "CTF赛题/WriteUP/2023 DiceCTF.md"
               }
             }
           },
@@ -99,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -117,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+                "file": "CTF赛题/WriteUP/2023 DiceCTF.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -194,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+                "file": "CTF赛题/WriteUP/2023 DiceCTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+                "file": "CTF赛题/WriteUP/2023 DiceCTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,6 +252,9 @@
   "active": "7f265d8996935f56",
   "lastOpenFiles": [
     "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+    "CTF赛题/WriteUP/2023 DiceCTF.md",
+    "CTF赛题/WriteUP/2022MRCTF.md",
+    "未命名 1.canvas",
     "Web/Node.js/沙箱逃逸",
     "Web/Node.js",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
@@ -290,15 +292,12 @@
     "网络安全/网络数据包分析/Practice 6.md",
     "网络安全/网络数据包分析/Practice 5.md",
     "网络安全/网络数据包分析/Practice 4.md",
-    "网络安全/网络数据包分析/Practice 3.md",
-    "链接、装载与库/链接、装载与库.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-04 绕过多行限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-06 变量覆盖与函数篡改 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-03 绕过命名空间限制 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md.crdownload",
-    "未命名 1.canvas"
+    "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md.crdownload"
   ]
 }
