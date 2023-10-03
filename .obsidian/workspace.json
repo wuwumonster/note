@@ -95,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -251,6 +252,8 @@
   },
   "active": "7f265d8996935f56",
   "lastOpenFiles": [
+    "Web/Node.js/沙箱逃逸/attachments/d2976669ebe6f4cef93742b97c6ba3c.png",
+    "Web/Node.js/沙箱逃逸/attachments",
     "CTF赛题/WriteUP/2023 DiceCTF.md",
     "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
     "CTF赛题/WriteUP/2022MRCTF.md",
@@ -291,13 +294,11 @@
     "网络安全/网络数据包分析/Practice 2.md",
     "网络安全/网络数据包分析/Practice 6.md",
     "网络安全/网络数据包分析/Practice 5.md",
-    "网络安全/网络数据包分析/Practice 4.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-04 绕过多行限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-06 变量覆盖与函数篡改 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-03 绕过命名空间限制 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-02 绕过基于字符串匹配的过滤 _ DummyKitty's blog.md.crdownload"
+    "Web/Python/大佬博客/simpread-pyjail bypass-03 绕过命名空间限制 _ DummyKitty's blog.md.crdownload"
   ]
 }

