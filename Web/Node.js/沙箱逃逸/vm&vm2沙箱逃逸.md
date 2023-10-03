@@ -113,6 +113,13 @@ console.log('Hello ' + res)
 
 这里其实和DiceCTF 2023的jwtjail是相似的，但是jwtjail中外部没有能够用来触发toString和恶意重写的函数就通过`proxy`来劫持属性
 
+利用`proxy`的钩子属性
+- `get`，在沙箱外访问`proxy`的任意属性，即便这个属性不存在，钩子也会运行。
+- `apply(target, thisArg, args)`，钩子能使代理以函数的方式被调用
+	- `target` 是目标对象（函数是 JavaScript 中的对象）
+	- `thisArg` 是 `this` 的值
+	- `args` 是参数列表，这个擦部署列表是调用者传入的参数列表，列表的v8上下文不在vm内，可以用来返回`process`对象
+
 
 ## 参考文章
 https://xz.aliyun.com/t/11859
