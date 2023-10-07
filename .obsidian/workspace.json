@@ -47,9 +47,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md"
-              }
+              "state": {}
             }
           },
           {
@@ -96,7 +94,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -117,7 +115,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -194,7 +191,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +207,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -250,12 +245,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7f265d8996935f56",
+  "active": "1f84be4be0117483",
   "lastOpenFiles": [
+    "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
     "Web/Node.js/沙箱逃逸/attachments/d2976669ebe6f4cef93742b97c6ba3c.png",
     "Web/Node.js/沙箱逃逸/attachments",
     "CTF赛题/WriteUP/2023 DiceCTF.md",
-    "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
     "CTF赛题/WriteUP/2022MRCTF.md",
     "未命名 1.canvas",
     "Web/Node.js/沙箱逃逸",
@@ -285,7 +280,6 @@
     "大数据/attachments/Pasted image 20230926082911.png",
     "大数据/attachments/Pasted image 20230926082843.png",
     "大数据/attachments/Pasted image 20230926082606.png",
-    "大数据/attachments/Pasted image 20230926082414.png",
     "大数据/attachments",
     "网络安全/实战渗透/Hack the Box/SEASON/SEP-DEC 2023.md",
     "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
