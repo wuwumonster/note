@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "144ce2a63269ad5a",
+        "id": "5064f4dbc0826cfb",
         "type": "tabs",
         "children": [
           {
-            "id": "7f265d8996935f56",
+            "id": "55ab1233558bb723",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+                "file": "CTF赛题/WriteUP/2023 长城杯.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,7 +47,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CTF赛题/WriteUP/2023 长城杯.md"
+              }
             }
           },
           {
@@ -56,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "º*",
+                "query": "DiceCTF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,12 +95,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 243.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -115,6 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "CTF赛题/WriteUP/2023 长城杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -178,7 +180,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "8bde2fa46e5c99cf",
@@ -191,6 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF赛题/WriteUP/2023 长城杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,6 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CTF赛题/WriteUP/2023 长城杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -228,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,32 +248,40 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1f84be4be0117483",
+  "active": "55ab1233558bb723",
   "lastOpenFiles": [
-    "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
+    "CTF赛题/WriteUP/2022 祥云杯线上.md",
+    "CTF赛题/WriteUP/2023 长城杯.md",
+    "CTF赛题/WriteUP/2022 美亚杯个人赛.md",
+    "CTF赛题/WriteUP/2022 安洵杯.md",
+    "CTF赛题/WriteUP/2022 虎符CTF.md",
+    "CTF赛题/WriteUP/2023西湖论剑.md",
+    "CTF赛题/WriteUP/2023DiceCTF.md",
+    "CTF赛题/WriteUP/2023 DiceCTF.md",
+    "CTF赛题/WriteUP/2023 VNCTF.md",
+    "CTF赛题/WriteUP/datacon笔记.md",
+    "CTF赛题/WriteUP/2023 蓝帽杯 初赛.md",
+    "CTF赛题/WriteUP/2023 蓝帽杯 半决赛.md",
+    "CTF赛题/WriteUP/2020 网鼎-复现.md",
+    "CTF赛题/WriteUP/2019 SUCTF.md",
+    "CTF赛题/WriteUP/2021 0CTF.md",
+    "CTF赛题/WriteUP/2021 N1CTF.md",
+    "CTF赛题/WriteUP/2022 蓝帽杯.md",
+    "CTF赛题/WriteUP/2022 美亚团队赛.md",
+    "CTF赛题/WriteUP/2022 强网杯.md",
+    "CTF赛题/WriteUP/2022 网鼎杯.md",
+    "CTF赛题/WriteUP/2022 长城杯.md",
+    "CTF赛题/WriteUP/2022 BytesCTF.md",
+    "CTF赛题/WriteUP/2022 MRCTF.md",
+    "CTF赛题/WriteUP/2022 MTCTF.md",
+    "CTF赛题/WriteUP/2023 长安杯.md",
+    "2023-10-07.md",
+    "未命名.canvas",
     "Web/Node.js/沙箱逃逸/attachments/d2976669ebe6f4cef93742b97c6ba3c.png",
     "Web/Node.js/沙箱逃逸/attachments",
-    "CTF赛题/WriteUP/2023 DiceCTF.md",
-    "CTF赛题/WriteUP/2022MRCTF.md",
     "未命名 1.canvas",
     "Web/Node.js/沙箱逃逸",
     "Web/Node.js",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
-    "未命名.canvas",
-    "CTF赛题/BUU月赛/2023.04.md",
-    "CTF赛题/BUU月赛/2023.07.md",
-    "Misc/Write up/2023.2.23.md",
-    "JavaSec/JavaSec.md",
-    "Reverse/脱壳技术.md",
-    "README.md",
-    "网络安全/应急响应/情景练习/Practice 1.md",
-    "网络安全/应急响应/情景练习/Practice 2.md",
-    "网络安全/应急响应/情景练习/Practice 4.md",
-    "网络安全/应急响应/应急响应.md",
-    "大数据/智警杯.md",
-    "大数据/Hadoop技术与大数据应用.md",
-    "大数据/全国大数据竞赛.md",
-    "大数据/相关环境搭建.md",
     "大数据/attachments/Pasted image 20230926083340.png",
     "大数据/attachments/Pasted image 20230926083246.png",
     "大数据/attachments/Pasted image 20230926083225.png",
@@ -281,13 +292,6 @@
     "大数据/attachments/Pasted image 20230926082843.png",
     "大数据/attachments/Pasted image 20230926082606.png",
     "大数据/attachments",
-    "网络安全/实战渗透/Hack the Box/SEASON/SEP-DEC 2023.md",
-    "网络安全/实战渗透/Hack the Box/SEASON/JUN-SEP 2023.md",
-    "CTF赛题/WriteUP/2023DiceCTF.md",
-    "网络安全/网络数据包分析/Practice 1.md",
-    "网络安全/网络数据包分析/Practice 2.md",
-    "网络安全/网络数据包分析/Practice 6.md",
-    "网络安全/网络数据包分析/Practice 5.md",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
