@@ -95,13 +95,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 243.5,
-    "collapsed": true
+    "width": 243.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -251,8 +249,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "55ab1233558bb723",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "开发/SSM",
+    "开发",
     "Java Web/Spring/attachments/Pasted image 20231007191731.png",
     "Java Web/Spring/attachments",
     "CTF赛题/WriteUP/2023 长城杯.md",
@@ -295,11 +295,9 @@
     "大数据/attachments/Pasted image 20230926083004.png",
     "大数据/attachments/Pasted image 20230926082931.png",
     "大数据/attachments/Pasted image 20230926082911.png",
-    "大数据/attachments/Pasted image 20230926082843.png",
     "大数据/attachments",
     "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
     "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-04 绕过多行限制 _ DummyKitty's blog.md.crdownload"
+    "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload"
   ]
 }
