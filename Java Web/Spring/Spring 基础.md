@@ -222,3 +222,4 @@ public class ExampleBean {
 #### 基于Setter的依赖注入
 基于 Setter 的 DI 是通过容器在调用无参数的构造函数或无参数的 `static` 工厂方法来实例化你的 bean 之后调用 Setter 方法来实现的。
 
+
