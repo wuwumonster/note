@@ -96,5 +96,87 @@ bean 定义（definition）本质上是创建一个或多个对象的“配方�
 
 #### 用构造函数进行实例化
 当你用构造函数的方法创建一个Bean时，所有普通的类都可以被Spring使用并与之兼容。也就是说，被开发的类不需要实现任何特定的接口，也不需要以特定的方式进行编码。只需指定Bean类就足够了。然而，根据你对该特定Bean使用的IoC类型，你可能需要一个默认（空）构造函数。
+Spring IoC容器几乎可以管理任何你希望它管理的类。它并不局限于管理真正的JavaBean。大多数Spring用户更喜欢真正的JavaBean，它只有一个默认的（无参数）构造函数，以及按照容器中的属性建模的适当的setter和getter。
 
 #### 用静态工厂方法实例化
+在定义一个用静态工厂方法创建的Bean时，使用 `class` 属性来指定包含 `static` 工厂方法的类，并使用名为 `factory-method` 的属性来指定工厂方法本身的名称。你应该能够调用这个方法（有可选的参数，如后文所述）并返回一个活的对象，随后该对象被视为通过构造函数创建的。这种Bean定义的一个用途是在遗留代码中调用 `static` 工厂。
+```xml
+<bean id="clientService"
+    class="examples.ClientService"
+    factory-method="createInstance"/>
+
+```
+#### 用实例工厂方法进行实例化
+与用静态工厂方法实例化类似，用实例工厂方法进行的实例化从容器中调用现有 bean 的非静态方法来创建一个新的 bean。要使用这种机制，请将 `class` 属性留空，并在 `factory-bean` 属性中指定当前（或父代或祖代）容器中的一个 Bean 的名称，该容器包含要被调用来创建对象的实例方法。用 `factory-method` 属性设置工厂方法本身的名称。
+```xml
+<!-- the factory bean, which contains a method called createInstance() -->
+<bean id="serviceLocator" class="examples.DefaultServiceLocator">
+    <!-- inject any dependencies required by this locator bean -->
+</bean>
+
+<!-- the bean to be created via the factory bean -->
+<bean id="clientService"
+    factory-bean="serviceLocator"
+    factory-method="createClientServiceInstance"/>
+```
+
+```java
+public class DefaultServiceLocator {
+
+    private static ClientService clientService = new ClientServiceImpl();
+
+    public ClientService createClientServiceInstance() {
+        return clientService;
+    }
+}
+```
+
+## 依赖
+### 依赖注入
+依赖注入（DI）是一个过程，对象仅通过构造参数、工厂方法的参数或在对象实例被构造或从工厂方法返回后在其上设置的属性来定义它们的依赖（即与它们一起工作的其它对象）。然后，容器在创建 bean 时注入这些依赖。这个过程从根本上说是Bean本身通过使用类的直接构造或服务定位模式来控制其依赖的实例化或位置的逆过程（因此被称为控制反转）。
+DI有两个主要的变体：
+- 基于构造器的依赖注入
+- 基于setter的依赖注入
+
+#### 基于构造器的依赖注入
+基于构造函数的 DI 是通过容器调用带有许多参数的构造函数来完成的，每个参数代表一个依赖。调用带有特定参数的 `static` 工厂方法来构造 bean 几乎是等价的，本讨论对构造函数的参数和 `static` 工厂方法的参数进行类似处理。
+```java
+public class SimpleMovieLister {
+
+    // the SimpleMovieLister has a dependency on a MovieFinder
+    private final MovieFinder movieFinder;
+
+    // a constructor so that the Spring container can inject a MovieFinder
+    public SimpleMovieLister(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+
+    // business logic that actually uses the injected MovieFinder is omitted...
+}
+```
+
+#### 构造函数参数解析
+构造函数参数解析匹配是通过使用参数的类型进行的。如果 bean 定义中的构造器参数不存在潜在的歧义，那么构造器参数在 bean 定义中的定义顺序就是这些参数在 bean 被实例化时被提供给适当的构造器的顺序。
+```java
+package x.y;
+
+public class ThingOne {
+
+    public ThingOne(ThingTwo thingTwo, ThingThree thingThree) {
+        // ...
+    }
+}
+```
+假设 `ThingTwo` 和 `ThingThree` 类没有继承关系，就不存在潜在的歧义。因此，下面的配置可以正常工作，你不需要在 `<constructor-arg/>` 元素中明确指定构造函数参数的索引或类型。
+```xml
+<beans>
+    <bean id="beanOne" class="x.y.ThingOne">
+        <constructor-arg ref="beanTwo"/>
+        <constructor-arg ref="beanThree"/>
+    </bean>
+
+    <bean id="beanTwo" class="x.y.ThingTwo"/>
+
+    <bean id="beanThree" class="x.y.ThingThree"/>
+</beans>
+```
