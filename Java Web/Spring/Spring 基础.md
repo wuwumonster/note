@@ -182,5 +182,43 @@ public class ThingOne {
 ```
 
 ```java
+package examples;
 
+public class ExampleBean {
+
+    // Number of years to calculate the Ultimate Answer
+    private final int years;
+
+    // The Answer to Life, the Universe, and Everything
+    private final String ultimateAnswer;
+
+    public ExampleBean(int years, String ultimateAnswer) {
+        this.years = years;
+        this.ultimateAnswer = ultimateAnswer;
+    }
+}
 ```
+
+在前面的情况下，如果你通过使用 `type` 属性显式地指定构造函数参数的类型，容器就可以使用简单类型的类型匹配，如下例所示。
+
+```xml
+<bean id="exampleBean" class="examples.ExampleBean">
+    <constructor-arg type="int" value="7500000"/>
+    <constructor-arg type="java.lang.String" value="42"/>
+</bean>
+```
+
+可以使用 `index` 属性来明确指定构造函数参数的索引，如下例所示。
+
+```xml
+<bean id="exampleBean" class="examples.ExampleBean">
+    <constructor-arg index="0" value="7500000"/>
+    <constructor-arg index="1" value="42"/>
+</bean>
+```
+
+>索引（下标）从0开始
+
+#### 基于Setter的依赖注入
+基于 Setter 的 DI 是通过容器在调用无参数的构造函数或无参数的 `static` 工厂方法来实例化你的 bean 之后调用 Setter 方法来实现的。
+
