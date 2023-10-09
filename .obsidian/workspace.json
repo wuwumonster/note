@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Web/Spring/Spring 基础.md",
+                "file": "开发/SSM/SpringFramework.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java Web/Spring/Spring 基础.md"
+                "file": "开发/SSM/SpringFramework.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Java Web/Spring/Spring 基础.md",
+                "file": "开发/SSM/SpringFramework.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java Web/Spring/Spring 基础.md",
+                "file": "开发/SSM/SpringFramework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java Web/Spring/Spring 基础.md",
+                "file": "开发/SSM/SpringFramework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -249,14 +249,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "55ab1233558bb723",
   "lastOpenFiles": [
+    "开发/SSM/attachments/Pasted image 20231009080821.png",
+    "开发/SSM/attachments/Pasted image 20231009080508.png",
+    "开发/SSM/attachments/Pasted image 20231009080328.png",
+    "开发/SSM/attachments",
+    "Java Web/Spring/Spring 基础.md",
+    "开发/SSM/SpringFramework.md",
     "开发/SSM",
     "开发",
     "Java Web/Spring/attachments/Pasted image 20231007191731.png",
     "Java Web/Spring/attachments",
     "CTF赛题/WriteUP/2023 长城杯.md",
-    "Java Web/Spring/Spring 基础.md",
     "Java Web/Spring",
     "JavaSec/JavaSec/CC链/CC链.md",
     "2023-10-07.md",
@@ -281,7 +286,6 @@
     "CTF赛题/WriteUP/2022 美亚团队赛.md",
     "CTF赛题/WriteUP/2022 强网杯.md",
     "CTF赛题/WriteUP/2022 网鼎杯.md",
-    "CTF赛题/WriteUP/2022 长城杯.md",
     "未命名.canvas",
     "Web/Node.js/沙箱逃逸/attachments/d2976669ebe6f4cef93742b97c6ba3c.png",
     "Web/Node.js/沙箱逃逸/attachments",
@@ -293,11 +297,7 @@
     "大数据/attachments/Pasted image 20230926083225.png",
     "大数据/attachments/Pasted image 20230926083037.png",
     "大数据/attachments/Pasted image 20230926083004.png",
-    "大数据/attachments/Pasted image 20230926082931.png",
-    "大数据/attachments/Pasted image 20230926082911.png",
     "大数据/attachments",
-    "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-08 绕过 AST 沙箱 _ DummyKitty's blog.md.crdownload",
-    "Web/Python/大佬博客/simpread-pyjail bypass-07 绕过 audit hook _ DummyKitty's blog.md.crdownload"
+    "Web/Python/大佬博客/simpread-pyjail bypass-05 绕过长度限制 _ DummyKitty's blog.md.crdownload"
   ]
 }
