@@ -162,4 +162,14 @@ PetStoreService service = context.getBean("petStore", PetStoreService.class);
 //使用组件对象
 List<String> userList = service.getUsernameList();
 ```
-1. 获取Bean（组件）
+3. 获取Bean（组件）
+`ApplicationContext` 是一个高级工厂的接口，能够维护不同 bean 及其依赖项的注册表。通过使用方法 `T getBean(String name, Class<T> requiredType)` ，您可以检索 bean 的实例。
+允许读取 Bean 定义并访问它们，如以下示例所示：
+```java
+//创建ioc容器对象，指定配置文件，ioc也开始实例组件对象
+ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
+//获取ioc容器的组件对象
+PetStoreService service = context.getBean("petStore", PetStoreService.class);
+//使用组件对象
+List<String> userList = service.getUsernameList();
+```
