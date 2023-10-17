@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 ISCC.md",
+                "file": "CTF赛题/WriteUP/2023 香山杯.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "f8826f3a45a92382",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 ISCC.md"
+                "file": "CTF赛题/WriteUP/2023 香山杯.md"
               }
             }
           },
@@ -127,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 ISCC.md",
+                "file": "CTF赛题/WriteUP/2023 香山杯.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 ISCC.md",
+                "file": "CTF赛题/WriteUP/2023 香山杯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 ISCC.md",
+                "file": "CTF赛题/WriteUP/2023 香山杯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -260,8 +249,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f8826f3a45a92382",
+  "active": "55ab1233558bb723",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/2023 ISCC.md",
+    "CTF赛题/WriteUP/2023 香山杯.md",
     "CTF赛题/WriteUP/2023 春秋杯.md",
     "Crypto/低加密指数广播攻击(n、c不同，e和m相同).md",
     "Crypto/dp泄露.md",
@@ -302,8 +293,6 @@
     "Java Web/Spring/attachments",
     "Java Web/Spring",
     "JavaSec/JavaSec/CC链/CC链.md",
-    "2023-10-07.md",
-    "JavaSec/JavaSec.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20231007141225.png",
     "未命名.canvas",
     "Web/Node.js/沙箱逃逸/attachments",
