@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大数据/环境搭建脚本.md",
+                "file": "CTF赛题/BUU月赛/2023.10.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "大数据/环境搭建脚本.md"
+                "file": "CTF赛题/BUU月赛/2023.10.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "大数据/环境搭建脚本.md",
+                "file": "CTF赛题/BUU月赛/2023.10.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "大数据/环境搭建脚本.md",
+                "file": "CTF赛题/BUU月赛/2023.10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "大数据/环境搭建脚本.md",
+                "file": "CTF赛题/BUU月赛/2023.10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,6 +251,10 @@
   },
   "active": "57694e28f107f97b",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/attachments/Pasted image 20231029082726.png",
+    "CTF赛题/BUU月赛/2022.11.md",
+    "CTF赛题/BUU月赛/2023.10.md",
+    "大数据/环境搭建脚本.md",
     "大数据/attachments/Pasted image 20231027154349.png",
     "大数据/attachments/Pasted image 20231027153811.png",
     "大数据/attachments/Pasted image 20231027153752.png",
@@ -258,12 +262,10 @@
     "大数据/attachments/Pasted image 20231027153650.png",
     "大数据/attachments/Pasted image 20231027153225.png",
     "大数据/相关环境搭建.md",
-    "大数据/环境搭建脚本.md",
     "大数据/attachments/Pasted image 20231027153131.png",
     "大数据/attachments/Pasted image 20231027152953.png",
     "CTF赛题/WriteUP/2023 香山杯.md",
     "Web/PHPTrike/FilterChain.md",
-    "CTF赛题/BUU月赛/2023.10.md",
     "CTF赛题/BUU月赛/attachments/Pasted image 20231021174631.png",
     "CTF赛题/WriteUP/2023 春秋杯.md",
     "CTF赛题/WriteUP/2022 MTCTF.md",
@@ -284,9 +286,7 @@
     "CTF赛题/WriteUP/2019 SUCTF.md",
     "CTF赛题/WriteUP/2023 VNCTF.md",
     "Web/PHP反序列化/PHP魔术方法.md",
-    "Web/PHP反序列化/Phar反序列化.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20231018110925.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20231018093750.png",
     "取证/Raid重组复习 - 0xL4k1d - 博客园.pdf",
     "取证/内存取证-volatility工具的使用 （史上更全教程，更全命令）_路baby的博客-CSDN博客.pdf",
     "开发/SSM/attachments",
