@@ -4,6 +4,11 @@
       "name": "CTFtime",
       "url": "https://ctftime.org/event/list/upcoming/rss/",
       "folder": "CTF竞赛"
+    },
+    {
+      "name": "代码审计",
+      "url": "https://govuln.com/news/feed/d03b3ab2f6c9539c",
+      "folder": "安全文章"
     }
   ],
   "read": {
@@ -51,6 +56,17 @@
         "pubDate": "",
         "folder": "CTF竞赛",
         "feed": "CTFtime"
+      },
+      {
+        "title": "Defense Evasion(防御规避)",
+        "description": "",
+        "content": "",
+        "category": "",
+        "link": "https://govuln.com/news/url/NMd6",
+        "creator": "",
+        "pubDate": "2023-11-07T13:47:14.826313+00:00",
+        "folder": "安全文章",
+        "feed": "代码审计"
       }
     ]
   },

@@ -12,7 +12,7 @@
   "obsidian-pandoc",
   "templater-obsidian",
   "quickadd",
-  "obsidian-git",
   "rss-reader",
-  "obsidian-local-rest-api"
+  "obsidian-local-rest-api",
+  "obsidian-git"
 ]

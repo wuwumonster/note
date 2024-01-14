@@ -1,6 +1,7 @@
 # 简述
 Gopher是Internet上一个非常有名的信息查找系统，它将Internet上的文件组织成某种索引，很方便地将用户从Internet的一处带到另一处。在WWW出现之前，Gopher是Internet上最主要的信息检索工具，Gopher站点也是最主要的站点，使用tcp70端口。
 **gopher协议支持发出GET、POST请求**：可以先截获get请求包和post请求包，在构成符合gopher协议的请求。gopher协议是ssrf利用中最强大的协议
+
 | 协议 | 支持情况                              |
 | ---- | ------------------------------------- |
 | PHP  | --wite-curlwrappers且php版本至少为5.3 |

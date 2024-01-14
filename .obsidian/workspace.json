@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 鹏城杯.md",
+                "file": "Web/SSTI/SSTI-山河.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 鹏城杯.md"
+                "file": "Web/SSTI/SSTI-山河.md"
               }
             }
           },
@@ -99,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 227.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -108,7 +108,7 @@
       {
         "id": "764760dc2726562f",
         "type": "tabs",
-        "dimension": 26.608187134502927,
+        "dimension": 30.23255813953488,
         "children": [
           {
             "id": "6db15c0934719e17",
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 鹏城杯.md",
+                "file": "Web/SSTI/SSTI-山河.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -154,14 +154,6 @@
             }
           },
           {
-            "id": "ab06ed3a0e7ba357",
-            "type": "leaf",
-            "state": {
-              "type": "RSS_FEED",
-              "state": {}
-            }
-          },
-          {
             "id": "3071e2bae51866d5",
             "type": "leaf",
             "state": {
@@ -175,17 +167,19 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "8bde2fa46e5c99cf",
         "type": "tabs",
-        "dimension": 73.39181286549707,
+        "dimension": 69.76744186046511,
         "children": [
           {
             "id": "ebece91d27bf2118",
@@ -193,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 鹏城杯.md",
+                "file": "Web/SSTI/SSTI-山河.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/WriteUP/2023 鹏城杯.md",
+                "file": "Web/SSTI/SSTI-山河.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,9 +220,17 @@
                 "useHierarchy": false
               }
             }
+          },
+          {
+            "id": "ab06ed3a0e7ba357",
+            "type": "leaf",
+            "state": {
+              "type": "RSS_FEED",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -249,55 +251,55 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "0fc07d69b47acddd",
   "lastOpenFiles": [
-    "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
-    "CTF赛题/WriteUP/2023 鹏城杯.md",
+    "JavaSec/JavaSec/AviatorScript 表达式注入.md",
+    "JavaSec/JavaSec/未确认 940193.crdownload",
+    "Web/Sql注入/Oracle.md",
+    "Web/Sql注入/未确认 12963.crdownload",
+    "Web/JWT/JWT.md",
+    "Web/JWT/未确认 869814.crdownload",
+    "Web/JWT",
+    "Web/新建文件夹",
+    "Web/文件上传/文件上传-山河.md",
+    "Web/文件上传/未确认 943291.crdownload",
+    "Web/文件上传/未确认 77277.crdownload",
+    "Web/文件包含/文件包含-山河.md",
+    "Web/文件包含/未确认 275493.crdownload",
+    "Web/文件包含/未确认 829314.crdownload",
+    "Web/中间件/解析漏洞-山河.md",
+    "Web/中间件/未确认 818001.crdownload",
+    "Web/Sql注入/SQL注入常用函数&类型.md",
+    "Web/SSTI/SSTI-山河.md",
+    "Web/Sql注入/SQL流程.md",
+    "Web/Sql注入/SQL Bypass.md",
+    "取证/取证能力测试.md",
+    "CTF赛题/WriteUP/2020 网鼎-复现.md",
+    "Web/Sql注入/SQLI-LABS.md",
+    "取证/Raid重组.md",
+    "Web/PHPTrike/FilterChain.md",
+    "Web/PHPTrike/Fast Destruct.md",
+    "取证/attachments/服务器任务说明.jpg",
+    "CTF赛题/CTFShow/2023 菜狗杯.md",
+    "CTF赛题/CTFShow/终极考核.md",
+    "CTF赛题/CTFShow/2023 愚人杯.md",
+    "CTF赛题/CTFShow/周末挑战.md",
+    "Web/PHP反序列化/PHP魔术方法.md",
+    "Web/PHP反序列化/Phar反序列化.md",
+    "JavaSec/JavaSec/Jxpath.md",
+    "JavaSec/JavaSec/ROME链.md",
+    "JavaSec/JavaSec/Struts2漏洞.md",
+    "JavaSec/JavaSec/Spring框架漏洞.md",
+    "Web/Node.js/沙箱逃逸/attachments/d2976669ebe6f4cef93742b97c6ba3c.png",
+    "未命名.canvas",
+    "CTF赛题/WriteUP/attachments/Pasted image 20231107111848.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20231107111835.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20231107111821.png",
+    "CTF赛题/WriteUP/attachments/Pasted image 20231107104652.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20231104180516.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20231104175840.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20231104123757.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20231104100602.png",
-    "CTF赛题/WriteUP/2023 ACTF.md",
-    "CTF赛题/WriteUP/attachments/Pasted image 20231103141715.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20231103141242.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20231103085217.png",
-    "CTF赛题/WriteUP/2022 美亚团队赛.md",
-    "CTF赛题/WriteUP/2021 N1CTF.md",
-    "CTF赛题/WriteUP/2023 NepCTF.md",
-    "CTF赛题/WriteUP/2023 N1CTF.md",
-    "CTF赛题/WriteUP/2019 SUCTF.md",
-    "未命名.canvas",
-    "CTF赛题/WriteUP/2023 ACTF",
-    "CTF赛题/BUU月赛/2023.10.md",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20231029085351.png",
-    "CTF赛题/BUU月赛/attachments/Pasted image 20231029082726.png",
-    "CTF赛题/BUU月赛/2022.11.md",
-    "大数据/环境搭建脚本.md",
-    "大数据/attachments/Pasted image 20231027154349.png",
-    "大数据/相关环境搭建.md",
-    "CTF赛题/WriteUP/2023 香山杯.md",
-    "Web/PHPTrike/FilterChain.md",
-    "CTF赛题/WriteUP/2023 春秋杯.md",
-    "CTF赛题/WriteUP/2022 MTCTF.md",
-    "CTF赛题/WriteUP/2022 MRCTF.md",
-    "CTF赛题/WriteUP/2022 BytesCTF.md",
-    "CTF赛题/WriteUP/2022 长城杯.md",
-    "CTF赛题/WriteUP/2022 祥云杯线上.md",
-    "CTF赛题/WriteUP/2022 网鼎杯.md",
-    "CTF赛题/WriteUP/2022 强网杯.md",
-    "CTF赛题/WriteUP/2022 美亚杯个人赛.md",
-    "CTF赛题/WriteUP/2022 蓝帽杯.md",
-    "CTF赛题/WriteUP/2022 虎符CTF.md",
-    "CTF赛题/WriteUP/2022 安洵杯.md",
-    "取证/Raid重组复习 - 0xL4k1d - 博客园.pdf",
-    "取证/内存取证-volatility工具的使用 （史上更全教程，更全命令）_路baby的博客-CSDN博客.pdf",
-    "开发/SSM/attachments",
-    "开发/SSM",
-    "开发",
-    "Java Web/Spring/attachments",
-    "Java Web/Spring",
-    "Web/Node.js/沙箱逃逸/attachments",
-    "未命名 1.canvas",
-    "Web/Node.js/沙箱逃逸"
+    "未命名 1.canvas"
   ]
 }
