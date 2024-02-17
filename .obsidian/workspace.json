@@ -251,11 +251,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0fc07d69b47acddd",
+  "active": "b88c6fc99e6a03e7",
   "lastOpenFiles": [
+    "CTF赛题/CTFShow/2023 愚人杯.md",
+    "CTF赛题/CTFShow/2024 元旦水友赛.md",
     "CTF赛题/CTFShow/attachments/Pasted image 20240216144441.png",
     "Web/文件包含/文件包含和相关Trick.md",
-    "CTF赛题/CTFShow/2024 元旦水友赛.md",
     "CTF赛题/CTFShow/attachments/Pasted image 20240216140716.png",
     "Web/PHPTrike/PHP伪协议.md",
     "工具库/工具链接.md",
@@ -278,7 +279,6 @@
     "Web/PHP反序列化/php反序列化-山河.md",
     "Web/PHP反序列化/Phar反序列化.md",
     "Web/SSTI/SSTI-山河.md",
-    "CTF赛题/CTFShow/2023 愚人杯.md",
     "Web/JWT/JWT.md",
     "Web/Sql注入/SQLI-LABS.md",
     "Web/Sql注入/SQL注入常用函数&类型.md",
@@ -299,7 +299,6 @@
     "CTF赛题/WriteUP/attachments/Pasted image 20231107111835.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20231107111821.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20231107104652.png",
-    "CTF赛题/WriteUP/attachments/Pasted image 20231104180516.png",
     "未命名 1.canvas"
   ]
 }
