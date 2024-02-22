@@ -50,3 +50,14 @@ $_SESSION['session'] = $_GET['session'];
 ![](attachments/Pasted%20image%2020240218132003.png)
 
 `a:1`表示`$_SESSION`数组中有 1 个元素，花括号里面的内容即为传入 GET 参数经过序列化后的值
+### 脚本中设置不同`serialize_handler`注入任意`session`数据
+
+`php`处理器和`php_serialize`处理器这两个处理器生成的序列化格式本身是没有问题的，但是如果这两个处理器混合起来用，就会造成危害
+
+```html
+<form action =“ upload.php” method =“ POST” enctype =“ multipart / form-data”>
+    <input type =“ hidden” name =“ PHP_SESSION_UPLOAD_PROGRESS” value =“ ryat” />
+    <input type =“ file” name =“ file” />
+    <input type =“ submit” />
+</ form>
+```

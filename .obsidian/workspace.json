@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/CTFShow/2024 元旦水友赛.md",
+                "file": "Web/SSTI/SS.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF赛题/CTFShow/2024 元旦水友赛.md"
+                "file": "Web/SSTI/SS.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CTF赛题/CTFShow/2024 元旦水友赛.md",
+                "file": "Web/SSTI/SS.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF赛题/CTFShow/2024 元旦水友赛.md",
+                "file": "Web/SSTI/SS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF赛题/CTFShow/2024 元旦水友赛.md",
+                "file": "Web/SSTI/SS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,52 +253,52 @@
   },
   "active": "0fc07d69b47acddd",
   "lastOpenFiles": [
+    "Web/SSTI/SSTI PHP题目.md",
+    "Web/SSTI/SS.md",
+    "Web/Sql注入/Mysql 总结.md",
+    "Web/Sql注入/attachments/Pasted image 20240221131605.png",
+    "Web/Sql注入/attachments",
+    "Web/Sql注入/mysql-山河.md",
+    "Web/Sql注入/Oracle.md",
+    "Web/Sql注入/SQL注入常用函数&类型.md",
+    "Web/Sql注入/SQLI-LABS.md",
+    "Web/Sql注入/SQL流程.md",
+    "Web/Sql注入/SQL Bypass.md",
+    "Web/文件包含/文件包含和相关Trick.md",
+    "CTF赛题/CTFShow/2024 元旦水友赛.md",
+    "CTF赛题/CTFShow/attachments/Pasted image 20240219125922.png",
+    "Web/PHP反序列化/Session反序列化.md",
     "CTF赛题/CTFShow/attachments/Pasted image 20240218133537.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20240218133424.png",
-    "Web/PHP反序列化/Session反序列化.md",
     "Web/PHP反序列化/attachments/Pasted image 20240218132003.png",
     "Web/PHP反序列化/attachments/Pasted image 20240218131933.png",
     "Web/PHP反序列化/attachments/Pasted image 20240218131855.png",
     "Web/PHP反序列化/php反序列化-山河.md",
     "Web/PHP反序列化/PHP魔术方法.md",
     "Web/PHP反序列化/Phar反序列化.md",
-    "CTF赛题/CTFShow/2024 元旦水友赛.md",
     "CTF赛题/CTFShow/attachments/Pasted image 20240218130920.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20240218130918.png",
     "CTF赛题/CTFShow/2023 愚人杯.md",
     "CTF赛题/CTFShow/attachments/Pasted image 20240216144441.png",
-    "Web/文件包含/文件包含和相关Trick.md",
-    "CTF赛题/CTFShow/attachments/Pasted image 20240216140716.png",
     "Web/PHPTrike/PHP伪协议.md",
     "工具库/工具链接.md",
     "春秋云境/Hospital.md",
     "工具库",
-    "春秋云境/attachments/Pasted image 20240216130244.png",
     "春秋云境/attachments",
     "JavaSec/JavaSec/CC链/CC链.md",
     "春秋云境",
-    "Web/Sql注入/SQL Bypass.md",
     "项目开发/CTF平台.md",
     "Java Web/Spring/Spring 基础.md",
     "项目开发",
-    "Web/Sql注入/mysql-山河.md",
-    "Web/Sql注入/SQL流程.md",
     "JavaSec/JavaSec/RMI攻击利用.md",
     "JavaSec/JavaSec/RMI.md",
-    "JavaSec/JavaSec/CC链.png",
     "Web/SSTI/SSTI-山河.md",
     "Web/JWT/JWT.md",
-    "Web/Sql注入/SQLI-LABS.md",
-    "Web/Sql注入/SQL注入常用函数&类型.md",
-    "JavaSec/JavaSec/AviatorScript 表达式注入.md",
     "JavaSec/JavaSec/未确认 940193.crdownload",
-    "Web/Sql注入/Oracle.md",
     "Web/Sql注入/未确认 12963.crdownload",
     "Web/JWT/未确认 869814.crdownload",
     "Web/JWT",
     "Web/新建文件夹",
-    "Web/文件上传/文件上传-山河.md",
-    "Web/文件上传/未确认 943291.crdownload",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
