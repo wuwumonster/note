@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/SSTI/SS.md",
+                "file": "Web/SSTI/SSTI-总结.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/SSTI/SS.md"
+                "file": "Web/SSTI/SSTI-总结.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Web/SSTI/SS.md",
+                "file": "Web/SSTI/SSTI-总结.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web/SSTI/SS.md",
+                "file": "Web/SSTI/SSTI-总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web/SSTI/SS.md",
+                "file": "Web/SSTI/SSTI-总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,8 +253,12 @@
   },
   "active": "0fc07d69b47acddd",
   "lastOpenFiles": [
+    "Web/SSTI/attachments/Pasted image 20240222135714.png",
+    "Web/SSTI/attachments/Pasted image 20240222134656.png",
+    "Web/SSTI/attachments",
+    "Web/SSTI/SSTI-山河.md",
+    "Web/SSTI/SSTI-总结.md",
     "Web/SSTI/SSTI PHP题目.md",
-    "Web/SSTI/SS.md",
     "Web/Sql注入/Mysql 总结.md",
     "Web/Sql注入/attachments/Pasted image 20240221131605.png",
     "Web/Sql注入/attachments",
@@ -279,7 +283,6 @@
     "CTF赛题/CTFShow/attachments/Pasted image 20240218130920.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20240218130918.png",
     "CTF赛题/CTFShow/2023 愚人杯.md",
-    "CTF赛题/CTFShow/attachments/Pasted image 20240216144441.png",
     "Web/PHPTrike/PHP伪协议.md",
     "工具库/工具链接.md",
     "春秋云境/Hospital.md",
@@ -292,13 +295,10 @@
     "项目开发",
     "JavaSec/JavaSec/RMI攻击利用.md",
     "JavaSec/JavaSec/RMI.md",
-    "Web/SSTI/SSTI-山河.md",
-    "Web/JWT/JWT.md",
     "JavaSec/JavaSec/未确认 940193.crdownload",
     "Web/Sql注入/未确认 12963.crdownload",
     "Web/JWT/未确认 869814.crdownload",
     "Web/JWT",
-    "Web/新建文件夹",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
