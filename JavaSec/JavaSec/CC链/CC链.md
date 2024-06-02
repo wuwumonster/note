@@ -1,3 +1,4 @@
+![](attachments/Pasted%20image%2020240408083213.png)
 ## CC1-TransformedMap-commons.collections 3.2.1\<JDK8u71
 
 ### 代码
@@ -219,7 +220,6 @@ public class CC4 {
 
 报错的原因是为抽象类，需要实现抽象方法
 
-[https://www.notion.so](https://www.notion.so)
 
 只有一个抽象方法transform
 

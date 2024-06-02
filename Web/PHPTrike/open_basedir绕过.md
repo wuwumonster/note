@@ -1,8 +1,3 @@
-这篇p牛的文章首发已经寄了，[PHP绕过open_basedir列目录的研究 | 离别歌 (leavesongs.com)](https://www.leavesongs.com/PHP/php-bypass-open-basedir-list-directory.html)，自存一份
-
-首发drops：[](http://drops.wooyun.org/tips/3978)[http://drops.wooyun.org/tips/3978](http://drops.wooyun.org/tips/3978) 。
-
-近期由于在开发自己的webshell，所以对PHP一些已有的漏洞进行了一定的研究，并且也自己发现了部分PHP存在的安全隐患。这篇文章我来与大家分享一下自己对于PHP中open_basedir绕过并列举目录的方法总结。
 
 ## [0x01 open_basedir的简介](https://www.leavesongs.com/PHP/php-bypass-open-basedir-list-directory.html#0x01-open_basedir)
 
@@ -235,34 +230,6 @@ var_dump($re);
 但很大的鸡肋点在，windows下默认是没有这个函数的，而在linux下不能使用通配符进行目录的猜解，所以显得很鸡肋。
 
 当然，在万无退路的时候进行暴力猜解目录，也不失为一个还算行的方法。
-
-## [0x07 总结](https://www.leavesongs.com/PHP/php-bypass-open-basedir-list-directory.html#0x07)
-
-open_basedir本来作为php限制跨目录读写文件的最基础的方式，应该需要进行完好的设计。但可能php在当初编写代码的时候并没有进行一个统一的设计，导致每当新增加功能或遇到一些偏僻的函数的时候，都会出现类似“open_basedir绕过”等悲剧。
-
-我曾经写过一篇文章，《lnmp虚拟主机安全配置研究》，中讲述了一个防止虚拟主机跨目录的方法。但受到了一些白帽子的质疑：
-
-[![PHP绕过open_basedir列目录的研究6713.png](https://www.leavesongs.com/content/uploadfile/201411/6a2c1416562464.png)](https://www.leavesongs.com/content/uploadfile/201411/6a2c1416562464.png)
-
-原因是很多人过于相信open_basedir的可靠性。open_basedir固然是一个简单地限制跨目录的方法，但如果过于依赖某一个方法去防御一类攻击，你将会死的很惨。
-
-[![PHP绕过open_basedir列目录的研究6800.png](https://www.leavesongs.com/content/uploadfile/201411/c6551416562465.png)](https://www.leavesongs.com/content/uploadfile/201411/c6551416562465.png)
-
-open_basedir绕过方法固然有版本局限，但不排除有很多人手中握着0day。像我这样对php造诣并不算高的菜鸟也能找到的open_basedir绕过漏洞，你真的能保证大牛们都没有办法绕过么？
-
-我当然更能相信linux/windows等操作系统自带的权限控制机制，也不会单单相信open_basedir真的能帮我防御什么。
-
-By the way，我上面提到的这些方法，基本都还没有在php的最新版修复（甚至是我自己发现的“0day”），也就是说还真的有这么多通用的方法可以绕过open_basedir。
-
-估计又会有人质疑了，光绕过open_basedir列目录有什么用？
-
-诚然，列目录相比于读、写具体文件，都鸡肋了很多。但很多时候，就是这些看似“鸡肋”的漏洞组合技完成了绝杀。
-
-当列目录可以列出备份文件、整站源码的时候，你还能说列目录是个鸡肋的漏洞么？
-
-安全是一个水桶，不是看哪块木板最高，而是看哪块木板最低。当我们保护住这些“低木板”的时候，才能真正守护住水桶。
-
-而对于渗透测试的同学来说，open_basedir绕过也希望给大家一个新的思路：拿旁站不一定非要提权或弹shell，有时候可能只是简单地列一下目录，就能给你所有。
 
 ## [0x08 参考文档与链接](https://www.leavesongs.com/PHP/php-bypass-open-basedir-list-directory.html#0x08)
 

