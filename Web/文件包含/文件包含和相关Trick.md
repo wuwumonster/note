@@ -99,7 +99,7 @@ ssh '<?php phpinfo();?>'@remotehost
 ### .htacess
 `AddType application/x-httpd-php .jpg [`
 
-### .ini
+### .user.ini
 在所有页面的顶部与底部都加入require语句
 
 `auto_prepend_file`与`auto_append_file
