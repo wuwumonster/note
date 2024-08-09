@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/靶场/春秋云境/Hospital.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/靶场/春秋云境/Hospital.md"
+                "file": "网络安全/内网渗透/内网信息收集.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/靶场/春秋云境/Hospital.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/靶场/春秋云境/Hospital.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/靶场/春秋云境/Hospital.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,8 +266,11 @@
   },
   "active": "660485dad79e20a8",
   "lastOpenFiles": [
-    "网络安全/内网渗透/Venom.md",
+    "网络安全/内网渗透/内网工作环境.md",
+    "网络安全/内网渗透/内网信息收集.md",
+    "网络安全/内网渗透/域渗透.md",
     "网络安全/内网渗透/靶场/春秋云境/Hospital.md",
+    "网络安全/内网渗透/Venom.md",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240807170211.png",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240807170050.png",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240807163424.png",
@@ -278,9 +281,7 @@
     "JavaSec/JavaSec/Nacos 漏洞.md",
     "网络安全/内网渗透/frp配置(0.52.0以上版本).md",
     "网络安全/内网渗透/工具.md",
-    "网络安全/内网渗透/域渗透.md",
     "网络安全/内网渗透/三层内网代理.pdf",
-    "网络安全/内网渗透/内网工作环境.md",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240803130627.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "CTF赛题/WriteUP/2023 VNCTF.md",
