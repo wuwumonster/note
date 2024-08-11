@@ -266,6 +266,8 @@
   },
   "active": "660485dad79e20a8",
   "lastOpenFiles": [
+    "网络安全/内网渗透/attachments/Pasted image 20240811155534.png",
+    "网络安全/内网渗透/attachments",
     "网络安全/内网渗透/内网工作环境.md",
     "网络安全/内网渗透/内网信息收集.md",
     "网络安全/内网渗透/域渗透.md",
@@ -305,7 +307,6 @@
     "CTF赛题/WriteUP/2020 羊城杯.md",
     "CTF赛题/WriteUP/2020 BJDCTF.md",
     "CTF赛题/BUU月赛/2023.07.md",
-    "CTF赛题/CTFShow/2024 元旦水友赛.md",
     "未命名.canvas",
     "Web/Sql注入/SQLMAP_使用文档(中文).pdf",
     "Web/SSTI/Thymeleaf-SSTI分析.pdf",
@@ -313,7 +314,6 @@
     "Web/Python/pickle反序列化.pdf",
     "Web/OtherTrike/Proc目录在CTF中的利用.pdf",
     "Web/OtherTrike/proc利用.pdf",
-    "工具使用/attachments",
     "未命名 1.canvas"
   ]
 }
