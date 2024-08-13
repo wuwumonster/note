@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/内网工作环境.md",
+                "file": "工具使用/mimikatz.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具使用/MSF.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具使用/MSF.md"
+                "file": "网络安全/内网渗透/内网信息收集.md"
               }
             }
           },
@@ -129,7 +129,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "工具使用/MSF.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具使用/MSF.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具使用/MSF.md",
+                "file": "网络安全/内网渗透/内网信息收集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -266,12 +266,14 @@
   },
   "active": "660485dad79e20a8",
   "lastOpenFiles": [
+    "工具使用/MSF.md",
+    "工具使用/mimikatz.md",
+    "网络安全/内网渗透/内网信息收集.md",
+    "网络安全/内网渗透/工具.md",
     "网络安全/内网渗透/内网工作环境.md",
     "网络安全/内网渗透/frp配置(0.52.0以上版本).md",
     "网络安全/内网渗透/域渗透.md",
-    "网络安全/内网渗透/内网信息收集.md",
     "网络安全/内网渗透/Venom.md",
-    "工具使用/MSF.md",
     "工具使用/attachments/Pasted image 20240812174627.png",
     "网络安全/内网渗透/attachments/Pasted image 20240811155534.png",
     "网络安全/内网渗透/attachments",
@@ -284,7 +286,6 @@
     "工具库/工具链接.md",
     "JavaSec/JavaSec/SpEL表达式注入.md",
     "JavaSec/JavaSec/Nacos 漏洞.md",
-    "网络安全/内网渗透/工具.md",
     "网络安全/内网渗透/三层内网代理.pdf",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240803130627.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
