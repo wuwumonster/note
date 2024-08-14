@@ -7,6 +7,10 @@
 - JDK 6u141、7u131、8u121之后：增加了com.sun.jndi.rmi.object.trustURLCodebase选项，默认为false，禁止RMI和CORBA协议使用远程codebase的选项，因此RMI和CORBA在以上的JDK版本上已经无法触发该漏洞，但依然可以通过指定URI为LDAP协议来进行JNDI注入攻击。
 - JDK 6u211、7u201、8u191之后：增加了com.sun.jndi.ldap.object.trustURLCodebase选项，默认为false，禁止LDAP协议使用远程codebase的选项，把LDAP协议的攻击途径也给禁了。
 
+|协议|JDK6|JDK7|JDK8|JDK11|
+|---|---|---|---|---|
+|LADP|6u211以下|7u201以下|8u191以下|11.0.1以下|
+|RMI|6u132以下|7u122以下|8u113以下|无|
 ## 攻击方法
 
 漏洞成因：lookup()函数的访问地址参数控制不当，导致加载远程恶意类。

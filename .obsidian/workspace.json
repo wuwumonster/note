@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/内网渗透/内网信息收集.md",
+                "file": "JavaSec/JavaSec/JNDI注入.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网络安全/内网渗透/内网信息收集.md"
+                "file": "JavaSec/JavaSec/JNDI注入.md"
               }
             }
           },
@@ -108,7 +108,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -129,7 +130,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "网络安全/内网渗透/内网信息收集.md",
+                "file": "JavaSec/JavaSec/JNDI注入.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -200,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网络安全/内网渗透/内网信息收集.md",
+                "file": "JavaSec/JavaSec/JNDI注入.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网络安全/内网渗透/内网信息收集.md",
+                "file": "JavaSec/JavaSec/JNDI注入.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -264,10 +265,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "660485dad79e20a8",
+  "active": "1660fe89eec4088b",
   "lastOpenFiles": [
-    "工具使用/mimikatz.md",
+    "JavaSec/JavaSec/JNDI.md",
     "网络安全/内网渗透/内网信息收集.md",
+    "工具使用/mimikatz.md",
     "工具使用/MSF.md",
     "网络安全/内网渗透/工具.md",
     "网络安全/内网渗透/内网工作环境.md",
@@ -306,7 +308,6 @@
     "CTF赛题/WriteUP/2020 WUSTCTF.md",
     "Web/文件上传/文件上传.md",
     "CTF赛题/WriteUP/2020 羊城杯.md",
-    "CTF赛题/WriteUP/2020 BJDCTF.md",
     "未命名.canvas",
     "Web/Sql注入/SQLMAP_使用文档(中文).pdf",
     "Web/SSTI/Thymeleaf-SSTI分析.pdf",
