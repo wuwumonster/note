@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工具使用/mimikatz.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "660485dad79e20a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaSec/JavaSec/JNDI注入.md",
+                "file": "CTF赛题/WriteUP/2024 巅峰极客.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工具使用/mimikatz.md"
+                "file": "CTF赛题/WriteUP/2024 巅峰极客.md"
               }
             }
           },
@@ -108,8 +95,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -130,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "工具使用/mimikatz.md",
+                "file": "CTF赛题/WriteUP/2024 巅峰极客.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -201,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工具使用/mimikatz.md",
+                "file": "CTF赛题/WriteUP/2024 巅峰极客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工具使用/mimikatz.md",
+                "file": "CTF赛题/WriteUP/2024 巅峰极客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -265,12 +251,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1660fe89eec4088b",
+  "active": "e642e860c7514bdb",
   "lastOpenFiles": [
+    "网络安全/实战渗透/Hack the Box/SEASON/JAN-MAR 2024.md",
+    "CTF赛题/WriteUP/2023 DiceCTF.md",
+    "CTF赛题/WriteUP/2023 香山杯.md",
+    "CTF赛题/WriteUP/2024 巅峰极客.md",
+    "CTF赛题/WriteUP/attachments/Pasted image 20240817102058.png",
+    "工具使用/MSF.md",
+    "工具使用/nmap.md",
+    "工具使用/mimikatz.md",
+    "未命名.canvas",
     "JavaSec/JavaSec/JNDI.md",
     "网络安全/内网渗透/内网信息收集.md",
-    "工具使用/mimikatz.md",
-    "工具使用/MSF.md",
     "网络安全/内网渗透/工具.md",
     "网络安全/内网渗透/内网工作环境.md",
     "网络安全/内网渗透/frp配置(0.52.0以上版本).md",
@@ -296,19 +289,12 @@
     "CTF赛题/WriteUP/2022 蓝帽杯.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240802152045.png",
-    "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240802151910.png",
     "网络安全/内网渗透/靶场/春秋云境/Brute4Road.md",
     "网络安全/内网渗透/靶场/春秋云境/未命名.canvas",
     "网络安全/实战渗透/Hack the Box/Machines/GreenHorn.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments",
     "CTF赛题/BUU月赛/2024.07.md",
     "网络安全/实战渗透/Hack the Box/Machines",
-    "网络安全/实战渗透/Hack the Box/未命名.md",
-    "Web/文件包含/文件包含和相关Trick.md",
-    "CTF赛题/WriteUP/2020 WUSTCTF.md",
-    "Web/文件上传/文件上传.md",
-    "CTF赛题/WriteUP/2020 羊城杯.md",
-    "未命名.canvas",
     "Web/Sql注入/SQLMAP_使用文档(中文).pdf",
     "Web/SSTI/Thymeleaf-SSTI分析.pdf",
     "Web/SSRF/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf",
