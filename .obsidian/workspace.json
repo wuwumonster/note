@@ -61,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSec/JavaSec/JNDI注入.md"
+                "file": "工具使用/mimikatz.md"
               }
             }
           },
@@ -130,7 +130,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "JavaSec/JavaSec/JNDI注入.md",
+                "file": "工具使用/mimikatz.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -201,7 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSec/JavaSec/JNDI注入.md",
+                "file": "工具使用/mimikatz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +218,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSec/JavaSec/JNDI注入.md",
+                "file": "工具使用/mimikatz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
