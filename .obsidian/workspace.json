@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "109c7f87f634e9cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/内网渗透/提权/Lunux提权.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -58,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spaw",
+                "query": "提权",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,7 +107,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -253,10 +266,12 @@
   },
   "active": "e642e860c7514bdb",
   "lastOpenFiles": [
+    "网络安全/内网渗透/提权/Lunux提权.md",
+    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
+    "CTF赛题/WriteUP/2024 巅峰极客.md",
     "网络安全/实战渗透/Hack the Box/SEASON/JAN-MAR 2024.md",
     "CTF赛题/WriteUP/2023 DiceCTF.md",
     "CTF赛题/WriteUP/2023 香山杯.md",
-    "CTF赛题/WriteUP/2024 巅峰极客.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20240817102058.png",
     "工具使用/MSF.md",
     "工具使用/nmap.md",
@@ -283,11 +298,9 @@
     "JavaSec/JavaSec/Nacos 漏洞.md",
     "网络安全/内网渗透/三层内网代理.pdf",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240803130627.png",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "CTF赛题/WriteUP/2023 VNCTF.md",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240802154503.png",
     "CTF赛题/WriteUP/2022 蓝帽杯.md",
-    "网络安全/内网渗透/提权/Lunux提权.md",
     "网络安全/内网渗透/靶场/春秋云境/attachments/Pasted image 20240802152045.png",
     "网络安全/内网渗透/靶场/春秋云境/Brute4Road.md",
     "网络安全/内网渗透/靶场/春秋云境/未命名.canvas",
