@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ee5af91658da650a",
+        "id": "85c01183115112bf",
         "type": "tabs",
         "children": [
           {
-            "id": "109c7f87f634e9cf",
+            "id": "e4a065822af19683",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/未命名.md",
+                "file": "CTF赛题/WriteUP/2020 网鼎-复现.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发/未命名.md"
+                "file": "CTF赛题/WriteUP/2020 网鼎-复现.md"
               }
             }
           },
@@ -95,7 +95,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -116,7 +117,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "开发/未命名.md",
+                "file": "CTF赛题/WriteUP/2020 网鼎-复现.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发/未命名.md",
+                "file": "CTF赛题/WriteUP/2020 网鼎-复现.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发/未命名.md",
+                "file": "CTF赛题/WriteUP/2020 网鼎-复现.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -251,10 +252,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "109c7f87f634e9cf",
+  "active": "e4a065822af19683",
   "lastOpenFiles": [
+    "CTF赛题/WriteUP/attachments/Pasted image 20240901001851.png",
+    "开发/portainer.md",
     "CTF赛题/WriteUP/2020 网鼎-复现.md",
-    "开发/未命名.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20240830111459.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20240830105908.png",
     "CTF赛题/WriteUP/attachments/Pasted image 20240830104824.png",
@@ -287,7 +289,6 @@
     "网络安全/内网渗透/工具.md",
     "网络安全/内网渗透/内网工作环境.md",
     "网络安全/内网渗透/frp配置(0.52.0以上版本).md",
-    "网络安全/内网渗透/域渗透.md",
     "工具使用/attachments/Pasted image 20240812174627.png",
     "网络安全/内网渗透/attachments/Pasted image 20240811155534.png",
     "网络安全/内网渗透/attachments",
