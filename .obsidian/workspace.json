@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CVE/2024/CVE-2024-38856.md",
+                "file": "CVE/2024/CVE-2024-36401.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CVE/2024/CVE-2024-38856.md"
+                "file": "CVE/2024/CVE-2024-36401.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CVE/2024/CVE-2024-38856.md",
+                "file": "CVE/2024/CVE-2024-36401.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CVE/2024/CVE-2024-38856.md",
+                "file": "CVE/2024/CVE-2024-36401.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CVE/2024/CVE-2024-38856.md",
+                "file": "CVE/2024/CVE-2024-36401.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,8 +253,9 @@
   },
   "active": "e4a065822af19683",
   "lastOpenFiles": [
-    "工具使用/MSF.md",
     "CVE/2024/CVE-2024-38856.md",
+    "CVE/2024/CVE-2024-36401.md",
+    "工具使用/MSF.md",
     "CVE/2024",
     "CVE",
     "工具使用/fscan.md",
@@ -289,7 +290,6 @@
     "Web/XSS/Payload.md",
     "网络安全/内网渗透/提权/Lunux提权.md",
     "CTF赛题/WriteUP/2024 巅峰极客.md",
-    "网络安全/实战渗透/Hack the Box/SEASON/JAN-MAR 2024.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20240817102058.png",
     "工具使用/attachments/Pasted image 20240812174627.png",
     "网络安全/内网渗透/attachments/Pasted image 20240811155534.png",
