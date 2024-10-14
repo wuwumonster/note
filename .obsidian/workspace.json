@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CVE/2024/CVE-2024-36401.md",
+                "file": "CVE/2024/CVE-2024-40075.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CVE/2024/CVE-2024-36401.md"
+                "file": "CVE/2024/CVE-2024-40075.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CVE/2024/CVE-2024-36401.md",
+                "file": "CVE/2024/CVE-2024-40075.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -187,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CVE/2024/CVE-2024-36401.md",
+                "file": "CVE/2024/CVE-2024-40075.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CVE/2024/CVE-2024-36401.md",
+                "file": "CVE/2024/CVE-2024-40075.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,8 +253,10 @@
   },
   "active": "e4a065822af19683",
   "lastOpenFiles": [
-    "CVE/2024/CVE-2024-38856.md",
+    "CVE/2024/CVE-2024-20931.md",
+    "CVE/2024/CVE-2024-40075.md",
     "CVE/2024/CVE-2024-36401.md",
+    "CVE/2024/CVE-2024-38856.md",
     "CVE/2024/attachments/Pasted image 20241013162054.png",
     "CVE/2024/attachments/Pasted image 20241013162448.png",
     "CVE/2024/attachments",
@@ -291,7 +293,6 @@
     "Web/SSTI/SSTI PHP题目.md",
     "CTF赛题/WriteUP/2023 RealWorld_复现.md",
     "Web/XSS/Payload.md",
-    "网络安全/内网渗透/提权/Lunux提权.md",
     "CTF赛题/WriteUP/attachments/Pasted image 20240817102058.png",
     "网络安全/内网渗透/attachments",
     "网络安全/内网渗透/三层内网代理.pdf",
