@@ -99,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 226.5,
-    "collapsed": true
+    "width": 226.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -254,6 +253,7 @@
   },
   "active": "e4a065822af19683",
   "lastOpenFiles": [
+    "CVE/2024/attachments/Pasted image 20241015095436.png",
     "CVE/2024/attachments/Pasted image 20241014222431.png",
     "CVE/2024/CVE-2024-36401.md",
     "CVE/2024/CVE-2024-40075.md",
@@ -294,7 +294,6 @@
     "Web/SSTI/SSTI-山河.md",
     "Web/SSTI/SSTI-总结.md",
     "Web/SSTI/Thymeleaf-SSTI分析.pdf",
-    "CTF赛题/WriteUP/attachments/Pasted image 20240817102058.png",
     "网络安全/内网渗透/attachments",
     "网络安全/内网渗透/三层内网代理.pdf",
     "网络安全/内网渗透/靶场/春秋云境/未命名.canvas",
