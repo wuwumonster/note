@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "CVE-2024-25600"
             }
-          },
-          {
-            "id": "88b94487d8fdf300",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.4"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -294,7 +281,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "88b94487d8fdf300",
+  "active": "e4a065822af19683",
   "lastOpenFiles": [
     "CVE/2024/CVE-2024-36401.md",
     "CVE/2024/CVE-2024-25600.md",
