@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CVE/2024/CVE-2024-0195.md",
+                "file": "CVE/2024/CVE-2024-0352.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CVE-2024-0195"
+              "title": "CVE-2024-0352"
             }
           }
         ]
@@ -52,10 +52,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CVE/2024/CVE-2024-0195.md"
+                "file": "CVE/2024/CVE-2024-0352.md"
               },
               "icon": "lucide-list",
-              "title": "CVE-2024-0195 的大纲"
+              "title": "CVE-2024-0352 的大纲"
             }
           },
           {
@@ -130,7 +130,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "CVE/2024/CVE-2024-0195.md",
+                "file": "CVE/2024/CVE-2024-0352.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -158,7 +158,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "CVE-2024-0195 的关系图"
+              "title": "CVE-2024-0352 的关系图"
             }
           },
           {
@@ -209,7 +209,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CVE/2024/CVE-2024-0195.md",
+                "file": "CVE/2024/CVE-2024-0352.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +219,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "CVE-2024-0195 的反向链接列表"
+              "title": "CVE-2024-0352 的反向链接列表"
             }
           },
           {
@@ -228,12 +228,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CVE/2024/CVE-2024-0195.md",
+                "file": "CVE/2024/CVE-2024-0352.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "CVE-2024-0195 的出链列表"
+              "title": "CVE-2024-0352 的出链列表"
             }
           },
           {
@@ -283,23 +283,24 @@
   },
   "active": "e4a065822af19683",
   "lastOpenFiles": [
+    "CVE/2024/attachments/Pasted image 20241020155608.png",
+    "CVE/2024/attachments/Pasted image 20241020155545.png",
+    "CVE/2024/attachments/Pasted image 20241020155320.png",
+    "CVE/2024/attachments/Pasted image 20241020155033.png",
+    "CVE/2024/attachments/Pasted image 20241020154907.png",
+    "CVE/2024/CVE-2024-25600.md",
+    "CVE/2024/CVE-2024-0352.md",
+    "CVE/2024/CVE-2024-0195.md",
     "CVE/2024/attachments/Pasted image 20241020145330.png",
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
-    "CVE/2024/CVE-2024-0195.md",
-    "CVE/2024/CVE-2024-25600.md",
     "CVE/2024/CVE-2024-38856.md",
     "CVE/2024/attachments/Pasted image 20241020125113.png",
     "CVE/2024/attachments/Pasted image 20241020125019.png",
     "CVE/2024/attachments/Pasted image 20241020124020.png",
     "CVE/2024/attachments/Pasted image 20241020123559.png",
     "CVE/2024/attachments/Pasted image 20241020123253.png",
-    "CVE/2024/attachments/Pasted image 20241020112523.png",
-    "CVE/2024/attachments/Pasted image 20241020105213.png",
     "CVE/2024/CVE-2024-36401.md",
     "网络安全/SomeOfTrick/SQL拖库.md",
-    "网络安全/SomeOfTrick/attachments/Pasted image 20241018084729.png",
-    "网络安全/SomeOfTrick/attachments/Pasted image 20241018084526.png",
-    "网络安全/SomeOfTrick/attachments/Pasted image 20241018084130.png",
     "网络安全/SomeOfTrick/attachments",
     "网络安全/SomeOfTrick",
     "网络安全/未命名.md",
@@ -324,7 +325,6 @@
     "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit1.md",
     "Web/代码审计/MVC架构.md",
     "未命名.canvas",
-    "CTF赛题/BUU月赛/2022.11.md",
     "Web/SSTI/Thymeleaf-SSTI分析.pdf",
     "网络安全/内网渗透/attachments",
     "网络安全/内网渗透/三层内网代理.pdf",
