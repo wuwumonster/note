@@ -11,14 +11,10 @@
             "id": "d5ae1fb2fef8f05e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CVE/2024/CVE-2024-0195.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "CVE-2024-0195"
+              "title": "新标签页"
             }
           }
         ]
@@ -52,10 +48,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CVE/2024/CVE-2024-0195.md"
+                "file": "CVE/2024/CVE-2024-36522.md"
               },
               "icon": "lucide-list",
-              "title": "CVE-2024-0195 的大纲"
+              "title": "CVE-2024-36522 的大纲"
             }
           },
           {
@@ -281,16 +277,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b88c6fc99e6a03e7",
+  "active": "d5ae1fb2fef8f05e",
   "lastOpenFiles": [
-    "未命名.canvas",
     "CVE/2024/CVE-2024-36522.md",
-    "新建 文本文档.txt",
-    "CVE/2024/CVE-2024-38856.md",
+    "CVE/2024/CVE-2024-36401.md",
     "CVE/2024/CVE-2024-25600.md",
     "CVE/2024/CVE-2024-0352.md",
     "CVE/2024/CVE-2024-0195.md",
-    "CVE/2024/CVE-2024-36401.md",
+    "未命名.canvas",
+    "新建 文本文档.txt",
+    "CVE/2024/CVE-2024-38856.md",
     "CVE/2024/CVE-2024-40075.md",
     "Web/Bypass/基于HTTP协议特性绕WAF.md",
     "Web/Bypass/Bypass基操.md",
