@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/CTFShow/2024 单身杯.md",
+                "file": "Web/SSTI/Jinja2 SSTI外带命令回显.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024 单身杯"
+              "title": "Jinja2 SSTI外带命令回显"
             }
           }
         ],
@@ -298,8 +298,13 @@
   },
   "active": "22f3b868b36ded34",
   "lastOpenFiles": [
-    "Web/PHPTrike/类型.md",
+    "Web/SSTI/attachments/Pasted image 20241130130625.png",
+    "Web/SSTI/SSTI PHP题目.md",
+    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
+    "JavaSec/JavaSec/JNDI.md",
+    "Web/Python/SSTI",
     "CTF赛题/CTFShow/2024 单身杯.md",
+    "Web/PHPTrike/类型.md",
     "Web/Bypass/基于HTTP协议特性绕WAF.md",
     "Web/Python/Flask内存马.md",
     "Web/Python/Python反序列化.md",
@@ -333,7 +338,6 @@
     "CVE/2024/attachments/Pasted image 20241020112523.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020105213.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241015095436.png.crdownload",
-    "CVE/2024/attachments/Pasted image 20241014222431.png.crdownload",
     "CVE/2024/CVE-2024-36522.md",
     "CVE/2024/CVE-2024-36401.md",
     "CVE/2024/CVE-2024-25600.md",
@@ -341,10 +345,6 @@
     "CVE/2024/CVE-2024-0195.md",
     "未命名.canvas",
     "Web/Bypass/Bypass基操.md",
-    "Web/Node.js/沙箱逃逸/vm&vm2沙箱逃逸.md",
-    "Web/Python/Python 原型链污染.md",
-    "网络安全/内网渗透/靶场/Tempus-Fugit/Tempus-Fugit2.md",
-    "网络安全/SomeOfTrick/SQL拖库.md",
     "网络安全/内网渗透/靶场/春秋云境/未命名.canvas",
     "未命名 1.canvas"
   ]
