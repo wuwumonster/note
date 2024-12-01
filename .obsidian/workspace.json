@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/内存马/无文件落地注入Agent内存马.md",
+                "file": "CTF赛题/CTFShow/2024 单身杯.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "无文件落地注入Agent内存马"
+              "title": "2024 单身杯"
             }
           }
         ],
@@ -298,8 +298,9 @@
   },
   "active": "22f3b868b36ded34",
   "lastOpenFiles": [
-    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
+    "CTF赛题/CTFShow/attachments/Pasted image 20241201204001.png",
     "JavaSec/JavaSec/内存马/无文件落地注入Agent内存马.md",
+    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
     "JavaSec/JavaSec/内存马",
     "Web/SSTI/attachments/Pasted image 20241130130625.png",
     "Web/SSTI/SSTI PHP题目.md",
@@ -344,7 +345,6 @@
     "CVE/2024/CVE-2024-0352.md",
     "CVE/2024/CVE-2024-0195.md",
     "未命名.canvas",
-    "Web/Bypass/Bypass基操.md",
     "网络安全/内网渗透/靶场/春秋云境/未命名.canvas",
     "未命名 1.canvas"
   ]
