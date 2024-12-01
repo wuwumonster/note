@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web/SSTI/Jinja2 SSTI外带命令回显.md",
+                "file": "JavaSec/JavaSec/内存马/无文件落地注入Agent内存马.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jinja2 SSTI外带命令回显"
+              "title": "无文件落地注入Agent内存马"
             }
           }
         ],
@@ -298,9 +298,11 @@
   },
   "active": "22f3b868b36ded34",
   "lastOpenFiles": [
+    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
+    "JavaSec/JavaSec/内存马/无文件落地注入Agent内存马.md",
+    "JavaSec/JavaSec/内存马",
     "Web/SSTI/attachments/Pasted image 20241130130625.png",
     "Web/SSTI/SSTI PHP题目.md",
-    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
     "JavaSec/JavaSec/JNDI.md",
     "Web/Python/SSTI",
     "CTF赛题/CTFShow/2024 单身杯.md",
@@ -332,12 +334,10 @@
     "CVE/2024/attachments/Pasted image 20241020125019.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020124020.png",
     "CVE/2024/attachments/Pasted image 20241020124020.png.crdownload",
-    "CVE/2024/attachments/Pasted image 20241020123559.png",
     "CVE/2024/attachments/Pasted image 20241020123559.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020123253.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020112523.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020105213.png.crdownload",
-    "CVE/2024/attachments/Pasted image 20241015095436.png.crdownload",
     "CVE/2024/CVE-2024-36522.md",
     "CVE/2024/CVE-2024-36401.md",
     "CVE/2024/CVE-2024-25600.md",
