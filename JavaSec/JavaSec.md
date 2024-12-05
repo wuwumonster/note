@@ -20,7 +20,7 @@ j# JavaSec
 
 [RMI攻击利用](JavaSec/RMI攻击利用.md)
 
-[JNDI注入](JavaSec/JNDI注入.md)
+[JNDI注入](JavaSec/JNDI/JNDI注入.md)
 
 [JEP290](JavaSec/JEP290.md)
 
