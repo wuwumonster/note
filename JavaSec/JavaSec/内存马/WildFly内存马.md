@@ -1,0 +1,1 @@
+python neoreg.py generate -k password
