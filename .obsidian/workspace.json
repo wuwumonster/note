@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSec/JavaSec/内存马/WildFly内存马.md",
+                "file": "CTF赛题/WriteUP/2021 蓝帽杯.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WildFly内存马"
+              "title": "2021 蓝帽杯"
             }
           },
           {
@@ -283,6 +283,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-livesync:Show Log": false,
+      "obsidian-livesync:Replicate": false,
+      "obsidian-livesync:P2P Replicator": false,
       "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -292,16 +295,22 @@
       "markdown-importer:打开 Markdown 格式转换器": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-livesync:Show Customization sync": false
     }
   },
   "active": "d5ae1fb2fef8f05e",
   "lastOpenFiles": [
+    "CTF赛题/BUU月赛/2024.12.md",
+    "CTF赛题/WriteUP/2021 蓝帽杯.md",
+    "Web/OtherTrike/请求走私.md",
+    "Web/中间件/解析漏洞-山河.md",
+    "JavaSec/JavaSec/内存马/Restlet內存马.md",
+    "JavaSec/JavaSec/内存马/WildFly内存马.md",
     "JavaSec/JavaSec/内存马/attachments/Pasted image 20241209210827.png",
     "JavaSec/JavaSec/内存马/attachments/Pasted image 20241209210604.png",
     "取证/取证能力测试.md",
     "工具使用/Nuclei.md",
-    "JavaSec/JavaSec/内存马/WildFly内存马.md",
     "Web/Python/Flask内存马.md",
     "JavaSec/JavaSec/内存马/Solon 内存马.md",
     "JavaSec/JavaSec/内存马/attachments/Pasted image 20241205220627.png",
@@ -318,7 +327,6 @@
     "CTF赛题/CTFShow/attachments/Pasted image 20241201211657.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20241201211538.png",
     "CTF赛题/CTFShow/attachments/Pasted image 20241201210025.png",
-    "CTF赛题/CTFShow/attachments/Pasted image 20241201204001.png",
     "JavaSec/JavaSec/内存马/无文件落地注入Agent内存马.md",
     "Web/SSTI/Jinja2 SSTI外带命令回显.md",
     "JavaSec/JavaSec/内存马",
@@ -333,10 +341,6 @@
     "Web/PHPTrike/Fast Destruct.md",
     "Web/PHPTrike/内置类.md",
     "Web/PHPTrike/RCE.md",
-    "Web/PHPTrike/open_basedir绕过.md",
-    "Web/PHPTrike/函数特性.md",
-    "CTF赛题/BUU月赛/2024.10.md",
-    "CVE/2024/CVE-2024-40075.md",
     "CVE/2024/attachments/Pasted image 20241020145330.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020125113.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020125019.png.crdownload",
