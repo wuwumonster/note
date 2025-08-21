@@ -154,6 +154,52 @@ PAC被放置在票据的`Authorization Data`字段中。它本身是一个复杂
 3. **KDC签名**：整个PAC内容使用**服务服务器密钥**的签名。（在某些情况下）   
 **关键点**：PAC由**KDC**（域控制器）生成和签署。客户端和服务器都无法伪造一个有效的PAC，因为它们没有`KRBtgt`密钥。
 ![](attachments/Pasted%20image%2020250821100401.png)
+#### PAC凭证信息
+PAC不仅仅是“一些组信息”，它是一个结构化的数据库，包含了在Windows域环境中进行授权决策所需的**全部身份和权限凭证**。
+Logon Info类型的PAC_LOGON_INFO包含Kerberos票据客户端的凭据信息。数据本身包含在一个KERB_VALIDATION_INFO结构中，该结构是由NDR编码的。NDR编码的输出被放置在Logon Info类型的PAC_INFO_BUFFER结构中。
+##### a. `LOGON_INFO` (最重要的部分)
+
+这是PAC的**核心**，包含了用户登录和授权所需的所有基本信息。它本身又是一个复杂的结构（`KERB_VALIDATION_INFO`），主要包含：
+- **用户标识信息**：    
+    - `UserId`：用户的**相对标识符 (RID)**。        
+    - `PrimaryGroupId`：用户**主要组**的RID（通常是`Domain Users`的RID）。    
+    - `GroupIds`：一个**SID列表**，包含了用户所属的所有**额外组**（如`Domain Admins`, `Schema Admins`等）。**这是权限提升的关键**。    
+    - `LogonDomainId`：用户所在域的SID。
+>域用户的Group RID恒为513 （也就是Domain Users的RID）​，机器用户的Group RID恒为515（也就是Domain Comp­uters的RID）​，域控的Group RID恒为516 （也就是Domain Controllers的RID）​。
+- **登录元数据**：    
+    - `LogonTime`：用户登录时间。        
+    - `LogoffTime`：用户登录会话过期时间。        
+    - `KickOffTime`：强制注销时间。        
+    - `PasswordLastSet`：密码最后修改时间。        
+    - `PasswordCanChange`：允许修改密码的时间。        
+    - `PasswordMustChange`：必须修改密码的时间。        
+- **登录类型和来源**：    
+    - `LogonType`：登录类型（如交互式、网络、批处理等）。        
+    - `UserFlags`：用户账户标志。        
+    - `LogonServer`：用户进行认证的域控制器名称。        
+    - `LogonServerName`：用户进行认证的域控制器名称。        
+    - `UserSessionKey`：用户会话密钥（已废弃，通常为空）。       
+
+**渗透视角**：`GroupIds`列表是黄金票据攻击中你最想篡改的部分。如果你能成功伪造一个包含`Domain Admins`组SID的PAC，你就能获得域管理员权限。但正如之前所述，签名是最大的障碍。
+##### b. `CLIENT_INFO`
+这是一个简单但重要的结构，用于快速验证。
+- `ClientId`：用户的登录时间（与`LOGON_INFO`中的`LogonTime`相同）。    
+- `NameLength` / `ClientName`：用户的账户名（例如`alice`）。    
+- **作用**：服务服务器可以快速检查这个明文名称是否与票据中的用户名匹配，作为一个初步的、非加密的完整性检查。   
+
+##### c. `UPN_DNS_INFO`
+包含用户的更多标识信息。
+- `UpnLength` / `UserPrincipalName`：用户的UPN（例如`alice@corp.com`）。    
+- `DnsDomainNameLength` / `DnsDomainName`：用户的完全限定域名（FQDN）（例如`corp.com`）。    
+- `Flags`：标志位。    
+- **作用**：提供额外的用户身份信息，特别是在跨域或联邦身份验证场景中。    
+
+##### d. `SERVER_CHECKSUM` 和 `PRIVSVR_CHECKSUM`
+这是PAC的**防伪标签**，是保证PAC可信度的核心。
+- `SERVER_CHECKSUM`：使用**服务服务器的长期密钥**（NTLM Hash）生成的签名。    
+- `PRIVSVR_CHECKSUM`：使用**KDC的长期密钥（`KRBtgt`的NTLM Hash）** 生成的签名。    
+- **算法**：通常是HMAC，使用MD5或SHA1等算法。    
+- **渗透视角**：这是攻击者无法完美伪造的。任何对PAC内容的修改都会导致签名验证失败。黄金票据攻击的局限性正源于此。`PRIVSVR_CHECKSUM`是PAC的“皇帝玉玺”，只有KDC才拥有。
 ### 核心概念与“票券”
 1. **Principal (主体)**：Kerberos系统中被认证的对象，通常是用户或服务。每个主体都有一个唯一的名称，如 `user@DOMAIN.COM` 或 `host/fileserver.domain.com@DOMAIN.COM`。    
 2. **Secret Key (密钥)**：    
