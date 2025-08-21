@@ -158,7 +158,7 @@ PAC被放置在票据的`Authorization Data`字段中。它本身是一个复杂
 PAC不仅仅是“一些组信息”，它是一个结构化的数据库，包含了在Windows域环境中进行授权决策所需的**全部身份和权限凭证**。
 Logon Info类型的PAC_LOGON_INFO包含Kerberos票据客户端的凭据信息。数据本身包含在一个KERB_VALIDATION_INFO结构中，该结构是由NDR编码的。NDR编码的输出被放置在Logon Info类型的PAC_INFO_BUFFER结构中。
 ##### a. `LOGON_INFO` (最重要的部分)
-
+![](attachments/Pasted%20image%2020250821102633.png)
 这是PAC的**核心**，包含了用户登录和授权所需的所有基本信息。它本身又是一个复杂的结构（`KERB_VALIDATION_INFO`），主要包含：
 - **用户标识信息**：    
     - `UserId`：用户的**相对标识符 (RID)**。        
@@ -195,7 +195,7 @@ Logon Info类型的PAC_LOGON_INFO包含Kerberos票据客户端的凭据信息。
 - **作用**：提供额外的用户身份信息，特别是在跨域或联邦身份验证场景中。    
 
 ##### d. `SERVER_CHECKSUM` 和 `PRIVSVR_CHECKSUM`
-这是PAC的**防伪标签**，是保证PAC可信度的核心。
+这是PAC的**防伪标签**，是保证PAC可信度的核心。在PAC数据用于访问控制之前，必须检查PAC_SERVER_CHECKSUM签名，这将验证客户端是否知道服务的密钥。而PAC_PRIVSVR_CHECKSUM签名的验证是可选的，默认不开启。它用于验证PAC是否由KDC签发，而不是由KDC以外的具有访问服务密钥的第三方放入票据中。
 - `SERVER_CHECKSUM`：使用**服务服务器的长期密钥**（NTLM Hash）生成的签名。    
 - `PRIVSVR_CHECKSUM`：使用**KDC的长期密钥（`KRBtgt`的NTLM Hash）** 生成的签名。    
 - **算法**：通常是HMAC，使用MD5或SHA1等算法。    
@@ -243,6 +243,7 @@ TGS收到请求后：
 客户端现在可以连接目标服务服务器了。它发送：
 4. 之前收到的**ST**（D部分）。    
 5. 一个用`Session Key_2`加密的**Authenticator**。    
+>当服务端收到客户端发来的AP-REQ消息时，只能校验PAC_SERVER_CHECKSUM签名，并不能校验PAC_PRIVSVR_CHECKSUM签名。
 
 **第6步：AP-REP - 服务服务器验证（可选双向认证）**  
 服务服务器收到请求后：
@@ -251,4 +252,6 @@ TGS收到请求后：
 3. 验证通过后，即授予客户端访问权限。    
 4. （可选）为了证明自己是真正的服务（双向认证），服务服务器可以从Authenticator中取出时间戳，用`Session Key_2`加密后发回给客户端（AP-REP）。客户端解密验证后，即可确认服务器的真实性。
 ![](attachments/Pasted%20image%2020250821095201.png)
+
+### AS-REQ&AS-REP
 ## LDAP协议
