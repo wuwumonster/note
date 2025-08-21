@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF赛题/WriteUP/2021 蓝帽杯.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2021 蓝帽杯"
+              "title": "Cypher"
             }
           },
           {
@@ -54,7 +54,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -283,9 +284,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-livesync:Show Log": false,
-      "obsidian-livesync:Replicate": false,
-      "obsidian-livesync:P2P Replicator": false,
       "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -295,14 +293,23 @@
       "markdown-importer:打开 Markdown 格式转换器": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-livesync:Show Customization sync": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "d5ae1fb2fef8f05e",
   "lastOpenFiles": [
-    "CTF赛题/BUU月赛/2024.12.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250517120050.png",
+    "CTF赛题/刷题/Web.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
+    "CTF赛题/BUU月赛/2022.04.md",
+    "CTF赛题/BUU月赛/2024.07.md",
+    "Web/PHPTrike/FilterChain.md",
+    "Web/PHPTrike/open_basedir绕过.md",
+    "Web/Sql注入/SQLI-LABS.md",
+    "Web/Sql注入/SQL流程.md",
+    "Web/Sql注入/Mysql 总结.md",
     "CTF赛题/WriteUP/2021 蓝帽杯.md",
+    "CTF赛题/BUU月赛/2024.12.md",
     "Web/OtherTrike/请求走私.md",
     "Web/中间件/解析漏洞-山河.md",
     "JavaSec/JavaSec/内存马/Restlet內存马.md",
@@ -330,17 +337,7 @@
     "JavaSec/JavaSec/内存马/无文件落地注入Agent内存马.md",
     "Web/SSTI/Jinja2 SSTI外带命令回显.md",
     "JavaSec/JavaSec/内存马",
-    "Web/SSTI/SSTI PHP题目.md",
-    "JavaSec/JavaSec/JNDI.md",
     "Web/Python/SSTI",
-    "Web/Bypass/基于HTTP协议特性绕WAF.md",
-    "Web/Python/Python反序列化.md",
-    "Web/PHPTrike/参数.md",
-    "Web/PHPTrike/PHP伪协议.md",
-    "Web/PHPTrike/FilterChain.md",
-    "Web/PHPTrike/Fast Destruct.md",
-    "Web/PHPTrike/内置类.md",
-    "Web/PHPTrike/RCE.md",
     "CVE/2024/attachments/Pasted image 20241020145330.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020125113.png.crdownload",
     "CVE/2024/attachments/Pasted image 20241020125019.png.crdownload",

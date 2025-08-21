@@ -14,6 +14,5 @@
   "quickadd",
   "rss-reader",
   "obsidian-local-rest-api",
-  "obsidian-git",
-  "obsidian-livesync"
+  "obsidian-git"
 ]
