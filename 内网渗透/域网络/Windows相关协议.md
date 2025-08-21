@@ -254,4 +254,54 @@ TGS收到请求后：
 ![](attachments/Pasted%20image%2020250821095201.png)
 
 ### AS-REQ&AS-REP
+- **目的**：客户端向KDC证明自己的身份，并获取一个**票证授予票证（TGT）**。TGT是后续获取所有其他服务票证（ST）的“通行证”。
+#### AS-REQ分析
+当域内某个用户想要访问域内某个服务时，输入用户名和密码，本机就会向KDC的AS发送一个AS-REQ（认证请求）​。
+![](attachments/Pasted%20image%2020250821112000.png)
+- PA-DATA pA-ENC-TIMESTAMP：预认证，就是用用户Hash加密时间戳作为value发送给KDC的AS。然后KDC从活动目录中查询出用户的Hash，使用用户Hash进行解密，获得时间戳。如果能解密，且时间戳在一定的范围内，则证明认证通过。由于是使用用户密码Hash加密的时间戳，因此也就造成了哈希传递攻击。
+- PA-DATA pA-PAC-REQUEST：启用PAC支持的扩展。这里value对应的值为True或False，KDC根据include的值来确定返回的票据中是否需要携带PAC。
+- include-pac：是否包含PAC，这里为True，说明包含PAC。
+- kdc-options：用于与KDC协商一些选项设置。
+- cname：请求的用户名，这个用户名存在与否，返回的包是有差异的，因此可以用于枚举域内用户名。当用户名存在时，密码正确与否会影响返回包，因此也可以进行密码喷洒。
+- realm：域名。
+- sname：请求的服务，包含type和value。在AS-REQ中sname始终为krbtgt。
+#### AS-REP包分析
+![](attachments/Pasted%20image%2020250821114137.png)
+- ticket：认购权证票据。(TGT)
+- enc-part（ticket中的）​：TGT中的加密部分，这部分是用krbtgt的密码Hash加密的。因此如果我们拥有krbtgt的Hash，就可以自己制作一个ticket，这就造成了黄金票据传递攻击。
+- enc-part（最外层的）​：Logon Session Key，这部分是用请求的用户密码Hash加密的，作为下一阶段的认证密钥。
+
+##### TGT
+AS-REP包中的ticket便是TGT了。TGT中包含一些明文显示的信息，如版本号tkt-vno、域名realm、请求的服务名sname，但最重要的还是加密部分。加密部分是使用krbtgt账户密钥加密的，主要包含Logon Session Key、请求的用户名cname、域名crealm、认证时间authtime、认证到期时间endtime、authorization-data等信息。其中authorization-data部分包含客户端的身份权限等信息，这些信息包含在PAC中。
+![](attachments/Pasted%20image%2020250821114332.png)
+常用攻击手法：
+###### a. 凭证窃取 (Credential Theft) - 抓取现有TGT
+- **目的**：获取当前用户或其他登录用户的TGT，用于**票据传递 (Pass-the-Ticket, PtT)**。    
+- **方法**：    
+    - **Mimikatz**: `kerberos::list /export` 可以列出并导出所有缓存的Kerberos票证（包括TGT）。        
+    - **Rubeus**: `Rubeus.exe dump` 功能类似。        
+    - **Cobalt Strike**: `make_token` + `kerberos_ticket_use` 注入窃取的票证。        
+- **利用**：注入窃取的TGT后，你就可以以该用户的身份申请访问任何服务的ST，实现横向移动。   
+###### b. 凭证伪造 (Credential Forgery) - 黄金票据 (Golden Ticket)
+这是最强大的攻击之一，直接针对TGT的信任模型。
+- **前提**：获取域控的 **`KRBtgt`用户的NTLM Hash**。这是加密TGT的密钥。    
+- **原理**：由于TGT是KDC自己加密的，而加密密钥（`KRBtgt` Hash）是固定的，**谁拥有这个密钥，谁就是KDC**。    
+- **攻击**：攻击者使用`KRBtgt` Hash，自己伪造一个TGT。他可以在这个TGT中：    
+    - 声称自己是**任何用户**（如`DOMAIN\Administrator`）。        
+    - 设置**任意长的有效期**（如10年）。        
+    - 在PAC中添加**任何组**（如`Domain Admins`、`Enterprise Admins`）。       
+- **效果**：伪造的TGT（黄金票据）可以被用来直接向TGS请求任何服务的ST，从而获得域内任何资源的最高访问权限。**它完全绕过了KDC的认证，因为TGS只负责解密和验证TGT的签名**。    
+- **工具**：`Mimikatz` 的 `kerberos::golden` 命令。    
+
+###### c. 无约束委派 (Unconstrained Delegation) 攻击
+- **原理**：配置了无约束委派的服务服务器在接收用户认证时，会**获取该用户的TGT**（而不仅仅是ST），并缓存起来。    
+- **攻击**：攻击者可以诱导域管理员访问被攻陷的委派服务器，从而**捕获域管理员的TGT**。这个TGT是KDC正式签发的，拥有完全有效的PAC，比黄金票据更“真实”。    
+- **工具**：`Rubeus` 的 `monitor` 功能可以监听并捕获传入的TGT。
+
+##### Logon Session Key
+AS-REP包最外层的那部分便是加密的Logon Session Key，用于确保客户端和KDC下一阶段的通信安全，它使用请求的用户密钥加密。
+
+![](attachments/Pasted%20image%2020250821114550.png)
+
+![](attachments/deepseek_mermaid_20250821_5bd086.png)
 ## LDAP协议
