@@ -391,6 +391,8 @@ TGS-REP包最外层的部分便是Service Session Key，用于确保客户端和
 
 #### S4u2Self
 和正常的TGS-REQ包相比，S4u2Self协议的TGS-REQ包会多一个PA-DATA pA-FOR-USER，name为要模拟的用户，并且sname也是请求的服务自身
+
+**​PA-FOR-USER结构​**​：作为预认证数据(padata)的一部分，包含目标用户的身份信息(userName、userRealm)和校验和(cksum)。该结构使用服务账户的密钥进行签名，确保真实性
 ![](attachments/Pasted%20image%2020250825175621.png)
 
 #### S4u2Proxy
