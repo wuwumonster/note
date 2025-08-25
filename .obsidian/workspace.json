@@ -96,8 +96,8 @@
             "state": {
               "type": "starred",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "lucide-ghost",
+              "title": "starred"
             }
           },
           {
@@ -114,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5,
-    "collapsed": true
+    "width": 217.5
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -271,6 +270,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -285,17 +285,17 @@
   },
   "active": "22f3b868b36ded34",
   "lastOpenFiles": [
-    "内网渗透/域网络/attachments/Pasted image 20250821114550.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821114332.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821114137.png",
-    "内网渗透/域网络/attachments/deepseek_mermaid_20250821_5bd086.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821112000.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821102633.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821100401.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821100326.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821100119.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821095201.png",
-    "内网渗透/域网络/attachments/Pasted image 20250821092942.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825175705.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825175621.png",
+    "内网渗透/域网络/attachments/b675b4ca2d7448.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825173802.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825173655.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825173422.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825172850.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825172243.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825171229.png",
+    "内网渗透/域网络/attachments/Pasted image 20250825171206.png",
+    "内网渗透/域网络/attachments/deepseek_mermaid_20250821_491df3.png",
     "内网渗透/域网络/attachments",
     "工具使用/Nuclei.md",
     "内网渗透/域网络/Windows相关协议.md",

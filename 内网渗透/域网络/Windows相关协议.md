@@ -304,4 +304,96 @@ AS-REP包最外层的那部分便是加密的Logon Session Key，用于确保客
 ![](attachments/Pasted%20image%2020250821114550.png)
 
 ![](attachments/deepseek_mermaid_20250821_5bd086.png)
+### TGS-REQ&TGS-REP
+![](attachments/deepseek_mermaid_20250821_491df3.png)
+![](attachments/Pasted%20image%2020250825171206.png)
+
+#### TGS-REQ分析
+客户端用获得的TGT发起TGS-REQ，向KDC购买针对指定服务的ST
+-  padata：包含ap_req，这个是TGS_REQ必须携带的部分，这部分包含AS_REP中获取到的TGT票据和使用原始的Logon Session Key加密的时间戳。可能会有PA_FOR_USER，类型是S4u2Self，是唯一的标识符，指示用户的身份，由用户名和域名组成。S4u2Proxy必须扩展PA_FOR_USER结构，用于指定服务代表某个用户去请求针对服务自身的Kerberos服务票据。还可能会有PA_PAC_OPTIONS，类型是PA_PAC_OPTIONS。S4u2Proxy必须扩展PA-PAC-OPTIONS结构。如果是基于资源的约束性委派，就需要指定Resource-based Constrained Delegation位
+- ap-req: TGS-REQ 必须携带的部分  
+- ticket: AS-REP 回复包中返回的 TGT（票据授予票据）。       
+- authenticator: 使用原始的 Logon Session Key 加密的时间戳，用于保证会话安全
+#### TGS-REP分析
+KDC的TGS服务接收到TGS-REQ之后会进行如下操作：
+- 首先，使用krbtgt密钥解密TGT中的加密部分，得到Logon Session Key和PAC等信息，解密成功则说明该TGT是KDC颁发的；
+- 然后，验证PAC的签名，签名正确证明PAC未经过篡改；
+- 最后，使用Logon Session Key解密authenticator得到时间戳等信息，如果能够解密成功，并且票据时间在有效范围内，则验证了会话的安全性。
+- 在完成上述的检测后，KDC的TGS就完成了对客户端的认证，TGS发送回复包给客户端。
+>注意：TGS-REP中KDC并不会验证客户端是否有权限访问服务端。因此，不管用户有没有访问服务的权限，只要TGT正确，均会返回ST
+
+![](attachments/Pasted%20image%2020250825172243.png)
+- ticket (ST - Service Ticket)：服务票据（Service Ticket），是客户端请求访问特定服务时使用的凭证。
+- enc-part (位于 ticket 内部)：这部分是用原始的Logon Session Key加密的。里面最重要的字段是Service Session Key，作为下一阶段的认证密钥
+- enc-part（最外层的）​：这部分是用原始的Logon Session Key加密的。里面最重要的字段是Service Session Key，作为下一阶段的认证密钥
+##### ST
+ST中包含明文显示的信息，如版本号tkt-vno、域名realm、请求的服务名sname，但最重要的还是加密部分。加密部分是使用服务密钥加密的，主要包含Server Session Key、请求的用户名cname、域名crealm、认证时间authtime、认证到期时间endtime、authorization-data等信息。其中authorization-data部分包含客户端的身份权限等信息，这些信息包含在PAC中
+![](attachments/Pasted%20image%2020250825172850.png)
+
+| 字段             | 描述                                            | 渗透测试意义            |
+| -------------- | --------------------------------------------- | ----------------- |
+| **`pvno`**     | 协议版本号（5）                                      |                   |
+| **`msg-type`** | 消息类型（`krb-ap-req`）                            |                   |
+| **`realm`**    | 域名                                            |                   |
+| **`sname`**    | **服务主体名 (SPN)**（如 `cifs/fileserver.corp.com`） | **决定了这张票能用于哪个服务** |
+| **`enc-part`** | **加密部分**（这是ST的**核心 payload**）                 | **所有重要信息都在这里**    |
+enc-part解密后
+
+|字段|描述|渗透测试意义|
+|---|---|---|
+|**`key`**|**`Service Session Key`**|一个新的随机会话密钥，用于加密客户端与目标服务之间的通信。|
+|**`crealm`**|客户端所在域||
+|**`cname`**|客户端用户名|**白银票据攻击中可伪造的身份**|
+|**`authtime`**|用户最初认证时间||
+|**`starttime`**|ST生效时间||
+|**`endtime`**|ST过期时间|白银票据可设置为永不过期|
+|**`renew-till`**|ST最长的续订期限||
+|**`authorization-data`**|**授权数据（PAC）**|**包含用户的SID和组SID列表，是服务进行权限决策的依据**|
+>ST中的PAC和TGT中的PAC是一致的。在正常的非S4u2Self请求的TGS过程中，KDC在ST中的PAC直接复制了TGT中的PAC
+
+##### Service Session Key
+TGS-REP包最外层的部分便是Service Session Key，用于确保客户端和KDC下一阶段的通信安全，它使用Logon Session Key加密。
+![](attachments/Pasted%20image%2020250825173422.png)
+
+### AP-REQ&AP-REP双向认证
+客户端收到KDC返回的TGS-REP消息后，从中取出ST，准备开始申请访问服务
+>注意：通过Impacket远程连接服务默认不需要验证提供服务的服务端
+
+![](attachments/Pasted%20image%2020250825173655.png)
+
+
+#### AP-REQ包分析
+客户端接收到KDC的TGS回复后，通过缓存的Logon Session Key解密enc_Service Session key得到Service Session Key，同时它也拿到了ST。Serivce Session Key和ST会被客户端缓存。客户端访问指定服务时，将发起AP-REQ
+![](attachments/Pasted%20image%2020250825173802.png)
+- Service Ticket (ST)​**​: 这是由TGS签发、并使用​**​服务自身的密钥（Server's Secret Key）​**​ 加密的票据。客户端无法解密此票据，也不知道服务密钥。该票据内包含了用于客户端和服务端之间通信的 ​**​Service Session Key​**​（也由TGS生成），以及客户端的身份信息（如用户名、所属组等，通常包含在PAC中）
+- ​**​Authenticator​**​: 这是一个用于即时验证的凭证，由客户端生成。它包含客户端的身份信息和当前​**​时间戳​**​，并使用上一步中提到的 ​**​Service Session Key​**​ 进行加密（客户端从TGS的回复中解密获得了这个Key）。由于Authenticator每次请求都是新生成的（主要变化是时间戳），它有助于防止重放攻击。
+#### AP-REP包分析
+>注意：Impacket默认不需要验证服务端身份
+
+- 使用​​自己的密钥（Server's Secret Key）​​ 解密Service Ticket (ST)，提取出其中的 ​​Service Session Key​​ 和PAC等信息。
+- 使用刚提取的 ​**​Service Session Key​**​ 解密Authenticator，获取其中的时间戳和客户端信息。
+- 将Authenticator中解密得到的客户端信息与ST中解密出的客户端信息进行比对，确认一致性。
+- 检查Authenticator中的时间戳是否与当前时间相差在允许的范围内（通常是5分钟），以防止重放攻击
+- 服务端从ST中取出PAC中代表用户身份权限信息的数据，然后与请求的服务ACL做对比，生成相应的访问令牌
+- （可选但常见，AP-REQ请求中mutual-required选项是否为True）服务端可能会将ST中携带的PAC（特权属性证书）发送给KDC（域控）以验证客户端的详细权限
+
+### S4u2Self&S4u2Proxy协议
+为了在Kerberos协议层面对约束性委派进行支持，微软对Kerberos协议扩展了两个自协议：S4u2Self(Service for User to Self)和S4u2Proxy(Service for User to Proxy)：
+- **​S4U2Self​**​(Service for User to Self)：允许服务代表用户向KDC(密钥分发中心)申请访问​**​自身服务​**​的票据，而无需用户直接提供凭据。这主要用于服务需要验证用户身份但用户未通过Kerberos认证的场景(如基于表单的Web应用认证)
+- **S4U2Proxy​**​(Service for User to Proxy)：允许服务将已获得的用户票据​**​转发​**​给其他服务，实现跨服务的身份传递。这是约束委派实现"约束"的关键，因为转发目标必须明确列在服务账户的`msDS-AllowedToDelegateTo`属性中
+
+#### 协议工作流程概述
+- **初始认证​**​：用户通过Kerberos或其他协议(如NTLM)向服务A进行身份验证。
+- **​S4U2Self请求​**​：服务A代表用户向KDC请求一个针对自身服务的可转发票据(ST)。
+- **​S4U2Proxy请求​**​：服务A使用S4U2Self获得的票据，向KDC请求访问服务B的票据。
+- ​**​服务访问​**​：服务A使用获得的票据代表用户访问服务B。
+>整个过程中，KDC会严格检查服务账户的委派权限，确保只有配置了约束委派且目标服务在允许列表中的请求才能通过
+
+#### S4u2Self
+和正常的TGS-REQ包相比，S4u2Self协议的TGS-REQ包会多一个PA-DATA pA-FOR-USER，name为要模拟的用户，并且sname也是请求的服务自身
+![](attachments/Pasted%20image%2020250825175621.png)
+
+#### S4u2Proxy
+和正常的TGS-REQ包相比，S4u2Proxy协议的TGS-REQ包会增加一个additional-tickets字段，该字段的内容就是上一步利用S4u2Self请求的ST
+![](attachments/Pasted%20image%2020250825175705.png)
 ## LDAP协议
