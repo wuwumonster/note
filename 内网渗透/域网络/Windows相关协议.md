@@ -398,4 +398,6 @@ TGS-REP包最外层的部分便是Service Session Key，用于确保客户端和
 #### S4u2Proxy
 和正常的TGS-REQ包相比，S4u2Proxy协议的TGS-REQ包会增加一个additional-tickets字段，该字段的内容就是上一步利用S4u2Self请求的ST
 ![](attachments/Pasted%20image%2020250825175705.png)
+### Kerberos协议的安全问题
+![](attachments/Pasted%20image%2020250826171516.png)
 ## LDAP协议
