@@ -1,0 +1,1 @@
+NetExec（nxc）是一个强大的网络服务利用工具，旨在自动化评估大型网络的安全性。它是 CrackMapExec 的继任者，支持多种协议（SMB、LDAP、WinRM、MSSQL、RDP、FTP 等），并通过模块化设计提供枚举、凭据测试、漏洞扫描和后渗透功能。
