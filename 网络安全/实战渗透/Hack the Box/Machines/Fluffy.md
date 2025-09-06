@@ -25,3 +25,12 @@ crackmapexec smb 10.10.11.69 -u j.fleischman -p J0elTHEM4n1990! --rid-brute
 
 ![](attachments/Pasted%20image%2020250906131052.png)
 
+查看IT部门文件
+```shell
+smbclient //10.10.11.69/IT -U fluffy.htb/j.fleischman%J0elTHEM4n1990!
+```
+
+![](attachments/Pasted%20image%2020250906150609.png)
+
+pdf提示了一些CVE编号
+
