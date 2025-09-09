@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "22f3b868b36ded34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "内网渗透/cmd.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cmd"
-            }
-          },
-          {
-            "id": "30d350d4606d6a63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fluffy"
-            }
-          },
-          {
             "id": "615475d565716bed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/工具篇/responder.md",
+                "file": "网络安全/工具篇/certipy-ad.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "responder"
-            }
-          },
-          {
-            "id": "e4e1710a41306a9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络安全/工具篇/bloodyAD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "bloodyAD"
+              "title": "certipy-ad"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -326,36 +283,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "30d350d4606d6a63",
+  "active": "615475d565716bed",
   "lastOpenFiles": [
+    "网络安全/工具篇/bloodyAD.md",
+    "网络安全/工具篇/certipy-ad.md",
+    "网络安全/内网渗透/Vulhub 890f01955a4f4345beea2c751d36b3c5/Untitled 10.png",
+    "网络安全/内网渗透/Vulhub 890f01955a4f4345beea2c751d36b3c5/Untitled 1.png",
+    "网络安全/内网渗透/靶场/Vulhub靶机.md",
+    "网络安全/内网渗透/内网工作环境.md",
+    "网络安全/内网渗透/attachments/Pasted image 20240811155534.png",
+    "网络安全/内网渗透/内网工作环境 f6e0feb93ff24057a1c98661b855c855/Untitled.png",
+    "内网渗透/cmd.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250908214959.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250907105143.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250907104912.png",
     "网络安全/工具篇/responder.md",
-    "网络安全/工具篇/bloodyAD.md",
     "CVE/2025/CVE-2025-24071.md",
-    "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906165239.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906163723.png",
     "网络安全/工具篇/bloodhound.md",
     "CVE/2024/CVE-2024-0195.md",
     "CVE/2025",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906150609.png",
-    "网络安全/工具篇/certipy-ad.md",
-    "内网渗透/cmd.md",
     "网络安全/工具篇/netexec.md",
     "网络安全/工具篇/evil-winrm.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906131052.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906130655.png",
     "网络安全/工具篇/CrackMapExec.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906125355.png",
     "内网渗透/域网络/Windows相关协议.md",
-    "内网渗透/域网络/attachments/Pasted image 20250826171516.png",
-    "内网渗透/域网络/attachments/Pasted image 20250825175705.png",
-    "内网渗透/域网络/attachments/Pasted image 20250825175621.png",
     "内网渗透/域网络/attachments",
     "工具使用/Nuclei.md",
     "内网渗透/域网络",
-    "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
     "内网渗透",
     "CTF赛题/刷题/Web.md",
     "CTF赛题/BUU月赛/2022.04.md",
@@ -366,8 +324,6 @@
     "Web/Sql注入/SQL流程.md",
     "Web/Sql注入/Mysql 总结.md",
     "CTF赛题/WriteUP/2021 蓝帽杯.md",
-    "CTF赛题/BUU月赛/2024.12.md",
-    "Web/OtherTrike/请求走私.md",
     "JavaSec/JavaSec/内存马/attachments",
     "JavaSec/JavaSec/JNDI",
     "JavaSec/JavaSec/内存马",
