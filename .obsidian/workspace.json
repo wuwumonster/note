@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/工具篇/certipy-ad.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "certipy-ad"
+              "title": "Artificial"
             }
           }
         ]
@@ -256,8 +256,8 @@
             "state": {
               "type": "RSS_FEED",
               "state": {},
-              "icon": "feather-rss",
-              "title": "RSS Feeds"
+              "icon": "lucide-ghost",
+              "title": "RSS_FEED"
             }
           }
         ],
@@ -285,8 +285,15 @@
   },
   "active": "615475d565716bed",
   "lastOpenFiles": [
-    "网络安全/工具篇/bloodyAD.md",
+    "网络安全/实战渗透/Hack the Box/Machines/CodePartTwo.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910152056.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910152045.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910151837.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910151713.png",
+    "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/工具篇/certipy-ad.md",
+    "网络安全/工具篇/bloodyAD.md",
     "网络安全/内网渗透/Vulhub 890f01955a4f4345beea2c751d36b3c5/Untitled 10.png",
     "网络安全/内网渗透/Vulhub 890f01955a4f4345beea2c751d36b3c5/Untitled 1.png",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
@@ -295,18 +302,13 @@
     "网络安全/内网渗透/内网工作环境 f6e0feb93ff24057a1c98661b855c855/Untitled.png",
     "内网渗透/cmd.md",
     "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
-    "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250908214959.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250907105143.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250907104912.png",
     "网络安全/工具篇/responder.md",
     "CVE/2025/CVE-2025-24071.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906165239.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906163723.png",
     "网络安全/工具篇/bloodhound.md",
     "CVE/2024/CVE-2024-0195.md",
     "CVE/2025",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250906150609.png",
     "网络安全/工具篇/netexec.md",
     "网络安全/工具篇/evil-winrm.md",
     "网络安全/工具篇/CrackMapExec.md",
@@ -323,7 +325,6 @@
     "Web/Sql注入/SQLI-LABS.md",
     "Web/Sql注入/SQL流程.md",
     "Web/Sql注入/Mysql 总结.md",
-    "CTF赛题/WriteUP/2021 蓝帽杯.md",
     "JavaSec/JavaSec/内存马/attachments",
     "JavaSec/JavaSec/JNDI",
     "JavaSec/JavaSec/内存马",
