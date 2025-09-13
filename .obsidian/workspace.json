@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Artificial"
+              "title": "Voleur"
+            }
+          },
+          {
+            "id": "bd1c138ae1725b13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络安全/工具篇/netexec.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "netexec"
+            }
+          },
+          {
+            "id": "8216a7d63140067c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "内网渗透/cmd.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cmd"
             }
           },
           {
@@ -27,15 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/Machines/CodePartTwo.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CodePartTwo"
+              "title": "Artificial"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 217.5,
+    "collapsed": true
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -297,34 +327,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "615475d565716bed",
+  "active": "8216a7d63140067c",
   "lastOpenFiles": [
+    "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
+    "内网渗透/cmd.md",
+    "网络安全/工具篇/netexec.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Outbound.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912161147.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912160754.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912155744.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912155742.png",
+    "网络安全/实战渗透/Hack the Box/Machines/CodePartTwo.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912152601.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912104027.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911232809.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911232625.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911232100.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911220810.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911215312.png",
-    "网络安全/实战渗透/Hack the Box/Machines/CodePartTwo.md",
-    "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911172733.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911164641.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910152056.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910152045.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910151837.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250910151713.png",
     "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/工具篇/certipy-ad.md",
     "网络安全/工具篇/bloodyAD.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
     "网络安全/内网渗透/内网工作环境.md",
-    "内网渗透/cmd.md",
     "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
     "网络安全/工具篇/responder.md",
     "CVE/2025/CVE-2025-24071.md",
     "网络安全/工具篇/bloodhound.md",
     "CVE/2024/CVE-2024-0195.md",
     "CVE/2025",
-    "网络安全/工具篇/netexec.md",
     "网络安全/工具篇/evil-winrm.md",
     "网络安全/工具篇/CrackMapExec.md",
     "内网渗透/域网络/Windows相关协议.md",
@@ -338,7 +369,6 @@
     "Web/PHPTrike/FilterChain.md",
     "Web/PHPTrike/open_basedir绕过.md",
     "Web/Sql注入/SQLI-LABS.md",
-    "Web/Sql注入/SQL流程.md",
     "JavaSec/JavaSec/内存马/attachments",
     "JavaSec/JavaSec/JNDI",
     "JavaSec/JavaSec/内存马",
