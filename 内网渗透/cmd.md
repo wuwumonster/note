@@ -16,3 +16,17 @@ bloodhound-python -u ryan.naylor -p HollowOct31Nyt -k -ns 10.10.11.76 -c All -d 
 ```shell
 impacket-getTGT [domain/]username[:password]
 ```
+
+## 枚举
+smb 枚举
+```SHELL
+nxc smb dc.voleur.htb -u ryan.naylor -p 'HollowOct31Nyt' -k --shares --smb-timeout 500
+
+```
+
+## 连接
+smb
+```shell
+impacket-smbclient -k dc.voleur.htb
+smbclient //10.10.11.69/IT -U fluffy.htb/j.fleischman%J0elTHEM4n1990!
+```
