@@ -63,7 +63,8 @@
               "title": "Artificial"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 217.5,
+    "collapsed": true
   },
   "right": {
     "id": "caaf5b2001d4395e",
@@ -325,27 +327,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd1c138ae1725b13",
+  "active": "fdf360814b233c9c",
   "lastOpenFiles": [
-    "网络安全/工具篇/netexec.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913192943.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913185540.png",
     "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913161544.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913161213.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913160714.png",
     "内网渗透/cmd.md",
+    "网络安全/工具篇/netexec.md",
     "网络安全/实战渗透/Hack the Box/Machines/未命名 1.base",
     "网络安全/实战渗透/Hack the Box/Machines/未命名.base",
-    "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913144218.png",
-    "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
     "网络安全/实战渗透/Hack the Box/Machines/Outbound.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912161147.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912160754.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912155744.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912155742.png",
     "网络安全/实战渗透/Hack the Box/Machines/CodePartTwo.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912152601.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250912104027.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911232809.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911232625.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250911232100.png",
     "网络安全/工具篇/certipy-ad.md",
     "网络安全/工具篇/bloodyAD.md",
     "网络安全/内网渗透/靶场/Vulhub靶机.md",
