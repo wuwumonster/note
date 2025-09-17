@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/Machines/Editor.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/Soulmate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Editor"
+              "title": "Soulmate"
             }
           },
           {
@@ -313,8 +313,16 @@
   },
   "active": "bd1c138ae1725b13",
   "lastOpenFiles": [
-    "网络安全/内网渗透/提权/Lunux提权.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917115228.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917114137.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917114055.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917101309.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917101259.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917100420.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917095757.png",
     "网络安全/实战渗透/Hack the Box/Machines/Editor.md",
+    "网络安全/实战渗透/Hack the Box/Machines/Soulmate.md",
+    "网络安全/内网渗透/提权/Lunux提权.md",
     "内网渗透/cmd.md",
     "网络安全/实战渗透/Hack the Box/Machines/Cypher.md",
     "网络安全/实战渗透/Hack the Box/Machines/CodePartTwo.md",
@@ -328,15 +336,9 @@
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916105907.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916105518.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916105050.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916105027.png",
     "CTF赛题/WriteUP/2023 VNCTF.md",
     "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913204136.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913202704.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913202206.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913201432.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250913192943.png",
     "网络安全/工具篇/netexec.md",
     "网络安全/实战渗透/Hack the Box/Machines/未命名 1.base",
     "网络安全/实战渗透/Hack the Box/Machines/未命名.base",
@@ -350,8 +352,6 @@
     "CVE/2024/CVE-2024-0195.md",
     "CVE/2025",
     "网络安全/工具篇/evil-winrm.md",
-    "网络安全/工具篇/CrackMapExec.md",
-    "内网渗透/域网络/Windows相关协议.md",
     "内网渗透/域网络/attachments",
     "内网渗透/域网络",
     "内网渗透",
