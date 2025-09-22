@@ -153,7 +153,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -326,7 +327,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd1c138ae1725b13",
+  "active": "1660fe89eec4088b",
   "lastOpenFiles": [
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922162224.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922161949.png",
