@@ -25,14 +25,12 @@
             "id": "460153585a6a0468",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Web/SSTI/SSTI-总结.md",
-                "mode": "source",
-                "source": false
+                "file": "Web/SSTI/Thymeleaf-SSTI分析.pdf"
               },
-              "icon": "lucide-file",
-              "title": "SSTI-总结"
+              "icon": "lucide-file-text",
+              "title": "Thymeleaf-SSTI分析"
             }
           },
           {
@@ -63,8 +61,7 @@
               "title": "cmd"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,13 +93,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web/SSTI/SSTI-总结.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/HackNet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SSTI-总结 的大纲"
+              "title": "HackNet 的大纲"
             }
           },
           {
@@ -329,12 +326,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "460153585a6a0468",
+  "active": "bd1c138ae1725b13",
   "lastOpenFiles": [
-    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922162224.png",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922161949.png",
+    "Web/SSTI/Thymeleaf-SSTI分析.pdf",
+    "Web/SSTI/SSTI-总结.md",
     "Web/SSTI/SSTI-山河.md",
     "Web/SSTI/SSTI PHP题目.md",
-    "Web/SSTI/SSTI-总结.md",
+    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
     "网络安全/实战渗透/Hack the Box/Machines/HackNet.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922152328.png",
     "网络安全/实战渗透/Hack the Box/Machines/Expressway.md",
@@ -359,7 +359,6 @@
     "网络安全/病毒样本分析/ldr.sh & hezb.md",
     "2025-09-16.md",
     "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916110515.png",
     "CTF赛题/WriteUP/2023 VNCTF.md",
     "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
@@ -368,7 +367,6 @@
     "网络安全/实战渗透/Hack the Box/Machines/未命名.base",
     "网络安全/工具篇/certipy-ad.md",
     "网络安全/工具篇/bloodyAD.md",
-    "网络安全/内网渗透/内网工作环境.md",
     "CVE/2025",
     "内网渗透/域网络/attachments",
     "内网渗透/域网络",
@@ -376,7 +374,6 @@
     "JavaSec/JavaSec/内存马/attachments",
     "JavaSec/JavaSec/JNDI",
     "JavaSec/JavaSec/内存马",
-    "Web/Python/SSTI",
     "未命名.canvas",
     "网络安全/内网渗透/靶场/春秋云境/未命名.canvas",
     "未命名 1.canvas"
