@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络安全/实战渗透/Hack the Box/Machines/Outbound.md",
+                "file": "网络安全/实战渗透/Hack the Box/Machines/HackNet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Outbound"
+              "title": "HackNet"
+            }
+          },
+          {
+            "id": "460153585a6a0468",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/SSTI/SSTI-总结.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SSTI-总结"
             }
           },
           {
@@ -49,7 +63,8 @@
               "title": "cmd"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -311,8 +326,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd1c138ae1725b13",
+  "active": "460153585a6a0468",
   "lastOpenFiles": [
+    "Web/SSTI/SSTI-山河.md",
+    "网络安全/实战渗透/Hack the Box/Machines/HackNet.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922152328.png",
+    "网络安全/实战渗透/Hack the Box/Machines/Expressway.md",
+    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922095553.png",
+    "网络安全/实战渗透/Hack the Box/Machines/Outbound.md",
     "网络安全/实战渗透/Hack the Box/Machines/Soulmate.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917115228.png",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250917114137.png",
@@ -333,24 +354,19 @@
     "2025-09-16.md",
     "网络安全/实战渗透/Hack the Box/Machines/Artificial.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916110515.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916105907.png",
-    "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250916105518.png",
     "CTF赛题/WriteUP/2023 VNCTF.md",
     "网络安全/实战渗透/Hack the Box/Machines/Fluffy.md",
     "网络安全/实战渗透/Hack the Box/Machines/Voleur.md",
     "网络安全/工具篇/netexec.md",
     "网络安全/实战渗透/Hack the Box/Machines/未命名 1.base",
     "网络安全/实战渗透/Hack the Box/Machines/未命名.base",
-    "网络安全/实战渗透/Hack the Box/Machines/Outbound.md",
     "网络安全/工具篇/certipy-ad.md",
     "网络安全/工具篇/bloodyAD.md",
     "网络安全/内网渗透/内网工作环境.md",
     "网络安全/工具篇/responder.md",
     "CVE/2025/CVE-2025-24071.md",
     "网络安全/工具篇/bloodhound.md",
-    "CVE/2024/CVE-2024-0195.md",
     "CVE/2025",
-    "网络安全/工具篇/evil-winrm.md",
     "内网渗透/域网络/attachments",
     "内网渗透/域网络",
     "内网渗透",
