@@ -195,3 +195,128 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-09-22 05:17:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-09-22 05:18:10
 ```
+
+## root.txt
+```SHELL
+mikey@hacknet:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+messagebus:x:100:107::/nonexistent:/usr/sbin/nologin
+sshd:x:101:65534::/run/sshd:/usr/sbin/nologin
+mikey:x:1000:1000:mikey,,,:/home/mikey:/bin/bash
+tcpdump:x:102:110::/nonexistent:/usr/sbin/nologin
+sandy:x:1001:1001::/home/sandy:/bin/bash
+mysql:x:103:111:MySQL Server,,,:/nonexistent:/bin/false
+_laurel:x:999:997::/var/log/laurel:/bin/false
+```
+
+网页权限在sandy
+![](attachments/Pasted%20image%2020250922173559.png)
+
+```PYTHON
+@cache_page(60)
+def explore(request):
+    if not "email" in request.session.keys():
+        return redirect("index")
+
+    session_user = get_object_or_404(SocialUser, email=request.session['email'])
+
+    page_size = 10
+    keyword = ""
+
+    if "keyword" in request.GET.keys():
+        keyword = request.GET['keyword']
+        posts = SocialArticle.objects.filter(text__contains=keyword).order_by("-date")
+    else:
+        posts = SocialArticle.objects.all().order_by("-date")
+
+    pages = ceil(len(posts) / page_size)
+
+    if "page" in request.GET.keys() and int(request.GET['page']) > 0:
+        post_start = int(request.GET['page'])*page_size-page_size
+        post_end = post_start + page_size
+        posts_slice = posts[post_start:post_end]
+    else:
+        posts_slice = posts[:page_size]
+
+    news = get_news()
+    request.session['requests'] = session_user.contact_requests
+    request.session['messages'] = session_user.unread_messages
+
+    for post_item in posts:
+        if session_user in post_item.likes.all():
+            post_item.is_like = True
+
+    posts_filtered = []
+    for post in posts_slice:
+        if not post.author.is_hidden or post.author == session_user:
+            posts_filtered.append(post)
+        for like in post.likes.all():
+            if like.is_hidden and like != session_user:
+                post.likes_number -= 1
+
+    context = {"pages": pages, "posts": posts_filtered, "keyword": keyword, "news": news, "session_user": session_user}
+
+    return render(request, "SocialNetwork/explore.html", context)
+
+def search(request):
+    if not "email" in request.session.keys():
+        return redirect("index")
+
+    page_size = 10
+
+    session_user = get_object_or_404(SocialUser, email=request.session['email'])
+
+    if "username" in request.GET.keys():
+        username = request.GET['username']
+        users = SocialUser.objects.filter(username__contains=username).order_by(Lower("username"))
+    else:
+        users = SocialUser.objects.all().order_by(Lower("username"))
+        username = ""
+
+    pages = ceil(len(users) / page_size)
+
+    if "page" in request.GET.keys() and int(request.GET['page']) > 0:
+        user_start = int(request.GET['page'])*page_size-page_size
+        user_end = user_start + page_size
+        users_slice = users[user_start:user_end]
+    else:
+        users_slice = users[:page_size]
+
+    for user in users_slice:
+        if len(user.about) > 100:
+            user.about = user.about[:100] + "..."
+
+    users_filtered = []
+
+    for user in users_slice:
+        if not user.is_hidden or user == session_user:
+            users_filtered.append(user)
+
+    news = get_news()
+    session_user = get_object_or_404(SocialUser, email=request.session['email'])
+    request.session['requests'] = session_user.contact_requests
+    request.session['messages'] = session_user.unread_messages
+
+    context = {"pages": pages, "users": users_filtered, "username": username, "news": news}
+
+    return render(request, "SocialNetwork/search.html", context)
+
+```
