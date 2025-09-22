@@ -96,10 +96,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CVE/2024/CVE-2024-36522.md"
+                "file": "Web/SSTI/SSTI-总结.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CVE-2024-36522 的大纲"
+              "title": "SSTI-总结 的大纲"
             }
           },
           {
@@ -328,7 +331,10 @@
   },
   "active": "460153585a6a0468",
   "lastOpenFiles": [
+    "Web/SSTI/Jinja2 SSTI外带命令回显.md",
     "Web/SSTI/SSTI-山河.md",
+    "Web/SSTI/SSTI PHP题目.md",
+    "Web/SSTI/SSTI-总结.md",
     "网络安全/实战渗透/Hack the Box/Machines/HackNet.md",
     "网络安全/实战渗透/Hack the Box/Machines/attachments/Pasted image 20250922152328.png",
     "网络安全/实战渗透/Hack the Box/Machines/Expressway.md",
@@ -363,9 +369,6 @@
     "网络安全/工具篇/certipy-ad.md",
     "网络安全/工具篇/bloodyAD.md",
     "网络安全/内网渗透/内网工作环境.md",
-    "网络安全/工具篇/responder.md",
-    "CVE/2025/CVE-2025-24071.md",
-    "网络安全/工具篇/bloodhound.md",
     "CVE/2025",
     "内网渗透/域网络/attachments",
     "内网渗透/域网络",
